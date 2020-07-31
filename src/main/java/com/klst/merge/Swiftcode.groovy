@@ -111,7 +111,7 @@ WHERE swiftcode = ?
 	def jsonString = new StringBuilder()
 	// see https://stackoverflow.com/questions/11863474/how-to-read-text-file-from-remote-system-and-then-write-it-into-array-of-string
 	def	readFromRemote = { filename , charsetName="Cp1252" ->
-		println "${CLASSNAME}:readFromRemote from ${filename}"
+		println "${CLASSNAME}:readFromRemote ${filename}"
 		File file = new File(filename)
 		BufferedReader reader = null
 		def done = 0
@@ -138,11 +138,10 @@ WHERE swiftcode = ?
 		println "${CLASSNAME}:run ${this.sqlInstance}"
 
 		def urlprefix = 'https://raw.githubusercontent.com/homebeaver/swiftcode/master/AllCountries/'		
-//		jsonLoad() // test
 		// TODO Laden in c_bank, c_bank_id ermitteln/darf nicht mit Ext_bankleitzahlen kollidieren
 //		readFromRemote(urlprefix + 'DE.json')
-		readFromRemote(urlprefix + 'AD.json') // Andorra
-		readFromRemote(urlprefix + 'GG.json') // Guernsey
+//		readFromRemote(urlprefix + 'AD.json') // Andorra
+		readFromRemote(urlprefix + 'IS.json') // Iceland
 		
 		return this;
 	}
