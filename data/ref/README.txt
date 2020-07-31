@@ -1,7 +1,7 @@
--- $Id: README.txt 46063 2016-03-31 18:10:42Z ehanussek.ext $
 -- Changehistory:
 -- 2015-03-17 EUG : created 
 -- 2015-06-15 EUG : DE-Cities BUG beschrieben
+-- ISO-country.json für swiftcode bank importer
  
 Quelle: databene-benerator/src/main/resources/org/databene/domain
 
