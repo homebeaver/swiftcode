@@ -1,5 +1,3 @@
-// wg. https://projects.klst.com/issues/2095
-
 package com.klst.merge
 
 import groovy.json.JsonSlurper;
@@ -66,77 +64,6 @@ class Swiftcode extends Script {
 
 	def TABLENAME = "c_bank"
 	
-	def ADjson = """
-{
-    "country": "Andorra",
-    "country_code": "AD",
-    "list": [
-        {
-            "id": 1,
-            "bank": "ANDORRA BANC AGRICOL REIG S.A.",
-            "city": "LES ESCALDES",
-            "branch": null,
-            "swift_code": "BACAADAD"
-        },
-        {
-            "id": 2,
-            "bank": "ANDORRA GESTIO AGRICOL REIG SAU",
-            "city": "ESCALDES-ENGORDANY",
-            "branch": "(AIM/POMS SERVICE)",
-            "swift_code": "AAMAADAD"
-        },
-        {
-            "id": 3,
-            "bank": "BANC SABADELL D'ANDORRA S.A.",
-            "city": "ANDORRA LA VELLA",
-            "branch": null,
-            "swift_code": "BSANADAD"
-        },
-        {
-            "id": 4,
-            "bank": "BANCA PRIVADA D'ANDORRA S.A.",
-            "city": "LES ESCALDES",
-            "branch": null,
-            "swift_code": "CASBADAD"
-        },
-        {
-            "id": 5,
-            "bank": "CREDIT ANDORRA,S.A.",
-            "city": "ANDORRA LA VELLA",
-            "branch": null,
-            "swift_code": "CRDAADAD"
-        },
-        {
-            "id": 6,
-            "bank": "MORA BANC GRUP SA",
-            "city": "ANDORRA LA VELLA",
-            "branch": null,
-            "swift_code": "BINAADAD"
-        },
-        {
-            "id": 7,
-            "bank": "MORA BANC SAU",
-            "city": "LES ESCALDES",
-            "branch": null,
-            "swift_code": "BINAADB1"
-        },
-        {
-            "id": 8,
-            "bank": "RESULT INTERNACIONAL SA",
-            "city": "ANDORRA LA VELLA",
-            "branch": null,
-            "swift_code": "RINSADA1"
-        },
-        {
-            "id": 9,
-            "bank": "VALL BANC",
-            "city": "ANDORRA LA VELLA",
-            "branch": null,
-            "swift_code": "VALBADAD"
-        }
-    ]
-}
-"""
 	void checkSwiftCodes(List swiftRecord, tablename=TABLENAME) {
 		def sql = """
 SELECT * FROM ${tablename} 
@@ -172,11 +99,11 @@ WHERE swiftcode = ?
 		}
 	}
 	
-	void jsonLoad(String jsonString=ADjson) {
+	void jsonLoad(String jsonString) {
 		def jsonSlurper = new JsonSlurper()
-		def object = jsonSlurper.parseText('{ "name": "John Doe" } /* some comment */')
-		assert object instanceof Map
-		assert object.name == 'John Doe'
+//		def object = jsonSlurper.parseText('{ "name": "John Doe" } /* some comment */')
+//		assert object instanceof Map
+//		assert object.name == 'John Doe'
 		
 		println "${CLASSNAME}:jsonLoad"
 		object = jsonSlurper.parseText(jsonString)
@@ -217,7 +144,7 @@ WHERE swiftcode = ?
 
 		def urlprefix = 'https://raw.githubusercontent.com/homebeaver/swiftcode/master/AllCountries/'		
 //		jsonLoad() // test
-		// TODO Laden in c_bank, c_bank_id ermitteln/darf nicht mit Ext_bankleitzahlen koolidieren
+		// TODO Laden in c_bank, c_bank_id ermitteln/darf nicht mit Ext_bankleitzahlen kollidieren
 //		readFromRemote(urlprefix + 'DE.json')
 		readFromRemote(urlprefix + 'AD.json') // Andorra
 		readFromRemote(urlprefix + 'GG.json') // Guernsey
