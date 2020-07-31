@@ -90,7 +90,6 @@ WHERE swiftcode = ?
 					println "${CLASSNAME}:checkSwiftCodes: new ${row}"
 					// TODO insert into ${tablename} - aber unter welcher id, denn row
 				} else {
-//					println "${CLASSNAME}:checkSwiftCodes: ${row.swift_code} isAktivSWIFTparticipant:${isAktiv} ${first}"
 					println "${CLASSNAME}:checkSwiftCodes: ${row.swift_code} is NOT AktivSWIFTparticipant : ${row}"
 				}
 			} else {
@@ -101,14 +100,10 @@ WHERE swiftcode = ?
 	
 	void jsonLoad(String jsonString) {
 		def jsonSlurper = new JsonSlurper()
-//		def object = jsonSlurper.parseText('{ "name": "John Doe" } /* some comment */')
-//		assert object instanceof Map
-//		assert object.name == 'John Doe'
 		
 		println "${CLASSNAME}:jsonLoad"
 		object = jsonSlurper.parseText(jsonString)
 		assert object instanceof Map
-//		assert object.country == 'Andorra' // Test
 		println "${CLASSNAME}:jsonLoad country_code: ${object.country_code} \n${object.list}"
 		checkSwiftCodes(object.list)
 	}
