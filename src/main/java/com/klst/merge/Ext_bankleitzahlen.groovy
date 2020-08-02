@@ -7,13 +7,18 @@ import java.sql.SQLException
 
 class Ext_bankleitzahlen extends Script {
 
+	static final URL_PREFIX = 'https://raw.githubusercontent.com/klst-de/de-mpiere/master/data/bundesbank/'
+	static final SUPER_USER_ID = 100
+	static final SYSTEM_CLIENT_ID = 0
+	
+	static final ISO_3166_1_DE = [ name: "Germany" , name_fr: "Allemagne (l')" , alpha2: "DE" , alpha3: "DEU" , numeric: 276 ]
+	//{ name: "Germany" , name_fr: "Allemagne (l')" , alpha2: "DE" , alpha3: "DEU" , numeric: 276 }
+	
 	def CLASSNAME = this.getClass().getName()
-	def DEFAULT_FROM_SCHEMA = "adempiere"
-	def DEFAULT_TO_SCHEMA = "adempiere"
-	def SUPER_USER_ID = 100
-	def SYSTEM_CLIENT_ID = 0
-	def GERDENWORD_CLIENT_ID = 11
-	def DEFAULT_CLIENT_ID = 1000000
+//	def DEFAULT_FROM_SCHEMA = "adempiere"
+//	static final DEFAULT_TO_SCHEMA = "adempiere"
+//	def GERDENWORD_CLIENT_ID = 11
+//	def DEFAULT_CLIENT_ID = 1000000
 	Sql sqlInstance
 	
 	public Ext_bankleitzahlen() {
@@ -22,7 +27,7 @@ class Ext_bankleitzahlen extends Script {
 
 	public Ext_bankleitzahlen(Binding binding) {
 		super(binding);
-		println "${CLASSNAME}:ctor binding"
+		println "${CLASSNAME}:ctor binding for ${ISO_3166_1_DE}"
 		// ACHTUNG : nonstd port
 		def db = [url:'jdbc:postgresql://localhost:5433/ad393', user:'adempiere', password:'adempiereIstEsNicht', driver:'org.postgresql.Driver']
 		try {
@@ -64,13 +69,13 @@ class Ext_bankleitzahlen extends Script {
 		return res                  
 	}
 
-	def TABLENAME = "ext_bankleitzahlen"
+	static final TABLENAME = "ext_bankleitzahlen"
 	
 	def createTable = { tableName=TABLENAME ->
 		def sql = """
 CREATE TABLE ${tableName}
 (
-  ext_bankleitzahlen_id numeric(10,0) NOT NULL,        -- fld 10 Konflikt mit c_bank_id 100 und 50000 GW
+  ext_bankleitzahlen_id numeric(10,0) NOT NULL,        -- fld 10 Konflikt mit c_bank_id 100 und 50000 GW, daher + ISO_3166_1_DE.numeric*1000000 
   routingno character varying(20) NOT NULL,            -- fld  1 BLZ , len  8
   merkmal character(1) NOT NULL DEFAULT '1'::bpchar,   -- fld  2
   name character varying(100) NOT NULL,                -- fld  3     , len 58
@@ -133,7 +138,7 @@ unique für merkmal='1' -- bankleitzahlführender Zahlungsdienstleister : COALES
 siehe https://de.wikipedia.org/wiki/Primary_Account_Number
 
 mapping to TABLE c_bank
-  c_bank_id                               ext_bankleitzahlen_id
+  c_bank_id                               ext_bankleitzahlen_id + ISO_3166_1_DE.numeric*1000000
   ad_client_id                            0
   ad_org_id                               0
   isactive                                aus merkmal! 'Y' <= '1' ?
@@ -149,6 +154,7 @@ mapping to TABLE c_bank
   description                             merkmal,panin,checkdigitmethod,chg,del,newroutingno als map in JSON Format
   uuid  
  */
+	static final int FIRST_ID = 276000000 // ISO_3166_1_DE.numeric*1000000
 	def cols = [ext_bankleitzahlen_id: [6,153,"int"]
 		, routingno        : [ 8,  1,"utf"]
 		, merkmal          : [ 1,  9,"utf"]
@@ -174,7 +180,7 @@ mapping to TABLE c_bank
 				def from = it.value.get(1) - 1
 				def to = it.value.get(0) + from
 				if(it.value.get(2)=='int') {
-					data.put(name, 0+line.substring(from,to))
+					data.put(name, FIRST_ID + Integer.parseInt(line.substring(from,to)))
 				} else {
 					def str = line.substring(from,to).trim()
 					data.put(name, (str.length()==0 ? null : "'"+str+"'"))
@@ -329,12 +335,18 @@ VALUES ( :id , ${SYSTEM_CLIENT_ID} , 0 , '${updated}' , ${SUPER_USER_ID} , '${up
 		int i = 0
 		sqlInstance.eachRow(newfromsql,[]) { fromrow ->
 			i++
-			println "${CLASSNAME}:mergeInto $i: ${fromrow}"
+//			println "${CLASSNAME}:mergeInto $i: ${fromrow}" // nur kurzinfo: id, name, city, branch (evtl), swiftcode 
 			nums[fromrow.chg]++
 			id = fromrow.ext_bankleitzahlen_id
 			String name = fromrow.name + " , " + fromrow.city 
 			String routingno = fromrow.routingno
 			String swiftcode = fromrow.swiftcode
+			if(swiftcode==null) {
+				println "${CLASSNAME}:mergeInto $i: ${fromrow}"
+			} else {
+				String branch = swiftcode.length()>8 ? '"'+swiftcode.substring(8)+'"' : "null"
+				println "${CLASSNAME}:mergeInto $i: { \"id\": ${id}, \"bank\": \"${fromrow.name}\", \"city\": \"${fromrow.city}\", \"branch\": ${branch}, \"swift_code\": \"${swiftcode}\" },"
+			}
 			String description = [merkmal:fromrow.merkmal,panin:fromrow.pan,checkdigitmethod:fromrow.checkdigitmethod,chg:fromrow.chg,del:fromrow.del,newroutingno:fromrow.newroutingno]
 			doSql(newinssql,[name:name,routingno:routingno,swiftcode:swiftcode,description:description, id:id])
 		}
@@ -367,7 +379,7 @@ VALUES ( :id , ${SYSTEM_CLIENT_ID} , 0 , '${updated}' , ${SUPER_USER_ID} , '${up
 	void loadOrInitialLoad(createTableAndInitialLoad=false) {
 		// in ad390 ist "name character varying(60) NOT NULL" zu kurz ==> https://github.com/adempiere/adempiere/issues/2266
 		
-		def urlprefix = 'https://raw.githubusercontent.com/klst-de/de-mpiere/master/data/bundesbank/'
+		def urlprefix = URL_PREFIX
 		try {
 			deleteAndLoad(urlprefix + 'BLZ_20180903.txt', '2018-09-03')
 //			deleteAndLoad(urlprefix + 'BLZ_20181203.txt', '2018-12-03')
