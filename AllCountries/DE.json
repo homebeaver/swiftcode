@@ -2,7 +2,7 @@
     "country": "Germany",
     "country_code": "DE",
     "ISO_3166_1": { "name": "Germany" , "name_fr": "Allemagne (l')" , "alpha2": "DE" , "alpha3": "DEU" , "numeric": 276 },
-    "source": "data/bundesbank/BLZ_20180305.txt"
+    "source": "data/bundesbank/BLZ_20180305.txt",
     "list": [
 { "id": 276047622, "bank": "Pax-Bank", "city": "Berlin", "branch": "PA6", "swift_code": "GENODED1PA6" },
 { "id": 276045681, "bank": "Raiffeisenbank Wismar -alt-", "city": "Wismar", "branch": "HWR", "swift_code": "GENODEF1HWR" },
