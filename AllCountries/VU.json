@@ -1,0 +1,26 @@
+{
+    "country": "Vanuatu",
+    "country_code": "VU",
+    "ISO_3166_1": { "name": "Vanuatu" , "name_fr": "Vanuatu (le)" , "alpha2": "VU" , "alpha3": "VUT" , "numeric": 548 },
+    "list": [
+{ "id": 1, "bank": "ALPEN BARUCH BANK LIMITED", "city": "PORT VILA", "branch": null, "swift_code": "ALBUVUVVXXX" },
+{ "id": 2, "bank": "ASIA MERCHANT BANK LIMITED", "city": "PORT VILA", "branch": null, "swift_code": "AMBVVUVUXXX" },
+{ "id": 3, "bank": "ANZ BANK (VANUATU) LTD", "city": "VILA", "branch": null, "swift_code": "ANZBVUVXXXX" },
+{ "id": 4, "bank": "BRED (VANUATU) LTD", "city": "PORT VILA", "branch": null, "swift_code": "BREDVUVUXXX" },
+{ "id": 5, "bank": "FINANCIAL PARTNERS BANK LIMITED", "city": "PORT VILA", "branch": null, "swift_code": "FPBLVUV1XXX" },
+{ "id": 6, "bank": "INVESTORS' TRUST LIMITED", "city": "VILA", "branch": null, "swift_code": "ITLIVUV1XXX" },
+{ "id": 7, "bank": "MG COMMERCIAL BANK LIMITED", "city": "PORT VILA", "branch": null, "swift_code": "MGCBVUVVXXX" },
+{ "id": 8, "bank": "NATIONAL BANK OF VANUATU LIMITED", "city": "PORT VILA", "branch": null, "swift_code": "NBOVVUVUXXX" },
+{ "id": 9, "bank": "PACIFIC INTERNATIONAL TRUST CO. LTD", "city": "PORT VILA", "branch": null, "swift_code": "PITCVUV1XXX" },
+{ "id": 10, "bank": "PACIFIC PRIVATE BANK LIMITED", "city": "PORT VILA", "branch": null, "swift_code": "PPBLVUVUXXX" },
+{ "id": 11, "bank": "RESERVE BANK OF VANUATU", "city": "PORT VILA", "branch": null, "swift_code": "RBVAVUVUXXX" },
+{ "id": 12, "bank": "VANTU BANK LIMITED", "city": "PORT VILA", "branch": null, "swift_code": "VANTVUVUXXX" },
+{ "id": 13, "bank": "VANUATU INTERNATIONAL TRUST COMPANY LIMITED", "city": "PORT VILA", "branch": null, "swift_code": "VITRVUV1XXX" },
+{ "id": 14, "bank": "BANK SOUTH PACIFIC (VANUATU) LIMITED", "city": "VILA", "branch": null, "swift_code": "BOSPVUVXXXX" },
+{ "id": 15, "bank": "INTEGRATED MARKETS LTD", "city": "PORT VILA", "branch": null, "swift_code": "INKRVUV1XXX" },
+{ "id": 16, "bank": "GREENROCK SECURITIES LIMITED", "city": "PORT VILA", "branch": null, "swift_code": "GRCRVUV1XXX" },
+{ "id": 17, "bank": "NAUTILUS INTERNATIONAL BANK LTD", "city": "PORT VILA", "branch": null, "swift_code": "NAIOVUV1XXX" },
+{ "id": 18, "bank": "DIGITAL OCEAN BANK LIMITED", "city": "PORT VILA", "branch": null, "swift_code": "DIOCVUVVXXX" },
+{ "id": 19, "bank": "WANFUTENG BANK LIMITED", "city": "PORT VILA", "branch": null, "swift_code": "WANFVUVVXXX" }
+   ]
+}
