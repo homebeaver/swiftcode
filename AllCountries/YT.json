@@ -1,0 +1,8 @@
+{
+    "country": "Mayotte",
+    "country_code": "YT",
+    "ISO_3166_1": { "name": "Mayotte" , "name_fr": "Mayotte" , "alpha2": "YT" , "alpha3": "MYT" , "numeric": 175 },
+    "list": [
+		{ "id": 1, "bank": "BANQUE FRANCAISE COMMERCIALE DE L'OCEAN INDIEN", "city": "MAMOUDZOU", "branch": null, "swift_code": "BFCOYTYTXXX" }
+    ]
+}
