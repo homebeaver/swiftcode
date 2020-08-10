@@ -1,0 +1,11 @@
+{
+    "country": "Wallis and Futuna",
+    "country_code": "WF",
+    "ISO_3166_1": { "name": "Wallis and Futuna" , "name_fr": "Wallis-et-Futuna" , "alpha2": "WF" , "alpha3": "WLF" , "numeric": 876 },
+    "list": [
+{ "id": 1, "bank": "CAISSE DES DEPOTS ET CONSIGNATIONS", "city": "MATA UTU", "branch": null, "swift_code": "CDCGWF2MXXX" },
+{ "id": 2, "bank": "IEOM MATA UTU", "city": "MATA UTU", "branch": null, "swift_code": "INDDWF21XXX" },
+{ "id": 3, "bank": "TRESOR PUBLIC UVEA MATA UTU", "city": "MATA UTU", "branch": null, "swift_code": "TRPUWF21XXX" },
+{ "id": 4, "bank": "BANQUE DE WALLIS ET FUTUNA SA", "city": "MATA UTU", "branch": null, "swift_code": "WAFTWF21XXX" }
+    ]
+}
