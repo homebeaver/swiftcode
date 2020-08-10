@@ -1,0 +1,8 @@
+{
+    "country": "Ukraine",
+    "country_code": "UA",
+    "ISO_3166_1": { "name": "Ukraine" , "name_fr": "Ukraine (l')" , "alpha2": "UA" , "alpha3": "UKR" , "numeric": 804 },
+    "list": [
+// TODO get data from https://bank-code.net/country/UKRAINE-%28UA%29.html
+    ]
+}
