@@ -1,0 +1,8 @@
+{
+    "country": "Tuvalu",
+    "country_code": "TV",
+    "ISO_3166_1": { "name": "Tuvalu" , "name_fr": "Tuvalu (les)" , "alpha2": "TV" , "alpha3": "TUV" , "numeric": 798 },
+    "list": [
+		{ "id": 1, "bank": "NATIONAL BANK OF TUVALU", "city": "FUNAFUTI", "branch": null, "swift_code": "NABTTVTVXXX" }
+    ]
+}

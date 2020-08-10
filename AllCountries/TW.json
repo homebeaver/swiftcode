@@ -1,0 +1,8 @@
+{
+    "country": "Taiwan",
+    "country_code": "TW",
+    "ISO_3166_1": { "name": "Taiwan (Province of China)" , "name_fr": "Taïwan (Province de Chine)" , "alpha2": "TW" , "alpha3": "TWN" , "numeric": 158 },
+    "list": [
+// TODO get data from https://bank-code.net/country/TAIWAN-%28TW%29.html
+    ]
+}
