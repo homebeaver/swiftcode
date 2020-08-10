@@ -1,0 +1,13 @@
+{
+    "country": "Virgin Islands (U.S.)",
+    "country_code": "VI",
+    "ISO_3166_1": { "name": "Virgin Islands (U.S.)" , "name_fr": "Vierges des États-Unis (les Îles)" , "alpha2": "VI" , "alpha3": "VIR" , "numeric": 850 },
+    "list": [
+{ "id": 1, "bank": "CITIBANK, N.A.", "city": "ST. THOMAS", "branch": null, "swift_code": "CITIVIV1XXX" },
+{ "id": 2, "bank": "EPAY SYSTEMS LIMITED LIABILITY COM", "city": "CHRISTIANSTED", "branch": "(DEPARTMENT)", "swift_code": "ESLOVIV1707" },
+{ "id": 3, "bank": "EPAY SYSTEMS LIMITED LIABILITY COM", "city": "CHRISTIANSTED", "branch": "(FINANCIAL SERVICES)", "swift_code": "ESLOVIV1INV" },
+{ "id": 4, "bank": "EPAY SYSTEMS LIMITED LIABILITY COM", "city": "CHRISTIANSTED", "branch": null, "swift_code": "ESLOVIV1XXX" },
+{ "id": 5, "bank": "BANK OF NOVA SCOTIA,THE", "city": "ST. THOMAS", "branch": null, "swift_code": "NOSCVIVIXXX" },
+{ "id": 6, "bank": "FOREIGN EXCHANGE BANK CORP.", "city": "ST JOHN", "branch": null, "swift_code": "MCSNVIV1XXX" }
+    ]
+}
