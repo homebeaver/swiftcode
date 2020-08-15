@@ -1,0 +1,36 @@
+{
+    "country": "El Salvador",
+    "country_code": "SV",
+    "ISO_3166_1": { "name": "El Salvador" , "name_fr": "El Salvador" , "alpha2": "SV" , "alpha3": "SLV" , "numeric": 222 },
+// Expl iban=SV62 CENR 0000 0000 0000 0070 0025
+    "list": [
+{ "id": 1, "bank": "BANCO CUSCATLAN DE EL SALVADOR S.A.", "city": "SAN SALVADOR", "branch": "(NOSTRO ACCOUNT)", "swift_code": "BACUSVSSNOS" },
+{ "id": 2, "bank": "BANCO DE AMERICA CENTRAL, S.A.", "city": "SAN SALVADOR", "branch": null, "swift_code": "BAMCSVSSXXX" },
+{ "id": 3, "bank": "BANCO CENTROAMERICANO DE INTEGRACION ECONOMICA", "city": "SAN SALVADOR", "branch": null, "swift_code": "BCIESVS1XXX" },
+{ "id": 4, "bank": "BANCO HIPOTECARIO DE EL SALVADOR S.A.", "city": "SAN SALVADOR", "branch": null, "swift_code": "BHSASVSSXXX" },
+{ "id": 5, "bank": "BANCO DAVIVIENDA SALVADORENO SA", "city": "SAN SALVADOR", "branch": null, "swift_code": "BSALSVSSXXX" },
+{ "id": 6, "bank": "BANCO AGRICOLA, S.A.", "city": "SAN SALVADOR", "branch": null, "swift_code": "CAGRSVSSXXX" },
+{ "id": 7, "bank": "CENTRAL DE DEPOSITO DE VALORES DE EL SALVADOR SA DE CV", "city": "SAN SALVADOR", "branch": null, "swift_code": "CDVSSVS1XXX" },
+{ "id": 8, "bank": "BANCO CENTRAL DE RESERVA DE EL SALVADOR", "city": "SAN SALVADOR", "branch": "(GERENCIA DE TESORERIA)", "swift_code": "CENRSVSSGTE" },
+{ "id": 9, "bank": "BANCO CENTRAL DE RESERVA DE EL SALVADOR", "city": "SAN SALVADOR", "branch": null, "swift_code": "CENRSVSSXXX" },
+{ "id": 10, "bank": "CITIBANK, N.A", "city": "SAN SALVADOR", "branch": null, "swift_code": "CITISVS1XXX" },
+{ "id": 11, "bank": "FITCH CENTROAMERICA (EL SALVADOR BRANCH OF PANAMANIAN ENTITY)", "city": "SAN SALVADOR", "branch": null, "swift_code": "FRIPSVS1XXX" },
+{ "id": 12, "bank": "BANCO G AND T CONTINENTAL EL SALVADOR", "city": "SAN SALVADOR", "branch": null, "swift_code": "GTCSSVSSXXX" },
+{ "id": 13, "bank": "BANCO INDUSTRIAL EL SALVADOR, S.A.", "city": "SAN SALVADOR", "branch": null, "swift_code": "INDLSVSSXXX" },
+{ "id": 14, "bank": "BANCO DE CREDITO POPULAR S.A.", "city": "SAN SALVADOR", "branch": null, "swift_code": "POPCSVS1XXX" },
+{ "id": 15, "bank": "BANCO ATLANTIDA EL SALVADOR, S.A.", "city": "SAN SALVADOR", "branch": null, "swift_code": "PRCBSVSSXXX" },
+{ "id": 16, "bank": "SOCIEDAD DE AHORRO Y CREDITO MULTIVALORES", "city": "SAN SALVADOR", "branch": null, "swift_code": "SADISVS1XXX" },
+{ "id": 17, "bank": "BANCO CUSCATLAN DE EL SALVADOR S.A.", "city": "SAN SALVADOR", "branch": null, "swift_code": "BACUSVSSXXX" },
+{ "id": 18, "bank": "BANCO DE FOMENTO AGROPECUARIO", "city": "SAN SALVADOR", "branch": null, "swift_code": "FOAGSVSSXXX" },
+{ "id": 19, "bank": "BANCO AZUL DE EL SALVADOR, SOCIEDAD ANONIMA", "city": "SAN SALVADOR", "branch": null, "swift_code": "AZULSVSSXXX" },
+{ "id": 20, "bank": "SCOTIABANK EL SALVADOR, S.A.", "city": "SAN SALVADOR", "branch": null, "swift_code": "BCSASVSSXXX" },
+{ "id": 21, "bank": "BANCO PROMERICA, S.A.", "city": "ANTIGUO CUSCATLAN", "branch": null, "swift_code": "BPRASVSSXXX" },
+{ "id": 22, "bank": "ASOCIACION COOPERATIVA DE AHORRO Y CREDITO DEL COLEGIO MEDICO DE EL SALVADOR (COMEDICA DE R.L.)", "city": "SAN SALVADOR", "branch": null, "swift_code": "ACATSVS1XXX" },
+{ "id": 23, "bank": "ASOCIACION COOPERATIVA DE AHORRO Y CREDITO VICENTINA DE R.L. ACCOVI DE R.L.", "city": "SAN VICENTE", "branch": null, "swift_code": "ACHESVS1XXX" },
+{ "id": 24, "bank": "FEDECREDITO DE CV", "city": "SAN SALVADOR", "branch": null, "swift_code": "FEDRSVS1XXX" },
+{ "id": 25, "bank": "MULTI INVERSIONES BANCO COOPERATIVO DE LOS TRABAJADORES S.C. DE R.L. DE C.V.", "city": "SAN SALVADOR", "branch": null, "swift_code": "MICJSVS1XXX" },
+{ "id": 26, "bank": "PRIMER BANCO DE LOS TRABAJADORES SOC. COOP. DE R.L. DE C.V.", "city": "SAN SALVADOR", "branch": null, "swift_code": "PBTRSVS1XXX" },
+{ "id": 27, "bank": "SOCIEDAD DE AHORRO Y CREDITO CONSTELACION, S.A.", "city": "LA LIBERTAD", "branch": null, "swift_code": "SADTSV21XXX" },
+{ "id": 28, "bank": "SOCIEDAD DE AHORRO Y CREDITO MULTIVALORES SOCIEDAD ANONIMA", "city": "SAN SALVADOR", "branch": null, "swift_code": "MVASSVS2XXX" }
+    ]
+}
