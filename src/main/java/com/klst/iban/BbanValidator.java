@@ -12,24 +12,21 @@ public class BbanValidator {
     static final Map<String,String> BBAN_FORMATS = new Hashtable<String, String>();
     static final Map<String,BbanValidator> BBAN_DATA = new Hashtable<String, BbanValidator>();
     static {
-    	BBAN_FORMATS.put("AD", "(\\d{4})(\\d{4})([A-Z0-9]{12})");
-    	BBAN_FORMATS.put("AE", "(\\d{3})(\\d{16})");
-//    	BBAN_FORMATS.put("AL", "(\\d{8})([A-Z0-9]{16})"); // iban.com validiert anders:
-    	BBAN_FORMATS.put("AL", "(\\d{3})(\\d{4})([A-Z0-9]{17})");
-    	BBAN_FORMATS.put("AT", "(\\d{5})(\\d{11})");
-    	BBAN_FORMATS.put("AZ", "([A-Z]{4})([A-Z0-9]{20})");
-    	BBAN_FORMATS.put("BA", "(\\d{3})(\\d{3})(\\d{8})(\\d{2})");
-    	BBAN_FORMATS.put("BE", "(\\d{3})(\\d{7})(\\d{2})"                        ); // 3!n7!n2!n
-    	BBAN_FORMATS.put("BG", "([A-Z]{4})(\\d{4})(\\d{2})([A-Z0-9]{8})"         ); // 4!a4!n2!n8!c
-    	BBAN_FORMATS.put("BH", "([A-Z]{4})([A-Z0-9]{14})"                        ); // 4!a14!c
-    	BBAN_FORMATS.put("BR", "(\\d{8})(\\d{5})(\\d{10})([A-Z]{1})([A-Z0-9]{1})"); // 8!n5!n10!n1!a1!c
-    	BBAN_FORMATS.put("BY", "([A-Z0-9]{4})(\\d{4})([A-Z0-9]{16})"             ); // 4!c4!n16!c
-    	BBAN_FORMATS.put("CH", "(\\d{5})([A-Z0-9]{12})"                          ); // 5!n12!c
-    	BBAN_FORMATS.put("CR", "(\\d{4})(\\d{14})"                               ); // 4!n14!n
-    	BBAN_FORMATS.put("CY", "(\\d{3})(\\d{5})([A-Z0-9]{16})"                  ); // 3!n5!n16!c  	
-    	BBAN_FORMATS.put("CZ", "(\\d{4})(\\d{6})(\\d{10})"                       ); // 4!n6!n10!n 
-    	BBAN_FORMATS.put("DE", "(\\d{8})(\\d{10})"                               ); // 8!n10!n
-    	BBAN_FORMATS.put("DK", "(\\d{4})(\\d{9})(\\d{1})"                        ); // 4!n9!n1!n
+    	BBAN_DATA.put("AD", new BbanValidator("(\\d{4})(\\d{4})([A-Z0-9]{12})"  , 1)); // 4!n4!n12!c +BranchCode
+    	BBAN_DATA.put("AE", new BbanValidator("(\\d{3})(\\d{16})"                  )); // 3!n16!n
+    	BBAN_DATA.put("AL", new BbanValidator("(\\d{3})(\\d{4})([A-Z0-9]{17})"  , 1)); // 8!n16!c BankCode:3!n +BranchCode:3!n Kontrollzeichen+account
+    	BBAN_DATA.put("AT", new BbanValidator("(\\d{5})(\\d{11})"                  )); // 5!n11!n
+    	BBAN_DATA.put("AZ", new BbanValidator("([A-Z]{4})([A-Z0-9]{20})"           )); // 4!a20!c
+    	BBAN_DATA.put("BA", new BbanValidator("(\\d{3})(\\d{3})(\\d{10})"       , 1)); // 3!n3!n8!n2!n +BranchCode account+Kontrollzeichen
+    	BBAN_DATA.put("BE", new BbanValidator("(\\d{3})(\\d{9})"                   )); // 3!n7!n2!n account+Kontrollzeichen
+    	BBAN_DATA.put("BG", new BbanValidator("([A-Z]{4})(\\d{4})([A-Z0-9]{10})", 1)); // 4!a4!n2!n8!c +BranchCode Kontrollzeichen+account
+    	BBAN_DATA.put("BH", new BbanValidator("([A-Z]{4})([A-Z0-9]{14})"           )); // 4!a14!c
+    	BBAN_DATA.put("BR", new BbanValidator("(\\d{8})(\\d{5})([A-Z0-9]{12})"  , 1)); // 8!n5!n10!n1!a1!c +BranchCode account+Kontrollzeichen
+    	BBAN_DATA.put("BY", new BbanValidator("([A-Z0-9]{4})(\\d{4})([A-Z0-9]{16})", 1)); // 4!c4!n16!c +BranchCode
+    	BBAN_DATA.put("CH", new BbanValidator("(\\d{5})([A-Z0-9]{12})"             )); // 5!n12!c
+    	BBAN_DATA.put("CR", new BbanValidator("(\\d{4})(\\d{14})"                  )); // 4!n14!n
+    	BBAN_DATA.put("CY", new BbanValidator("(\\d{3})(\\d{5})([A-Z0-9]{16})"  , 1)); // 3!n5!n16!c +BranchCode
+    	BBAN_DATA.put("CZ", new BbanValidator("(\\d{4})(\\d{16})"                  )); // 4!n6!n10!n 
     	BBAN_DATA.put("DE", new BbanValidator("(\\d{8})(\\d{10})"                  )); // 8!n10!n
     	BBAN_DATA.put("DK", new BbanValidator("(\\d{4})(\\d{10})"                  )); // 4!n9!n1!n account+Kontrollzeichen (Großbuchstabe oder Ziffer)
     	BBAN_DATA.put("DO", new BbanValidator("([A-Z0-9]{4})(\\d{20})"             )); // 4!c20!n
@@ -117,36 +114,19 @@ public class BbanValidator {
     }
    
     public BankData getBankData(String iban) {
-		String countryCode = iban.substring(0, 2);
-		String bban = iban.substring(4);
 		BankData bankData = new BankData();
+		String bban = getBban(iban, bankData);
 		String[] groups = this.regexValidator.match(bban);
-		bankData.setCountryIso(countryCode);
 		bankData.setBankIdentifier(groups[groupBankCode]);
 		if(this.groupBranchCode!=null) bankData.setBranchCode(Integer.parseInt(groups[this.groupBranchCode]));
 		bankData.setAccount(-1); // unbekannt bzw. anonym
     	return bankData;
     	
     }
-    static String getBban(String iban, String countryCode) {
-		countryCode = iban.substring(0, 2);
+    
+    private static String getBban(String iban, BankData bankData) {
+    	String countryCode = iban.substring(0, 2);
+    	bankData.setCountryIso(countryCode);
 		return iban.substring(4); 	
-    }
-//    static String getBban(String iban) {
-//		String countryCode = iban.substring(0, 2);
-//		return iban.substring(4); 	
-//    }
-    static BankData XXgetBankData(BbanValidator bbanVal, String iban) {
-		String countryCode = iban.substring(0, 2);
-		String bban = iban.substring(4);
-		BankData bankData = new BankData();
-//		RegexValidator regexValidator = new RegexValidator(BbanValidator.BBAN_FORMATS.get(countryCode));
-//		String[] groups = regexValidator.match(bban);
-		String[] groups = bbanVal.regexValidator.match(bban);
-		bankData.setCountryIso(countryCode);
-		bankData.setBankIdentifier(groups[GROUP_BANK_IDENTIFIER]);
-		if(bbanVal.groupBranchCode!=null) bankData.setBranchCode(Integer.parseInt(groups[bbanVal.groupBranchCode]));
-		bankData.setAccount(-1); // unbekannt bzw. anonym
-    	return bankData;
     }
 }
