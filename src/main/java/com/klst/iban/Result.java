@@ -361,6 +361,8 @@ public class Result {
         
         @XmlElement(name = "branch_code", required = true)
         protected Object branchCode;
+        
+        protected byte bankSupports;
 
         /**
          * Ruft den Wert der bic-Eigenschaft ab.
@@ -735,6 +737,14 @@ public class Result {
             this.branchCode = value;
         }
         
+        public byte getBankSupports() {
+            return bankSupports;
+        }
+        
+    	public void setBankSupports(byte bankSupports) {
+    		this.bankSupports = bankSupports;
+    	}
+
         public String toString() {
     		StringBuffer sb = new StringBuffer("[CountryIso:").append(this.getCountryIso())
     				.append(", Bic:").append(this.getBic())
@@ -743,7 +753,8 @@ public class Result {
     				.append(", BranchCode:").append(this.getBranchCode());
     		if(getBranch()!=null) sb.append(", Branch:\"").append(getBranch()).append("\"");	
     		if(getBank()!=null) sb.append(", Name:\"").append(getBank()).append("\""); // BankName		
-    		if(getAddress()!=null) sb.append(", Address:\"").append(getAddress()).append("\"");		
+    		if(getAddress()!=null) sb.append(", Address:\"").append(getAddress()).append("\"");	
+    		if(getBankSupports()>0) sb.append(", BankSupports:").append(getBankSupports());	
     		if(getZip()>0) sb.append(", Zip:").append(getZip());		
     		if(getCity()!=null) sb.append(", City:\"").append(getCity()).append("\"");		
     		if(getAccount()>0) sb.append(", Account:").append(getAccount());
