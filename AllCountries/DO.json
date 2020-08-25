@@ -2,1356 +2,198 @@
     "country": "Dominican Republic",
     "country_code": "DO",
     "list": [
-        {
-            "id": 1,
-            "bank": "ADMINISTRADORA DE FONDOS DE PENSIONES SIEMBRA, S.A",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AFPIDOS1"
-        },
-        {
-            "id": 2,
-            "bank": "AFP RESERVAS, S. A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AFPSDOS1"
-        },
-        {
-            "id": 3,
-            "bank": "AGENCIA DE CAMBIO FRANKLIN VASQUEZ",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACFQDOS1"
-        },
-        {
-            "id": 4,
-            "bank": "AGENTE DE CAMBIO ALEYBRA, S.A.",
-            "city": "LA ROMANA",
-            "branch": null,
-            "swift_code": "AGCLDOS1"
-        },
-        {
-            "id": 5,
-            "bank": "AGENTE DE CAMBIO AMERICA, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AGCEDOS1"
-        },
-        {
-            "id": 6,
-            "bank": "AGENTE DE CAMBIO C P Y R COMERCIAL, S.A.",
-            "city": "SANTIAGO",
-            "branch": null,
-            "swift_code": "AGACDOS1"
-        },
-        {
-            "id": 7,
-            "bank": "AGENTE DE CAMBIO CAPLA, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AGCPDOS1"
-        },
-        {
-            "id": 8,
-            "bank": "AGENTE DE CAMBIO CARIBE EXPRESS, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACCEDOS1"
-        },
-        {
-            "id": 9,
-            "bank": "AGENTE DE CAMBIO CENTRO DOLLAR CD, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACEODOS1"
-        },
-        {
-            "id": 10,
-            "bank": "AGENTE DE CAMBIO CHECO AND RODRIGUEZ, S.A.",
-            "city": "SANTIAGO",
-            "branch": null,
-            "swift_code": "ACCDDOS1"
-        },
-        {
-            "id": 11,
-            "bank": "AGENTE DE CAMBIO CHECO AND RODRIGUEZ, S.A.",
-            "city": "SANTIAGO",
-            "branch": null,
-            "swift_code": "ACCDDOS1"
-        },
-        {
-            "id": 12,
-            "bank": "AGENTE DE CAMBIO CIBAO EXPRESS",
-            "city": "SANTIAGO",
-            "branch": null,
-            "swift_code": "ACCXDOS1"
-        },
-        {
-            "id": 13,
-            "bank": "AGENTE DE CAMBIO CONCEPCION",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AGMCDOS1"
-        },
-        {
-            "id": 14,
-            "bank": "AGENTE DE CAMBIO DARIO GUZMAN,S.A.",
-            "city": "SANTIAGO",
-            "branch": null,
-            "swift_code": "ACDGDOS1"
-        },
-        {
-            "id": 15,
-            "bank": "AGENTE DE CAMBIO DIEGO VASQUEZ, C.POR A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACDVDOS1"
-        },
-        {
-            "id": 16,
-            "bank": "AGENTE DE CAMBIO EL EFECTIVO C.POR.A",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACECDOS1"
-        },
-        {
-            "id": 17,
-            "bank": "AGENTE DE CAMBIO EURODIVISAS DOMINI CANA S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACEDDOS1"
-        },
-        {
-            "id": 18,
-            "bank": "AGENTE DE CAMBIO EXTRANJERO UNICENTRO PLAZA",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACEUDOS1"
-        },
-        {
-            "id": 19,
-            "bank": "AGENTE DE CAMBIO FIRST POINT",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACFPDOS1"
-        },
-        {
-            "id": 20,
-            "bank": "AGENTE DE CAMBIO GIROSOL CORPORATION, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACGCDOS1"
-        },
-        {
-            "id": 21,
-            "bank": "AGENTE DE CAMBIO HERMANOS RODRIGUEZ , S. A.",
-            "city": "MOCA",
-            "branch": null,
-            "swift_code": "ACHRDOS1"
-        },
-        {
-            "id": 22,
-            "bank": "AGENTE DE CAMBIO HNOS DE LOS SANTOS",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACHADOS1"
-        },
-        {
-            "id": 23,
-            "bank": "AGENTE DE CAMBIO IMBERT BALBUENA C. POR. A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACIUDOS1"
-        },
-        {
-            "id": 24,
-            "bank": "AGENTE DE CAMBIO INVERPLA.S.A",
-            "city": "PUERTO PLATA",
-            "branch": null,
-            "swift_code": "ACIPDOS1"
-        },
-        {
-            "id": 25,
-            "bank": "AGENTE DE CAMBIO JR INTERNACIONAL, SA",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AGANDOS1"
-        },
-        {
-            "id": 26,
-            "bank": "AGENTE DE CAMBIO JULIO DIAZ, C. X A",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACJDDOS1"
-        },
-        {
-            "id": 27,
-            "bank": "AGENTE DE CAMBIO JULIO PEA A Y ASOCIADOS S.A",
-            "city": "BANI",
-            "branch": null,
-            "swift_code": "ACJPDOS1"
-        },
-        {
-            "id": 28,
-            "bank": "AGENTE DE CAMBIO LA MOREDI, S.A",
-            "city": "SAN CRISTOBAL",
-            "branch": null,
-            "swift_code": "AGADDOS1"
-        },
-        {
-            "id": 29,
-            "bank": "AGENTE DE CAMBIO LA NACIONAL C.POR.A",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACNCDOS1"
-        },
-        {
-            "id": 30,
-            "bank": "AGENTE DE CAMBIO LEONEL, S.A",
-            "city": "LA VEGA",
-            "branch": null,
-            "swift_code": "AGCNDOS1"
-        },
-        {
-            "id": 31,
-            "bank": "AGENTE DE CAMBIO LEONOR, S.A.",
-            "city": "SAN FRANCISCO DE MACORIS",
-            "branch": null,
-            "swift_code": "ACLEDOS1"
-        },
-        {
-            "id": 32,
-            "bank": "AGENTE DE CAMBIO LOS PRIMOS",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AGCRDOS1"
-        },
-        {
-            "id": 33,
-            "bank": "AGENTE DE CAMBIO MARCO'S C. POR A. MODULO NO. 1B",
-            "city": "SANTIAGO",
-            "branch": null,
-            "swift_code": "ACMMDOS1"
-        },
-        {
-            "id": 34,
-            "bank": "AGENTE DE CAMBIO MARINELLY C.A.",
-            "city": "LA ROMANA",
-            "branch": null,
-            "swift_code": "AGCYDOS1"
-        },
-        {
-            "id": 35,
-            "bank": "AGENTE DE CAMBIO MARVE, S.A.",
-            "city": "SANTIAGO",
-            "branch": null,
-            "swift_code": "AGMMDOS1"
-        },
-        {
-            "id": 36,
-            "bank": "AGENTE DE CAMBIO MELO, C. POR A.",
-            "city": "BANI",
-            "branch": null,
-            "swift_code": "AGAEDOS1"
-        },
-        {
-            "id": 37,
-            "bank": "AGENTE DE CAMBIO MONEYCORPS., I. R. , S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACMEDOS1"
-        },
-        {
-            "id": 38,
-            "bank": "AGENTE DE CAMBIO PATRICIO HIERRO S.A.",
-            "city": "MONSENOR NOUEL",
-            "branch": null,
-            "swift_code": "ACPHDOS1"
-        },
-        {
-            "id": 39,
-            "bank": "AGENTE DE CAMBIO PAULINO Y ASOCIADOS,S.A.",
-            "city": "SAN FRANCISCO DE MACORIS",
-            "branch": null,
-            "swift_code": "ACPSDOS1"
-        },
-        {
-            "id": 40,
-            "bank": "AGENTE DE CAMBIO PLACIDO IV, S.A",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AGCDDOS1"
-        },
-        {
-            "id": 41,
-            "bank": "AGENTE DE CAMBIO R.U.,S.A.",
-            "city": "PUERTO PLATA",
-            "branch": null,
-            "swift_code": "ACRADOS1"
-        },
-        {
-            "id": 42,
-            "bank": "AGENTE DE CAMBIO RAFAEL PLACIDO C.XA.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACRPDOS1"
-        },
-        {
-            "id": 43,
-            "bank": "AGENTE DE CAMBIO REMESAS DOMINICANAS, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACRDDOS1"
-        },
-        {
-            "id": 44,
-            "bank": "AGENTE DE CAMBIO RIJO Y ASOCIADOS C.POR A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACRSDOS1"
-        },
-        {
-            "id": 45,
-            "bank": "AGENTE DE CAMBIO RODRIGUEZ REYES, C POR A",
-            "city": "LA ROMANA",
-            "branch": null,
-            "swift_code": "ACRRDOS1"
-        },
-        {
-            "id": 46,
-            "bank": "AGENTE DE CAMBIO ROSARIO, C POR A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AGAODOS1"
-        },
-        {
-            "id": 47,
-            "bank": "AGENTE DE CAMBIO S.C.T.,S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AGATDOS1"
-        },
-        {
-            "id": 48,
-            "bank": "AGENTE DE CAMBIO SALVIA CXA",
-            "city": "PUERTO PLATA",
-            "branch": null,
-            "swift_code": "ACSXDOS1"
-        },
-        {
-            "id": 49,
-            "bank": "AGENTE DE CAMBIO SANTA LUCIA, S. A",
-            "city": "SANTIAGO",
-            "branch": null,
-            "swift_code": "ACSLDOS1"
-        },
-        {
-            "id": 50,
-            "bank": "AGENTE DE CAMBIO SP, C. POR A.",
-            "city": "PUERTO PLATA",
-            "branch": null,
-            "swift_code": "AGAIDOS1"
-        },
-        {
-            "id": 51,
-            "bank": "AGENTE DE CAMBIO TAVERAS,S.A",
-            "city": "SANTIAGO",
-            "branch": null,
-            "swift_code": "AGCTDOS1"
-        },
-        {
-            "id": 52,
-            "bank": "AGENTE DE CAMBIO TRANSACCIONES DAMOS, C. POR A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACTMDOS1"
-        },
-        {
-            "id": 53,
-            "bank": "AGENTE DE CAMBIO TRANSNACIONAL, S.A",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACAFDOS1"
-        },
-        {
-            "id": 54,
-            "bank": "AGENTE DE CAMBIO VIMENCA",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BCVIDOS1"
-        },
-        {
-            "id": 55,
-            "bank": "AGENTE DE CAMBIO Y REMESAS CTD, S.A",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACRTDOS1"
-        },
-        {
-            "id": 56,
-            "bank": "AGENTE DE CAMBIO Y REMESAS OZAMA, S.A",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACRZDOS1"
-        },
-        {
-            "id": 57,
-            "bank": "AGENTE DE REMESAS Y CAMBIO BOYA S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ARCYDOS1"
-        },
-        {
-            "id": 58,
-            "bank": "AGENTE DE REMESAS Y CAMBIO VIMENCA, S.A",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ARCVDOS1"
-        },
-        {
-            "id": 59,
-            "bank": "ASOCIACION BARAHONA DE AHORROS Y PRESTAMOS",
-            "city": "BARAHONA",
-            "branch": null,
-            "swift_code": "ABHPDOS1"
-        },
-        {
-            "id": 60,
-            "bank": "ASOCIACION BONAO DE AHORROS Y PRESTAMOS",
-            "city": "BONAO",
-            "branch": null,
-            "swift_code": "ABHRDOS1"
-        },
-        {
-            "id": 61,
-            "bank": "ASOCIACION CIBAO DE AHORROS Y PRESTAMOS",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACIBDOS1"
-        },
-        {
-            "id": 62,
-            "bank": "ASOCIACION COTUI DE AHORROS Y PRESTAMOS",
-            "city": "COTUI",
-            "branch": null,
-            "swift_code": "ACAPDOS1"
-        },
-        {
-            "id": 63,
-            "bank": "ASOCIACION DOMINICANA DE AHORROS Y PRESTAMOS",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ADAPDOS1"
-        },
-        {
-            "id": 64,
-            "bank": "ASOCIACION DUARTE DE AHORROS Y PRESTAMOS",
-            "city": "SAN FRANCISCO DE MACORIS",
-            "branch": null,
-            "swift_code": "ADUADOS1"
-        },
-        {
-            "id": 65,
-            "bank": "ASOCIACION HIGUAMO DE AHORROS Y PRESTAMOS",
-            "city": "SAN PEDRO DE MACORIS",
-            "branch": null,
-            "swift_code": "AHAPDOS1"
-        },
-        {
-            "id": 66,
-            "bank": "ASOCIACION LA NACIONAL DE AHORROS Y PRESTAMOS",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ANAYDOS1"
-        },
-        {
-            "id": 67,
-            "bank": "ASOCIACION LA PREVISORA DE AHORROS Y PRESTAMOS",
-            "city": "SANTIAGO DE LOS CABALLEROS",
-            "branch": null,
-            "swift_code": "APAPDOS1"
-        },
-        {
-            "id": 68,
-            "bank": "ASOCIACION LA VEGA REAL DE AHORROS Y PRESTAMOS",
-            "city": "LA VEGA",
-            "branch": null,
-            "swift_code": "ALVRDOS1"
-        },
-        {
-            "id": 69,
-            "bank": "ASOCIACION MAGUANA DE AHORROS Y PRESTAMOS",
-            "city": "SAN JUAN DE LA MAGUANA",
-            "branch": null,
-            "swift_code": "AMAPDOS1"
-        },
-        {
-            "id": 70,
-            "bank": "ASOCIACION MOCANA DE AHORROS Y PRESTAMOS",
-            "city": "MOCA",
-            "branch": null,
-            "swift_code": "AMARDOS1"
-        },
-        {
-            "id": 71,
-            "bank": "ASOCIACION NOROESTANA DE AHORROS Y PRESTAMOS",
-            "city": "MAO",
-            "branch": null,
-            "swift_code": "ANAPDOS1"
-        },
-        {
-            "id": 72,
-            "bank": "ASOCIACION NORTENA DE AHORROS Y PRESTAMOS",
-            "city": "PUERTO PLATA",
-            "branch": null,
-            "swift_code": "ANORDOS1"
-        },
-        {
-            "id": 73,
-            "bank": "ASOCIACION PERAVIA DE AHORROS Y PRESTAMOS",
-            "city": "BANI",
-            "branch": null,
-            "swift_code": "APARDOS1"
-        },
-        {
-            "id": 74,
-            "bank": "ASOCIACION POPULAR DE AHORROS Y PRESTAMOS",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "APOPDOS1"
-        },
-        {
-            "id": 75,
-            "bank": "ASOCIACION POPULAR DE AHORROS Y PRESTAMOS (APAP)",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "APOPDOSX"
-        },
-        {
-            "id": 76,
-            "bank": "ASOCIACION ROMANA DE AHORROS Y PRESTAMOS",
-            "city": "ROMANA",
-            "branch": null,
-            "swift_code": "ARAODOS1"
-        },
-        {
-            "id": 77,
-            "bank": "ATLANTICO BBA VALORES PUESTO DE BOLSA, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ABVPDOS1"
-        },
-        {
-            "id": 78,
-            "bank": "BANCA INVESTIMENTI EUROMEDITERRANEA SRL",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "INULDOS1"
-        },
-        {
-            "id": 79,
-            "bank": "BANCO AGRICOLA DE LA REPUBLICA DOMINICANA",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BAGRDOS1"
-        },
-        {
-            "id": 80,
-            "bank": "BANCO ATLANTICO DE AHORRO Y CREDITO, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BAACDOS1"
-        },
-        {
-            "id": 81,
-            "bank": "BANCO BDI, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BBDIDOSD"
-        },
-        {
-            "id": 82,
-            "bank": "BANCO CAPITAL DE AHORRO Y CREDITO, S.A",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "CAHCDOS1"
-        },
-        {
-            "id": 83,
-            "bank": "BANCO CENTRAL DE LA REPUBLICA DOMINICANA",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BCRDDOSX"
-        },
-        {
-            "id": 84,
-            "bank": "BANCO CENTRAL DE LA REPUBLICA DOMINICANA",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BCRDDOSXOMA"
-        },
-        {
-            "id": 85,
-            "bank": "BANCO CENTRAL DE LA REPUBLICA DOMINICANA",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BCRDDOSXSBC"
-        },
-        {
-            "id": 86,
-            "bank": "BANCO CONTINENTAL DE DESARROLLO,S.A",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BODSDOS1"
-        },
-        {
-            "id": 87,
-            "bank": "BANCO DE AHORRO Y CREDITO ADOPEM, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AHCDDOS1"
-        },
-        {
-            "id": 88,
-            "bank": "BANCO DE AHORRO Y CREDITO ALTAS CUMBRES, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACAUDOS1"
-        },
-        {
-            "id": 89,
-            "bank": "BANCO DE AHORRO Y CREDITO ATLAS, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AHCADOS1"
-        },
-        {
-            "id": 90,
-            "bank": "BANCO DE AHORRO Y CREDITO COFACI, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AHCCDOS1"
-        },
-        {
-            "id": 91,
-            "bank": "BANCO DE AHORRO Y CREDITO CONFISA, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AHCODOS1"
-        },
-        {
-            "id": 92,
-            "bank": "BANCO DE AHORRO Y CREDITO DEL CARIBE",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AHRCDOS1"
-        },
-        {
-            "id": 93,
-            "bank": "BANCO DE AHORRO Y CREDITO EMPIRE",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AHREDOS1"
-        },
-        {
-            "id": 94,
-            "bank": "BANCO DE AHORRO Y CREDITO FDG S.A.",
-            "city": "PUNTA CANA",
-            "branch": null,
-            "swift_code": "AHRFDOS1"
-        },
-        {
-            "id": 95,
-            "bank": "BANCO DE AHORRO Y CREDITO FEDERAL, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AHCEDOS1"
-        },
-        {
-            "id": 96,
-            "bank": "BANCO DE AHORRO Y CREDITO FIHOGAR",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AHCGDOS1"
-        },
-        {
-            "id": 97,
-            "bank": "BANCO DE AHORRO Y CREDITO FONDESA, S.A. (BANFONDESA)",
-            "city": "SANTIAGO DE LOS CABALLEROS",
-            "branch": null,
-            "swift_code": "ACFEDOS1"
-        },
-        {
-            "id": 98,
-            "bank": "BANCO DE AHORRO Y CREDITO GRUFICORP S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BACGDOS1"
-        },
-        {
-            "id": 99,
-            "bank": "BANCO DE AHORRO Y CREDITO IDECOSA, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "GBHDDOS1"
-        },
-        {
-            "id": 100,
-            "bank": "BANCO DE AHORRO Y CREDITO INMOBILIARIO, S. A. (BANACI)",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "ACIIDOSD"
-        },
-        {
-            "id": 101,
-            "bank": "BANCO DE AHORRO Y CREDITO MICRO, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AHRMDOS1"
-        },
-        {
-            "id": 102,
-            "bank": "BANCO DE AHORRO Y CREDITO OCHOA, S.A",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AHCHDOS1"
-        },
-        {
-            "id": 103,
-            "bank": "BANCO DE AHORRO Y CREDITO PROVIDENCIAL, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AHCPDOS1"
-        },
-        {
-            "id": 104,
-            "bank": "BANCO DE AHORRO Y CREDITO PYME, BHD, S. A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BPYMDOS1"
-        },
-        {
-            "id": 105,
-            "bank": "BANCO DE AHORRO Y CREDITO RIO, S. A",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AHRIDOS1"
-        },
-        {
-            "id": 106,
-            "bank": "BANCO DE AHORRO Y CREDITO UNION S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "UNONDOSD"
-        },
-        {
-            "id": 107,
-            "bank": "BANCO DE DESARROLLO AGROPECUARIO, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "DEARDOS1"
-        },
-        {
-            "id": 108,
-            "bank": "BANCO DE RESERVAS DE LA REPUBLICA DOMINICANA",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BRRDDOSD"
-        },
-        {
-            "id": 109,
-            "bank": "BANCO DOMINICANO DEL PROGRESO S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BDPRDOSD"
-        },
-        {
-            "id": 110,
-            "bank": "BANCO MULTIPLE ADEMI. S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AHCMDOSD"
-        },
-        {
-            "id": 111,
-            "bank": "BANCO MULTIPLE BELLBANK",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BELNDOSD"
-        },
-        {
-            "id": 112,
-            "bank": "BANCO MULTIPLE BHD LEON S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": "(HEADQUARTERS OFFICE)",
-            "swift_code": "BCBHDOSD"
-        },
-        {
-            "id": 113,
-            "bank": "BANCO MULTIPLE BHD LEON, S.A. (FORMERLY BANCO MULTIPLE LEON, S.A.)",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "NCREDOSD"
-        },
-        {
-            "id": 114,
-            "bank": "BANCO MULTIPLE BHD LEON, S.A. (FORMERLY BANCO MULTIPLE LEON, S.A.)",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "NCREDOSD"
-        },
-        {
-            "id": 115,
-            "bank": "BANCO MULTIPLE CARIBE",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "STGODOSD"
-        },
-        {
-            "id": 116,
-            "bank": "BANCO MULTIPLE DE LAS AMERICAS, S.A",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "AHCSDOSD"
-        },
-        {
-            "id": 117,
-            "bank": "BANCO MULTIPLE LAFISE S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BCCEDOSD"
-        },
-        {
-            "id": 118,
-            "bank": "BANCO MULTIPLE LOPEZ DE HARO, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BLDHDOSD"
-        },
-        {
-            "id": 119,
-            "bank": "BANCO MULTIPLE PROMERICA DE LA REPUBLICA DOMINICANA",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "PRHRDOSD"
-        },
-        {
-            "id": 120,
-            "bank": "BANCO MULTIPLE SANTA CRUZ, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "SCRZDOSD"
-        },
-        {
-            "id": 121,
-            "bank": "BANCO NACIONAL DE FOMENTO DE LA VIVIENDA Y LA PRODUCCION (BNV)",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BNVPDOS1"
-        },
-        {
-            "id": 122,
-            "bank": "BANCO POPULAR DOMINICANO, S.A. BANCO MULTIPLE",
-            "city": "SANTO DOMINGO",
-            "branch": "(DEPTO. TRASFERENCIAS INTERNACIONALES)",
-            "swift_code": "BPDODOSXREM"
-        },
-        {
-            "id": 123,
-            "bank": "BANCO POPULAR DOMINICANO, S.A. BANCO MULTIPLE",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BPDODOSX"
-        },
-        {
-            "id": 124,
-            "bank": "BANCO PROVIDENCIAL, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "PVDLDOSD"
-        },
-        {
-            "id": 125,
-            "bank": "BANCO REGIONAL DOMINICANO,S.A.",
-            "city": "SANTIAGO DE LOS CABALLEROS",
-            "branch": null,
-            "swift_code": "BGDODO21"
-        },
-        {
-            "id": 126,
-            "bank": "BANCO UNIVERSAL S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "UBANDOS1"
-        },
-        {
-            "id": 127,
-            "bank": "BANCO VIMENCA",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "VIMEDOSD"
-        },
-        {
-            "id": 128,
-            "bank": "BANESCO BANCO MULTIPLE, S. A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BANSDOSD"
-        },
-        {
-            "id": 129,
-            "bank": "BANK OF NOVA SCOTIA, THE",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "NOSCDOSD"
-        },
-        {
-            "id": 130,
-            "bank": "BHD LEON PUESTO DE BOLSA, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BHDVDOSD"
-        },
-        {
-            "id": 131,
-            "bank": "BITACORA VALORES PUESTO DE BOLSA",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BVPODOS1"
-        },
-        {
-            "id": 132,
-            "bank": "BNVALORES, PUESTO DE BOLSA, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BNUBDOS1"
-        },
-        {
-            "id": 133,
-            "bank": "BONANZA BANCO DE AHORRO Y CREDITO",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BADODOS1"
-        },
-        {
-            "id": 134,
-            "bank": "BRITISH AMERICAN TOBACCO REPUBLICA DOMINICANA",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "BATSDOS1"
-        },
-        {
-            "id": 135,
-            "bank": "CCI PUESTO DE BOLSA, S.A",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "CCPSDOS1"
-        },
-        {
-            "id": 136,
-            "bank": "CEVALDOM DEPOSITO CENTRALIZADO DE VALORES, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "CVDPDOSD"
-        },
-        {
-            "id": 137,
-            "bank": "CITIBANK, N.A.",
-            "city": "SANTIAGO DE LOS CABALLEROS",
-            "branch": null,
-            "swift_code": "CITIDOSD022"
-        },
-        {
-            "id": 138,
-            "bank": "CITIBANK, N.A.",
-            "city": "SANTO DOMINGO",
-            "branch": "(CITIINVERSIONES S.A.)",
-            "swift_code": "CITIDOSDCTV"
-        },
-        {
-            "id": 139,
-            "bank": "CITIBANK, N.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "CITIDOSD"
-        },
-        {
-            "id": 140,
-            "bank": "CITINVERSIONES DE TITULOS Y VALORES S.A. PUESTO DE BOLSA",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "CITIDOT1"
-        },
-        {
-            "id": 141,
-            "bank": "CONSORCIO DE TARJETAS DOMINICANAS, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "COTDDOS1"
-        },
-        {
-            "id": 142,
-            "bank": "COOP-CIERE",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "CPPPDOS1"
-        },
-        {
-            "id": 143,
-            "bank": "CORPORACION DE CREDITO AMERICA, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "CRTRDOS1"
-        },
-        {
-            "id": 144,
-            "bank": "CORPORACION DE CREDITO DEL MAR, S.A (CREDIMAR)",
-            "city": "LA ROMANO",
-            "branch": null,
-            "swift_code": "CRMDDOS1"
-        },
-        {
-            "id": 145,
-            "bank": "CORPORACION DE CREDITO EL EFECTIVO",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "CCEEDOS1"
-        },
-        {
-            "id": 146,
-            "bank": "CORPORACION DE CREDITO FIMOTORS",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "COTFDOS1"
-        },
-        {
-            "id": 147,
-            "bank": "CORPORACION DE CREDITO FINANZAR, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "COCZDOS1"
-        },
-        {
-            "id": 148,
-            "bank": "CORPORACION DE CREDITO FINATAL, S.A",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "CRDFDOS1"
-        },
-        {
-            "id": 149,
-            "bank": "CORPORACION DE CREDITO INVERSIONES MOCANAS, S.A.",
-            "city": "MOCA",
-            "branch": null,
-            "swift_code": "CCNMDOS1"
-        },
-        {
-            "id": 150,
-            "bank": "CORPORACION DE CREDITO LA AMERICANA S.A.",
-            "city": "SANTIAGO",
-            "branch": null,
-            "swift_code": "CRTCDOS1"
-        },
-        {
-            "id": 151,
-            "bank": "CORPORACION DE CREDITO LEASING CONFISA, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "CCLCDOS1"
-        },
-        {
-            "id": 152,
-            "bank": "CORPORACION DE CREDITO MONUMENTAL, S.A.",
-            "city": "SANTIAGO DE LOS CABALLEROS",
-            "branch": null,
-            "swift_code": "CRDLDOS1"
-        },
-        {
-            "id": 153,
-            "bank": "CORPORACION DE CREDITO NORDESTANA DE PRESTAMOS, S.A.",
-            "city": "SAN FRANCISCO DE MACORIS",
-            "branch": null,
-            "swift_code": "CCNPDOS1"
-        },
-        {
-            "id": 154,
-            "bank": "CORPORACION DE CREDITO OFICORP, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "CODODOS1"
-        },
-        {
-            "id": 155,
-            "bank": "CORPORACION DE CREDITO ORIENTAL",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "CROLDOS1"
-        },
-        {
-            "id": 156,
-            "bank": "CORPORACION DE CREDITO PREINDESA",
-            "city": "COTUI",
-            "branch": null,
-            "swift_code": "CODPDOS1"
-        },
-        {
-            "id": 157,
-            "bank": "CORPORACION DE CREDITO PRESTAMOS A LAS ORDENES, S.A.",
-            "city": "SAN FRANCISCO DE MACORIS",
-            "branch": null,
-            "swift_code": "CCPODOS1"
-        },
-        {
-            "id": 158,
-            "bank": "CORPORACION DE CREDITO PUERTOPLATENA, S.A.",
-            "city": "PUERTO PLATA",
-            "branch": null,
-            "swift_code": "CCPUDOS1"
-        },
-        {
-            "id": 159,
-            "bank": "CORPORACION DE CREDITO REIDO, C. POR A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "COEDDOS1"
-        },
-        {
-            "id": 160,
-            "bank": "CORPORACION DE CREDITO RONA, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "CPCRDOS1"
-        },
-        {
-            "id": 161,
-            "bank": "CORPORACION DE CREDITO TOINSA, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "CROTDOS1"
-        },
-        {
-            "id": 162,
-            "bank": "EXCEL PUESTO DE BOLSA, S. A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "EXPLDOD1"
-        },
-        {
-            "id": 163,
-            "bank": "FINANZAS Y SERVICIOS CONSOLIDADOS",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "FSCODOS1"
-        },
-        {
-            "id": 164,
-            "bank": "FONDO JUBILACIONES Y PENSIONES DEL BANCO CENTRAL, INC.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "FJPCDOS1"
-        },
-        {
-            "id": 165,
-            "bank": "GAMELIN AGENTE DE CAMBIO S.A",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "GAACDOS1"
-        },
-        {
-            "id": 166,
-            "bank": "GBTD GROUP-DOMINICAN REPUBLIC",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "GGDRDOS1"
-        },
-        {
-            "id": 167,
-            "bank": "GCS SYSTEMS",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "GCSYDOS1"
-        },
-        {
-            "id": 168,
-            "bank": "INVERSIONES AND RESERVAS S.A. PUESTO DE BOLSA",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "IRPLDOSD"
-        },
-        {
-            "id": 169,
-            "bank": "INVERSIONES GUERRERO AND VALDEZ, AGENTE DE CAMBIO",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "IGVADOS1"
-        },
-        {
-            "id": 170,
-            "bank": "INVERSIONES POPULAR S. A., PUESTO DE BOLSA",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "IPPBDOS1"
-        },
-        {
-            "id": 171,
-            "bank": "JMMB BDI AMERICA, PUESTO DE BOLSA S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "JBAPDOS1"
-        },
-        {
-            "id": 172,
-            "bank": "LAFISE DOMINICANA AGENTE DE CAMBIO, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "LDACDOS1"
-        },
-        {
-            "id": 173,
-            "bank": "LAFISE VALORES SANTO DOMINGO, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "LVSDDOS1"
-        },
-        {
-            "id": 174,
-            "bank": "MEGA AGENTE DE CAMBIO, S. A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "MEAODOS1"
-        },
-        {
-            "id": 175,
-            "bank": "MERCADO ELECTRONICO DOMINICANO",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "MEEDDOS1"
-        },
-        {
-            "id": 176,
-            "bank": "MOTOR CREDITO, S.A., BANCO DE AHORRO Y CREDITO",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "MCARDOS1"
-        },
-        {
-            "id": 177,
-            "bank": "NORCA S.A. AGENTE DE CAMBIO",
-            "city": "SANTIAGO DE LOS CABALLEROS",
-            "branch": null,
-            "swift_code": "NOABDOS1"
-        },
-        {
-            "id": 178,
-            "bank": "OPTIMA CORPORACION DE CREDITO, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "OPCCDOS1"
-        },
-        {
-            "id": 179,
-            "bank": "OPTIMA VALORES, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "OPVADOS1"
-        },
-        {
-            "id": 180,
-            "bank": "PAIS DARGAM C. POR A., AGENTE DE CAMBIO",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "PDACDOS1"
-        },
-        {
-            "id": 181,
-            "bank": "PARALLAX VALORES PUESTO DE BOLSA S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "PVPBDOS1"
-        },
-        {
-            "id": 182,
-            "bank": "PLUS CAPITAL MARKET DOMINICANCA",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "PCMDDOS1"
-        },
-        {
-            "id": 183,
-            "bank": "PRIMMA VALORES, S.A. PUESTO DE BOLSA",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "PVPODOS1"
-        },
-        {
-            "id": 184,
-            "bank": "QUEZADA AGENTE DE CAMBIO, S. A.",
-            "city": "ROMANA",
-            "branch": null,
-            "swift_code": "QUABDOS1"
-        },
-        {
-            "id": 185,
-            "bank": "SCOTIA CRECER AFP, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "SCRFDOS1"
-        },
-        {
-            "id": 186,
-            "bank": "TESORERIA DE LA SEGURIDAD SOCIAL",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "TESLDOS1"
-        },
-        {
-            "id": 187,
-            "bank": "TESORERIA NACIONAL",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "TENADOS1"
-        },
-        {
-            "id": 188,
-            "bank": "TIVALSA",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "TIVADOS1"
-        },
-        {
-            "id": 189,
-            "bank": "TODO PAGO DOMINICANA, S.A.",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "TOPDDOS1"
-        },
-        {
-            "id": 190,
-            "bank": "UNITED CAPITAL PUESTO DE BOLSA",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "UCPODOS1"
-        },
-        {
-            "id": 191,
-            "bank": "VALORES LEON",
-            "city": "SANTO DOMINGO",
-            "branch": null,
-            "swift_code": "VLEODOS1"
-        },
-        {
-            "id": 192,
-            "bank": "VT AGENTE DE CAMBIO, S.A",
-            "city": "SANTIAGO DE LOS CABALLEROS",
-            "branch": null,
-            "swift_code": "AGCMDOS1"
-        },
-        {
-            "id": 193,
-            "bank": "WALLY AGENTE DE CAMBIO,CXA",
-            "city": "PUERTO PLATA",
-            "branch": null,
-            "swift_code": "WAACDOS1"
-        }
+// {"id": 150878, "swift_code": null, "bank_code": "AFPI", "branch_code": null, "branch": null, "bank": null, "address": null,"zip": null, "city": null},
+// {"id": 326638, "swift_code": null, "bank_code": "AFPS", "branch_code": null, "branch": null, "bank": null, "address": null,"zip": null, "city": null},
+{"id": 284648, "swift_code": "ACFQDOS1XXX", "bank_code": "ACFQ", "branch_code": null, "branch": "AV. SAN MARTIN NO.34", "bank": "AGENCIA DE CAMBIO FRANKLIN VASQUEZ", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 194844, "swift_code": "AGCLDOS1XXX", "bank_code": "AGCL", "branch_code": null, "branch": "FCO. CASTILLO MARQUEZ 78", "bank": "AGENTE DE CAMBIO ALEYBRA, S.A.", "address": null,"zip": null, "city": "LA ROMANA"},
+{"id":  71812, "swift_code": "AGCEDOS1XXX", "bank_code": "AGCE", "branch_code": null, "branch": "PLAZA GALERIAS COMERCIALES, SUITE 101, EL VERGEL AVE. 27 DE FEBRERO NO.54", "bank": "AGENTE DE CAMBIO AMERICA, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  35308, "swift_code": "AGACDOS1XXX", "bank_code": "AGAC", "branch_code": null, "branch": "CALLE SANCHEZ ESQ. INDEPENDENCIA 84 - 1B", "bank": "AGENTE DE CAMBIO C P Y R COMERCIAL, S.A.", "address": null,"zip": null, "city": "SANTIAGO"},
+{"id": 265148, "swift_code": "AGCPDOS1XXX", "bank_code": "AGCP", "branch_code": null, "branch": "CALLE SAN MARTIN DE PORRES 14", "bank": "AGENTE DE CAMBIO CAPLA, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  71708, "swift_code": "ACCEDOS1XXX", "bank_code": "ACCE", "branch_code": null, "branch": "EDIFICIO CARIBE TOURS SUITE 302 AVENIDA 27 DE FEBRERO ESQUINA", "bank": "AGENTE DE CAMBIO CARIBE EXPRESS, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+// {"id": 248820, "swift_code": null, "bank_code": "ACEO", "branch_code": null, "branch": null, "bank": null, "address": null,"zip": null, "city": null},
+{"id":  54132, "swift_code": "ACCDDOS1XXX", "bank_code": "ACCD", "branch_code": null, "branch": "BARTOLOME COLON, PLAZA TEXAS MOD 118", "bank": "AGENTE DE CAMBIO CHECO AND RODRIGUEZ, S.A.", "address": null,"zip": null, "city": "SANTIAGO"},
+{"id":  54132, "swift_code": "ACCDDOS1XXX", "bank_code": "ACCD", "branch_code": null, "branch": "BARTOLOME COLON, PLAZA TEXAS MOD 118", "bank": "AGENTE DE CAMBIO CHECO AND RODRIGUEZ, S.A.", "address": null,"zip": null, "city": "SANTIAGO"},
+{"id": 405652, "swift_code": "ACCXDOS1XXX", "bank_code": "ACCX", "branch_code": null, "branch": "AV. BARTOLOME COLON NO.77", "bank": "AGENTE DE CAMBIO CIBAO EXPRESS", "address": null,"zip": null, "city": "SANTIAGO"},
+{"id":  43420, "swift_code": "AGMCDOS1XXX", "bank_code": "AGMC", "branch_code": null, "branch": "C/ PRESIDENTE ESTRELLA UREA A NO. 158, LOS MINAS", "bank": "AGENTE DE CAMBIO CONCEPCION", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 107536, "swift_code": "ACDGDOS1XXX", "bank_code": "ACDG", "branch_code": null, "branch": "LAS CARRERAS ESQUINA RC TOLENTINO", "bank": "AGENTE DE CAMBIO DARIO GUZMAN,S.A.", "address": null,"zip": null, "city": "SANTIAGO"},
+{"id": 371176, "swift_code": "ACDVDOS1XXX", "bank_code": "ACDV", "branch_code": null, "branch": "AV. SAN MARTIN NO.30 DON BOSCO", "bank": "AGENTE DE CAMBIO DIEGO VASQUEZ, C.POR A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  37908, "swift_code": "ACECDOS1XXX", "bank_code": "ACEC", "branch_code": null, "branch": "PLAZA METROPOLITANA LOCAL 219 AV. JFK ESQ. ORTEGA Y GASSET", "bank": "AGENTE DE CAMBIO EL EFECTIVO C.POR.A", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  55484, "swift_code": "ACEDDOS1XXX", "bank_code": "ACED", "branch_code": null, "branch": "BUSINESS CENTER LOCAL 409-A AVE. LOPE DE VEGA 13,", "bank": "AGENTE DE CAMBIO EURODIVISAS DOMINI CANA S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 354276, "swift_code": "ACEUDOS1XXX", "bank_code": "ACEU", "branch_code": null, "branch": "UNICENTRO PLAZA CALLE ABRAHAM LINCOLN UNICENTRO PLAZA LOCAL 42, ENSANCHE PIANTINI", "bank": "AGENTE DE CAMBIO EXTRANJERO UNICENTRO PLAZA", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 267072, "swift_code": "ACFPDOS1XXX", "bank_code": "ACFP", "branch_code": null, "branch": "EDIFICIO PROGRESSUS SUITE 2A AVE.ABRAHAM LINCOLN", "bank": "AGENTE DE CAMBIO FIRST POINT", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  39260, "swift_code": "ACGCDOS1XXX", "bank_code": "ACGC", "branch_code": null, "branch": "AVE. 27 DE FEB. ESQ. TIRADENTES PLAZA MERENGUE LOCAL 104, NACO", "bank": "AGENTE DE CAMBIO GIROSOL CORPORATION, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 303576, "swift_code": "ACHRDOS1XXX", "bank_code": "ACHR", "branch_code": null, "branch": "CALLE GUAUCI NO. 5", "bank": "AGENTE DE CAMBIO HERMANOS RODRIGUEZ , S. A.", "address": null,"zip": null, "city": "MOCA"},
+{"id":   4784, "swift_code": "ACHADOS1XXX", "bank_code": "ACHA", "branch_code": null, "branch": "CENTRO DE LOS HEROES AV.INDEPENDENCIA NO.1553", "bank": "AGENTE DE CAMBIO HNOS DE LOS SANTOS", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 356980, "swift_code": "ACIUDOS1XXX", "bank_code": "ACIU", "branch_code": null, "branch": "ISABEL AGUIAR 195 HERRERA", "bank": "AGENTE DE CAMBIO IMBERT BALBUENA C. POR. A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 269100, "swift_code": "ACIPDOS1XXX", "bank_code": "ACIP", "branch_code": null, "branch": "PLAYA DORADA PLAZA", "bank": "AGENTE DE CAMBIO INVERPLA.S.A", "address": null,"zip": null, "city": "PUERTO PLATA"},
+{"id": 228644, "swift_code": "AGANDOS1XXX", "bank_code": "AGAN", "branch_code": null, "branch": "SANTIAGO 151", "bank": "AGENTE DE CAMBIO JR INTERNACIONAL, SA", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  58864, "swift_code": "ACJDDOS1XXX", "bank_code": "ACJD", "branch_code": null, "branch": "CALLE MARCOS DEL ROSARIO NO. 157, LOS MINA", "bank": "AGENTE DE CAMBIO JULIO DIAZ, C. X A", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 269776, "swift_code": "ACJPDOS1XXX", "bank_code": "ACJP", "branch_code": null, "branch": "NUESTRA SEA ORA DE REGLA ESQ ULADISLAO GUERRERO NO.44", "bank": "AGENTE DE CAMBIO JULIO PEA A Y ASOCIADOS S.A", "address": null,"zip": null, "city": "BANI"},
+{"id":  52884, "swift_code": "AGADDOS1XXX", "bank_code": "AGAD", "branch_code": null, "branch": "PADRE BORBON 22", "bank": "AGENTE DE CAMBIO LA MOREDI, S.A", "address": null,"zip": null, "city": "SAN CRISTOBAL"},
+{"id":  43992, "swift_code": "ACNCDOS1XXX", "bank_code": "ACNC", "branch_code": null, "branch": "CARIBE TOURS AV.27 DE FEBRERO ESQ. LEOPOLDO NAVARRO", "bank": "AGENTE DE CAMBIO LA NACIONAL C.POR.A", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 229996, "swift_code": "AGCNDOS1XXX", "bank_code": "AGCN", "branch_code": null, "branch": "CALLE PADRE ADOLFO 37", "bank": "AGENTE DE CAMBIO LEONEL, S.A", "address": null,"zip": null, "city": "LA VEGA"},
+{"id":  77792, "swift_code": "ACLEDOS1XXX", "bank_code": "ACLE", "branch_code": null, "branch": "CALLE CASTILLO ESQ. PADRE BREA", "bank": "AGENTE DE CAMBIO LEONOR, S.A.", "address": null,"zip": null, "city": "SAN FRANCISCO DE MACORIS"},
+{"id": 300300, "swift_code": "AGCRDOS1XXX", "bank_code": "AGCR", "branch_code": null, "branch": "CALLE MARIA MONTEZ NO.7, VILLA JUANA", "bank": "AGENTE DE CAMBIO LOS PRIMOS", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 219076, "swift_code": "ACMMDOS1XXX", "bank_code": "ACMM", "branch_code": null, "branch": "EDIFICIO NO. B-C-17. MODULO NO. 1 B AVE. PRESIDENTE ANTONIO GUZMAN ESQ. CALLE SALVADOR CUCURULLO", "bank": "AGENTE DE CAMBIO MARCO'S C. POR A. MODULO NO. 1B", "address": null,"zip": null, "city": "SANTIAGO"},
+{"id": 423332, "swift_code": "AGCYDOS1XXX", "bank_code": "AGCY", "branch_code": null, "branch": "CALLE DR HERNANDEZ NO.9 CENTRO.", "bank": "AGENTE DE CAMBIO MARINELLY C.A.", "address": null,"zip": null, "city": "LA ROMANA"},
+{"id": 219180, "swift_code": "AGMMDOS1XXX", "bank_code": "AGMM", "branch_code": null, "branch": "AVENIDA JUAN PABLO DUARTE PLAZA CORONA", "bank": "AGENTE DE CAMBIO MARVE, S.A.", "address": null,"zip": null, "city": "SANTIAGO"},
+{"id":  70460, "swift_code": "AGAEDOS1XXX", "bank_code": "AGAE", "branch_code": null, "branch": "PRESIDENTE BILLINI NO.05", "bank": "AGENTE DE CAMBIO MELO, C. POR A.", "address": null,"zip": null, "city": "BANI"},
+{"id":  78468, "swift_code": "ACMEDOS1XXX", "bank_code": "ACME", "branch_code": null, "branch": "PLAZA BELLA VISTA MALL AV.SARASOTA", "bank": "AGENTE DE CAMBIO MONEYCORPS., I. R. , S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 133224, "swift_code": "ACPHDOS1XXX", "bank_code": "ACPH", "branch_code": null, "branch": "DUARTE136", "bank": "AGENTE DE CAMBIO PATRICIO HIERRO S.A.", "address": null,"zip": null, "city": "MONSENOR NOUEL"},
+{"id": 326560, "swift_code": "ACPSDOS1XXX", "bank_code": "ACPS", "branch_code": null, "branch": "CALLE MELLA 37 ESQ. LA CRUZ", "bank": "AGENTE DE CAMBIO PAULINO Y ASOCIADOS,S.A.", "address": null,"zip": null, "city": "SAN FRANCISCO DE MACORIS"},
+{"id":  54236, "swift_code": "AGCDDOS1XXX", "bank_code": "AGCD", "branch_code": null, "branch": "CARRETERA DE MENDOZA NO. 121", "bank": "AGENTE DE CAMBIO PLACIDO IV, S.A", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  11544, "swift_code": "ACRADOS1XXX", "bank_code": "ACRA", "branch_code": null, "branch": "CALLE 12 DE JULIO NO. 33", "bank": "AGENTE DE CAMBIO R.U.,S.A.", "address": null,"zip": null, "city": "PUERTO PLATA"},
+{"id": 275184, "swift_code": "ACRPDOS1XXX", "bank_code": "ACRP", "branch_code": null, "branch": "VILLA FARO CARR. MENDOZA NO.119", "bank": "AGENTE DE CAMBIO RAFAEL PLACIDO C.XA.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  64272, "swift_code": "ACRDDOS1XXX", "bank_code": "ACRD", "branch_code": null, "branch": "EDIF. MIGUEL MEJIA, EL VERGEL 2DO NIVEL AV. 27 DE FEBRERO NO. 102", "bank": "AGENTE DE CAMBIO REMESAS DOMINICANAS, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 327912, "swift_code": "ACRSDOS1XXX", "bank_code": "ACRS", "branch_code": null, "branch": "C/JUANA SALTITOPA NO. 173 MEJORAMIENTO SOCIAL", "bank": "AGENTE DE CAMBIO RIJO Y ASOCIADOS C.POR A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 310336, "swift_code": "ACRRDOS1XXX", "bank_code": "ACRR", "branch_code": null, "branch": "DR. HERNANDEZ NO. 10", "bank": "AGENTE DE CAMBIO RODRIGUEZ REYES, C POR A", "address": null,"zip": null, "city": "LA ROMANA"},
+{"id": 246220, "swift_code": "AGAODOS1XXX", "bank_code": "AGAO", "branch_code": null, "branch": "MARIA MONTES 3", "bank": "AGENTE DE CAMBIO ROSARIO, C POR A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 334100, "swift_code": "AGATDOS1XXX", "bank_code": "AGAT", "branch_code": null, "branch": "AV. 27 DE FEBRERO 481, SUITE 101", "bank": "AGENTE DE CAMBIO S.C.T.,S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 416468, "swift_code": "ACSXDOS1XXX", "bank_code": "ACSX", "branch_code": null, "branch": "CALLE GUAROCUYA ESQ. CRISTOBAL COLON", "bank": "AGENTE DE CAMBIO SALVIA CXA", "address": null,"zip": null, "city": "PUERTO PLATA"},
+{"id": 205556, "swift_code": "ACSLDOS1XXX", "bank_code": "ACSL", "branch_code": null, "branch": "AV. LAS CARRERAS ESQ. SABANA LARGA", "bank": "AGENTE DE CAMBIO SANTA LUCIA, S. A", "address": null,"zip": null, "city": "SANTIAGO"},
+{"id": 140764, "swift_code": "AGAIDOS1XXX", "bank_code": "AGAI", "branch_code": null, "branch": "CALLE JOSE DEL CARMEN ARIZA NO. 57, SECTOR CENTRO", "bank": "AGENTE DE CAMBIO SP, C. POR A.", "address": null,"zip": null, "city": "PUERTO PLATA"},
+{"id": 335452, "swift_code": "AGCTDOS1XXX", "bank_code": "AGCT", "branch_code": null, "branch": "CALLE DEL SOL 157", "bank": "AGENTE DE CAMBIO TAVERAS,S.A", "address": null,"zip": null, "city": "SANTIAGO"},
+{"id": 223808, "swift_code": "ACTMDOS1XXX", "bank_code": "ACTM", "branch_code": null, "branch": "AV. ABRAHAM LINCOLN ESQ AV. 27 DE FEBRERO, PLAZA LINCOLN", "bank": "AGENTE DE CAMBIO TRANSACCIONES DAMOS, C. POR A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  87932, "swift_code": "ACAFDOS1XXX", "bank_code": "ACAF", "branch_code": null, "branch": "EDIFICIO TAINO EXPRESS AVE 27 DE FEBRERO NO. 408, ENS QUISQUEYA", "bank": "AGENTE DE CAMBIO TRANSNACIONAL, S.A", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 154857, "swift_code": "BCVIDOS1XXX", "bank_code": "BCVI", "branch_code": null, "branch": "AVE. ABRAHAM LINCOLN 306", "bank": "AGENTE DE CAMBIO VIMENCA", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 345488, "swift_code": "ACRTDOS1XXX", "bank_code": "ACRT", "branch_code": null, "branch": "AV. 27 DE FEBRERO NO. 395 ENS. QUISQUEYA", "bank": "AGENTE DE CAMBIO Y REMESAS CTD, S.A", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 450944, "swift_code": "ACRZDOS1XXX", "bank_code": "ACRZ", "branch_code": null, "branch": "PLAZA LAS AMERICAS II LOCAL Y30B AVE. WINSTON CHURCHILL ESQ", "bank": "AGENTE DE CAMBIO Y REMESAS OZAMA, S.A", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 423618, "swift_code": "ARCYDOS1XXX", "bank_code": "ARCY", "branch_code": null, "branch": "AV. SABANA LARGA NO.55 ALTOS ENS OZAMA", "bank": "AGENTE DE REMESAS Y CAMBIO BOYA S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 370890, "swift_code": "ARCVDOS1XXX", "bank_code": "ARCV", "branch_code": null, "branch": "AVE. ABRAHAM LINCONL 306", "bank": "AGENTE DE REMESAS Y CAMBIO VIMENCA, S.A", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 268398, "swift_code": "ABHPDOS1XXX", "bank_code": "ABHP", "branch_code": null, "branch": "C/30 DE MAYO, ESQ. C/JAIME MOTA", "bank": "ASOCIACION BARAHONA DE AHORROS Y PRESTAMOS", "address": null,"zip": null, "city": "BARAHONA"},
+{"id": 303550, "swift_code": "ABHRDOS1XXX", "bank_code": "ABHR", "branch_code": null, "branch": "C/16 DE AGOSTO, ESQ. C/SANCHEZ", "bank": "ASOCIACION BONAO DE AHORROS Y PRESTAMOS", "address": null,"zip": null, "city": "BONAO"},
+{"id":  23036, "swift_code": "ACIBDOS1XXX", "bank_code": "ACIB", "branch_code": null, "branch": "CALLE MANUEL DE JESUS TRONCOSO N3", "bank": "ASOCIACION CIBAO DE AHORROS Y PRESTAMOS", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 263692, "swift_code": "ACAPDOS1XXX", "bank_code": "ACAP", "branch_code": null, "branch": "C/SANCHEZ, ESQ. C/HOSTOS", "bank": "ASOCIACION COTUI DE AHORROS Y PRESTAMOS", "address": null,"zip": null, "city": "COTUI"},
+{"id": 263718, "swift_code": "APOPDOSXXXX", "bank_code": "ADAP", "branch_code": null, "branch": "AV. 27 DE FEBRERO NO.232, CASI, ESQ. AV. TIRADENTES", "bank": "ASOCIACION DOMINICANA DE AHORROS Y PRESTAMOS", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  13598, "swift_code": "ADUADOS1XXX", "bank_code": "ADUA", "branch_code": null, "branch": "C/CASTILLO, ESQ., C/SAN FRANCISCO", "bank": "ASOCIACION DUARTE DE AHORROS Y PRESTAMOS", "address": null,"zip": null, "city": "SAN FRANCISCO DE MACORIS"},
+{"id": 263822, "swift_code": "AHAPDOS1XXX", "bank_code": "AHAP", "branch_code": null, "branch": "C/SANCHEZ NO.37, ESQ. C/ANACAONA MOSCOSO", "bank": "ASOCIACION HIGUAMO DE AHORROS Y PRESTAMOS", "address": null,"zip": null, "city": "SAN PEDRO DE MACORIS"},
+{"id": 422162, "swift_code": "ANAYDOS1XXX", "bank_code": "ANAY", "branch_code": null, "branch": "C/ ISABEL LA CATOLICA N 171", "bank": "ASOCIACION LA NACIONAL DE AHORROS Y PRESTAMOS", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 264030, "swift_code": "APAPDOS1XXX", "bank_code": "APAP", "branch_code": null, "branch": "AV. 27 DE FEBRERO N 25, ESQ. AV. METROPOLITANA", "bank": "ASOCIACION LA PREVISORA DE AHORROS Y PRESTAMOS", "address": null,"zip": null, "city": "SANTIAGO DE LOS CABALLEROS"},
+{"id": 313274, "swift_code": "ALVRDOS1XXX", "bank_code": "ALVR", "branch_code": null, "branch": "ESQ. C/RESTAURACION C/JUAN RODRIGUEZ,", "bank": "ASOCIACION LA VEGA REAL DE AHORROS Y PRESTAMOS", "address": null,"zip": null, "city": "LA VEGA"},
+{"id": 263952, "swift_code": "AMAPDOS1XXX", "bank_code": "AMAP", "branch_code": null, "branch": "C/ INDEPENDENCIA N 69", "bank": "ASOCIACION MAGUANA DE AHORROS Y PRESTAMOS", "address": null,"zip": null, "city": "SAN JUAN DE LA MAGUANA"},
+{"id": 299104, "swift_code": "AMARDOS1XXX", "bank_code": "AMAR", "branch_code": null, "branch": "C/ANTONIO DE LA MAZA NO.20, ESQ. C/ NUESTRA SENORA DEL ROSARIO", "bank": "ASOCIACION MOCANA DE AHORROS Y PRESTAMOS", "address": null,"zip": null, "city": "MOCA"},
+{"id": 263978, "swift_code": "ANAPDOS1XXX", "bank_code": "ANAP", "branch_code": null, "branch": "C/DUARTE NO.33", "bank": "ASOCIACION NOROESTANA DE AHORROS Y PRESTAMOS", "address": null,"zip": null, "city": "MAO"},
+{"id": 308594, "swift_code": "ANORDOS1XXX", "bank_code": "ANOR", "branch_code": null, "branch": "C/BELLER NO.66, ESQUINA CALLE 2-A. ENSANCHE PIANTINI", "bank": "ASOCIACION NORTENA DE AHORROS Y PRESTAMOS", "address": null,"zip": null, "city": "PUERTO PLATA"},
+{"id": 299182, "swift_code": "APARDOS1XXX", "bank_code": "APAR", "branch_code": null, "branch": "EDIF. PROFESIONAL C/DUARTE ESQ. C/SANCHEZ", "bank": "ASOCIACION PERAVIA DE AHORROS Y PRESTAMOS", "address": null,"zip": null, "city": "BANI"},
+{"id": 273494, "swift_code": "APOPDOSXXXX", "bank_code": "APOP", "branch_code": null, "branch": "APAP 27 DE FEBRERO ESQ MAXIMO GOMEZ 1", "bank": "ASOCIACION POPULAR DE AHORROS Y PRESTAMOS (APAP)", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 273494, "swift_code": "APOPDOSXXXX", "bank_code": "APOP", "branch_code": null, "branch": "APAP 27 DE FEBRERO ESQ MAXIMO GOMEZ 1", "bank": "ASOCIACION POPULAR DE AHORROS Y PRESTAMOS (APAP)", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 246506, "swift_code": "ARAODOS1XXX", "bank_code": "ARAO", "branch_code": null, "branch": "C/DUARTE NO. 40, ESQ. C/ FRANCISCO DEL CASTILLO MARQUEZ", "bank": "ASOCIACION ROMANA DE AHORROS Y PRESTAMOS", "address": null,"zip": null, "city": "ROMANA"},
+{"id": 277862, "swift_code": "ABVPDOS1XXX", "bank_code": "ABVP", "branch_code": null, "branch": "", "bank": "ATLANTICO BBA VALORES PUESTO DE BOLSA S.A.", "address": null,"zip": null, "city": ""},
+{"id": 207202, "swift_code": "INULDOS1XXX", "bank_code": "INUL", "branch_code": null, "branch": "EDIF. ELIAS I, SUITE 2-H AVENIDA BOLIVAR", "bank": "BANCA INVESTIMENTI EUROMEDITERRANEA SRL", "address": null,"zip": null, "city": "SANTO DOMINGO GAZCUE"},
+{"id": 302849, "swift_code": "BAGRDOS1XXX", "bank_code": "BAGR", "branch_code": null, "branch": "AV. GEORGE WASHINGTON 601", "bank": "BANCO AGRICOLA DE LA REPUBLICA DOMINICANA", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  35153, "swift_code": "BAACDOSDXXX", "bank_code": "BAAC", "branch_code": null, "branch": "CALLE FANTINO FALCO NO. 57 PLAZA CRISCAR ENSANCHE NACO LOCAL 201", "bank": "BANCO ATLANTICO DE AHORRO Y CREDITO, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 142663, "swift_code": "BBDIDOSDXXX", "bank_code": "BBDI", "branch_code": null, "branch": "AVE. SARASOTA, 27 ENSANCHE LA JULIA", "bank": "BANCO BDI, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  39886, "swift_code": "CAHCDOS1XXX", "bank_code": "CAHC", "branch_code": null, "branch": "EDIF. PALIC AV. ABRAHAM LINCOLN N 952 ESQ. C/ JOSE A. SOLER", "bank": "BANCO CAPITAL DE AHORRO Y CREDITO, S.A", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  64273, "swift_code": "BCRDDOSXXXX", "bank_code": "BCRD", "branch_code": null, "branch": "BANCO CENTRAL DE LA REP. DOMINICANA CALLE PEDRO HENRIQUEZ URENA ESQ. LEOPOLDO NAVARRO", "bank": "BANCO CENTRAL DE LA REPUBLICA DOMINICANA", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  64273, "swift_code": "BCRDDOSXOMA", "bank_code": "BCRD", "branch_code": null, "branch": "BANCO CENTRAL DE LA REP. DOMINICANA CALLE PEDRO HENRIQUEZ URENA ESQ. LEOPOLDO NAVARRO", "bank": "BANCO CENTRAL DE LA REPUBLICA DOMINICANA", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  64273, "swift_code": "BCRDDOSXSBC", "bank_code": "BCRD", "branch_code": null, "branch": "BANCO CENTRAL DE LA REP. DOMINICANA CALLE PEDRO HENRIQUEZ URENA ESQ. LEOPOLDO NAVARRO", "bank": "BANCO CENTRAL DE LA REPUBLICA DOMINICANA", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 318761, "swift_code": "BODSDOS1XXX", "bank_code": "BODS", "branch_code": null, "branch": "CONTINENTAL PEDRO HENRIQUEZ URENA, 126", "bank": "BANCO CONTINENTAL DE DESARROLLO,S.A", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  54262, "swift_code": "AHCDDOS1XXX", "bank_code": "AHCD", "branch_code": null, "branch": "CALLE SANCHEZ, ESQ. JUAN SANCHES RAMIREZ", "bank": "BANCO DE AHORRO Y CREDITO ADOPEM, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 351572, "swift_code": "ACAUDOS1XXX", "bank_code": "ACAU", "branch_code": null, "branch": "TORRE SERRANO FLOOR 1 AV. TIRADENTES, ESQ. CARLOS SANCHEZ", "bank": "BANCO DE AHORRO Y CREDITO ALTAS CUMBRES, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":   1534, "swift_code": "AHCADOS1XXX", "bank_code": "AHCA", "branch_code": null, "branch": "EDIFICIO GALERIAS COMERCIALES SUITE 101, EL VERGEL AV. 27 DE FEBRERO, N 54", "bank": "BANCO DE AHORRO Y CREDITO ATLAS, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  36686, "swift_code": "AHCCDOS1XXX", "bank_code": "AHCC", "branch_code": null, "branch": "CALLE PEDRO LIVIO CEDENO N 174 CASI ESQ. ORTEGA Y GASSET", "bank": "BANCO DE AHORRO Y CREDITO COFACI, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 247598, "swift_code": "AHCODOS1XXX", "bank_code": "AHCO", "branch_code": null, "branch": "AV. PEDRO HENRIQUEZ URENA N 78", "bank": "BANCO DE AHORRO Y CREDITO CONFISA, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  46826, "swift_code": "AHRCDOS1XXX", "bank_code": "AHRC", "branch_code": null, "branch": "AV. LOPEZ DE VEGA NO.33", "bank": "BANCO DE AHORRO Y CREDITO DEL CARIBE", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  81978, "swift_code": "AHREDOS1XXX", "bank_code": "AHRE", "branch_code": null, "branch": "AV. BOLIVAR, ESQ. FELIX MA. DEL MONTE", "bank": "BANCO DE AHORRO Y CREDITO EMPIRE", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+// {"id": 99554, "swift_code": null, "bank_code": "AHRF", "branch_code": null, "branch": null, "bank": null, "address": null,"zip": null, "city": null},
+{"id":  71838, "swift_code": "AHCEDOS1XXX", "bank_code": "AHCE", "branch_code": null, "branch": "TORRE GLOBAL LOPE DE VEGA, NO. 36", "bank": "BANCO DE AHORRO Y CREDITO FEDERAL, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 106990, "swift_code": "AHCGDOS1XXX", "bank_code": "AHCG", "branch_code": null, "branch": "EDIFICIO SANTANITA AVE. SAN MARTIN NO. 253", "bank": "BANCO DE AHORRO Y CREDITO FIHOGAR", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  73736, "swift_code": "ACFEDOS1XXX", "bank_code": "ACFE", "branch_code": null, "branch": "", "bank": "BANCO DE AHORRO Y CREDITO FONDESA S.A. (BANFONDESA) ", "address": null,"zip": null, "city": ""},
+{"id": 106809, "swift_code": "BACGDOS1XXX", "bank_code": "BACG", "branch_code": null, "branch": "CALLE ROBERTO PASTORIZA N 214 ENSANCHE NACO", "bank": "BANCO DE AHORRO Y CREDITO GRUFICORP S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  57492, "swift_code": "GBHDDOS1XXX", "bank_code": "GBHD", "branch_code": null, "branch": "PLAZA POPULAR AV. ISABEL AGUIAR 130/10 HERRERA", "bank": "BANCO DE AHORRO Y CREDITO IDECOSA, S.A.", "address": null,"zip": null, "city": "1000 SANTO DOMINGO"},
+{"id": 146068, "swift_code": "ACIIDOSDXXX", "bank_code": "ACII", "branch_code": null, "branch": "LEOPOLDO NAVARRO 53", "bank": "BANCO DE AHORRO Y CREDITO INMOBILIARIO, S. A. (BANACI)", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 222586, "swift_code": "AHRMDOS1XXX", "bank_code": "AHRM", "branch_code": null, "branch": "PASEO DE LOS PERIODISTAS 3 MIRAFLORES", "bank": "BANCO DE AHORRO Y CREDITO MICRO, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 124566, "swift_code": "AHCHDOS1XXX", "bank_code": "AHCH", "branch_code": null, "branch": "ENS. EVARISTO MORALES. CALLE FRANCISCO PRATS RAMIREZ N 301", "bank": "BANCO DE AHORRO Y CREDITO OCHOA, S.A", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 265174, "swift_code": "AHCPDOS1XXX", "bank_code": "AHCP", "branch_code": null, "branch": "CENTRO COMERCIAL NACO II LOCAL 1-B AVE. TIRANDENTES", "bank": "BANCO DE AHORRO Y CREDITO PROVIDENCIAL, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 227527, "swift_code": "BPYMDOS1XXX", "bank_code": "BPYM", "branch_code": null, "branch": "CALLE HERIBERTO PIETER N 10 Y 12 ENS. NACO", "bank": "BANCO DE AHORRO Y CREDITO PYME, BHD, S. A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 152282, "swift_code": "AHRIDOS1XXX", "bank_code": "AHRI", "branch_code": null, "branch": "TORRE PIANTINI FLOOR 24 Y 25 CALLE GUSTAVO MEJIA RICART,", "bank": "BANCO DE AHORRO Y CREDITO RIO, S. A", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 238310, "swift_code": "UNONDOSDXXX", "bank_code": "UNON", "branch_code": null, "branch": "TORRE EMPRESARIAL AIRD PISO 9 AVENIDA SARASOTA 20", "bank": "BANCO DE AHORRO Y CREDITO UNION", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 298899, "swift_code": "DEARDOS1XXX", "bank_code": "DEAR", "branch_code": null, "branch": "AVEN. INDEPENDENCIA ESQ. MAXIMO GOMEZ 801, ZONA UNIVERSITARIA", "bank": "BANCO DE DESARROLLO AGROPECUARIO, S.A.", "address": null,"zip": null, "city": "1616 SANTO DOMINGO"},
+{"id":  64663, "swift_code": "BRRDDOSDXXX", "bank_code": "BRRD", "branch_code": null, "branch": "TORRE BANRESERVAS AVENIDA WINSTON CHURCHILL, ESQUINA PORFIRIO HERRERA", "bank": "BANCO DE RESERVAS DE LA REPUBLICA DOMINICANA", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 309011, "swift_code": "BDPRDOSDXXX", "bank_code": "BDPR", "branch_code": null, "branch": "AVENIDA J.F. KENNEDY 3", "bank": "BANCO DOMINICANO DEL PROGRESO S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 212446, "swift_code": "AHCMDOSDXXX", "bank_code": "AHCM", "branch_code": null, "branch": "AV. PEDRO HENRIQUEZ URENA 78", "bank": "BANCO MULTIPLE ADEMI. S.A.", "address": null,"zip": null, "city": "2887 SANTO DOMINGO"},
+{"id": 236029, "swift_code": "BELNDOSDXXX", "bank_code": "BELN", "branch_code": null, "branch": "EDIFICIO ELAB FLOOR 1, SUITE 101 CALLE MAX HENRIQUEZ URENA 79", "bank": "BANCO DE AHORRO Y CREDITO BELLBANK", "address": null,"zip": null, "city": "10147 SANTO DOMINGO"},
+{"id": 123761, "swift_code": "BCBHDOSDXXX", "bank_code": "BCBH", "branch_code": null, "branch": "PLAZA BHD EDIFICIO SUR AV. WINSTON CHURCHILL ESQ 27", "bank": "BANCO BHD S.A.", "address": null,"zip": null, "city": "21721 SANTO DOMINGO"},
+{"id":  81861, "swift_code": "NCREDOSDXXX", "bank_code": "NCRE", "branch_code": null, "branch": "LEON AV. JOHN F. KENNEDY, ESQ. TIRADENTES", "bank": "BANCO MULTIPLE LEON, S.A.", "address": null,"zip": null, "city": "1408 SANTO DOMINGO"},
+{"id":  81861, "swift_code": "NCREDOSDXXX", "bank_code": "NCRE", "branch_code": null, "branch": "LEON AV. JOHN F. KENNEDY, ESQ. TIRADENTES", "bank": "BANCO MULTIPLE LEON, S.A.", "address": null,"zip": null, "city": "1408 SANTO DOMINGO"},
+{"id": 250632, "swift_code": "STGODOSDXXX", "bank_code": "STGO", "branch_code": null, "branch": "BANCO MULTIPLE CARIBE AVENIDA 27 DE FEBRERO 208", "bank": "BANCO MULTIPLE CARIBE", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 317902, "swift_code": "AHCSDOSDXXX", "bank_code": "AHCS", "branch_code": null, "branch": "CALLE FRANCISCO PRATS RAMIREZ 301 ESQUINA PADRE EMILIANO TARDIF", "bank": "BANCO MULTIPLE DE LAS AMERICAS, S.A", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  71709, "swift_code": "BCCEDOSDXXX", "bank_code": "BCCE", "branch_code": null, "branch": "INICA TOWER CUARTO PISO PORFIRIO HERRERA, EVARISTO MORALES 29", "bank": "BANCO MULTIPLE LAFISE S.A.", "address": null,"zip": null, "city": "10147 SANTO DOMINGO"},
+{"id": 125347, "swift_code": "BLDHDOSDXXX", "bank_code": "BLDH", "branch_code": null, "branch": "BANCO LOPEZ DE HARO AVENIDA SARAZOTA 20", "bank": "BANCO LOPEZ DE HARO", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 303981, "swift_code": "PRHRDOSDXXX", "bank_code": "PRHR", "branch_code": null, "branch": "420 AV. ROBERTO PASTORIZA, ESQUINA", "bank": "BANCO MULTIPLE PROMERICA DE LA REPUBLICA DOMINICANA", "address": null,"zip": null, "city": "10148 SANTO DOMINGO"},
+{"id": 450962, "swift_code": "SCRZDOSDXXX", "bank_code": "SCRZ", "branch_code": null, "branch": "AV. LOPE DE VEGA NO.21", "bank": "BANCO SANTA CRUZ", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 278175, "swift_code": "BNVPDOS1XXX", "bank_code": "BNVP", "branch_code": null, "branch": "AV. TIRADENTES N. 53, ENSANCHE NACO", "bank": "BANCO NACIONAL DE FOMENTO DE LA VIVIENDA Y LA PRODUCCION (BNV)", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 248483, "swift_code": "BPDODOSXREM", "bank_code": "BPDO", "branch_code": null, "branch": "TORRE POPULAR FLOOR 4 AVENIDA JOHN F. DENNEDY/MAXIMO", "bank": "BANCO POPULAR DOMINICANO, C. POR A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 248483, "swift_code": "BPDODOSXXXX", "bank_code": "BPDO", "branch_code": null, "branch": "TORRE POPULAR FLOOR 4 AVENIDA JOHN F. DENNEDY/MAXIMO", "bank": "BANCO POPULAR DOMINICANO, C. POR A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 195925, "swift_code": "PVDLDOSDXXX", "bank_code": "PVDL", "branch_code": null, "branch": "CENTRO COMERCIAL NACO II AVE. TIRADENTES", "bank": "BANCO PROVIDENCIAL, S.A.", "address": null,"zip": null, "city": "99999 SANTO DOMINGO"},
+{"id": 248249, "swift_code": "BGDODO21XXX", "bank_code": "BGDO", "branch_code": null, "branch": "AVENIDA SAN MARTIN 200", "bank": "BANCO REGIONAL DOMINICANO,S.A.", "address": null,"zip": null, "city": "SANTIAGO DE LOS CABALLEROS"},
+{"id": 228534, "swift_code": "UBANDOS1XXX", "bank_code": "UBAN", "branch_code": null, "branch": "CONDE 105", "bank": "BANCO UNIVERSAL S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  78645, "swift_code": "VIMEDOSDXXX", "bank_code": "VIME", "branch_code": null, "branch": "AV. ABRAHAM LINCOLN 306", "bank": "BANCO VIMENCA", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 325157, "swift_code": "BANSDOSDXXX", "bank_code": "BANS", "branch_code": null, "branch": "EDIFICIO BANESCO AV. ABRAHAN LINCOLN 1021 ENSANCHE SERRALLES", "bank": "BANESCO BANCO MULTIPLE, S. A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  47697, "swift_code": "NOSCDOSDXXX", "bank_code": "NOSC", "branch_code": null, "branch": "AVES. J.F. KENNEDY AND LOPE DE VEGA", "bank": "BANK OF NOVA SCOTIA, THE", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 371307, "swift_code": "BHDVDOSDXXX", "bank_code": "BHDV", "branch_code": null, "branch": "TORRE BHD FLOOR 5 LUIS F. THOMEN", "bank": "BHD VALORES PUESTO DE BOLSA, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+// {"id": 256751, "swift_code": null, "bank_code": "BVPO", "branch_code": null, "branch": null, "bank": null, "address": null,"zip": null, "city": null},
+{"id":  31435, "swift_code": "BNUBDOS1XXX", "bank_code": "BNUB", "branch_code": null, "branch": "EDIFICIO BNV AV. TIRADENTES NO. 53", "bank": "BNVALORES, PUESTO DE BOLSA, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 248093, "swift_code": "BADODOS1XXX", "bank_code": "BADO", "branch_code": null, "branch": "BBAC AV. 27 DE FEBRERO NO. 523", "bank": "BONANZA BANCO DE AHORRO Y CREDITO", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+// {"id": 329213, "swift_code": null, "bank_code": "BATS", "branch_code": null, "branch": null, "bank": null, "address": null,"zip": null, "city": null},
+{"id": 326562, "swift_code": "CCPSDOS1XXX", "bank_code": "CCPS", "branch_code": null, "branch": "TORRE BILTMORE II AVENIDA GUSTAVO MEJIA RICART CON AV ENIDA ABRAHAM LINCOLN", "bank": "CCI PUESTO DE BOLSA, S.A", "address": null,"zip": null, "city": "10127 SANTO DOMINGO"},
+{"id": 266216, "swift_code": "CVDPDOSDXXX", "bank_code": "CVDP", "branch_code": null, "branch": "SOLAZAR BUSINESS CENTER AV. GUSTAVO MEJIA RICART 54", "bank": "CEVALDOM DEPOSITO CENTRALIZADO DE VALORES, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 153662, "swift_code": "CITIDOSD022", "bank_code": "CITI", "branch_code": null, "branch": "CITIGROUP TOWER AV. WINSTON CHURCHILL", "bank": "CITIBANK, N.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 153662, "swift_code": "CITIDOSDCTV", "bank_code": "CITI", "branch_code": null, "branch": "CITIGROUP TOWER AV. WINSTON CHURCHILL", "bank": "CITIBANK, N.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 153662, "swift_code": "CITIDOSDXXX", "bank_code": "CITI", "branch_code": null, "branch": "CITIGROUP TOWER AV. WINSTON CHURCHILL", "bank": "CITIBANK, N.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 153662, "swift_code": "CITIDOSDXXX", "bank_code": "CITI", "branch_code": null, "branch": "CITIGROUP TOWER AV. WINSTON CHURCHILL", "bank": "CITIBANK, N.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  65938, "swift_code": "COTDDOS1XXX", "bank_code": "COTD", "branch_code": null, "branch": "CARDNET CALLE MAX HENRIQUEZ URENA NO. 6", "bank": "CONSORCIO DE TARJETAS DOMINICANAS, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+// {"id": 274172, "swift_code": null, "bank_code": "CPPP", "branch_code": null, "branch": null, "bank": null, "address": null,"zip": null, "city": null},
+{"id": 312080, "swift_code": "CRTRDOS1XXX", "bank_code": "CRTR", "branch_code": null, "branch": "EDIF. CORPORACION AMERICA ENS. NACO RODRIGUEZ NO. 36", "bank": "CORPORACION DE CREDITO AMERICA, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+// {"id": 61284, "swift_code": null, "bank_code": "CRMD", "branch_code": null, "branch": null, "bank": null, "address": null,"zip": null, "city": null},
+{"id":  73062, "swift_code": "CCEEDOS1XXX", "bank_code": "CCEE", "branch_code": null, "branch": "C/JOSE F. TAPIA BREA 208 ENS. QUISQUEYA", "bank": "CORPORACION DE CREDITO EL EFECTIVO", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 101090, "swift_code": "COTFDOS1XXX", "bank_code": "COTF", "branch_code": null, "branch": "AVE. 27 DE FEBRERO 422", "bank": "CORPORACION DE CREDITO FIMOTORS", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 441118, "swift_code": "COCZDOS1XXX", "bank_code": "COCZ", "branch_code": null, "branch": "ESQ. MANUEL DE JESUS TRONCOSO LOCAL 3B, ENS. PIANTINI CALLE ROBERTO PASTORIZA 463", "bank": "CORPORACION DE CREDITO FINANZAR, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  90352, "swift_code": "CRDFDOS1XXX", "bank_code": "CRDF", "branch_code": null, "branch": "EFA BUILDING SUITE 402 ABRAHAM LINCOLN AVE. NO.1009", "bank": "CORPORACION DE CREDITO FINATAL, S.A", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 219754, "swift_code": "CCNMDOS1XXX", "bank_code": "CCNM", "branch_code": null, "branch": "C/ROSARIO NO. 100", "bank": "CORPORACION DE CREDITO INVERSIONES MOCANAS, S.A.", "address": null,"zip": null, "city": "MOCA"},
+{"id":  48440, "swift_code": "CRTCDOS1XXX", "bank_code": "CRTC", "branch_code": null, "branch": "CALLE 30 DE MARZO 4", "bank": "CORPORACION DE CREDITO LA AMERICANA S.A.", "address": null,"zip": null, "city": "539 SANTIAGO"},
+{"id":  42642, "swift_code": "CCLCDOS1XXX", "bank_code": "CCLC", "branch_code": null, "branch": "CALLE MANUEL DE JESUS TRONSOCSO ESQ.FCO. PRATS RAMIREZ ENSANCHE PIANTINI", "bank": "CORPORACION DE CREDITO LEASING CONFISA, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 195808, "swift_code": "CRDLDOS1XXX", "bank_code": "CRDL", "branch_code": null, "branch": "CALLE 16 DE AGOSTO 169", "bank": "CORPORACION DE CREDITO MONUMENTAL, S.A.", "address": null,"zip": null, "city": "SANTIAGO DE LOS CABALLEROS"},
+{"id": 272482, "swift_code": "CCNPDOS1XXX", "bank_code": "CCNP", "branch_code": null, "branch": "C/CASTILLO NO. 66 ESQ. C/COLON", "bank": "CORPORACION DE CREDITO NORDESTANA DE PRESTAMOS, S.A.", "address": null,"zip": null, "city": "SAN FRANCISCO DE MACORIS"},
+{"id": 248458, "swift_code": "CODODOS1XXX", "bank_code": "CODO", "branch_code": null, "branch": "C/ROBERTO PASTORIZA NO. 214", "bank": "CORPORACION DE CREDITO OFICORP, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 203244, "swift_code": "CROLDOS1XXX", "bank_code": "CROL", "branch_code": null, "branch": "AV. SABANA LARGA N. 163", "bank": "CORPORACION DE CREDITO ORIENTAL", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 266034, "swift_code": "CODPDOS1XXX", "bank_code": "CODP", "branch_code": null, "branch": "27 DE FEBRERO NO. 45", "bank": "CORPORACION DE CREDITO PREINDESA", "address": null,"zip": null, "city": "COTUI"},
+{"id": 256258, "swift_code": "CCPODOS1XXX", "bank_code": "CCPO", "branch_code": null, "branch": "C/SAN FRANCISCO NO. 49 ESQ.C/MELLA", "bank": "CORPORACION DE CREDITO PRESTAMOS A LAS ORDENES, S.A.", "address": null,"zip": null, "city": "SAN FRANCISCO DE MACORIS"},
+{"id": 361714, "swift_code": "CCPUDOS1XXX", "bank_code": "CCPU", "branch_code": null, "branch": "EDIFICIO PUERTOPLATENA I 2DA. PLANTA BELLER NO. 51", "bank": "CORPORACION DE CREDITO PUERTOPLATENA, S.A.", "address": null,"zip": null, "city": "335 PUERTO PLATA"},
+{"id":  55798, "swift_code": "COEDDOS1XXX", "bank_code": "COED", "branch_code": null, "branch": "AV. LOPE DE VEGA ESQ. JFK", "bank": "CORPORACION DE CREDITO REIDO, C. POR A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 300536, "swift_code": "CPCRDOS1XXX", "bank_code": "CPCR", "branch_code": null, "branch": "AV. SAN MARTIN, NO. 267 CASI ESQ. AV.TIRADENTES ENSANCHE LA FE", "bank": "CORPORACION DE CREDITO RONA, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 343852, "swift_code": "CROTDOS1XXX", "bank_code": "CROT", "branch_code": null, "branch": "GUSTAVO MEJIA RICART NO.9 ENSANCHE NACO", "bank": "CORPORACION DE CREDITO TOINSA, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 204078, "swift_code": "EXPLDOD1XXX", "bank_code": "EXPL", "branch_code": null, "branch": "MAX HENRIQUEZ URENA 78 - PIANTINI", "bank": "EXCEL PUESTO DE BOLSA, S. A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 247889, "swift_code": "FSCODOS1XXX", "bank_code": "FSCO", "branch_code": null, "branch": "ANGEL SEVERO CABRAL 7", "bank": "FINANZAS Y SERVICIOS CONSOLIDADOS", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  45531, "swift_code": "FJPCDOS1XXX", "bank_code": "FJPC", "branch_code": null, "branch": "EDIFICIO VIEJA SEDE BANCO CENTRAL DE LA REPUBLICA DOMINICANA AV. PEDRO HENRIQUEZ URENA ESQ.", "bank": "FONDO JUBILACIONES Y PENSIONES DEL BANCO CENTRAL, INC.", "address": null,"zip": null, "city": "1347 SANTO DOMINGO"},
+{"id":  35158, "swift_code": "GAACDOS1XXX", "bank_code": "GAAC", "branch_code": null, "branch": "CALLE MANGANAGUA 20 LOS RESTAURADORES", "bank": "GAMELIN AGENTE DE CAMBIO S.A", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+// {"id": 300982, "swift_code": null, "bank_code": "GGDR", "branch_code": null, "branch": null, "bank": null, "address": null,"zip": null, "city": null},
+{"id": 434050, "swift_code": "GCSYDOS1XXX", "bank_code": "GCSY", "branch_code": null, "branch": "TORRE EMPRESARIAL REYNA II SUITE 601 PEDRO HENRIQUEZ URENA 138", "bank": "GCS SYSTEMS", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+// {"id": 203926, "swift_code": null, "bank_code": "IRPL", "branch_code": null, "branch": null, "bank": null, "address": null,"zip": null, "city": null},
+{"id":  14360, "swift_code": "IGVADOS1XXX", "bank_code": "IGVA", "branch_code": null, "branch": "EURODOLLAR CALLE JUANA SALTITOPA NO. 171 MEJORAMIENTO SOCIAL", "bank": "INVERSIONES GUERRERO AND VALDEZ, AGENTE DE CAMBIO", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  28114, "swift_code": "IPPBDOS1XXX", "bank_code": "IPPB", "branch_code": null, "branch": "TORRE POPULAR FLOOR 7 JOHN F. KENNEDY NO. 20, ESQ. MAXIMO", "bank": "INVERSIONES POPULAR S. A., PUESTO DE BOLSA", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 263675, "swift_code": "JBAPDOS1XXX", "bank_code": "JBAP", "branch_code": null, "branch": "TORRE ACROPOLIS AV. WINSTON CHURCHILL NO. 1099 PIANTINI", "bank": "JMMB BDI AMERICA, PUESTO DE BOLSA S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  35241, "swift_code": "LDACDOS1XXX", "bank_code": "LDAC", "branch_code": null, "branch": "INICA CALLE PORFIRIO HERRERA NO.29", "bank": "LAFISE DOMINICANA AGENTE DE CAMBIO, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  65453, "swift_code": "LVSDDOS1XXX", "bank_code": "LVSD", "branch_code": null, "branch": "EDIFICIO INICIA PORFIRIO HERRERA", "bank": "LAFISE VALORES SANTO DOMINGO, S.A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 246180, "swift_code": "MEAODOS1XXX", "bank_code": "MEAO", "branch_code": null, "branch": "MAX HENRIQUEZ URENA NO.78 ENS. PIANTINI", "bank": "MEGA AGENTE DE CAMBIO, S. A.", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  55548, "swift_code": "MEEDDOS1XXX", "bank_code": "MEED", "branch_code": null, "branch": "ANGEL SEVERO CABRAL NO. 7", "bank": "MERCADO ELECTRONICO DOMINICANO", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 298856, "swift_code": "MCARDOS1XXX", "bank_code": "MCAR", "branch_code": null, "branch": "EDIFICIO AMBAR FLOOR 2 AV. ABRAHAM LINCOLN N 1056", "bank": "MOTOR CREDITO, S.A., BANCO DE AHORRO Y CREDITO", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  17953, "swift_code": "NOABDOS1XXX", "bank_code": "NOAB", "branch_code": null, "branch": "CALLE DE LA SALLE ESQUINA J. PABLO DUARTE PLAZA ZONA ROSA SUITE C-003", "bank": "NORCA S.A. AGENTE DE CAMBIO", "address": null,"zip": null, "city": "SANTIAGO DE LOS CABALLEROS"},
+{"id":  36908, "swift_code": "OPCCDOS1XXX", "bank_code": "OPCC", "branch_code": null, "branch": "EDIFICIO IN TEMPO AVE WINSTON CHURCHILL ESQ MAX HENRIQUEZ URENA", "bank": "OPTIMA CORPORACION DE CREDITO, S.A.", "address": null,"zip": null, "city": "09 SANTO DOMINGO"},
+// {"id": 14600, "swift_code": null, "bank_code": "OPVA", "branch_code": null, "branch": null, "bank": null, "address": null,"zip": null, "city": null},
+{"id":  35245, "swift_code": "PDACDOS1XXX", "bank_code": "PDAC", "branch_code": null, "branch": "AVE. DE LOS PROCERES PLAZA DIAMOND LOCAL 7B, ARROYO HONDO", "bank": "PAIS DARGAM C. POR A., AGENTE DE CAMBIO", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":  28277, "swift_code": "PVPBDOS1XXX", "bank_code": "PVPB", "branch_code": null, "branch": "EDIFICIO GRUPO RIZEK AVE. PROL. 27 DE FEBRERO NO.1762 ENSANCHE ALAMEDA", "bank": "PARALLAX VALORES PUESTO DE BOLSA S.A.", "address": null,"zip": null, "city": "10902 SANTO DOMINGO"},
+// {"id": 60907, "swift_code": null, "bank_code": "PCMD", "branch_code": null, "branch": null, "bank": null, "address": null,"zip": null, "city": null},
+// {"id": 256765, "swift_code": null, "bank_code": "PVPO", "branch_code": null, "branch": null, "bank": null, "address": null,"zip": null, "city": null},
+{"id":  18112, "swift_code": "QUABDOS1XXX", "bank_code": "QUAB", "branch_code": null, "branch": "DOCTOR GONZALVO NO. 13", "bank": "QUEZADA AGENTE DE CAMBIO, S. A.", "address": null,"zip": null, "city": "ROMANA"},
+// {"id": 99442, "swift_code": null, "bank_code": "SCRF", "branch_code": null, "branch": null, "bank": null, "address": null,"zip": null, "city": null},
+{"id": 205627, "swift_code": "TESLDOS1XXX", "bank_code": "TESL", "branch_code": null, "branch": "TORRE DE LA SEGURIDAD SOCIAL AV. TIRADENTES NO.33", "bank": "TESORERIA DE LA SEGURIDAD SOCIAL", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id":   8911, "swift_code": "TENADOS1XXX", "bank_code": "TENA", "branch_code": null, "branch": "MINISTERIO DE HACIENDA AVENIDA MEXICO 45, GAZCUE DISTRITO NACIONAL", "bank": "TESORERIA NACIONAL", "address": null,"zip": null, "city": "10205 SANTO DOMINGO"},
+// {"id": 14423, "swift_code": null, "bank_code": "TIVA", "branch_code": null, "branch": null, "bank": null, "address": null,"zip": null, "city": null},
+// {"id": 63251, "swift_code": null, "bank_code": "TOPD", "branch_code": null, "branch": null, "bank": null, "address": null,"zip": null, "city": null},
+{"id": 256276, "swift_code": "UCPODOS1XXX", "bank_code": "UCPO", "branch_code": null, "branch": "DISTRICT TOWER PISO 9 CALLE JOSE A. BREA PENA NO. 14", "bank": "UNITED CAPITAL PUESTO DE BOLSA", "address": null,"zip": null, "city": "SANTO DOMINGO"},
+{"id": 249075, "swift_code": "VLEODOS1XXX", "bank_code": "VLEO", "branch_code": null, "branch": "BANCO LEON AVE. JOHN F KENNEDY NO 135", "bank": "VALORES LEON", "address": null,"zip": null, "city": "1502 SANTO DOMINGO"},
+{"id": 212420, "swift_code": "AGCMDOS1XXX", "bank_code": "AGCM", "branch_code": null, "branch": "16 DE AGOSTO NO.98", "bank": "VT AGENTE DE CAMBIO, S.A", "address": null,"zip": null, "city": "SANTIAGO DE LOS CABALLEROS"},
+{"id":  35174, "swift_code": "WAACDOS1XXX", "bank_code": "WAAC", "branch_code": null, "branch": "CALLE PRINCIPAL DE CABARETE CABARETE, SOSUA", "bank": "WALLY AGENTE DE CAMBIO,CXA", "address": null,"zip": null, "city": "PUERTO PLATA"}
     ]
 }
