@@ -2,1125 +2,165 @@
     "country": "Bahrain",
     "country_code": "BH",
     "list": [
-        {
-            "id": 1,
-            "bank": "ABC ISLAMIC BANK (E.C)",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "ABCIBHBM"
-        },
-        {
-            "id": 2,
-            "bank": "AHLI UNITED BANK B.S.C.",
-            "city": "MANAMA",
-            "branch": "(ALHILAL ISLAMIC BANKING SERVICES)",
-            "swift_code": "AUBBBHBMISB"
-        },
-        {
-            "id": 3,
-            "bank": "AHLI UNITED BANK B.S.C.",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "AUBBBHBM"
-        },
-        {
-            "id": 4,
-            "bank": "AL AHLIA SECURITIES W.L.L",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "GUSRBHB1"
-        },
-        {
-            "id": 5,
-            "bank": "AL BARAKA ISLAMIC BANK",
-            "city": "MANAMA",
-            "branch": "(FINANCIAL CONTROL AND RECONCILIATION - HEAD OFFICE)",
-            "swift_code": "ABIBBHBMFCR"
-        },
-        {
-            "id": 6,
-            "bank": "AL BARAKA ISLAMIC BANK",
-            "city": "MANAMA",
-            "branch": "(PAYMENTS AND TRANSFERS - HEAD OFFICE)",
-            "swift_code": "ABIBBHBMPMT"
-        },
-        {
-            "id": 7,
-            "bank": "AL BARAKA ISLAMIC BANK",
-            "city": "MANAMA",
-            "branch": "(TRADE FINANCE OPERATIONS - HEAD OFFICE)",
-            "swift_code": "ABIBBHBMTRF"
-        },
-        {
-            "id": 8,
-            "bank": "AL BARAKA ISLAMIC BANK",
-            "city": "MANAMA",
-            "branch": "(TREASURY BACK OFFICE - HEAD OFFICE)",
-            "swift_code": "ABIBBHBMTBO"
-        },
-        {
-            "id": 9,
-            "bank": "AL BARAKA ISLAMIC BANK",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "ABIBBHBM"
-        },
-        {
-            "id": 10,
-            "bank": "AL SALAM BANK BAHRAIN",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "ALSABHBM"
-        },
-        {
-            "id": 11,
-            "bank": "AL SALAM BANK BAHRAIN",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "ALSABHBMPBD"
-        },
-        {
-            "id": 12,
-            "bank": "ALBARAKA BANKING GROUP",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "ABBGBHBM"
-        },
-        {
-            "id": 13,
-            "bank": "ALLIED BANK LIMITED, WHOLESALE BANKING BRANCH",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "ABLWBHBM"
-        },
-        {
-            "id": 14,
-            "bank": "ALLIED BANKING CORPORATION",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "ABCMBHB1"
-        },
-        {
-            "id": 15,
-            "bank": "ALUBAF ARAB INTERNATIONAL BANK B.S.C. (C)",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "ALUBBHBM"
-        },
-        {
-            "id": 16,
-            "bank": "ARAB BANK PLC",
-            "city": "MANAMA",
-            "branch": "(COMMERCIAL BRANCH)",
-            "swift_code": "ARABBHBMMAN"
-        },
-        {
-            "id": 17,
-            "bank": "ARAB BANK PLC, OFFSHORE BANKING UNIT (OBU)",
-            "city": "MANAMA",
-            "branch": "(CENTRAL TRANSFER UNIT)",
-            "swift_code": "ARABBHBMCTU"
-        },
-        {
-            "id": 18,
-            "bank": "ARAB BANK PLC, OFFSHORE BANKING UNIT (OBU)",
-            "city": "MANAMA",
-            "branch": "(PAYMENTS INVESTIGATIONS)",
-            "swift_code": "ARABBHBMINV"
-        },
-        {
-            "id": 19,
-            "bank": "ARAB BANK PLC, OFFSHORE BANKING UNIT (OBU)",
-            "city": "MANAMA",
-            "branch": "(TRADE SERVICES UNIT)",
-            "swift_code": "ARABBHBMTSU"
-        },
-        {
-            "id": 20,
-            "bank": "ARAB BANK PLC, OFFSHORE BANKING UNIT (OBU)",
-            "city": "MANAMA",
-            "branch": "(TREASURY OPERATIONS)",
-            "swift_code": "ARABBHBMTRO"
-        },
-        {
-            "id": 21,
-            "bank": "ARAB BANK PLC, OFFSHORE BANKING UNIT (OBU)",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "ARABBHBM"
-        },
-        {
-            "id": 22,
-            "bank": "ARAB BANKING CORPORATION (B.S.C.)",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "ABCOBHBM"
-        },
-        {
-            "id": 23,
-            "bank": "ARAB FINANCIAL SERVICES CO. B.S.C",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "AFSCBHB1"
-        },
-        {
-            "id": 24,
-            "bank": "ARAB INVESTMENT COMPANY, THE",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "TAIQBHBM"
-        },
-        {
-            "id": 25,
-            "bank": "ARAB PETROLEUM INVESTMENTS CORPORATION",
-            "city": "MANAMA",
-            "branch": "(APICORP BAHRAIN PROJECT)",
-            "swift_code": "APICBHBMBH2"
-        },
-        {
-            "id": 26,
-            "bank": "ARAB PETROLEUM INVESTMENTS CORPORATION",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "APICBHBM"
-        },
-        {
-            "id": 27,
-            "bank": "ARCAPITA",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "FIIVBHBM"
-        },
-        {
-            "id": 28,
-            "bank": "ASKARI BANK LIMITED, BAHRAIN BRANCH",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "ASCMBHBM"
-        },
-        {
-            "id": 29,
-            "bank": "BAHRAIN BOURSE",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "BHBNBHBM"
-        },
-        {
-            "id": 30,
-            "bank": "BAHRAIN DEVELOPMENT BANK B S C (C)",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "BDBBBHBM"
-        },
-        {
-            "id": 31,
-            "bank": "BAHRAIN FINANCING COMPANY",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "BFCCBHBM"
-        },
-        {
-            "id": 32,
-            "bank": "BAHRAIN FINANCING COMPANY BSC",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "BAHFBHB1"
-        },
-        {
-            "id": 33,
-            "bank": "BAHRAIN INDIA INTERNATIONAL EXCHANGE CO .B.S.C",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "BIEEBHB1"
-        },
-        {
-            "id": 34,
-            "bank": "BAHRAIN ISLAMIC BANK B.S.C.",
-            "city": "MANAMA",
-            "branch": "(INVESTMENT AND TREASURY BACK OFFICE)",
-            "swift_code": "BIBBBHBMINV"
-        },
-        {
-            "id": 35,
-            "bank": "BAHRAIN ISLAMIC BANK B.S.C.",
-            "city": "MANAMA",
-            "branch": "(TRADE FINANCE DEPARTMENT)",
-            "swift_code": "BIBBBHBMTFD"
-        },
-        {
-            "id": 36,
-            "bank": "BAHRAIN ISLAMIC BANK B.S.C.",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "BIBBBHBM"
-        },
-        {
-            "id": 37,
-            "bank": "BAHRAIN MIDDLE EAST BANK B.S.C",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "BMEABHBM"
-        },
-        {
-            "id": 38,
-            "bank": "BAHRAIN STOCK EXCHANGE",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "XBAHBHB1"
-        },
-        {
-            "id": 39,
-            "bank": "BANK AL HABIB LIMITED",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "BAHLBHBM"
-        },
-        {
-            "id": 40,
-            "bank": "BANK ALFALAH LIMITED BAHRAIN",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "ALFHBHBM"
-        },
-        {
-            "id": 41,
-            "bank": "BANK AL-KHAIR B.S.C. (C)",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "UINSBHBN"
-        },
-        {
-            "id": 42,
-            "bank": "BANK OF BARODA",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "BARBBHBM"
-        },
-        {
-            "id": 43,
-            "bank": "BANK OF TOKYO-MITSUBISHI UFJ, LTD., THE",
-            "city": "MANAMA",
-            "branch": "(BAHRAIN BRANCH)",
-            "swift_code": "BOTKBHBM"
-        },
-        {
-            "id": 44,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": "(ADLIYA BRANCH)",
-            "swift_code": "BBKUBHBMADL"
-        },
-        {
-            "id": 45,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": "(BUDAIYA BRANCH)",
-            "swift_code": "BBKUBHBMBUD"
-        },
-        {
-            "id": 46,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": "(CENTRAL MARKET BRANCH)",
-            "swift_code": "BBKUBHBMCMK"
-        },
-        {
-            "id": 47,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": "(CLEARING SECTION)",
-            "swift_code": "BBKUBHBMCLG"
-        },
-        {
-            "id": 48,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": "(CREDIMAX)",
-            "swift_code": "BBKUBHBMMAX"
-        },
-        {
-            "id": 49,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": "(CREDIT SERVICES UNIT)",
-            "swift_code": "BBKUBHBMLOP"
-        },
-        {
-            "id": 50,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": "(DIPLOMATIC AREA BRANCH)",
-            "swift_code": "BBKUBHBMDIP"
-        },
-        {
-            "id": 51,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": "(EAST RIFFA BRANCH)",
-            "swift_code": "BBKUBHBMERF"
-        },
-        {
-            "id": 52,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": "(EXHIBITION BRANCH)",
-            "swift_code": "BBKUBHBMEXH"
-        },
-        {
-            "id": 53,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": "(HAMAD TOWN)",
-            "swift_code": "BBKUBHBMHTN"
-        },
-        {
-            "id": 54,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": "(ISA TOWN BRANCH)",
-            "swift_code": "BBKUBHBMITN"
-        },
-        {
-            "id": 55,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": "(LC DEPARTMENT)",
-            "swift_code": "BBKUBHBMCSU"
-        },
-        {
-            "id": 56,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": "(MAIN BRANCH)",
-            "swift_code": "BBKUBHBMMBR"
-        },
-        {
-            "id": 57,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": "(MANAMA BRANCH)",
-            "swift_code": "BBKUBHBMMNM"
-        },
-        {
-            "id": 58,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": "(MUHARRAQ BRANCH)",
-            "swift_code": "BBKUBHBMMHF"
-        },
-        {
-            "id": 59,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": "(MUHARRAQ SUQ BRANCH)",
-            "swift_code": "BBKUBHBMMSF"
-        },
-        {
-            "id": 60,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": "(RECONCILIATION)",
-            "swift_code": "BBKUBHBMREC"
-        },
-        {
-            "id": 61,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": "(REFINERY BRANCH)",
-            "swift_code": "BBKUBHBMREF"
-        },
-        {
-            "id": 62,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": "(REMITTANCES DEPARTMENT)",
-            "swift_code": "BBKUBHBMREM"
-        },
-        {
-            "id": 63,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": "(SALARIES DEPARTMENT)",
-            "swift_code": "BBKUBHBMSAL"
-        },
-        {
-            "id": 64,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": "(SUQ WAQIF BRANCH)",
-            "swift_code": "BBKUBHBMSUW"
-        },
-        {
-            "id": 65,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": "(TREASURY SERVICES UNIT)",
-            "swift_code": "BBKUBHBMTSU"
-        },
-        {
-            "id": 66,
-            "bank": "BBK",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "BBKUBHBM"
-        },
-        {
-            "id": 67,
-            "bank": "BBK",
-            "city": "WEST RIFFA",
-            "branch": "(WEST RIFFA BRANCH)",
-            "swift_code": "BBKUBHBMWRF"
-        },
-        {
-            "id": 68,
-            "bank": "BMI BANK BSC (C)",
-            "city": "MANAMA",
-            "branch": "(WEALTH MANAGEMENT BRANCH)",
-            "swift_code": "BMUSBHBMWMB"
-        },
-        {
-            "id": 69,
-            "bank": "BMI BANK BSC (C)",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "BMUSBHBM"
-        },
-        {
-            "id": 70,
-            "bank": "BNP PARIBAS 3U",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "BNPABHBW"
-        },
-        {
-            "id": 71,
-            "bank": "BNP PARIBAS BAHREIN - MANAMA OFFSHORE BANKING UNIT(OBU)",
-            "city": "MANAMA",
-            "branch": "(MANAMA OFFSHORE BANKING UNIT(OBU))",
-            "swift_code": "BNPABHBMWMI"
-        },
-        {
-            "id": 72,
-            "bank": "BNP PARIBAS BAHREIN - MANAMA OFFSHORE BANKING UNIT(OBU)",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "BNPABHBM"
-        },
-        {
-            "id": 73,
-            "bank": "BNP PARIBAS MANAMA, FULL COMMERCIAL BRANCH (FCB)",
-            "city": "MANAMA",
-            "branch": "(OFFSHORE BANKING UNIT)",
-            "swift_code": "BNPABHC1OBU"
-        },
-        {
-            "id": 74,
-            "bank": "BNP PARIBAS MANAMA, FULL COMMERCIAL BRANCH (FCB)",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "BNPABHBC"
-        },
-        {
-            "id": 75,
-            "bank": "BRITISH AMERICAN TOBACCO MIDDLE EAST S.P.C.",
-            "city": "HIDD",
-            "branch": null,
-            "swift_code": "BATSBHB1"
-        },
-        {
-            "id": 76,
-            "bank": "CAIRO AMMAN BANK",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "CAABBHBM"
-        },
-        {
-            "id": 77,
-            "bank": "CANARA BANK",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "CNRBBHBM"
-        },
-        {
-            "id": 78,
-            "bank": "CENTRAL BANK OF BAHRAIN",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "BMAGBHBM"
-        },
-        {
-            "id": 79,
-            "bank": "CHARLES FULTON (GULF) WLL",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "CFGWBHB1"
-        },
-        {
-            "id": 80,
-            "bank": "CITIBANK N.A.",
-            "city": "MANAMA",
-            "branch": "(BAHRAIN OFFSHORE UNIT)",
-            "swift_code": "CITIBHBXBBU"
-        },
-        {
-            "id": 81,
-            "bank": "CITIBANK N.A.",
-            "city": "MANAMA",
-            "branch": "(TRADE)",
-            "swift_code": "CITIBHBXTRD"
-        },
-        {
-            "id": 82,
-            "bank": "CITIBANK N.A.",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "CITIBHBX"
-        },
-        {
-            "id": 83,
-            "bank": "CREDIT LIBANAIS SAL",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "CLIBBHBB"
-        },
-        {
-            "id": 84,
-            "bank": "DENIZBANK AS BAHRAIN BRANCH (OBU)",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "DENIBHBX"
-        },
-        {
-            "id": 85,
-            "bank": "ELAF BANK BSC CLOSED",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "ILAFBHBM"
-        },
-        {
-            "id": 86,
-            "bank": "ESKAN BANK",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "ESKBBHBM"
-        },
-        {
-            "id": 87,
-            "bank": "FINANSBANK A.S. BAHRAIN BRANCH",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "FNNBBHBM"
-        },
-        {
-            "id": 88,
-            "bank": "FIRST ENERGY BANK",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "FEBBBHBM"
-        },
-        {
-            "id": 89,
-            "bank": "FIRST LEASING BANK",
-            "city": "AL SEEF",
-            "branch": null,
-            "swift_code": "FLBBBHB1"
-        },
-        {
-            "id": 90,
-            "bank": "GULF CUSTODY COMPANY -BHARAIN",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "GCCOBHB1"
-        },
-        {
-            "id": 91,
-            "bank": "GULF FINANCE HOUSE",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "GFHIBHBM"
-        },
-        {
-            "id": 92,
-            "bank": "GULF INTERNATIONAL BANK, B.S.C.",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "GULFBHBMCLS"
-        },
-        {
-            "id": 93,
-            "bank": "GULF INTERNATIONAL BANK, B.S.C.",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "GULFBHBM"
-        },
-        {
-            "id": 94,
-            "bank": "HABIB BANK LTD.",
-            "city": "MANAMA",
-            "branch": "(OFFSHORE BANKING UNIT)",
-            "swift_code": "HABBBHBMOBU"
-        },
-        {
-            "id": 95,
-            "bank": "HABIB BANK LTD.",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "HABBBHBM"
-        },
-        {
-            "id": 96,
-            "bank": "HDFC BANK LIMITED",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "HDFCBHBM"
-        },
-        {
-            "id": 97,
-            "bank": "HOUSING BANK FOR TRADE AND FINANCE \/ BAHRAIN, MANAMA, THE",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "HBHOBHBM"
-        },
-        {
-            "id": 98,
-            "bank": "HSBC BANK MIDDLE EAST",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "BBMEBHBX"
-        },
-        {
-            "id": 99,
-            "bank": "HSBC BANK MIDDLE EAST",
-            "city": "MUHARRAQ",
-            "branch": "(OFFSHORE BANKING UNIT)",
-            "swift_code": "BBMEBHBXOBU"
-        },
-        {
-            "id": 100,
-            "bank": "ICICI BANK LTD",
-            "city": "MANAMA",
-            "branch": "(CENTRAL OPERATIONS)",
-            "swift_code": "ICICBHBMCOP"
-        },
-        {
-            "id": 101,
-            "bank": "ICICI BANK LTD",
-            "city": "MANAMA",
-            "branch": "(GLOBAL TRADE SERVICE UNIT)",
-            "swift_code": "ICICBHBMGTS"
-        },
-        {
-            "id": 102,
-            "bank": "ICICI BANK LTD",
-            "city": "MANAMA",
-            "branch": "(IIOG)",
-            "swift_code": "ICICBHBMIOG"
-        },
-        {
-            "id": 103,
-            "bank": "ICICI BANK LTD",
-            "city": "MANAMA",
-            "branch": "(TREASURY)",
-            "swift_code": "ICICBHBMTMG"
-        },
-        {
-            "id": 104,
-            "bank": "ICICI BANK LTD",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "ICICBHBM"
-        },
-        {
-            "id": 105,
-            "bank": "ING BANK A.S. BAHRAIN BRANCH (FORMERLY OYAK BANK A.S. BAHRAIN BRANCH)",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "INGBBHBM"
-        },
-        {
-            "id": 106,
-            "bank": "INVESTCORP BANK B.S.C.",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "INVCBHBM"
-        },
-        {
-            "id": 107,
-            "bank": "ITHMAAR BANK B.S.C.",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "FIBHBHBM"
-        },
-        {
-            "id": 108,
-            "bank": "JPMORGAN CHASE BANK, N.A.",
-            "city": "MANAMA",
-            "branch": "(TEST KEY AND BKE ADMINISTRATION)",
-            "swift_code": "CHASBHBMKEY"
-        },
-        {
-            "id": 109,
-            "bank": "JPMORGAN CHASE BANK, N.A.",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "CHASBHBM"
-        },
-        {
-            "id": 110,
-            "bank": "KEB HANA BANK, BAHRAIN BRANCH (FORMERLY KOREA EXCHANGE BANK, BAHRAIN BRANCH)",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "KOEXBHBM"
-        },
-        {
-            "id": 111,
-            "bank": "KHALEEJI COMMERCIAL BANK B.S.C. (C)",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "KHCBBHBM"
-        },
-        {
-            "id": 112,
-            "bank": "KUWAIT FINANCE HOUSE",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "KFHOBHBM"
-        },
-        {
-            "id": 113,
-            "bank": "KUWAIT TURKISH PARTICIPATION BANK INC. BAHRAIN BRANCH",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "KTEFBHBM"
-        },
-        {
-            "id": 114,
-            "bank": "LIQUIDITY MANAGEMENT CENTRE B.S.C",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "LMCSBHBM"
-        },
-        {
-            "id": 115,
-            "bank": "MASHREQBANK PSC.",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "BOMLBHBM"
-        },
-        {
-            "id": 116,
-            "bank": "MCB BANK LIMITED",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "MUCBBHBM"
-        },
-        {
-            "id": 117,
-            "bank": "MUBASHER FINANCIAL SERVICES",
-            "city": "SANABIS",
-            "branch": null,
-            "swift_code": "MFSVBHB1"
-        },
-        {
-            "id": 118,
-            "bank": "MUBASHER FINANCIAL SERVICES BSC BAHRAIN",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "MFSCBHBM"
-        },
-        {
-            "id": 119,
-            "bank": "NATIONAL BANK OF ABU DHABI - OFFSHORE BANKING UNIT (OBU)",
-            "city": "MANAMA",
-            "branch": "(BAHRAIN BRANCH)",
-            "swift_code": "NBADBHBMBRA"
-        },
-        {
-            "id": 120,
-            "bank": "NATIONAL BANK OF ABU DHABI - OFFSHORE BANKING UNIT (OBU)",
-            "city": "MANAMA",
-            "branch": "(TRADE FINANCE DEPARTMENT)",
-            "swift_code": "NBADBHBMTFO"
-        },
-        {
-            "id": 121,
-            "bank": "NATIONAL BANK OF ABU DHABI - OFFSHORE BANKING UNIT (OBU)",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "NBADBHBM"
-        },
-        {
-            "id": 122,
-            "bank": "NATIONAL BANK OF BAHRAIN",
-            "city": "MANAMA",
-            "branch": "(MONEY TRANSFERS DEPARTMENT)",
-            "swift_code": "NBOBBHBMMTD"
-        },
-        {
-            "id": 123,
-            "bank": "NATIONAL BANK OF BAHRAIN",
-            "city": "MANAMA",
-            "branch": "(TREASURY OPERATION)",
-            "swift_code": "NBOBBHBMTOP"
-        },
-        {
-            "id": 124,
-            "bank": "NATIONAL BANK OF BAHRAIN",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "NBOBBHBM"
-        },
-        {
-            "id": 125,
-            "bank": "NATIONAL BANK OF KUWAIT SAK",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "NBOKBHBM"
-        },
-        {
-            "id": 126,
-            "bank": "NATIONAL BANK OF KUWAIT SAK",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "NBOKBHBMFCB"
-        },
-        {
-            "id": 127,
-            "bank": "NATIONAL BANK OF PAKISTAN",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "NBPABHBM"
-        },
-        {
-            "id": 128,
-            "bank": "NCB CAPITAL",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "NCCOBHBM"
-        },
-        {
-            "id": 129,
-            "bank": "NIKKO INVESTMENT BANKING (MIDDLE EAST) EC",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "NIBEBHB1"
-        },
-        {
-            "id": 130,
-            "bank": "NOMURA INVESTMENT BANKING (MIDDLE EAST) B.S.C.",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "NIBMBHB1"
-        },
-        {
-            "id": 131,
-            "bank": "NONOO EXCHANGE COMPANY BSC (C)",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "NOEXBHB1"
-        },
-        {
-            "id": 132,
-            "bank": "OSOOL ASSET MANAGEMENT B.S.C. (C)",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "OSOLBHBM"
-        },
-        {
-            "id": 133,
-            "bank": "R.P. MARTIN (BAHRAIN) WLL",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "MABWBHB1"
-        },
-        {
-            "id": 134,
-            "bank": "RAFIDAIN BANK",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "RAFBBHBM"
-        },
-        {
-            "id": 135,
-            "bank": "ROBERT FLEMING HOLDINGS LTD",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "ROFHBHB1"
-        },
-        {
-            "id": 136,
-            "bank": "SAUDI NATIONAL COMMERCIAL BANK - OBU",
-            "city": "MANAMA",
-            "branch": "(FULL COMMERCIAL BRANCH)",
-            "swift_code": "SNCBBHBMCOM"
-        },
-        {
-            "id": 137,
-            "bank": "SAUDI NATIONAL COMMERCIAL BANK - OBU",
-            "city": "MANAMA",
-            "branch": "(S AND P BAHRAIN)",
-            "swift_code": "SNCBBHBM861"
-        },
-        {
-            "id": 138,
-            "bank": "SAUDI NATIONAL COMMERCIAL BANK - OBU",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "SNCBBHBM"
-        },
-        {
-            "id": 139,
-            "bank": "SECURITIES AND INVESTMENT CO.(B.S.C)",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "SICSBHBM"
-        },
-        {
-            "id": 140,
-            "bank": "SEERA INVESTMENT BANK B.S.C. (CLOSED)",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "UIBBBHBM"
-        },
-        {
-            "id": 141,
-            "bank": "STANDARD CHARTERED BANK",
-            "city": "MANAMA",
-            "branch": "(ALL OFFICES)",
-            "swift_code": "SCBLBHBM"
-        },
-        {
-            "id": 142,
-            "bank": "STANDARD CHARTERED BANK",
-            "city": "MANAMA",
-            "branch": "(OFFSHORE BANKING UNIT)",
-            "swift_code": "SCBLBHBMOBU"
-        },
-        {
-            "id": 143,
-            "bank": "STATE BANK OF INDIA, OBU",
-            "city": "MANAMA",
-            "branch": "(FULL COMMERCIAL BRANCH)",
-            "swift_code": "SBINBHBMFCB"
-        },
-        {
-            "id": 144,
-            "bank": "STATE BANK OF INDIA, OBU",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "SBINBHBM"
-        },
-        {
-            "id": 145,
-            "bank": "TADHAMON CAPITAL BSC(C)",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "TCPBBHB1"
-        },
-        {
-            "id": 146,
-            "bank": "TAIB BANK B.S.C.(C)",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "TAIBBHBM"
-        },
-        {
-            "id": 147,
-            "bank": "TRANS ARABIAN DEVELOPMENT COMPANY E.C.",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "TRDEBHB1"
-        },
-        {
-            "id": 148,
-            "bank": "TURKIYE FINANS KATILIM BANKASI A.S.",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "AFKBBHBM"
-        },
-        {
-            "id": 149,
-            "bank": "TURKIYE HALK BANKASI A.S. BAHRAIN (OBU) BRANCH",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "TRHBBHBM"
-        },
-        {
-            "id": 150,
-            "bank": "TURKIYE IS BANKASI A.S. BAHRAIN BRANCH",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "ISBKBHBM"
-        },
-        {
-            "id": 151,
-            "bank": "TURKIYE VAKIFLAR BANKASI T.A.O. BAHRAIN BRANCH (OBU)",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "TVBABHBM"
-        },
-        {
-            "id": 152,
-            "bank": "UNITED BANK LIMITED",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "UNILBHBM"
-        },
-        {
-            "id": 153,
-            "bank": "UNITED BANK LIMITED",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "UNILBHBMTRY"
-        },
-        {
-            "id": 154,
-            "bank": "UNITED GULF BANK B.S.C",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "UGUBBHBM"
-        },
-        {
-            "id": 155,
-            "bank": "UNITED GULF BANK SECURITIES CO.",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "UNGUBHB1"
-        },
-        {
-            "id": 156,
-            "bank": "VENTURE CAPITAL BANK BSC",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "VCBKBHBM"
-        },
-        {
-            "id": 157,
-            "bank": "WOORI BANK, MANAMA",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "HVBKBHBM"
-        },
-        {
-            "id": 158,
-            "bank": "YAPI VE KREDI BANKASI BAHRAIN OFFSHORE BANKING UN IT",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "YAPIBHBX"
-        },
-        {
-            "id": 159,
-            "bank": "ZAIN BAHRAIN B.S.C CLOSED",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "ZAINBHBM"
-        },
-        {
-            "id": 160,
-            "bank": "ZENJ EXCHANGE CO. W.L.L",
-            "city": "MANAMA",
-            "branch": null,
-            "swift_code": "ZENJBHBM"
-        }
+{"id": 141986, "swift_code": "ABCIBHBMXXX", "bank_code": "ABCI", "branch_code": null, "branch": "C Tower, Diplomatic Area ", "bank": "ABC ISLAMIC BANK (E.C)", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  18772, "swift_code": "AUBBBHBMISB", "bank_code": "AUBB", "branch_code": null, "branch": "Al Seef District 428 Building 2495, Road 2832 2424-AL SEEF DISTRICT 428 ", "bank": "AHLI UNITED BANK B.S.C. Seef District Area", "address": null,"zip": null, "city": "AL SEEF"},
+{"id":  18772, "swift_code": "AUBBBHBMXXX", "bank_code": "AUBB", "branch_code": null, "branch": "Al Seef District 428 Building 2495, Road 2832 2424-AL SEEF DISTRICT 428 ", "bank": "AHLI UNITED BANK B.S.C. Seef District Area", "address": null,"zip": null, "city": "AL SEEF"},
+{"id": 311486, "swift_code": "GUSRBHB1XXX", "bank_code": "GUSR", "branch_code": null, "branch": "GOVERNMENT AVENUE,FLOOR 3 ", "bank": "GULFINVEST SECURITIES", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  23010, "swift_code": "ABIBBHBMFCR", "bank_code": "ABIB", "branch_code": null, "branch": "Al Baraka Tower ", "bank": "AL BARAKA ISLAMIC BANK", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  23010, "swift_code": "ABIBBHBMPMT", "bank_code": "ABIB", "branch_code": null, "branch": "Al Baraka Tower ", "bank": "AL BARAKA ISLAMIC BANK", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  23010, "swift_code": "ABIBBHBMTRF", "bank_code": "ABIB", "branch_code": null, "branch": "Al Baraka Tower ", "bank": "AL BARAKA ISLAMIC BANK", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  23010, "swift_code": "ABIBBHBMTBO", "bank_code": "ABIB", "branch_code": null, "branch": "Al Baraka Tower ", "bank": "AL BARAKA ISLAMIC BANK", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  23010, "swift_code": "ABIBBHBMXXX", "bank_code": "ABIB", "branch_code": null, "branch": "Al Baraka Tower ", "bank": "AL BARAKA ISLAMIC BANK", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  12454, "swift_code": "ALSABHBMXXX", "bank_code": "ALSA", "branch_code": null, "branch": "Av 58, Al Seef District 436  Al See MS Centre Building 22, t 436 973 ", "bank": "AL SALAM BANK BAHRAIN", "address": null,"zip": null, "city": "AL SEEF"},
+{"id":  12454, "swift_code": "ALSABHBMPBD", "bank_code": "ALSA", "branch_code": null, "branch": "Av 58, Al Seef District 436  Al See MS Centre Building 22, t 436 973 ", "bank": "AL SALAM BANK BAHRAIN", "address": null,"zip": null, "city": "AL SEEF"},
+{"id": 106158, "swift_code": "ABBGBHBMXXX", "bank_code": "ABBG", "branch_code": null, "branch": "Albaraka Tower 238 building No.238 1882 ", "bank": "ALBARAKA BANKING GROUP B.S.C.", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 394134, "swift_code": "ABLWBHBMXXX", "bank_code": "ABLW", "branch_code": null, "branch": "Diplomatic area 1704 AL ROSSAIS TOWER 11838 ", "bank": "ALLIED BANK LIMITED, WHOLESALE BANKING BRANCH", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 212290, "swift_code": "ABCMBHB1XXX", "bank_code": "ABCM", "branch_code": null, "branch": "Government Avenue ", "bank": "ALLIED BANKING CORPORATION", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  31382, "swift_code": "ALUBBHBMXXX", "bank_code": "ALUB", "branch_code": null, "branch": "Road 3618, Al Seef District 3618, A Alubaf Tower, Building 854, strict 317 ", "bank": "ALUBAF ARAB INTERNATIONAL BANK B.S.C. (C)", "address": null,"zip": null, "city": "AL SEEF"},
+{"id":  18018, "swift_code": "ARABBHBMMAN", "bank_code": "ARAB", "branch_code": null, "branch": "Diplomatic Area, Building 540/542 317 ", "bank": "ARAB BANK PLC, OFFSHORE BANKING", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  18018, "swift_code": "ARABBHBMCTU", "bank_code": "ARAB", "branch_code": null, "branch": "Diplomatic Area, Building 540/542 317 ", "bank": "ARAB BANK PLC, OFFSHORE BANKING", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  18018, "swift_code": "ARABBHBMINV", "bank_code": "ARAB", "branch_code": null, "branch": "Diplomatic Area, Building 540/542 317 ", "bank": "ARAB BANK PLC, OFFSHORE BANKING", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  18018, "swift_code": "ARABBHBMTSU", "bank_code": "ARAB", "branch_code": null, "branch": "Diplomatic Area, Building 540/542 317 ", "bank": "ARAB BANK PLC, OFFSHORE BANKING", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  18018, "swift_code": "ARABBHBMTRO", "bank_code": "ARAB", "branch_code": null, "branch": "Diplomatic Area, Building 540/542 317 ", "bank": "ARAB BANK PLC, OFFSHORE BANKING", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  18018, "swift_code": "ARABBHBMXXX", "bank_code": "ARAB", "branch_code": null, "branch": "Diplomatic Area, Building 540/542 317 ", "bank": "ARAB BANK PLC, OFFSHORE BANKING", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 247442, "swift_code": "ABCOBHBMXXX", "bank_code": "ABCO", "branch_code": null, "branch": "ABC Tower, Diplomatic Area ", "bank": "ARAB BANKING CORPORATION BSC", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  47450, "swift_code": "AFSCBHB1XXX", "bank_code": "AFSC", "branch_code": null, "branch": "PO Box 2152 ", "bank": "ARAB FINANCIAL SERVICES COMPANY (EC )", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 286643, "swift_code": "TAIQBHBMXXX", "bank_code": "TAIQ", "branch_code": null, "branch": "Bldg: 2309 Road: 2830 5559 ", "bank": "ARAB INVESTMENT COMPANY, THE", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  40950, "swift_code": "APICBHBMBH2", "bank_code": "APIC", "branch_code": null, "branch": "Road 2833 ", "bank": "ARAB PETROLEUM INVESTMENTS CORPORATION", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  40950, "swift_code": "APICBHBMXXX", "bank_code": "APIC", "branch_code": null, "branch": "Road 2833 ", "bank": "ARAB PETROLEUM INVESTMENTS CORPORATION", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 374717, "swift_code": "FIIVBHBMXXX", "bank_code": "FIIV", "branch_code": null, "branch": "551 FLOOR 8 AL-KHALIFA AVENUE ", "bank": "AIM INVESTMENT MANAGEMENT B.S.C.(C)", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 212732, "swift_code": "ASCMBHBMXXX", "bank_code": "ASCM", "branch_code": null, "branch": "Diplomatic area BDB BUILDING, 7TH FLOOR ", "bank": "ASKARI BANK LIMITED, BAHRAIN BRANCH", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 229347, "swift_code": "BHBNBHBMXXX", "bank_code": "BHBN", "branch_code": null, "branch": "King Faisal Road 4626 346 ", "bank": "BAHRAIN BOURSE", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  18331, "swift_code": "BDBBBHBMXXX", "bank_code": "BDBB", "branch_code": null, "branch": "BUILDING 1703 BULIDING 170 BLOCK 317 ROAD ", "bank": "BAHRAIN DEVELOPMENT BANK BSC", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  36635, "swift_code": "BFCCBHBMXXX", "bank_code": "BFCC", "branch_code": null, "branch": "ROAD N. 1507 BLOCK 315 ", "bank": "BAHRAIN FINANCING COMPANY", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  92613, "swift_code": "BAHFBHB1XXX", "bank_code": "BAHF", "branch_code": null, "branch": " ", "bank": "BAHRAIN FINANCING CO.", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  73217, "swift_code": "BIEEBHB1XXX", "bank_code": "BIEE", "branch_code": null, "branch": "No. 3809, 139 Bab Al Bahrain Square 304 ", "bank": "BAHRAIN INDIA INTERNATIONAL EXCHANGE CO.", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  18461, "swift_code": "BIBBBHBMINV", "bank_code": "BIBB", "branch_code": null, "branch": "Al-Salam Tower, Diplomatic Area ", "bank": "BAHRAIN ISLAMIC BANK B.S.C.", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  18461, "swift_code": "BIBBBHBMTFD", "bank_code": "BIBB", "branch_code": null, "branch": "Al-Salam Tower, Diplomatic Area ", "bank": "BAHRAIN ISLAMIC BANK B.S.C.", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  18461, "swift_code": "BIBBBHBMXXX", "bank_code": "BIBB", "branch_code": null, "branch": "Al-Salam Tower, Diplomatic Area ", "bank": "BAHRAIN ISLAMIC BANK B.S.C.", "address": null,"zip": null, "city": "MANAMA"},
+{"id":   3017, "swift_code": "BMEABHBMXXX", "bank_code": "BMEA", "branch_code": null, "branch": "Diplomatic area Building 135, Road 1702 Block 317 ", "bank": "BAHRAIN MIDDLE EAST BANK B.S.C.", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 123081, "swift_code": "XBAHBHB1XXX", "bank_code": "XBAH", "branch_code": null, "branch": "PO Box 2303 ", "bank": "BAHRAIN STOCK EXCHANGE", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 198069, "swift_code": "BAHLBHBMXXX", "bank_code": "BAHL", "branch_code": null, "branch": "Al Seef District ", "bank": "BANK AL HABIB LIMITED", "address": null,"zip": null, "city": "AL SEEF"},
+{"id": 126698, "swift_code": "ALFHBHBMXXX", "bank_code": "ALFH", "branch_code": null, "branch": " FINANCIAL HARBOUR 1375 ", "bank": "BANK ALFALAH BAHRAIN", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 325384, "swift_code": "UINSBHBNXXX", "bank_code": "UINS", "branch_code": null, "branch": "Block 0428 Building No. 2304. Road 2830 31700 ", "bank": "BANK AL-KHAIR B.S.C. (C)", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  29069, "swift_code": "BARBBHBMXXX", "bank_code": "BARB", "branch_code": null, "branch": "303, Bab- Al- Bahrain building 2778 ", "bank": "BANK OF BARODA", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 188969, "swift_code": "BOTKBHBMXXX", "bank_code": "BOTK", "branch_code": null, "branch": "Bahrain Financial Harbour Floor 12. Office 1201 Centre ", "bank": "BANK OF TOKYO-MITSUBISHI UFJ, LTD., THE  BAHRAIN BRANCH", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMADL", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMBUD", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMCMK", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMCLG", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMMAX", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMLOP", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMDIP", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMERF", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMEXH", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMHTN", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMITN", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMCSU", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMMBR", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMMNM", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMMHF", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMMSF", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMREC", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMREF", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMREM", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMSAL", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMSUW", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMTSU", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMXXX", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 358307, "swift_code": "BBKUBHBMWRF", "bank_code": "BBKU", "branch_code": null, "branch": "43 Government Road ", "bank": "BBK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 330201, "swift_code": "BMUSBHBMWMB", "bank_code": "BMUS", "branch_code": null, "branch": "WORLD TRADE CENTER 350 ", "bank": "BMI BANK BSC (C)", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 330201, "swift_code": "BMUSBHBMXXX", "bank_code": "BMUS", "branch_code": null, "branch": "WORLD TRADE CENTER 350 ", "bank": "BMI BANK BSC (C)", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  10479, "swift_code": "BNPABHBCXXX", "bank_code": "BNPA", "branch_code": null, "branch": "West Tower, King Faisal Highway Bahrain Financial Harbour ", "bank": "BNP PARIBAS MANAMA, FULL COMMERCIAL BRANCH (FCB)", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  10479, "swift_code": "BNPABHBCWMI", "bank_code": "BNPA", "branch_code": null, "branch": "West Tower, King Faisal Highway Bahrain Financial Harbour ", "bank": "BNP PARIBAS MANAMA, FULL COMMERCIAL BRANCH (FCB)", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  10479, "swift_code": "BNPABHBCXXX", "bank_code": "BNPA", "branch_code": null, "branch": "West Tower, King Faisal Highway Bahrain Financial Harbour ", "bank": "BNP PARIBAS MANAMA, FULL COMMERCIAL BRANCH (FCB)", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  10479, "swift_code": "BNPABHBCOBU", "bank_code": "BNPA", "branch_code": null, "branch": "West Tower, King Faisal Highway Bahrain Financial Harbour ", "bank": "BNP PARIBAS MANAMA, FULL COMMERCIAL BRANCH (FCB)", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  10479, "swift_code": "BNPABHBCXXX", "bank_code": "BNPA", "branch_code": null, "branch": "West Tower, King Faisal Highway Bahrain Financial Harbour ", "bank": "BNP PARIBAS MANAMA, FULL COMMERCIAL BRANCH (FCB)", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 329213, "swift_code": "BATSBHB1XXX", "bank_code": "BATS", "branch_code": null, "branch": "Road 1734", "bank": "BRITISH AMERICAN TOBACCO MIDDLE EAST S.P.C.", "address": null,"zip": null, "city": "HIDD"},
+{"id":  17578, "swift_code": "CAABBHBMXXX", "bank_code": "CAAB", "branch_code": null, "branch": "", "bank": "CAIRO AMMAN BANK", "address": null,"zip": null, "city": ""},
+{"id":  29408, "swift_code": "CNRBBHBMXXX", "bank_code": "CNRB", "branch_code": null, "branch": "B1, AL ZAMIL TOWERS, BUILDING No. 31 NO. 162, 16TH FLOOR, MAIN TOWER 65170- CENTER ", "bank": "CANARA BANK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 105769, "swift_code": "BMAGBHBMXXX", "bank_code": "BMAG", "branch_code": null, "branch": "Building 96, Road 1702 317 ", "bank": "CENTRAL BANK OF BAHRAIN", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 390860, "swift_code": "CFGWBHB1XXX", "bank_code": "CFGW", "branch_code": null, "branch": "Government Road ", "bank": "CHARLES FULTON (GULF) WLL", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 153662, "swift_code": "CITIBHBXBBU", "bank_code": "CITI", "branch_code": null, "branch": "43 Government Avenue ", "bank": "CITIBANK N.A.", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 153662, "swift_code": "CITIBHBXTRD", "bank_code": "CITI", "branch_code": null, "branch": "43 Government Avenue ", "bank": "CITIBANK N.A.", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 153662, "swift_code": "CITIBHBXXXX", "bank_code": "CITI", "branch_code": null, "branch": "43 Government Avenue ", "bank": "CITIBANK N.A.", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  23272, "swift_code": "CLIBBHBBXXX", "bank_code": "CLIB", "branch_code": null, "branch": "428 DOHA TOWER 5576 ", "bank": "CREDIT LIBANAIS SAL", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 149503, "swift_code": "DENIBHBXXXX", "bank_code": "DENI", "branch_code": null, "branch": "Office 62/63 Al Jasrah Tover 6th Floor ", "bank": "DENIZBANK AS BAHRAIN", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  88174, "swift_code": "ILAFBHBMXXX", "bank_code": "ILAF", "branch_code": null, "branch": "2813 11939 ", "bank": "ELAF BANK BSC CLOSED", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  24808, "swift_code": "ESKBBHBMXXX", "bank_code": "ESKB", "branch_code": null, "branch": "Seef Districts, Almoayyed Tower", "bank": "ESKAN BANK", "address": null,"zip": null, "city": "SEEF AREA"},
+{"id":  26707, "swift_code": "FNNBBHBMXXX", "bank_code": "FNNB", "branch_code": null, "branch": "Flat 51 Building 150, Road 383 Unitag House 5th Floor 2435 ", "bank": "FINANSBANK A.S. BAHRAIN BRANCH", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  18361, "swift_code": "FEBBBHBMXXX", "bank_code": "FEBB", "branch_code": null, "branch": "Bahrain Financial Harbour West Tower, 20th floor 209 ", "bank": "FIRST ENERGY BANK", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  18543, "swift_code": "FLBBBHBBXXX", "bank_code": "FLBB", "branch_code": null, "branch": "1006 Road 2813 ", "bank": "FIRST LEASING BANK", "address": null,"zip": null, "city": "AL SEEF"},
+{"id": 247474, "swift_code": "GCCOBHB1XXX", "bank_code": "GCCO", "branch_code": null, "branch": "PO Box 2400 ", "bank": "GULF CUSTODY COMPANY -BHARAIN", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 145476, "swift_code": "GFHIBHBMXXX", "bank_code": "GFHI", "branch_code": null, "branch": "East Tower -POBox 10006 Bahrain Financial Harbour ", "bank": "GULF FINANCE HOUSE", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  95842, "swift_code": "GULFBHBMCLS", "bank_code": "GULF", "branch_code": null, "branch": "Al-Dowali Building, 3 Palace Avenue ", "bank": "GULF INTERNATIONAL BANK B.S.C.", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  95842, "swift_code": "GULFBHBMXXX", "bank_code": "GULF", "branch_code": null, "branch": "Al-Dowali Building, 3 Palace Avenue ", "bank": "GULF INTERNATIONAL BANK B.S.C.", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  18259, "swift_code": "HABBBHBMOBU", "bank_code": "HABB", "branch_code": null, "branch": "2nd Floor, Rd 1507, Block 315 ", "bank": "HABIB BANK LTD", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  18259, "swift_code": "HABBBHBMXXX", "bank_code": "HABB", "branch_code": null, "branch": "2nd Floor, Rd 1507, Block 315 ", "bank": "HABIB BANK LTD", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  38617, "swift_code": "HDFCBHBMXXX", "bank_code": "HDFC", "branch_code": null, "branch": "49 floor. Building no 1459, Road no 4626 Financial Harbour West tower ", "bank": "HDFC BANK LTD", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 250829, "swift_code": "HBHOBHBMXXX", "bank_code": "HBHO", "branch_code": null, "branch": "Government Avenue, Manama Center ", "bank": "THE HOUSING BANK FOR TRADE AND FINANCE - BAHRAIN BRANCH", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  78443, "swift_code": "BBMEBHBXXXX", "bank_code": "BBME", "branch_code": null, "branch": "Building 2505, Road 2832, Seef 428 304 ", "bank": "HSBC BANK MIDDLE EAST", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  78443, "swift_code": "BBMEBHBXOBU", "bank_code": "BBME", "branch_code": null, "branch": "Building 2505, Road 2832, Seef 428 304 ", "bank": "HSBC BANK MIDDLE EAST", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  40620, "swift_code": "ICICBHBMCOP", "bank_code": "ICIC", "branch_code": null, "branch": "GOVERNMENT AVENUE OFFICE NO.15, BUILDING 114 ", "bank": "ICICI BANK LIMITED", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  40620, "swift_code": "ICICBHBMGTS", "bank_code": "ICIC", "branch_code": null, "branch": "GOVERNMENT AVENUE OFFICE NO.15, BUILDING 114 ", "bank": "ICICI BANK LIMITED", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  40620, "swift_code": "ICICBHBMIOG", "bank_code": "ICIC", "branch_code": null, "branch": "GOVERNMENT AVENUE OFFICE NO.15, BUILDING 114 ", "bank": "ICICI BANK LIMITED", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  40620, "swift_code": "ICICBHBMTMG", "bank_code": "ICIC", "branch_code": null, "branch": "GOVERNMENT AVENUE OFFICE NO.15, BUILDING 114 ", "bank": "ICICI BANK LIMITED", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  40620, "swift_code": "ICICBHBMXXX", "bank_code": "ICIC", "branch_code": null, "branch": "GOVERNMENT AVENUE OFFICE NO.15, BUILDING 114 ", "bank": "ICICI BANK LIMITED", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  21978, "swift_code": "INGBBHBMXXX", "bank_code": "INGB", "branch_code": null, "branch": "UNITAG HOUSE, 8TH FL GOVERNMENT AVE 0 ", "bank": "ING BANK A.S. BAHRAIN BRANCH", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  49694, "swift_code": "INVCBHBMXXX", "bank_code": "INVC", "branch_code": null, "branch": "Investcorp House7 Building 499, Flat 61 ", "bank": "INVESTCORP BANK  B.S.C.", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 123921, "swift_code": "FIBHBHBMXXX", "bank_code": "FIBH", "branch_code": null, "branch": "Road 2825, Alseef District - Block 428 2078 Seef Tower, Ground Floor 2820 ", "bank": "ITHMAAR BANK B.S.C.", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 316552, "swift_code": "CHASBHBMKEY", "bank_code": "CHAS", "branch_code": null, "branch": "Bahrain World Trade Centre West Tower 14th floor ", "bank": "JPMORGAN CHASE BANK, N.A.", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 316552, "swift_code": "CHASBHBMXXX", "bank_code": "CHAS", "branch_code": null, "branch": "Bahrain World Trade Centre West Tower 14th floor ", "bank": "JPMORGAN CHASE BANK, N.A.", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 407326, "swift_code": "KOEXBHBMXXX", "bank_code": "KOEX", "branch_code": null, "branch": "5th Floor, Yateem Center Bldg ", "bank": "KOREA EXCHANGE BANK, BAHRAIN BRANCH", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  19120, "swift_code": "KHCBBHBMXXX", "bank_code": "KHCB", "branch_code": null, "branch": "AL ZAMIL TOWER 10006 ", "bank": "KHALEEJI COMMERCIAL BANK B.S.C.", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 250936, "swift_code": "KFHOBHBMXXX", "bank_code": "KFHO", "branch_code": null, "branch": "West Tower Bahrain World Trade Center 2066- 304 ", "bank": "KUWAIT FINANCE HOUSE", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  91088, "swift_code": "KTEFBHBMXXX", "bank_code": "KTEF", "branch_code": null, "branch": "Dilmun Tower A 121 Government Ave. 305 ", "bank": "KUWAIT TURKISH PARTICIPATION BANK BAHRAIN BRANCH", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 318043, "swift_code": "LMCSBHBMXXX", "bank_code": "LMCS", "branch_code": null, "branch": "8th and 9th Floor, LMC Building 11567 ", "bank": "LIQUIDITY MANAGEMENT CENTRE B.S.C", "address": null,"zip": null, "city": "AL SEEF"},
+{"id": 201813, "swift_code": "BOMLBHBMXXX", "bank_code": "BOML", "branch_code": null, "branch": "F 116, Bldg 122, Rd 160 Chamber of Commerce Bldg, G Flr ", "bank": "MASHREQBANK PSC", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  19460, "swift_code": "MUCBBHBMXXX", "bank_code": "MUCB", "branch_code": null, "branch": "3RD FL BKIC BLDG DIPLOMATIC AREA 10164 ", "bank": "MCB BANK LIMITED", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 381406, "swift_code": "MFSVBHB1XXX", "bank_code": "MFSV", "branch_code": null, "branch": "Unit 112, Seef", "bank": "MUBASHER FINANCIAL SERVICES", "address": null,"zip": null, "city": "SANABIS"},
+{"id":  47462, "swift_code": "MFSCBHBMXXX", "bank_code": "MFSC", "branch_code": null, "branch": "ROAD 1010, BLOCK 410, SANABIS ", "bank": "MUBASHER FINANCIAL SERVICES BSC BAHRAIN", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  52767, "swift_code": "NBADBHBMBRA", "bank_code": "NBAD", "branch_code": null, "branch": "Building No. 2611, Road No. 2833 5247 ", "bank": "NATIONAL BANK OF ABU DHABI", "address": null,"zip": null, "city": "AL SEEF"},
+{"id":  52767, "swift_code": "NBADBHBMTFO", "bank_code": "NBAD", "branch_code": null, "branch": "Building No. 2611, Road No. 2833 5247 ", "bank": "NATIONAL BANK OF ABU DHABI", "address": null,"zip": null, "city": "AL SEEF"},
+{"id":  52767, "swift_code": "NBADBHBMXXX", "bank_code": "NBAD", "branch_code": null, "branch": "Building No. 2611, Road No. 2833 5247 ", "bank": "NATIONAL BANK OF ABU DHABI", "address": null,"zip": null, "city": "AL SEEF"},
+{"id":  27079, "swift_code": "NBOBBHBMMTD", "bank_code": "NBOB", "branch_code": null, "branch": "Building 127 NBB Tower 106 ", "bank": "NATIONAL BANK OF BAHRAIN B.S.C", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  27079, "swift_code": "NBOBBHBMTOP", "bank_code": "NBOB", "branch_code": null, "branch": "Building 127 NBB Tower 106 ", "bank": "NATIONAL BANK OF BAHRAIN B.S.C", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  27079, "swift_code": "NBOBBHBMXXX", "bank_code": "NBOB", "branch_code": null, "branch": "Building 127 NBB Tower 106 ", "bank": "NATIONAL BANK OF BAHRAIN B.S.C", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 185263, "swift_code": "NBOKBHBMXXX", "bank_code": "NBOK", "branch_code": null, "branch": "Road 1702 Diplomatic Area ", "bank": "NATIONAL BANK OF KUWAIT", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 185263, "swift_code": "NBOKBHBMFCB", "bank_code": "NBOK", "branch_code": null, "branch": "Road 1702 Diplomatic Area ", "bank": "NATIONAL BANK OF KUWAIT", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  10179, "swift_code": "NBPABHBMXXX", "bank_code": "NBPA", "branch_code": null, "branch": "9 Manama Centre/Government Avenue ", "bank": "NATIONAL BANK OF PAKISTAN", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 247481, "swift_code": "NCCOBHBMXXX", "bank_code": "NCCO", "branch_code": null, "branch": "Rd 1705, Blck 317, Diplomatic Area 10363 ", "bank": "NCB CAPITAL", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  71201, "swift_code": "NIBEBHB1XXX", "bank_code": "NIBE", "branch_code": null, "branch": "Government Road ", "bank": "NIKKO INVESTMENT BANKING (MIDDLE EAST) EC", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 211809, "swift_code": "NIBMBHB1XXX", "bank_code": "NIBM", "branch_code": null, "branch": "Diplomatic Area ", "bank": "NOMURA INVESTMENT BANKING MIDDLE EA ST", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 407329, "swift_code": "NOEXBHB1XXX", "bank_code": "NOEX", "branch_code": null, "branch": "SHOP NO. 226 A, SHAIKH ISA AVENUE ", "bank": "NONOO EXCHANGE COMPANY BSC (C)", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 203282, "swift_code": "OSOLBHBMXXX", "bank_code": "OSOL", "branch_code": null, "branch": "Road 1704, Block 317 317 ", "bank": "Osool Asset Management B.S.C. (c)", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 387360, "swift_code": "MABWBHB1XXX", "bank_code": "MABW", "branch_code": null, "branch": "Yateem Centre ", "bank": "R.P. MARTIN (BAHRAIN) WLL", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  20973, "swift_code": "RAFBBHBMXXX", "bank_code": "RAFB", "branch_code": null, "branch": "Shop 46, Goverment Evanue Blk-305, 607 ", "bank": "RAFIDAIN BANK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 126793, "swift_code": "ROFHBHB1XXX", "bank_code": "ROFH", "branch_code": null, "branch": " ", "bank": "ROBERT FLEMING HOLDINGS LTD", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  19284, "swift_code": "SNCBBHBMCOM", "bank_code": "SNCB", "branch_code": null, "branch": "Floor 1 315 Road 1705 Diplomatic Area Diplomat Tower Block 317 ", "bank": "THE SAUDI NATIONAL COMMERCIAL BANK", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  19284, "swift_code": "SNCBBHBM861", "bank_code": "SNCB", "branch_code": null, "branch": "Floor 1 315 Road 1705 Diplomatic Area Diplomat Tower Block 317 ", "bank": "THE SAUDI NATIONAL COMMERCIAL BANK", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  19284, "swift_code": "SNCBBHBMXXX", "bank_code": "SNCB", "branch_code": null, "branch": "Floor 1 315 Road 1705 Diplomatic Area Diplomat Tower Block 317 ", "bank": "THE SAUDI NATIONAL COMMERCIAL BANK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 317946, "swift_code": "SICSBHBMXXX", "bank_code": "SICS", "branch_code": null, "branch": "Diplomatic Area ", "bank": "SECURITIES AND INVESTMENT CO. (B.S.C)", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  18480, "swift_code": "UIBBBHBMXXX", "bank_code": "UIBB", "branch_code": null, "branch": "Seera Building Block 428 Rd 2831 20363 ", "bank": "Seera Investment  Bank B.S.C. (CLOSED)", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 194082, "swift_code": "SCBLBHBMXXX", "bank_code": "SCBL", "branch_code": null, "branch": "Government Road Building No.180, Road 383 315 ", "bank": "STANDARD CHARTERED BANK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 194082, "swift_code": "SCBLBHBMOBU", "bank_code": "SCBL", "branch_code": null, "branch": "Government Road Building No.180, Road 383 315 ", "bank": "STANDARD CHARTERED BANK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 233940, "swift_code": "SBINBHBMFCB", "bank_code": "SBIN", "branch_code": null, "branch": "Bahrain Financial Harbour, 9th Floor, G B Corp Tower ", "bank": "STATE BANK OF INDIA, OBU", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 233940, "swift_code": "SBINBHBMXXX", "bank_code": "SBIN", "branch_code": null, "branch": "Bahrain Financial Harbour, 9th Floor, G B Corp Tower ", "bank": "STATE BANK OF INDIA, OBU", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  27787, "swift_code": "TCPBBHBMXXX", "bank_code": "TCPB", "branch_code": null, "branch": "1411 Road 4626 ", "bank": "TADHAMON CAPITAL BSC(C)", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  23003, "swift_code": "TAIBBHBMXXX", "bank_code": "TAIB", "branch_code": null, "branch": "TAIB Tower, Diplomatic Area 20485 ", "bank": "TAIB BANK B.S.C (C)", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  72793, "swift_code": "TRDEBHB1XXX", "bank_code": "TRDE", "branch_code": null, "branch": " ", "bank": "TRANS-ARABIAN DEVELOPMENT CO. EC", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  24466, "swift_code": "AFKBBHBMXXX", "bank_code": "AFKB", "branch_code": null, "branch": "", "bank": "TURKIYE FINANS KATILIM BANKASI A.S.", "address": null,"zip": null, "city": ""},
+{"id":  22769, "swift_code": "TRHBBHBMXXX", "bank_code": "TRHB", "branch_code": null, "branch": "Suite 3302 Almoayyed Tower, 33rd Floor ", "bank": "TURKIYE HALK BANKASI A.S. BAHRAIN (OBU) BRANCH", "address": null,"zip": null, "city": "AL SEEF"},
+{"id": 176912, "swift_code": "ISBKBHBMXXX", "bank_code": "ISBK", "branch_code": null, "branch": "Al Jasrah Tower Road 1702, Area 317,Diplomatic Area ", "bank": "TURKIYE IS BANKASI A.S. BAHRAIN OFFSHORE BRANCH", "address": null,"zip": null, "city": "MANAMA"},
+{"id":   1241, "swift_code": "TVBABHBMXXX", "bank_code": "TVBA", "branch_code": null, "branch": "OFFICE 102/103 ROAD 1704 AL ROSSAIS TOWER FLOOR 10 ", "bank": "TURKIYE VAKIFLAR BANKASI T.A.O. BAHRAIN BRANCH (OBU)", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 199102, "swift_code": "UNILBHBMXXX", "bank_code": "UNIL", "branch_code": null, "branch": "Road 2806 & 2813, Adex Tower, Ground Floor 304 ", "bank": "UNITED BANK LIMITED, MANAMA", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 199102, "swift_code": "UNILBHBMTRY", "bank_code": "UNIL", "branch_code": null, "branch": "Road 2806 & 2813, Adex Tower, Ground Floor 304 ", "bank": "UNITED BANK LIMITED, MANAMA", "address": null,"zip": null, "city": "MANAMA"},
+{"id":  31272, "swift_code": "UGUBBHBMXXX", "bank_code": "UGUB", "branch_code": null, "branch": "Diplomatic Area, UGB Tower 5964 ", "bank": "UNITED GULF BANK B.S.C. UGB Tower", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 355934, "swift_code": "UNGUBHB1XXX", "bank_code": "UNGU", "branch_code": null, "branch": "Diplomatic Area ", "bank": "UNITED GULF BANK SECURITIES CO.", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 176509, "swift_code": "VCBKBHBMXXX", "bank_code": "VCBK", "branch_code": null, "branch": "Building Road 1704, Block 31 1704 Venture Capital Bank Building 11755 ", "bank": "VENTURE CAPITAL BANK", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 176989, "swift_code": "HVBKBHBMXXX", "bank_code": "HVBK", "branch_code": null, "branch": "4th, Government Road Manama Centre Building Entrance 1 ", "bank": "WOORI BANK, MANAMA", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 150772, "swift_code": "YAPIBHBXXXX", "bank_code": "YAPI", "branch_code": null, "branch": "2nd floor, Diplomatic area Bahrain Development Bank Building 10615 ", "bank": "YAPI VE KREDI BANKASI BAHRAIN OFFSHORE BANKING UNIT", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 233921, "swift_code": "ZAINBHBMXXX", "bank_code": "ZAIN", "branch_code": null, "branch": "Al Afoo, Road 662, Road 2811 ", "bank": "ZAIN BAHRAIN B.S.C CLOSED", "address": null,"zip": null, "city": "MANAMA"},
+{"id": 167101, "swift_code": "ZENJBHBMXXX", "bank_code": "ZENJ", "branch_code": null, "branch": "12 ROAD 385 ", "bank": "ZENJ EXCHANGE CO. W.L.L", "address": null,"zip": null, "city": "MANAMA"}
     ]
 }
