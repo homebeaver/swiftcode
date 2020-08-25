@@ -1,216 +1,36 @@
 {
     "country": "Gibraltar",
     "country_code": "GI",
+    "isSEPAcountry": true,
     "list": [
-        {
-            "id": 1,
-            "bank": "3GT ACTIVE TRADING FUNDS PCC LTD",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "ATFCGI21"
-        },
-        {
-            "id": 2,
-            "bank": "BALTICA BANK (GIBRALTAR) LTD",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "BBALGIG1"
-        },
-        {
-            "id": 3,
-            "bank": "BANK J. SAFRA SARASIN (GIBRALTAR) LTD",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "BJSBGIGX"
-        },
-        {
-            "id": 4,
-            "bank": "BARCLAYS BANK PLC",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "BARCGIG10GI"
-        },
-        {
-            "id": 5,
-            "bank": "BARCLAYS BANK PLC",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "BARCGIG1PCI"
-        },
-        {
-            "id": 6,
-            "bank": "BARCLAYS BANK PLC",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "BARCGIGI"
-        },
-        {
-            "id": 7,
-            "bank": "BARCLAYTRUST INTERNATIONAL NOMINEES (GIBRALTAR) LIMITED",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "BIGIGIG1"
-        },
-        {
-            "id": 8,
-            "bank": "CLOSE BROTHERS MARRACHE BANK LIMITED",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "CLOSGIG1"
-        },
-        {
-            "id": 9,
-            "bank": "CREDIT SUISSE (GIBRALTAR) LTD",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "CRESGIGI"
-        },
-        {
-            "id": 10,
-            "bank": "FACTUM CAPITAL LTD",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "FACCGIG1"
-        },
-        {
-            "id": 11,
-            "bank": "GIBRALTAR AND IBERIAN BANK LTD",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "GIBIGIG1"
-        },
-        {
-            "id": 12,
-            "bank": "GIBRALTAR ASSET MANAGEMENT LIMITED",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "GIAMGIG1"
-        },
-        {
-            "id": 13,
-            "bank": "GIBRALTAR INTERNATIONAL BANK LIMITED",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "GIBKGIGI"
-        },
-        {
-            "id": 14,
-            "bank": "GSB LIMITED",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "IETGGIG1"
-        },
-        {
-            "id": 15,
-            "bank": "GUEVORA FUND LIMITED",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "GUFUGIG1"
-        },
-        {
-            "id": 16,
-            "bank": "GUEVOURA FUND LIMITED",
-            "city": "MARINA BAY",
-            "branch": null,
-            "swift_code": "GUFNGIG1"
-        },
-        {
-            "id": 17,
-            "bank": "INDIGO FUTURES LTD.",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "IDFUGIG1"
-        },
-        {
-            "id": 18,
-            "bank": "JYSKE BANK (GIBRALTAR) LTD.",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "JYBAGIGI"
-        },
-        {
-            "id": 19,
-            "bank": "LLOYDS BANK (GIBRALTAR) LIMITED",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "LOYDGIGI"
-        },
-        {
-            "id": 20,
-            "bank": "LLOYDS BANK (GIBRALTAR) LIMITED",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "LOYDGIB1"
-        },
-        {
-            "id": 21,
-            "bank": "LLOYDS TSB BANK PLC",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "LOYDGIG1"
-        },
-        {
-            "id": 22,
-            "bank": "LOMBARD ODIER AND CIE (GIBRALTAR) LTD",
-            "city": "GIBRALTAR",
-            "branch": "(NDP DEPT)",
-            "swift_code": "LOCYGIGINDP"
-        },
-        {
-            "id": 23,
-            "bank": "LOMBARD ODIER AND CIE (GIBRALTAR) LTD",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "LOCYGIGI"
-        },
-        {
-            "id": 24,
-            "bank": "MASSEY FUND LIMITED",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "MSFUGIG1"
-        },
-        {
-            "id": 25,
-            "bank": "NATWEST OFFSHORE-GIBRALTAR",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "RBOSGI21"
-        },
-        {
-            "id": 26,
-            "bank": "NATWEST-GIBRALTAR",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "RBOSGIGI"
-        },
-        {
-            "id": 27,
-            "bank": "NOVISTA INSURANCE LTD",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "NOVRGIGI"
-        },
-        {
-            "id": 28,
-            "bank": "SG HAMBROS BANK (GIBRALTAR) LIMITED",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "HAMBGIGI"
-        },
-        {
-            "id": 29,
-            "bank": "SPRINGFIELD BANK AND TRUST LTD",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "SPRNGIG1"
-        },
-        {
-            "id": 30,
-            "bank": "TURICUM PRIVATE BANK LIMITED",
-            "city": "GIBRALTAR",
-            "branch": null,
-            "swift_code": "TURCGIGI"
-        }
-    ]
+{"id":  39026, "swift_code": "ATFCGI21XXX", "bank_code": "ATFC", "branch_code": null, "branch": "", "bank": "3GT ACTIVE TRADING FUNDS PCC LTD", "address": null, "zip": null, "city": ""},
+{"id": 193363, "swift_code": "BBALGIG1XXX", "bank_code": "BBAL", "branch_code": null, "branch": "", "bank": "BALTICA BANK (GIBRALTAR) LTD", "address": null, "zip": null, "city": ""},
+{"id":  29979, "swift_code": "BJSBGIGXXXX", "bank_code": "BJSB", "branch_code": null, "branch": "9.8.INTERN. COMMERCIAL CENTER MAIN STREET 2A", "bank": "BANK J. SAFRA SARASIN (GIBRALTAR) LTD", "address": null, "zip": null, "city": "GIBRALTAR"},
+{"id":  46645, "swift_code": "BARCGIGI0GI", "bank_code": "BARC", "branch_code": null, "branch": "REGAL HOUSE QUEENSWAY", "bank": "BARCLAYS BANK PLC", "address": null, "zip": null, "city": "GIBRALTAR"},
+{"id":  46645, "swift_code": "BARCGIGIPCI", "bank_code": "BARC", "branch_code": null, "branch": "REGAL HOUSE QUEENSWAY", "bank": "BARCLAYS BANK PLC", "address": null, "zip": null, "city": "GIBRALTAR"},
+{"id":  46645, "swift_code": "BARCGIGIXXX", "bank_code": "BARC", "branch_code": null, "branch": "REGAL HOUSE QUEENSWAY", "bank": "BARCLAYS BANK PLC", "address": null, "zip": null, "city": "GIBRALTAR"},
+{"id": 144873, "swift_code": "BIGIGIG1XXX", "bank_code": "BIGI", "branch_code": null, "branch": "", "bank": "BARCLAYTRUST INTERNATIONAL NOMINEES (GIBRALTAR) LIMITED", "address": null, "zip": null, "city": ""},
+{"id": 326120, "swift_code": "CLOSGIG1XXX", "bank_code": "CLOS", "branch_code": null, "branch": "", "bank": "CLOSE BROTHERS MARRACHE BANK LIMITED", "address": null, "zip": null, "city": ""},
+{"id": 319516, "swift_code": "CRESGIGIXXX", "bank_code": "CRES", "branch_code": null, "branch": "NEPTUNE HOUSE SUITE 107 MARINE BAY", "bank": "CREDIT SUISSE (GIBRALTAR) LTD", "address": null, "zip": null, "city": "GIBRALTAR", "support_codes": 1},
+{"id":  36509, "swift_code": "FACCGIG1XXX", "bank_code": "FACC", "branch_code": null, "branch": "", "bank": "FACTUM CAPITAL LTD", "address": null, "zip": null, "city": ""},
+{"id": 141498, "swift_code": "GIBIGIG1XXX", "bank_code": "GIBI", "branch_code": null, "branch": "", "bank": "GIBRALTAR AND IBERIAN BANK LTD", "address": null, "zip": null, "city": ""},
+{"id": 211126, "swift_code": "GIAMGIG1XXX", "bank_code": "GIAM", "branch_code": null, "branch": "", "bank": "GIBRALTAR ASSET MANAGEMENT LIMITED", "address": null, "zip": null, "city": ""},
+{"id": 176650, "swift_code": "GIBKGIGIXXX", "bank_code": "GIBK", "branch_code": null, "branch": "PO BOX 1375 UNIT 2.2.09  BLOCK 2 EUROTOWERS", "bank": "GIBRALTAR INTERNATIONAL BANK LIMITED", "address": null, "zip": null, "city": "GIBRALTAR", "support_codes": 1},
+{"id": 118412, "swift_code": "IETGGIG1XXX", "bank_code": "IETG", "branch_code": null, "branch": "", "bank": "GSB LIMITED", "address": null, "zip": null, "city": ""},
+{"id": 355426, "swift_code": "GUFUGIG1XXX", "bank_code": "GUFU", "branch_code": null, "branch": "", "bank": "GUEVORA FUND LIMITED", "address": null, "zip": null, "city": ""},
+{"id": 232394, "swift_code": "GUFNGIG1XXX", "bank_code": "GUFN", "branch_code": null, "branch": "", "bank": "GUEVOURA FUND LIMITED", "address": null, "zip": null, "city": ""},
+{"id": 354986, "swift_code": "IDFUGIG1XXX", "bank_code": "IDFU", "branch_code": null, "branch": "", "bank": "INDIGO FUTURES LTD.", "address": null, "zip": null, "city": ""},
+{"id":   1309, "swift_code": "JYBAGIGIXXX", "bank_code": "JYBA", "branch_code": null, "branch": "76 MAIN STREET", "bank": "JYSKE BANK (GIBRALTAR) LTD.", "address": null, "zip": null, "city": "GIBRALTAR", "support_codes": 7},
+{"id":  69327, "swift_code": "LOYDGIGIXXX", "bank_code": "LOYD", "branch_code": null, "branch": "323 MAIN STREET", "bank": "LLOYDS TSB BANK (GIBRALTAR) LIMITED", "address": null, "zip": null, "city": "GIBRALTAR"},
+{"id":  69327, "swift_code": "LOYDGIGIXXX", "bank_code": "LOYD", "branch_code": null, "branch": "323 MAIN STREET", "bank": "LLOYDS TSB BANK (GIBRALTAR) LIMITED", "address": null, "zip": null, "city": "GIBRALTAR"},
+{"id":  69327, "swift_code": "LOYDGIGIXXX", "bank_code": "LOYD", "branch_code": null, "branch": "323 MAIN STREET", "bank": "LLOYDS TSB BANK (GIBRALTAR) LIMITED", "address": null, "zip": null, "city": "GIBRALTAR"},
+{"id": 423551, "swift_code": "LOCYGIGINDP", "bank_code": "LOCY", "branch_code": null, "branch": "EUROPORT SUITE 921", "bank": "LOMBARD ODIER AND CIE (GIBRALTAR) LTD", "address": null, "zip": null, "city": "GIBRALTAR"},
+{"id": 423551, "swift_code": "LOCYGIGIXXX", "bank_code": "LOCY", "branch_code": null, "branch": "EUROPORT SUITE 921", "bank": "LOMBARD ODIER AND CIE (GIBRALTAR) LTD", "address": null, "zip": null, "city": "GIBRALTAR"},
+{"id": 355380, "swift_code": "MSFUGIG1XXX", "bank_code": "MSFU", "branch_code": null, "branch": "", "bank": "MASSEY FUND LIMITED", "address": null, "zip": null, "city": ""},
+{"id": 325875, "swift_code": "RBOSGIGIXXX", "bank_code": "RBOS", "branch_code": null, "branch": "NATIONAL WESTMINSTER HOUSE ST LINE WALL STREET", "bank": "NATWEST-GIBRALTAR", "address": null, "zip": null, "city": "GIBRALTAR", "support_codes": 1},
+{"id": 325875, "swift_code": "RBOSGIGIXXX", "bank_code": "RBOS", "branch_code": null, "branch": "NATIONAL WESTMINSTER HOUSE ST LINE WALL STREET", "bank": "NATWEST-GIBRALTAR", "address": null, "zip": null, "city": "GIBRALTAR", "support_codes": 1},
+{"id": 313365, "swift_code": "NOVRGIGIXXX", "bank_code": "NOVR", "branch_code": null, "branch": "57/63 LINE WALL ROAD", "bank": "NOVISTA INSURANCE LTD", "address": null, "zip": null, "city": "GIBRALTAR"},
+{"id":  25695, "swift_code": "HAMBGIGIXXX", "bank_code": "HAMB", "branch_code": null, "branch": "HAMBRO HOUSE 32 LINE WALL ROAD", "bank": "SG HAMBROS BANK (GIBRALTAR) LIMITED", "address": null, "zip": null, "city": "GIBRALTAR", "support_codes": 1},
+{"id": 240388, "swift_code": "SPRNGIG1XXX", "bank_code": "SPRN", "branch_code": null, "branch": "", "bank": "SPRINGFIELD BANK AND TRUST LTD", "address": null, "zip": null, "city": ""},
+{"id":  47183, "swift_code": "TURCGIGIXXX", "bank_code": "TURC", "branch_code": null, "branch": "Turicum House 315 Main Street", "bank": "TURICUM PRIVATE BANK LIMITED", "address": null, "zip": null, "city": "Gibraltar"}    ]
 }
