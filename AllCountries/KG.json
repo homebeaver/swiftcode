@@ -1,0 +1,33 @@
+{
+    "country": "Kyrgyzstan",
+    "country_code": "KG",
+    "ISO_3166_1": { "name": "Kyrgyzstan" , "name_fr": "Kirghizistan (le)" , "alpha2": "KG" , "alpha3": "KGZ" , "numeric": 417 },
+    "list": [
+{ "id": 1, "bank": "OJSC AIYL BANK", "city": "BISHKEK", "branch": null, "swift_code": "AIYLKG22XXX" },
+{ "id": 2, "bank": "AMANBANK (JOINT-STOCK RUSSIAN-KYRGYZ AMANBANK)", "city": "BISHKEK", "branch": null, "swift_code": "AJRAKG22XXX" },
+{ "id": 3, "bank": "THE OPEN JOINT-STOCK COMPANY CAPITAL BANK", "city": "BISHKEK", "branch": null, "swift_code": "AKILKG22XXX" },
+{ "id": 4, "bank": "BAI-TUSHUM BANK CJSC", "city": "BISHKEK", "branch": null, "swift_code": "BBTPKG22XXX" },
+{ "id": 5, "bank": "CJSC ECOISLAMICBANK", "city": "BISHKEK", "branch": null, "swift_code": "ECBIKG22XXX" },
+{ "id": 6, "bank": "BTA BANK CJSC (FORMERLY INEXIMBANK CJSC), BISHKEK,KG", "city": "BISHKEK", "branch": null, "swift_code": "EIMBKG22XXX" },
+{ "id": 7, "bank": "OPTIMA BANK OJSC", "city": "BISHKEK", "branch": null, "swift_code": "ENEJKG22XXX" },
+{ "id": 8, "bank": "CJSC FINCA BANK", "city": "BISHKEK", "branch": null, "swift_code": "FBANKG22XXX" },
+{ "id": 9, "bank": "OJSC KYRGYZKOMMERTSBANK", "city": "BISHKEK", "branch": null, "swift_code": "KAKYKG22XXX" },
+{ "id": 10, "bank": "KYRGYZ-SWISS BANK CJSC", "city": "BISHKEK", "branch": null, "swift_code": "KSBCKG22XXX" },
+{ "id": 11, "bank": "EURASIAN SAVINGS BANK, OJSC", "city": "BISHKEK", "branch": null, "swift_code": "KYRGKG22XXX" },
+{ "id": 12, "bank": "OJSC COMMERCIAL BANK KYRGYZSTAN", "city": "BISHKEK", "branch": null, "swift_code": "KYRSKG22XXX" },
+{ "id": 13, "bank": "OJSC HALYK BANK KYRGYZSTAN", "city": "BISHKEK", "branch": null, "swift_code": "MAKAKG22XXX" },
+{ "id": 14, "bank": "NATIONAL BANK OF THE KYRGYZ REPUBLIC", "city": "BISHKEK", "branch": null, "swift_code": "NBKIKG22XXX" },
+{ "id": 15, "bank": "NATIONAL BANK OF PAKISTAN BISHKEK BRANCH", "city": "BISHKEK", "branch": null, "swift_code": "NBPAKG22XXX" },
+{ "id": 16, "bank": "OJSC RUSSIAN INVESTMENT BANK", "city": "BISHKEK", "branch": null, "swift_code": "RINBKG22XXX" },
+{ "id": 17, "bank": "OJSC RSK BANK", "city": "BISHKEK", "branch": null, "swift_code": "SESVKG22XXX" },
+{ "id": 18, "bank": "TOLUBAY BANK - CLOSED JOINT STOCK COMPANY", "city": "BISHKEK", "branch": null, "swift_code": "TOLUKG22XXX" },
+{ "id": 19, "bank": "DEMIR KYRGYZ INTERNATIONAL BANK", "city": "BISHKEK", "branch": null, "swift_code": "DEMIKG22XXX" },
+{ "id": 20, "bank": "BANK OF ASIA CJSC", "city": "BISHKEK", "branch": null, "swift_code": "ASCJKG22XXX" },
+{ "id": 21, "bank": "BAKAI BANK OJSC", "city": "BISHKEK", "branch": null, "swift_code": "BAKAKG22XXX" },
+{ "id": 22, "bank": "DOS-CREDOBANK OJSC", "city": "BISHKEK", "branch": null, "swift_code": "DOSSKG22XXX" },
+{ "id": 23, "bank": "FINANCECREDITBANK KAB", "city": "BISHKEK", "branch": null, "swift_code": "FIKBKG22XXX" },
+{ "id": 24, "bank": "KYRGYZ INVESTMENT AND CREDIT BANK", "city": "BISHKEK", "branch": null, "swift_code": "KICBKG22XXX" },
+{ "id": 25, "bank": "INVESTMENT BANK CHANG AN OJSC", "city": "BISHKEK", "branch": null, "swift_code": "IBCHKG22XXX" },
+{ "id": 26, "bank": "KOMPANION BANK CLOSED JOINT-STOCK COMPANY", "city": "BISHKEK", "branch": null, "swift_code": "KOMPKG22XXX" }
+    ]
+}
