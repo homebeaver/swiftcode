@@ -1,0 +1,16 @@
+{
+    "country": "Maldives",
+    "country_code": "MV",
+    "ISO_3166_1": { "name": "Maldives" , "name_fr": "Maldives (les)" , "alpha2": "MV" , "alpha3": "MDV" , "numeric": 462 },
+    "list": [
+{ "id": 1, "bank": "BANK OF CEYLON", "city": "MALE", "branch": null, "swift_code": "BCEYMVMVXXX" },
+{ "id": 2, "bank": "HABIB BANK LIMITED", "city": "MALE", "branch": null, "swift_code": "HABBMVMVXXX" },
+{ "id": 3, "bank": "HONGKONG AND SHANGHAI BANKING CORPORATION LIMITED, THE", "city": "MALE", "branch": null, "swift_code": "HSBCMVMVXXX" },
+{ "id": 4, "bank": "MALDIVES ISLAMIC BANK PVT. LTD", "city": "MALE", "branch": null, "swift_code": "MADVMVMVXXX" },
+{ "id": 5, "bank": "BANK OF MALDIVES PLC.", "city": "MALE", "branch": null, "swift_code": "MALBMVMVXXX" },
+{ "id": 6, "bank": "THE MAURITIUS COMMERCIAL BANK LIMITED", "city": "MALE", "branch": null, "swift_code": "MCBLMVMVXXX" },
+{ "id": 7, "bank": "MALDIVES MONETARY AUTHORITY", "city": "MALE", "branch": null, "swift_code": "MMAUMVMVXXX" },
+{ "id": 8, "bank": "STATE BANK OF INDIA", "city": "MALE", "branch": null, "swift_code": "SBINMVMVXXX" },
+{ "id": 9, "bank": "COMMERCIAL BANK OF MALDIVES PRIVATE LIMITED", "city": "MALE", "branch": null, "swift_code": "CBMVMVMVXXX" }
+    ]
+}
