@@ -1,0 +1,28 @@
+{
+    "country": "Nicaragua",
+    "country_code": "NI",
+    "ISO_3166_1": { "name": "Nicaragua" , "name_fr": "Nicaragua (le)" , "alpha2": "NI" , "alpha3": "NIC" , "numeric": 558 },
+    "list": [
+{ "id": 1, "bank": "BANCO DE AMERICA CENTRAL", "city": "MANAGUA", "branch": null, "swift_code": "BAMCNIMAXXX" },
+{ "id": 2, "bank": "BANCO DE LA PRODUCCION S.A.", "city": "MANAGUA", "branch": null, "swift_code": "BAPRNIMAXXX" },
+{ "id": 3, "bank": "BANCO LAFISE BANCENTRO, S.A.", "city": "MANAGUA", "branch": null, "swift_code": "BCCENIMAXXX" },
+{ "id": 4, "bank": "BANCO DE CENTRO AMERICA", "city": "MANAGUA", "branch": null, "swift_code": "BCEANIM1XXX" },
+{ "id": 5, "bank": "BANCO CENTROAMERICANO DE INTEGRACION ECONOMICA", "city": "MANAGUA", "branch": null, "swift_code": "BCIENIM1XXX" },
+{ "id": 6, "bank": "BANCO CENTRAL DE NICARAGUA", "city": "MANAGUA", "branch": null, "swift_code": "BCNINIMAXXX" },
+{ "id": 7, "bank": "BANCO EUROPEO DE CENTRO AMERICA, S.A.", "city": "MANAGUA", "branch": null, "swift_code": "BEUCNIM1XXX" },
+{ "id": 8, "bank": "BANCO MERCANTIL", "city": "MANAGUA", "branch": null, "swift_code": "BMRCNIM1XXX" },
+{ "id": 9, "bank": "BANCO NACIONAL DE DESARROLLO", "city": "MANAGUA", "branch": null, "swift_code": "BNDENIM1XXX" },
+{ "id": 10, "bank": "BANCO CORPORATIVO, S. A.", "city": "MANAGUA", "branch": null, "swift_code": "BOFPNIMAXXX" },
+{ "id": 11, "bank": "BANCO DE PRESTAMOS", "city": "MANAGUA", "branch": null, "swift_code": "BPRENIM1XXX" },
+{ "id": 12, "bank": "BANCO FICOHSA NICARAGUA S.A.", "city": "MANAGUA", "branch": null, "swift_code": "BUNONIMAXXX" },
+{ "id": 13, "bank": "BANCO DE LA VIVIENDA DE NICARAGUA", "city": "MANAGUA", "branch": null, "swift_code": "BVISNIM1XXX" },
+{ "id": 14, "bank": "CITIBANK N.A.", "city": "MANAGUA", "branch": null, "swift_code": "CITINIM1XXX" },
+{ "id": 15, "bank": "BANCO DE CREDITO POPULAR", "city": "MANAGUA", "branch": null, "swift_code": "CRPONIM1XXX" },
+{ "id": 16, "bank": "BANCO DE EXPORTACION", "city": "MANAGUA", "branch": null, "swift_code": "EXPTNIM1XXX" },
+{ "id": 17, "bank": "BANCO AVANZ S.A.", "city": "MANAGUA", "branch": null, "swift_code": "PRCBNIMAXXX" },
+{ "id": 18, "bank": "BRITISH AMERICAN TOBACCO CENTRAL AMERICA S.A., SUCURSAL NICARAGUA", "city": "MANAGUA", "branch": null, "swift_code": "BATSNIM1XXX" },
+{ "id": 19, "bank": "BANCO DE FINANZAS, S.A.(BDF)", "city": "MANAGUA", "branch": null, "swift_code": "BBDFNIMAXXX" },
+{ "id": 20, "bank": "CENTRAL NICARAGUEENSE DE VALORES, S.A.", "city": "MANAGUA", "branch": null, "swift_code": "CNVCNIM1XXX" },
+{ "id": 21, "bank": "BANCO ATLANTIDA NICARAGUA, SOCIEDAD ANONIMA", "city": "MANAGUA", "branch": null, "swift_code": "ATTDNIMAXXX" }
+    ]
+}

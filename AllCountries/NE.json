@@ -1,0 +1,26 @@
+{
+    "country": "Niger",
+    "country_code": "NE",
+    "ISO_3166_1": { "name": "Niger (the)" , "name_fr": "Niger (le)" , "alpha2": "NE" , "alpha3": "NER" , "numeric": 562 },
+    "list": [
+{ "id": 1, "bank": "BANK OF AFRICA NIGER", "city": "NIAMEY", "branch": null, "swift_code": "AFRINENIXXX" },
+{ "id": 2, "bank": "BANQUE CENTRALE DES ETATS DE L'AFRIQUE DE L'OUEST", "city": "NIAMEY", "branch": null, "swift_code": "BCAONENIXXX" },
+{ "id": 3, "bank": "BANQUE CENTRALE DES ETATS DE L'AFRIQUE DE L'OUEST", "city": "ZINDER", "branch": "(ZINDER BRANCH)", "swift_code": "BCAONENIZIN" },
+{ "id": 4, "bank": "BANQUE COMMERCIALE DU NIGER", "city": "NIAMEY", "branch": null, "swift_code": "BCDNNENIXXX" },
+{ "id": 5, "bank": "BANQUE INTERNATIONALE POUR L'AFRIQUE AU NIGER", "city": "NIAMEY", "branch": null, "swift_code": "BIANNENIXXX" },
+{ "id": 6, "bank": "BANQUE ISLAMIQUE DU NIGER POUR LE COMMERCE ET L'INVESTISSEMENT", "city": "NIAMEY", "branch": null, "swift_code": "BICVNENIXXX" },
+{ "id": 7, "bank": "BANQUE REGIONALE DE MARCHES", "city": "NIAMEY", "branch": null, "swift_code": "BRMXNENIXXX" },
+{ "id": 8, "bank": "BANQUE SAHELO-SAHARIENNE POUR L'INVESTISSEMENT ET LE COMMERCE (NIGER) S.A.", "city": "NIAMEY", "branch": null, "swift_code": "BSAHNENIXXX" },
+{ "id": 9, "bank": "ECOBANK NIGER ECN", "city": "NIAMEY", "branch": null, "swift_code": "ECOCNENIXXX" },
+{ "id": 10, "bank": "CITIBANK NIGERIA LIMITED", "city": "NIAMEY", "branch": null, "swift_code": "NIBANEN1XXX" },
+{ "id": 11, "bank": "ORABANK NIGER", "city": "NIAMEY", "branch": null, "swift_code": "ORBKNENIXXX" },
+{ "id": 12, "bank": "SOCIETE NIGERIENNE DE BANQUE", "city": "NIAMEY", "branch": null, "swift_code": "SOCNNENIXXX" },
+{ "id": 13, "bank": "BANQUE CENTRALE DES ETATS DE L'AFRIQUE DE L'OUEST", "city": "MARADI", "branch": "(MARADI BRANCH)", "swift_code": "BCAONENIMAR" },
+{ "id": 14, "bank": "CBAO GROUPE ATTIJARIWAFA BANK", "city": "NIAMEY", "branch": null, "swift_code": "CBAONENIXXX" },
+{ "id": 15, "bank": "BANQUE ATLANTIQUE NIGER", "city": "NIAMEY", "branch": null, "swift_code": "ATNENENIXXX" },
+{ "id": 16, "bank": "BANQUE AGRICOLE DU NIGER", "city": "NIAMEY", "branch": null, "swift_code": "BANENENIXXX" },
+{ "id": 17, "bank": "DEPOSITAIRE CENTRAL-BANQUE DE REGLEMENT (DCBR NIGER)", "city": "NIAMEY", "branch": null, "swift_code": "DCRRNEN1XXX" },
+{ "id": 18, "bank": "CORIS BANK INTERNATIONAL SA-BRANCH OF NIGER", "city": "NIAMEY", "branch": null, "swift_code": "CORINENIXXX" },
+{ "id": 19, "bank": "BANQUE DE L'HABITAT DU NIGER - BHN", "city": "NIAMEY", "branch": null, "swift_code": "BHDNNENIXXX" }
+    ]
+}
