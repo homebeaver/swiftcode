@@ -1,0 +1,19 @@
+{
+    "country": "Korea",
+    "country_code": "KP",
+    "ISO_3166_1": { "name": "Korea (the Democratic People's Republic of)" , "name_fr": "Corée (la République populaire démocratique de)" , "alpha2": "KP" , "alpha3": "PRK" , "numeric": 408 },
+    "list": [
+{ "id": 1, "bank": "BANK OF EAST LAND, PYONGYANG", "city": "PYONGYANG", "branch": null, "swift_code": "BOELKPP1XXX" },
+{ "id": 2, "bank": "FOREIGN TRADE BANK OF THE D.P.R. OF KOREA", "city": "PYONGYANG", "branch": null, "swift_code": "FTBDKPP1KBC" },
+{ "id": 3, "bank": "FOREIGN TRADE BANK OF THE D.P.R. OF KOREA", "city": "PYONGYANG", "branch": null, "swift_code": "FTBDKPP1XXX" },
+{ "id": 4, "bank": "KOREA DAESONG BANK", "city": "PYONGYANG", "branch": null, "swift_code": "KDBKKPP1XXX" },
+{ "id": 5, "bank": "KORYO CREDIT DEVELOPMENT BANK", "city": "PYONGYANG", "branch": null, "swift_code": "KGCBKPP1XXX" },
+{ "id": 6, "bank": "KOREA KWANGSON BANKING CORP.", "city": "PYONGYANG", "branch": null, "swift_code": "KKBCKPP1XXX" },
+{ "id": 7, "bank": "KUMGANG BANK", "city": "PYONGYANG", "branch": null, "swift_code": "KMBKKPP1XXX" },
+{ "id": 8, "bank": "NORTH EAST ASIA BANK", "city": "PYONGYANG", "branch": null, "swift_code": "NEABKPP1XXX" },
+{ "id": 9, "bank": "BRILLIANCE BANKING CORPORATION LTD.", "city": "PYONGYANG", "branch": null, "swift_code": "BRBKKPP1XXX" },
+{ "id": 10, "bank": "DAEDONG CREDIT BANK", "city": "PYONGYANG", "branch": null, "swift_code": "DCBKKPP1XXX" },
+{ "id": 11, "bank": "KORYO COMMERCIAL BANK LTD.", "city": "PYONGYANG", "branch": null, "swift_code": "KCBKKPP1XXX" },
+{ "id": 12, "bank": "GOLDEN TRIANGLE BANK", "city": "NAMSAN", "branch": null, "swift_code": "KGTBKPP1XXX" }
+    ]
+}
