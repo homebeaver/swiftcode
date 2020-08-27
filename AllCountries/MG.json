@@ -1,0 +1,23 @@
+{
+    "country": "Madagascar",
+    "country_code": "MG",
+    "ISO_3166_1": { "name": "Madagascar" , "name_fr": "Madagascar" , "alpha2": "MG" , "alpha3": "MDG" , "numeric": 450 },
+    "list": [
+{ "id": 1, "bank": "ACCESBANQUE MADAGASCAR", "city": "ANTANANARIVO", "branch": null, "swift_code": "ABMGMGMGXXX" },
+{ "id": 2, "bank": "BANK OF AFRICA MADAGASCAR", "city": "ANTANANARIVO", "branch": null, "swift_code": "AFRIMGMGXXX" },
+{ "id": 3, "bank": "BM MADAGASCAR S.A", "city": "ANTANANARIVO", "branch": null, "swift_code": "BAIMMGMGXXX" },
+{ "id": 4, "bank": "BFV-SOCIETE GENERALE", "city": "ANTANANARIVO", "branch": null, "swift_code": "BFAVMGMGXXX" },
+{ "id": 5, "bank": "BGFIBANK MADAGASCAR", "city": "ANTANANARIVO", "branch": null, "swift_code": "BGFIMGMGXXX" },
+{ "id": 6, "bank": "BANQUE MALGACHE DE L'OCEAN INDIEN", "city": "ANTANANARIVO", "branch": null, "swift_code": "BMOIMGMGXXX" },
+{ "id": 7, "bank": "BANQUE SBM MADAGASCAR", "city": "ANTANANARIVO", "branch": null, "swift_code": "BSBMMGMGXXX" },
+{ "id": 8, "bank": "BNI MADAGASCAR", "city": "ANTSIRANANA", "branch": null, "swift_code": "CLMDMGM10MA" },
+{ "id": 9, "bank": "BNI MADAGASCAR", "city": "MAHAJANGA", "branch": null, "swift_code": "CLMDMGM10MM" },
+{ "id": 10, "bank": "BNI MADAGASCAR", "city": "TOAMASINA", "branch": null, "swift_code": "CLMDMGM10MT" },
+{ "id": 11, "bank": "BNI MADAGASCAR", "city": "ANTANANARIVO", "branch": null, "swift_code": "CLMDMGMGXXX" },
+{ "id": 12, "bank": "THE MAURITIUS COMMERCIAL BANK (MADAGASCAR) SA", "city": "ANTANANARIVO", "branch": null, "swift_code": "MCBLMGMGXXX" },
+{ "id": 13, "bank": "PAOSITRA MALAGASY", "city": "ANTANANARIVO", "branch": null, "swift_code": "PAMLMGM1XXX" },
+{ "id": 14, "bank": "BANQUE CENTRALE DE MADAGASCAR", "city": "ANTANANARIVO", "branch": "(RTGS BACKUP LINE)", "swift_code": "REPUMGMGRTG" },
+{ "id": 15, "bank": "BANQUE CENTRALE DE MADAGASCAR", "city": "ANTANANARIVO", "branch": null, "swift_code": "REPUMGMGXXX" },
+{ "id": 16, "bank": "MARCHE INTERBANCAIRE DES DEVISES M.I.D.", "city": "ANTANANARIVO", "branch": null, "swift_code": "XMDGMGM1XXX" }
+    ]
+}

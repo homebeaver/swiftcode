@@ -1,0 +1,27 @@
+{
+    "country": "Mali",
+    "country_code": "ML",
+    "ISO_3166_1": { "name": "Mali" , "name_fr": "Mali (le)" , "alpha2": "ML" , "alpha3": "MLI" , "numeric": 466 },
+    "list": [
+{ "id": 1, "bank": "BANK OF AFRICA - MALI", "city": "BAMAKO", "branch": null, "swift_code": "AFRIMLBA022" },
+{ "id": 2, "bank": "BANK OF AFRICA - MALI", "city": "BAMAKO", "branch": null, "swift_code": "AFRIMLBAXXX" },
+{ "id": 3, "bank": "BANQUE COMMERCIALE DU SAHEL SA", "city": "BAMAKO", "branch": null, "swift_code": "ALIMMLBAXXX" },
+{ "id": 4, "bank": "BANQUE ATLANTIQUE MALI", "city": "BAMAKO", "branch": null, "swift_code": "ATMLMLBAXXX" },
+{ "id": 5, "bank": "BANQUE DE L' HABITAT DU MALI", "city": "BAMAKO", "branch": null, "swift_code": "BAHMMLBAXXX" },
+{ "id": 6, "bank": "BANQUE (MALI) CENTRALE DES ETATS DE L'AFRIQUE ET DE L'OUEST", "city": "MOPTI", "branch": "(MOPTI BRANCH)", "swift_code": "BCAOMLBAMOP" },
+{ "id": 7, "bank": "BANQUE CENTRALE DES ETATS DE L'AFRIQUE DE L'OUEST", "city": "SIKASSO", "branch": "(SIKASSO BRANCH)", "swift_code": "BCAOMLBASIK" },
+{ "id": 8, "bank": "BANQUE CENTRALE DES ETATS DE L'AFRIQUE DE L'OUEST", "city": "BAMAKO", "branch": null, "swift_code": "BCAOMLBAXXX" },
+{ "id": 9, "bank": "BANQUE DE DEVELOPPEMENT DU MALI - S.A.", "city": "BAMAKO", "branch": null, "swift_code": "BDMAMLBAXXX" },
+{ "id": 10, "bank": "BANQUE INTERNATIONALE POUR LE MALI SA.", "city": "BAMAKO", "branch": null, "swift_code": "BIPMMLBAXXX" },
+{ "id": 11, "bank": "BANQUE MALIENNE DE SOLIDARITE", "city": "BAMAKO", "branch": null, "swift_code": "BMSMMLBAXXX" },
+{ "id": 12, "bank": "BANQUE NATIONALE DE DEVELOPPEMENT AGRICOLE (BNDA)", "city": "BAMAKO", "branch": null, "swift_code": "BNADMLBAXXX" },
+{ "id": 13, "bank": "BANQUE SAHELO-SAHARIENNE POUR L'INVESTISSEMENT ET LE COMMERCE (MALI) S.A.", "city": "BAMAKO", "branch": null, "swift_code": "BSAHMLBAXXX" },
+{ "id": 14, "bank": "BCI-MALI", "city": "BAMAKO", "branch": null, "swift_code": "COLIMLBAXXX" },
+{ "id": 15, "bank": "CORIS BANK INTERNATIONAL", "city": "BAMAKO", "branch": null, "swift_code": "CORIMLBAXXX" },
+{ "id": 16, "bank": "DEPOSITAIRE CENTRAL BANQUE DE REGLEMENT", "city": "BAMAKO", "branch": null, "swift_code": "DCRBMLB1XXX" },
+{ "id": 17, "bank": "ECOBANK MALI", "city": "BAMAKO", "branch": null, "swift_code": "ECOCMLBAXXX" },
+{ "id": 18, "bank": "ORABANK MALI", "city": "BAMAKO", "branch": null, "swift_code": "ORBKMLBAXXX" },
+{ "id": 19, "bank": "BICIM", "city": "BAMAKO", "branch": null, "swift_code": "BICIMLBAXXX" },
+{ "id": 20, "bank": "UNITED BANK FOR AFRICA MALI SA", "city": "BAMAKO", "branch": null, "swift_code": "UNAFMLBAXXX" }
+    ]
+}

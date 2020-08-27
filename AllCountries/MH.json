@@ -1,0 +1,14 @@
+{
+    "country": "Marshall Islands",
+    "country_code": "MH",
+    "ISO_3166_1": { "name": "Marshall Islands (the)" , "name_fr": "Marshall (Îles)" , "alpha2": "MH" , "alpha3": "MHL" , "numeric": 584 },
+    "list": [
+{ "id": 1, "bank": "BANK OF HAWAII", "city": "MAJURO", "branch": null, "swift_code": "BOHIMH21XXX" },
+{ "id": 2, "bank": "BANK OF MARSHALL ISLANDS", "city": "MAJURO", "branch": null, "swift_code": "BOMDMH22XXX" },
+{ "id": 3, "bank": "ANAMETRICS HOLDINGS LIMITED", "city": "MAJURO", "branch": null, "swift_code": "ANHDMH22XXX" },
+{ "id": 4, "bank": "WADIAH CAPITAL LTD", "city": "MAJURO", "branch": null, "swift_code": "WACPMH21XXX" },
+{ "id": 5, "bank": "PACIFIC REGIONAL BANK", "city": "MAJURO", "branch": null, "swift_code": "PRLGMH22XXX" },
+{ "id": 6, "bank": "PAMEROY MANAGEMENT LTD", "city": "MAJURO", "branch": null, "swift_code": "PAGGMH22XXX" },
+{ "id": 7, "bank": "TEEKAY CORPORATION", "city": "MAJURO", "branch": null, "swift_code": "TEECMH22XXX" }
+    ]
+}
