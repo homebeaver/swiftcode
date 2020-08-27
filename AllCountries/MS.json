@@ -1,0 +1,9 @@
+{
+    "country": "Montserrat",
+    "country_code": "MS",
+    "ISO_3166_1": { "name": "Montserrat" , "name_fr": "Montserrat" , "alpha2": "MS" , "alpha3": "MSR" , "numeric": 500 },
+    "list": [
+{ "id": 1, "bank": "BANK OF MONTSERRAT LIMITED", "city": "BRADES", "branch": null, "swift_code": "BKMOMSMSXXX" },
+{ "id": 2, "bank": "RBC ROYAL BANK OF CANADA", "city": "PLYMOUTH", "branch": null, "swift_code": "ROYCMSMSXXX" }
+    ]
+}

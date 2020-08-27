@@ -1,0 +1,18 @@
+{
+    "country": "Martinique",
+    "country_code": "MQ",
+    "ISO_3166_1": { "name": "Martinique" , "name_fr": "Martinique (la)" , "alpha2": "MQ" , "alpha3": "MTQ" , "numeric": 474 },
+    "list": [
+{ "id": 1, "bank": "CREDIT AGRICOLE", "city": "LE LAMENTIN", "branch": null, "swift_code": "AGRIMQMXLEL" },
+{ "id": 2, "bank": "CREDIT AGRICOLE", "city": "FORT DE FRANCE", "branch": null, "swift_code": "AGRIMQMXXXX" },
+{ "id": 3, "bank": "BANQUE NATIONALE DE PARIS SUCCURSALE DE FORT DE FRANCE", "city": "FORT DE FRANCE", "branch": null, "swift_code": "BNPAMQMXXXX" },
+{ "id": 4, "bank": "GROUPE BERNARD HAYOT", "city": "LE LAMENTIN", "branch": null, "swift_code": "GBHAMQMMXXX" },
+{ "id": 5, "bank": "CREDIT MUTUEL-CAISSE FEDERALE ANTILLES GUYANE", "city": "FORT DE FRANCE", "branch": null, "swift_code": "CMCIMQM1XXX" },
+{ "id": 6, "bank": "CAISSE EPARGNE MARTINIQUE", "city": "FORT DE FRANCE", "branch": null, "swift_code": "CAEQMQM1XXX" },
+{ "id": 7, "bank": "CAISSE REGIONALE DE CREDIT AGRICOLE MUTUEL DE LA MARTINIQUE ET DE LA GUYANE", "city": "LE LAMENTIN", "branch": null, "swift_code": "CGRLMQM1XXX" },
+{ "id": 8, "bank": "SOCIETE MARTINIQUAISE DE FINT-SOMAFI", "city": "LE LAMENTIN", "branch": null, "swift_code": "SMFSMQM1XXX" },
+{ "id": 9, "bank": "SOFIAG", "city": "FORT DE FRANCE", "branch": null, "swift_code": "SOAIMQM1XXX" },
+{ "id": 10, "bank": "CAISSE EPARGNE PREVOYANCE MARTINIQUE", "city": "FORT DE FRANCE", "branch": null, "swift_code": "CERIMQM1XXX" },
+{ "id": 11, "bank": "BNC SA", "city": "FORT DE FRANCE", "branch": null, "swift_code": "NNCBMQM1XXX" }
+    ]
+}

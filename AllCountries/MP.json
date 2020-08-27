@@ -1,0 +1,11 @@
+{
+    "country": "Mariana Islands",
+    "country_code": "MP",
+    "ISO_3166_1": { "name": "Northern Mariana Islands (the)" , "name_fr": "Mariannes du Nord (les Îles)" , "alpha2": "MP" , "alpha3": "MNP" , "numeric": 580 },
+    "list": [
+{ "id": 1, "bank": "ALLIED MERCANTILE BANK CORPORATION", "city": "SAIPAN", "branch": null, "swift_code": "ALMPMPMPXXX" },
+{ "id": 2, "bank": "BANK OF HAWAII", "city": "SAIPAN", "branch": null, "swift_code": "BOHIMPM1XXX" },
+{ "id": 3, "bank": "BANK OF SAIPAN", "city": "SAIPAN", "branch": null, "swift_code": "BSAIMPM1XXX" },
+{ "id": 4, "bank": "BANK OF GUAM", "city": "SAIPAN", "branch": null, "swift_code": "GMBKMPM1XXX" }
+    ]
+}

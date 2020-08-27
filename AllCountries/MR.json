@@ -1,0 +1,29 @@
+{
+    "country": "Mauritania",
+    "country_code": "MR",
+    "ISO_3166_1": { "name": "Mauritania" , "name_fr": "Mauritanie (la)" , "alpha2": "MR" , "alpha3": "MRT" , "numeric": 478 },
+    "list": [
+{ "id": 1, "bank": "BANQUE EL AMANA (BEA)", "city": "NOUAKCHOTT", "branch": null, "swift_code": "AMDHMRMRXXX" },
+{ "id": 2, "bank": "BANQUE AL WAVA MAURITANIENNE ISLAMIQUE (BAMIS)", "city": "NOUAKCHOTT", "branch": null, "swift_code": "BAAWMRMRXXX" },
+{ "id": 3, "bank": "BANQUE CENTRALE DE MAURITANIE", "city": "NOUAKCHOTT", "branch": null, "swift_code": "BCEMMRMRXXX" },
+{ "id": 4, "bank": "ATTIJARI BANK MAURITANIE", "city": "NOUAKCHOTT", "branch": null, "swift_code": "BCMAMRMRXXX" },
+{ "id": 5, "bank": "SOCIETE GENERALE MAURITANIE", "city": "NOUAKCHOTT", "branch": null, "swift_code": "BIIMMRMRXXX" },
+{ "id": 6, "bank": "BANQUE ISLAMIQUE DE MAURITANIE", "city": "NOUAKCHOTT", "branch": null, "swift_code": "BIMMMRMRXXX" },
+{ "id": 7, "bank": "BANQUE AL MUAMELAT AS SAHIHA", "city": "NOUAKCHOTT", "branch": null, "swift_code": "BMSHMRMRXXX" },
+{ "id": 8, "bank": "BANQUE POPULAIRE DE MAURITANIE", "city": "NOUAKCHOTT", "branch": null, "swift_code": "BPMAMRMRXXX" },
+{ "id": 9, "bank": "BANQUE NATIONALE DE MAURITANIE", "city": "NOUAKCHOTT", "branch": null, "swift_code": "BQNMMRMRXXX" },
+{ "id": 10, "bank": "BANQUE POUR LE COMMERCE ET L'INDUSTRIE", "city": "NOUAKCHOTT", "branch": null, "swift_code": "COLIMRMRXXX" },
+{ "id": 11, "bank": "CHINGUITTY BANK", "city": "NOUAKCHOTT", "branch": null, "swift_code": "CZRZMRMRXXX" },
+{ "id": 12, "bank": "UNION DES BANQUES DE DEVELOPPEMENT", "city": "NOUAKCHOTT", "branch": null, "swift_code": "DEUBMRM1XXX" },
+{ "id": 13, "bank": "GENERALE DE BANQUE DE MAURITANIE POUR L'INVESTISSEMENT ET LE COMMERCE", "city": "NOUADHIBOU", "branch": null, "swift_code": "GBMCMRMRNDB" },
+{ "id": 14, "bank": "GENERALE DE BANQUE DE MAURITANIE POUR L'INVESTISSEMENT ET LE COMMERCE", "city": "NOUAKCHOTT", "branch": null, "swift_code": "GBMCMRMRXXX" },
+{ "id": 15, "bank": "BANQUE MAURITANIENNE POUR LE COMMERCE INTERNATIONAL", "city": "NOUADHIBOU", "branch": null, "swift_code": "MBICMRMR0MN" },
+{ "id": 16, "bank": "BANQUE MAURITANIENNE POUR LE COMMERCE INTERNATIONAL", "city": "NOUAKCHOTT", "branch": null, "swift_code": "MBICMRMRXXX" },
+{ "id": 17, "bank": "NOUVELLE BANQUE DE MAURITANIE", "city": "NOUAKCHOTT", "branch": null, "swift_code": "NBMRMRMRXXX" },
+{ "id": 18, "bank": "ORABANK MAURITANIE", "city": "NOUAKCHOTT", "branch": null, "swift_code": "ORBKMRMRXXX" },
+{ "id": 19, "bank": "QATAR NATIONAL BANK (QNB)", "city": "NOUAKCHOTT", "branch": null, "swift_code": "QNBAMRMUXXX" },
+{ "id": 20, "bank": "BANQUE MAURITANIENNE DE L'INVESTISSEMENT", "city": "NOUAKCHOTT", "branch": null, "swift_code": "BQMIMRMRXXX" },
+{ "id": 21, "bank": "BANQUE DES FINANCEMENTS ISLAMIQUES", "city": "NOUAKCHOTT", "branch": null, "swift_code": "FIAQMRMRXXX" },
+{ "id": 22, "bank": "INTERNATIONAL BANK OF MAURITANIA", "city": "NOUAKCHOTT", "branch": null, "swift_code": "IBMRMRMRXXX" }
+    ]
+}
