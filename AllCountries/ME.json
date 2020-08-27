@@ -1,0 +1,24 @@
+{
+    "country": "Montenegro",
+    "country_code": "ME",
+    "ISO_3166_1": { "name": "Montenegro" , "name_fr": "Monténégro (le)" , "alpha2": "ME" , "alpha3": "MNE" , "numeric": 499 },
+    "list": [
+{ "id": 1, "bank": "ATLAS BANKA AD", "city": "PODGORICA", "branch": null, "swift_code": "ATLMMEP2XXX" },
+{ "id": 2, "bank": "CENTRALNA BANKA CRNE GORE (CENTRAL BANK OF MONTENEGRO)", "city": "PODGORICA", "branch": null, "swift_code": "CBCGMEPGXXX" },
+{ "id": 3, "bank": "ADDIKO BANK A.D. PODGORICA", "city": "PODGORICA", "branch": null, "swift_code": "HAABMEPGXXX" },
+{ "id": 4, "bank": "HIPOTEKARNA BANKA AD", "city": "PODGORICA", "branch": null, "swift_code": "HBBAMEPGXXX" },
+{ "id": 5, "bank": "KOMERCIJALNA BANKA AD PODGORICA", "city": "PODGORICA", "branch": null, "swift_code": "KOBBMEP2XXX" },
+{ "id": 6, "bank": "LOVCEN BANKA AD", "city": "PODGORICA", "branch": null, "swift_code": "LOVBMEPGXXX" },
+{ "id": 7, "bank": "NLB BANKA AD PODGORICA", "city": "PODGORICA", "branch": null, "swift_code": "MNBAMEPGXXX" },
+{ "id": 8, "bank": "ERSTE BANK AD PODGORICA", "city": "PODGORICA", "branch": null, "swift_code": "OPPOMEPGXXX" },
+{ "id": 9, "bank": "SOCIETE GENERALE BANKA MONTENEGRO", "city": "PODGORICA", "branch": null, "swift_code": "PDBPMEPGXXX" },
+{ "id": 10, "bank": "PRVA BANKA CRNE GORE AD", "city": "PODGORICA", "branch": null, "swift_code": "PRVAMEPGXXX" },
+{ "id": 11, "bank": "ZIRAAT BANK MONTENEGRO", "city": "PODGORICA", "branch": null, "swift_code": "TCZBMEPGXXX" },
+{ "id": 12, "bank": "ZAPAD BANKA AD PODGORICA", "city": "PODGORICA", "branch": null, "swift_code": "ZBCGMEPGXXX" },
+{ "id": 13, "bank": "CENTRAL BANK OF MONTENEGRO", "city": "PODGORICA", "branch": null, "swift_code": "CBCGMEB1XXX" },
+{ "id": 14, "bank": "CRNOGORSKA KOMERCIJALNA BANKA AD PODGORICA", "city": "PODGORICA", "branch": null, "swift_code": "CKBCMEPGXXX" },
+{ "id": 15, "bank": "NOVA BANKA AD PODGORICA", "city": "PODGORICA", "branch": null, "swift_code": "AZMNMEPGXXX" },
+{ "id": 16, "bank": "IBANKMENT DOO", "city": "PODGORICA", "branch": null, "swift_code": "IBDOMEP1XXX" },
+{ "id": 17, "bank": "UNIVERSAL CAPITAL BANK", "city": "PODGORICA", "branch": null, "swift_code": "UNCBMEPGXXX" }
+    ]
+}
