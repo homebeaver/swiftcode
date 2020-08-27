@@ -1,0 +1,13 @@
+{
+    "country": "Lesotho",
+    "country_code": "LS",
+    "ISO_3166_1": { "name": "Lesotho" , "name_fr": "Lesotho (le)" , "alpha2": "LS" , "alpha3": "LSO" , "numeric": 426 },
+    "list": [
+{ "id": 1, "bank": "CENTRAL BANK OF LESOTHO", "city": "MASERU", "branch": null, "swift_code": "CBLELSMXXXX" },
+{ "id": 2, "bank": "FIRST NATIONAL BANK OF LESOTHO", "city": "MASERU", "branch": null, "swift_code": "FIRNLSMXXXX" },
+{ "id": 3, "bank": "LESOTHO POSTBANK", "city": "MASERU", "branch": null, "swift_code": "LESHLSMMXXX" },
+{ "id": 4, "bank": "NEDBANK (LESOTHO) LIMITED", "city": "MASERU", "branch": null, "swift_code": "NEDLLSMXXXX" },
+{ "id": 5, "bank": "STANDARD LESOTHO BANK LTD.", "city": "MASERU", "branch": null, "swift_code": "SBICLSMXXXX" },
+{ "id": 6, "bank": "MALUTI MOUNTAIN BREWERY LIMITED", "city": "MASERU", "branch": null, "swift_code": "SABMLSM1XXX" }
+    ]
+}

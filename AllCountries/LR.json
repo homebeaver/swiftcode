@@ -1,0 +1,24 @@
+{
+    "country": "Liberia",
+    "country_code": "LR",
+    "ISO_3166_1": { "name": "Liberia" , "name_fr": "Libéria (le)" , "alpha2": "LR" , "alpha3": "LBR" , "numeric": 430 },
+    "list": [
+{ "id": 1, "bank": "ACCESSBANK LIBERIA", "city": "MONROVIA", "branch": null, "swift_code": "ACLILRLMXXX" },
+{ "id": 2, "bank": "AGRICULTURAL AND COOPERATIVE DEVELOMENT BANK", "city": "MONROVIA", "branch": null, "swift_code": "AGRCLRL1XXX" },
+{ "id": 3, "bank": "CENTRAL BANK OF LIBERIA", "city": "MONROVIA", "branch": null, "swift_code": "CBLRLRLAXXX" },
+{ "id": 4, "bank": "CENTRAL BANK OF LIBERIA", "city": "MONROVIA", "branch": null, "swift_code": "CBLRLRLMXXX" },
+{ "id": 5, "bank": "AFRILAND FIRST BANK LIBERIA LIMITED", "city": "MONROVIA", "branch": null, "swift_code": "CCEILRLMXXX" },
+{ "id": 6, "bank": "CITIBANK N.A.", "city": "MONROVIA", "branch": null, "swift_code": "CITILRL1XXX" },
+{ "id": 7, "bank": "ECOBANK LIBERIA LIMITED", "city": "MONROVIA", "branch": null, "swift_code": "ECOCLRLMXXX" },
+{ "id": 8, "bank": "GN BANK LIBERIA LIMITED", "city": "MONROVIA", "branch": null, "swift_code": "GNERLRLMXXX" },
+{ "id": 9, "bank": "GUARANTY TRUST BANK (LIBERIA) LIMITED", "city": "MONROVIA", "branch": null, "swift_code": "GTBILRLMXXX" },
+{ "id": 10, "bank": "LIBERIAN BANK FOR DEVELOPMENT AND INVESTMENT, THE", "city": "MONROVIA", "branch": null, "swift_code": "LBDELRLMXXX" },
+{ "id": 11, "bank": "MERIDIEN BIAO BANK LIBERIA LTD", "city": "MONROVIA", "branch": null, "swift_code": "LIMELRL1XXX" },
+{ "id": 12, "bank": "NATIONAL BANK OF LIBERIA", "city": "MONROVIA", "branch": null, "swift_code": "NBLILRL1XXX" },
+{ "id": 13, "bank": "GLOBAL BANK LIBERIA LIMITED (MEMBER BANKPHB GROUP)", "city": "MONROVIA", "branch": null, "swift_code": "PHBXLRLMXXX" },
+{ "id": 14, "bank": "LIBERIAN TRADING AND DEVELOPMENT BANK, THE", "city": "MONROVIA", "branch": null, "swift_code": "TLTRLRL1XXX" },
+{ "id": 15, "bank": "UNITED BANK FOR AFRICA (LIBERIA) LIMITED", "city": "MONROVIA", "branch": null, "swift_code": "UNAFLRLMXXX" },
+{ "id": 16, "bank": "WEST BANK4U", "city": "MONROVIA", "branch": null, "swift_code": "WETTLRL1XXX" },
+{ "id": 17, "bank": "INTERNATIONAL BANK (LIBERIA) LIMITED", "city": "MONROVIA", "branch": null, "swift_code": "IBLRLRLMXXX" }
+    ]
+}
