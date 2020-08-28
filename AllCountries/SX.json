@@ -1,0 +1,15 @@
+{
+    "country": "Sint Maarten",
+    "country_code": "SX",
+    "ISO_3166_1": { "name": "Sint Maarten (Dutch part)" , "name_fr": "Saint-Martin (partie néerlandaise)" , "alpha2": "SX" , "alpha3": "SXM" , "numeric": 534 },
+    "list": [
+{ "id": 1, "bank": "BANCO DI CARIBE N.V SINT MAARTEN", "city": "PHILIPSBURG", "branch": null, "swift_code": "BDCCSXSMXXX" },
+{ "id": 2, "bank": "FIRSTCARIBBEAN INTERNATIONAL BANK (CAYMAN) LIMITED", "city": "PHILIPSBURG", "branch": null, "swift_code": "FCIBSXSMXXX" },
+{ "id": 3, "bank": "BANK OF NOVA SCOTIA,THE", "city": "PHILIPSBURG", "branch": null, "swift_code": "NOSCSXSMXXX" },
+{ "id": 4, "bank": "PSB BANK N.V.", "city": "PHILIPSBURG", "branch": null, "swift_code": "PBBPSXS1XXX" },
+{ "id": 5, "bank": "RBC ROYAL BANK N.V. (FORMERLY RBTT BANK ST. MAARTEN N.V.)", "city": "PHILIPSBURG", "branch": null, "swift_code": "RBTTSXSMXXX" },
+{ "id": 6, "bank": "WINDWARD ISLANDS BANK LTD, THE", "city": "PHILIPSBURG", "branch": null, "swift_code": "WISBSXSMXXX" },
+{ "id": 7, "bank": "CM-CIC ST MAARTEN", "city": "SINT MAARTEN", "branch": null, "swift_code": "CMCISXS1XXX" },
+{ "id": 8, "bank": "ORCO BANK N.V. ST. MAARTEN", "city": "COLEBAY", "branch": null, "swift_code": "ORBASXSMXXX" }
+    ]
+}

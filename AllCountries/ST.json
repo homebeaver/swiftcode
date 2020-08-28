@@ -1,0 +1,14 @@
+{
+    "country": "Sao Tome and Principe",
+    "country_code": "ST",
+    "ISO_3166_1": { "name": "Sao Tome and Principe" , "name_fr": "Sao Tomé-et-Principe" , "alpha2": "ST" , "alpha3": "STP" , "numeric": 678 },
+    "list": [
+{ "id": 1, "bank": "AFRILAND FIRST BANK STP", "city": "SAO TOME", "branch": null, "swift_code": "AFFSSTSTXXX" },
+{ "id": 2, "bank": "BGFIBANK SAO TOME ET PRINCIPE", "city": "SAO TOME", "branch": null, "swift_code": "BGFISTSTXXX" },
+{ "id": 3, "bank": "BANCO CENTRAL DE SAO TOME E PRINCIPE", "city": "SAO TOME", "branch": null, "swift_code": "CSTPSTSTXXX" },
+{ "id": 4, "bank": "ECOBANK SAO TOME", "city": "SAO TOME", "branch": null, "swift_code": "ECOCSTSTXXX" },
+{ "id": 5, "bank": "ENERGYBANK SAO TOME E PRICIPE S.A", "city": "SAO TOME", "branch": null, "swift_code": "ESTPSTSTXXX" },
+{ "id": 6, "bank": "BANCO INTERNACIONAL DE SAO TOME E PRINCIPE", "city": "SAO TOME", "branch": null, "swift_code": "INOISTSTXXX" },
+{ "id": 7, "bank": "BANCO NACIONAL DE SAO TOME E PRINCIPE", "city": "SAO TOME", "branch": null, "swift_code": "BNSTSTS1XXX" }
+    ]
+}

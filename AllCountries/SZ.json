@@ -1,0 +1,8 @@
+{
+    "country": "Swaziland",
+    "country_code": "SZ",
+    "ISO_3166_1": { "name": "Swaziland" , "name_fr": "Swaziland (le)" , "alpha2": "SZ" , "alpha3": "SWZ" , "numeric": 748 },
+    "list": [
+		{ "id": 1, "bank": "SWAZILAND DEVELOPMENT AND SAVINGS BANK", "city": "MBABANE", "branch": null, "swift_code": "SDSBSZMBXXX" }
+    ]
+}

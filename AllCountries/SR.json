@@ -1,0 +1,20 @@
+{
+    "country": "Suriname",
+    "country_code": "SR",
+    "ISO_3166_1": { "name": "Suriname" , "name_fr": "Suriname (le)" , "alpha2": "SR" , "alpha3": "SUR" , "numeric": 740 },
+    "list": [
+{ "id": 1, "bank": "CENTRALE BANK VAN SURINAME", "city": "PARAMARIBO", "branch": null, "swift_code": "CBVSSRPASUR" },
+{ "id": 2, "bank": "CENTRALE BANK VAN SURINAME", "city": "PARAMARIBO", "branch": null, "swift_code": "CBVSSRPAXXX" },
+{ "id": 3, "bank": "COOPERATIEVE SPAAR-EN KREDIETBANK GODO G.A.", "city": "PARAMARIBO", "branch": null, "swift_code": "GODOSRPAXXX" },
+{ "id": 4, "bank": "HAKRINBANK N.V.", "city": "PARAMARIBO", "branch": null, "swift_code": "HAKRSRPAXXX" },
+{ "id": 5, "bank": "FINATRUST, DE TRUSTBANK N.V.", "city": "PARAMARIBO", "branch": null, "swift_code": "ICTBSRPAXXX" },
+{ "id": 6, "bank": "LANDBOUWBANK N.V.", "city": "PARAMARIBO", "branch": null, "swift_code": "LBNKSRPAXXX" },
+{ "id": 7, "bank": "DSB BANK ALSO KNOWN AS DE SURINAAMSCHE BANK N.V. PARAMARIBO SR", "city": "PARAMARIBO", "branch": null, "swift_code": "SURBSRPAXXX" },
+{ "id": 8, "bank": "SURICHANGE BANK N.V.", "city": "PARAMARIBO", "branch": null, "swift_code": "SURCSRPAXXX" },
+{ "id": 9, "bank": "SURINAAMSE VOLKSCREDIETBANK", "city": "PARAMARIBO", "branch": null, "swift_code": "VCBSSRPAXXX" },
+{ "id": 10, "bank": "REPUBLIC BANK (SURINAME) N.V.", "city": "PARAMARIBO", "branch": null, "swift_code": "RBNKSRPAXXX" },
+{ "id": 11, "bank": "FINABANK N.V.", "city": "PARAMARIBO", "branch": null, "swift_code": "FBNASRPAXXX" },
+{ "id": 12, "bank": "SURINAAMSE POSTSPAARBANK", "city": "PARAMARIBO", "branch": null, "swift_code": "SDPOSRPAXXX" },
+{ "id": 13, "bank": "SOUTHERN COMMERCIAL BANK NV", "city": "PARAMARIBO", "branch": null, "swift_code": "SOUOSRPPXXX" }
+    ]
+}
