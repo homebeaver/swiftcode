@@ -1,0 +1,15 @@
+{
+    "country": "Somalia",
+    "country_code": "SO",
+    "ISO_3166_1": { "name": "Somalia" , "name_fr": "Somalie (la)" , "alpha2": "SO" , "alpha3": "SOM" , "numeric": 706 },
+    "list": [
+{ "id": 1, "bank": "CENTRAL BANK OF SOMALIA", "city": "MOGADISCIO", "branch": null, "swift_code": "CBSOSOSMXXX" },
+{ "id": 2, "bank": "DAHABSHIL BANK INTERNATIONAL", "city": "MOGADISCIO", "branch": null, "swift_code": "DAHISOSMXXX" },
+{ "id": 3, "bank": "INTERNATIONAL BANK OF SOMALIA (IBS)", "city": "MOGADISCIO", "branch": null, "swift_code": "IBOSSOSMXXX" },
+{ "id": 4, "bank": "PREMIER BANK LIMITED", "city": "MOGADISCIO", "branch": null, "swift_code": "PBSMSOSMXXX" },
+{ "id": 5, "bank": "SALAAM SOMALI BANK", "city": "MOGADISCIO", "branch": null, "swift_code": "SSBMSOSMXXX" },
+{ "id": 6, "bank": "AMAL BANK LTD", "city": "GAROWE", "branch": null, "swift_code": "AALLSOSGXXX" },
+{ "id": 7, "bank": "TRUST AFRICAN BANK", "city": "MOGADISCIO", "branch": null, "swift_code": "TTAFSOS1XXX" },
+{ "id": 8, "bank": "MYBANK LIMITED", "city": "MOGADISCIO", "branch": null, "swift_code": "MYBASOSMXXX" }
+    ]
+}

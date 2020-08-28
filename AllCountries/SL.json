@@ -1,0 +1,24 @@
+{
+    "country": "Sierra Leone",
+    "country_code": "SL",
+    "ISO_3166_1": { "name": "Sierra Leone" , "name_fr": "Sierra Leone (la)" , "alpha2": "SL" , "alpha3": "SLE" , "numeric": 694 },
+    "list": [
+{ "id": 1, "bank": "ACCESS BANK SIERRA LEONE LIMITED", "city": "FREETOWN", "branch": null, "swift_code": "ABSFSLFRXXX" },
+{ "id": 2, "bank": "BANK OF SIERRA LEONE", "city": "FREETOWN", "branch": null, "swift_code": "BSLESLFRXXX" },
+{ "id": 3, "bank": "FIRST INTERNATIONAL BANK (SL) LIMITED", "city": "FREETOWN", "branch": null, "swift_code": "FSTISLFRXXX" },
+{ "id": 4, "bank": "GUARANTY TRUST BANK (SL) LTD", "city": "FREETOWN", "branch": null, "swift_code": "GTBISLFRXXX" },
+{ "id": 5, "bank": "COMMERCE AND MORTGAGE BANK (SL) PLC", "city": "FREETOWN", "branch": null, "swift_code": "HFCMSLFRXXX" },
+{ "id": 6, "bank": "INTERNATIONAL COMMERCIAL BANK(SL) LIMITED", "city": "FREETOWN", "branch": null, "swift_code": "ICBZSLFRXXX" },
+{ "id": 7, "bank": "NATIONAL COOPERATIVE DEVELOPMENT BANK LTD.", "city": "FREETOWN", "branch": null, "swift_code": "NCDBSLF1XXX" },
+{ "id": 8, "bank": "KEYSTONE BANK (SL) LIMITED", "city": "FREETOWN", "branch": null, "swift_code": "PHBXSLFRXXX" },
+{ "id": 9, "bank": "ROKEL COMMERCIAL BANK (SIERRA LEONE) LTD.", "city": "FREETOWN", "branch": null, "swift_code": "RCBKSLFRXXX" },
+{ "id": 10, "bank": "STANDARD CHARTERED BANK SIERRA LEONE LTD", "city": "FREETOWN", "branch": null, "swift_code": "SCBLSLFRXXX" },
+{ "id": 11, "bank": "SKYE BANK (SL) LTD", "city": "FREETOWN", "branch": null, "swift_code": "SKYESLFRXXX" },
+{ "id": 12, "bank": "SIERRA LEONE COMMERCIAL BANK LTD", "city": "FREETOWN", "branch": null, "swift_code": "SLCBSLFRXXX" },
+{ "id": 13, "bank": "UNITED BANK FOR AFRICA (S L) LTD", "city": "FREETOWN", "branch": null, "swift_code": "UNAFSLFRXXX" },
+{ "id": 14, "bank": "UNION TRUST BANK LIMITED", "city": "FREETOWN", "branch": null, "swift_code": "UTBSSLFRXXX" },
+{ "id": 15, "bank": "ZENITH BANK (SIERRA LEONE) LIMITED", "city": "FREETOWN", "branch": null, "swift_code": "ZESLSLFRXXX" },
+{ "id": 16, "bank": "ECOBANK SIERRA LEONE LIMITED", "city": "FREETOWN", "branch": null, "swift_code": "ECOCSLFRXXX" },
+{ "id": 17, "bank": "APEX BANK SIERRA LEONE LIMITED", "city": "FREETOWN", "branch": null, "swift_code": "APIESLF1XXX" }
+    ]
+}
