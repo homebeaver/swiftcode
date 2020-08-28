@@ -1,0 +1,13 @@
+{
+    "country": "Solomon Islands",
+    "country_code": "SB",
+    "ISO_3166_1": { "name": "Solomon Islands" , "name_fr": "Salomon (Îles)" , "alpha2": "SB" , "alpha3": "SLB" , "numeric": 90 },
+    "list": [
+{ "id": 1, "bank": "AUSTRALIA AND NEW ZEALAND BANKING GROUP LIMITED", "city": "HONIARA", "branch": null, "swift_code": "ANZBSBSBXXX" },
+{ "id": 2, "bank": "BANK OF SOUTH PACIFIC LIMITED", "city": "HONIARA", "branch": null, "swift_code": "BOSPSBSBXXX" },
+{ "id": 3, "bank": "CENTRAL BANK OF SOLOMON ISLANDS", "city": "HONIARA", "branch": null, "swift_code": "CBSISBSBXXX" },
+{ "id": 4, "bank": "PAN OCEANIC BANK LIMITED", "city": "HONIARA", "branch": null, "swift_code": "POBBSBSBXXX" },
+{ "id": 5, "bank": "SOLOMON ISLANDS TOBACCO COMPANY LIMITED", "city": "HONIARA", "branch": null, "swift_code": "BATSSBA1XXX" },
+{ "id": 6, "bank": "BRED BANK SOLOMON", "city": "HONIARA", "branch": null, "swift_code": "BREDSBSBXXX" }
+    ]
+}

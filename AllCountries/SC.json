@@ -1,0 +1,20 @@
+{
+    "country": "Seychelles",
+    "country_code": "SC",
+    "ISO_3166_1": { "name": "Seychelles" , "name_fr": "Seychelles (les)" , "alpha2": "SC" , "alpha3": "SYC" , "numeric": 690 },
+    "list": [
+{ "id": 1, "bank": "BANK AL HABIB LIMITED", "city": "VICTORIA", "branch": null, "swift_code": "BAHLSCSCXXX" },
+{ "id": 2, "bank": "BANK OF BARODA", "city": "VICTORIA", "branch": null, "swift_code": "BARBSCSCXXX" },
+{ "id": 3, "bank": "BARCLAYS BANK (SEYCHELLES) LTD", "city": "VICTORIA", "branch": null, "swift_code": "BARCSCSCXXX" },
+{ "id": 4, "bank": "BANK OF CEYLON, SEYCHELLES BRANCH", "city": "VICTORIA", "branch": null, "swift_code": "BCEYSCSCXXX" },
+{ "id": 5, "bank": "AL SALAM BANK SEYCHELLES LIMITED", "city": "PROVIDENCE MAHE", "branch": null, "swift_code": "BMUSSCSCXXX" },
+{ "id": 6, "bank": "MAGNATE PREMIER PRIVATE BANK LIMITED", "city": "VICTORIA", "branch": null, "swift_code": "MARVSCS1XXX" },
+{ "id": 7, "bank": "NOUVOBANQ", "city": "VICTORIA", "branch": null, "swift_code": "NOVHSCSCXXX" },
+{ "id": 8, "bank": "SEYCHELLES COMMERCIAL BANK", "city": "VICTORIA", "branch": null, "swift_code": "SEYSSCSCXXX" },
+{ "id": 9, "bank": "MCB SEYCHELLES", "city": "VICTORIA", "branch": null, "swift_code": "MCBLSCSCXXX" },
+{ "id": 10, "bank": "CENTRAL BANK OF SEYCHELLES", "city": "VICTORIA", "branch": null, "swift_code": "SSCBSCSCXXX" },
+{ "id": 11, "bank": "SBM BANK (SEYCHELLES) LIMITED.", "city": "VICTORIA", "branch": null, "swift_code": "STCBSCSCXXX" },
+{ "id": 12, "bank": "MILS CORP LIMITED", "city": "PROVIDENCE MAHE", "branch": null, "swift_code": "MLLSSCS1XXX" },
+{ "id": 13, "bank": "RM INTERNATIONAL HOLDINGS AG", "city": "PROVIDENCE MAHE", "branch": null, "swift_code": "INHLSCS1XXX" }
+    ]
+}
