@@ -1,0 +1,8 @@
+{
+    "country": "Saint Pierre and Miquelon",
+    "country_code": "PM",
+    "ISO_3166_1": { "name": "Saint Pierre and Miquelon" , "name_fr": "Saint-Pierre-et-Miquelon" , "alpha2": "PM" , "alpha3": "SPM" , "numeric": 666 },
+    "list": [
+		{ "id": 1, "bank": "CISPM", "city": "SAINT PIERRE ET MIQUELON", "branch": null, "swift_code": "CIPMPMP1XXX" }
+    ]
+}
