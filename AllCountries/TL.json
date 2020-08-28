@@ -1,0 +1,12 @@
+{
+    "country": "Timor",
+    "country_code": "TL",
+    "ISO_3166_1": { "name": "Timor-Leste" , "name_fr": "Timor-Leste (le)" , "alpha2": "TL" , "alpha3": "TLS" , "numeric": 626 },
+    "list": [
+{ "id": 1, "bank": "AUSTRALIA AND NEW ZEALAND BANKING GROUP LTD", "city": "DILI", "branch": null, "swift_code": "ANZBTLDIXXX" },
+{ "id": 2, "bank": "BANKING AND PAYMENTS AUTHORITY OF EAST TIMOR", "city": "DILI", "branch": null, "swift_code": "BCTLTLDAXXX" },
+{ "id": 3, "bank": "BANCO CENTRAL DE TIMOR-LESTE", "city": "DILI", "branch": null, "swift_code": "BCTLTLDIXXX" },
+{ "id": 4, "bank": "BANCO NACIONAL DE COMERCIO DE TIMOR-LESTE, S.A.", "city": "DILI", "branch": null, "swift_code": "BNCTTLDDXXX" },
+{ "id": 5, "bank": "CAIXA GERAL DE DEPOSITOS, SA", "city": "DILI", "branch": null, "swift_code": "CGDITLDIXXX" }
+    ]
+}

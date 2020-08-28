@@ -1,0 +1,19 @@
+{
+    "country": "Turkmenistan",
+    "country_code": "TM",
+    "ISO_3166_1": { "name": "Turkmenistan" , "name_fr": "Turkménistan (le)" , "alpha2": "TM" , "alpha3": "TKM" , "numeric": 795 },
+    "list": [
+{ "id": 1, "bank": "DAYKHANBANK", "city": "ASHKHABAD", "branch": null, "swift_code": "BDAYTM22XXX" },
+{ "id": 2, "bank": "CENTRAL BANK OF TURKMENISTAN, THE", "city": "ASHKHABAD", "branch": null, "swift_code": "CBTUTM2AXXX" },
+{ "id": 3, "bank": "THE STATE COMMERCIAL BANK OF TURKMENISTAN 'HALKBANK'", "city": "ASHKHABAD", "branch": null, "swift_code": "HALKTM22XXX" },
+{ "id": 4, "bank": "TURKMENBASHIBANK", "city": "ASHKHABAD", "branch": null, "swift_code": "INVATM2XXXX" },
+{ "id": 5, "bank": "NATIONAL BANK OF PAKISTAN", "city": "ASHKHABAD", "branch": null, "swift_code": "NBPATM22XXX" },
+{ "id": 6, "bank": "JOINT-STOCK COMMERCIAL BANK RYSGAL", "city": "ASHKHABAD", "branch": null, "swift_code": "RYSGTM2AXXX" },
+{ "id": 7, "bank": "SAVINGS BANK OF TURKMENISTAN", "city": "ASHKHABAD", "branch": null, "swift_code": "SATUTM21XXX" },
+{ "id": 8, "bank": "STATE BANK FOR FOREIGN ECONOMIC AFFAIRS OF TURKMENISTAN", "city": "ASHKHABAD", "branch": null, "swift_code": "SBFETM22XXX" },
+{ "id": 9, "bank": "STATE COMMERCIAL BANK 'GARASHSYZLYK '", "city": "ASHKHABAD", "branch": null, "swift_code": "STCGTM21XXX" },
+{ "id": 10, "bank": "'TURKMENISTAN' STATE COMMERCIAL BANK OF TURKMENISTAN", "city": "ASHKHABAD", "branch": null, "swift_code": "TNBKTM2XXXX" },
+{ "id": 11, "bank": "TURKMEN TURKISH JOINT STOCK COMMERCIAL BANK", "city": "ASHKHABAD", "branch": null, "swift_code": "TUTCTM2XXXX" },
+{ "id": 12, "bank": "SENAGAT BANK JSCB", "city": "ASHKHABAD", "branch": null, "swift_code": "SENBTM22XXX" }
+    ]
+}

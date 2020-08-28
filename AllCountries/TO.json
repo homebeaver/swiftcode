@@ -1,0 +1,13 @@
+{
+    "country": "Tonga",
+    "country_code": "TO",
+    "ISO_3166_1": { "name": "Tonga" , "name_fr": "Tonga (les)" , "alpha2": "TO" , "alpha3": "TON" , "numeric": 776 },
+    "list": [
+{ "id": 1, "bank": "ANZ BANKING GROUP LIMITED", "city": "NUKU'ALOFA", "branch": null, "swift_code": "ANZBTONNXXX" },
+{ "id": 2, "bank": "BANK OF SOUTH PACIFIC TONGA LIMITED", "city": "NUKU'ALOFA", "branch": null, "swift_code": "BOSPTONUXXX" },
+{ "id": 3, "bank": "MBF BANK LIMITED", "city": "NUKU'ALOFA", "branch": null, "swift_code": "MBFMTONUXXX" },
+{ "id": 4, "bank": "NATIONAL RESERVE BANK OF TONGA", "city": "NUKU'ALOFA", "branch": null, "swift_code": "NRBTTONUXXX" },
+{ "id": 5, "bank": "TONGA DEVELOPMENT BANK", "city": "NUKU'ALOFA", "branch": null, "swift_code": "TODETONUXXX" },
+{ "id": 6, "bank": "BAT TONGA", "city": "TONGA", "branch": null, "swift_code": "BATSTOA1XXX" }
+    ]
+}
