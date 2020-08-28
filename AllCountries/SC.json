@@ -3,18 +3,18 @@
     "country_code": "SC",
     "ISO_3166_1": { "name": "Seychelles" , "name_fr": "Seychelles (les)" , "alpha2": "SC" , "alpha3": "SYC" , "numeric": 690 },
     "list": [
-{ "id": 1, "bank": "BANK AL HABIB LIMITED", "city": "VICTORIA", "branch": null, "swift_code": "BAHLSCSCXXX" },
-{ "id": 2, "bank": "BANK OF BARODA", "city": "VICTORIA", "branch": null, "swift_code": "BARBSCSCXXX" },
-{ "id": 3, "bank": "BARCLAYS BANK (SEYCHELLES) LTD", "city": "VICTORIA", "branch": null, "swift_code": "BARCSCSCXXX" },
-{ "id": 4, "bank": "BANK OF CEYLON, SEYCHELLES BRANCH", "city": "VICTORIA", "branch": null, "swift_code": "BCEYSCSCXXX" },
-{ "id": 5, "bank": "AL SALAM BANK SEYCHELLES LIMITED", "city": "PROVIDENCE MAHE", "branch": null, "swift_code": "BMUSSCSCXXX" },
-{ "id": 6, "bank": "MAGNATE PREMIER PRIVATE BANK LIMITED", "city": "VICTORIA", "branch": null, "swift_code": "MARVSCS1XXX" },
-{ "id": 7, "bank": "NOUVOBANQ", "city": "VICTORIA", "branch": null, "swift_code": "NOVHSCSCXXX" },
-{ "id": 8, "bank": "SEYCHELLES COMMERCIAL BANK", "city": "VICTORIA", "branch": null, "swift_code": "SEYSSCSCXXX" },
-{ "id": 9, "bank": "MCB SEYCHELLES", "city": "VICTORIA", "branch": null, "swift_code": "MCBLSCSCXXX" },
-{ "id": 10, "bank": "CENTRAL BANK OF SEYCHELLES", "city": "VICTORIA", "branch": null, "swift_code": "SSCBSCSCXXX" },
-{ "id": 11, "bank": "SBM BANK (SEYCHELLES) LIMITED.", "city": "VICTORIA", "branch": null, "swift_code": "STCBSCSCXXX" },
-{ "id": 12, "bank": "MILS CORP LIMITED", "city": "PROVIDENCE MAHE", "branch": null, "swift_code": "MLLSSCS1XXX" },
-{ "id": 13, "bank": "RM INTERNATIONAL HOLDINGS AG", "city": "PROVIDENCE MAHE", "branch": null, "swift_code": "INHLSCS1XXX" }
+{"id": 198069, "swift_code": "BAHLSCSCXXX", "bank_code": "BAHL", "branch_code": null, "branch": "", "bank": "BANK AL HABIB LIMITED", "address": null, "zip": null, "city": "VICTORIA (MAHE)"},
+{"id":  29069, "swift_code": "BARBSCSCXXX", "bank_code": "BARB", "branch_code": null, "branch": "", "bank": "BANK OF BARODA SEYCHELLES", "address": null, "zip": null, "city": "VICTORIA"},
+{"id":  46645, "swift_code": "BARCSCSCXXX", "bank_code": "BARC", "branch_code": null, "branch": "", "bank": "ABSA BANK LIMITED", "address": null, "zip": null, "city": "VICTORIA"},
+{"id": 424581, "swift_code": "BCEYSCSCXXX", "bank_code": "BCEY", "branch_code": null, "branch": "", "bank": "BANK OF CEYLON SEYCHELLES BRANCH", "address": null, "zip": null, "city": "VICTORIA"},
+{"id": 330201, "swift_code": "BMUSSCSCXXX", "bank_code": "BMUS", "branch_code": null, "branch": "", "bank": "AL SALAM BANK SEYCHELLES LIMITED", "address": null, "zip": null, "city": "PROVIDENCE MAHE"},
+{"id": 380600, "swift_code": "MARVSCS1XXX", "bank_code": "MARV", "branch_code": null, "branch": "", "bank": "MAGNATE PREMIER PRIVATE BANK LIMITED", "address": null, "zip": null, "city": "VICTORIA"},
+{"id": 137605, "swift_code": "NOVHSCSCXXX", "bank_code": "NOVH", "branch_code": null, "branch": "", "bank": "NOUVOBANQ", "address": null, "zip": null, "city": "VICTORIA MAHE"},
+{"id": 332714, "swift_code": "SEYSSCSCXXX", "bank_code": "SEYS", "branch_code": null, "branch": "", "bank": "SEYCHELLES COMMERCIAL BANK", "address": null, "zip": null, "city": "VICTORIA"},
+{"id": 194076, "swift_code": "MCBLSCSCXXX", "bank_code": "MCBL", "branch_code": null, "branch": "", "bank": "THE MAURITIUS COMMERCIAL BANK (SEYCHELLES) LIMITED", "address": null, "zip": null, "city": "VICTORIA"},
+{"id":  19414, "swift_code": "SSCBSCSCXXX", "bank_code": "SSCB", "branch_code": null, "branch": "", "bank": "CENTRAL BANK OF SEYCHELLES", "address": null, "zip": null, "city": "VICTORIA"},
+// {"id": 19440, "swift_code": null, "bank_code": "STCB", "branch_code": null, "branch": null, "bank": null, "address": null, "zip": null, "city": null},
+{"id": 324102, "swift_code": "MLLSSCS1XXX", "bank_code": "MLLS", "branch_code": null, "branch": "", "bank": "MILS CORP LIMITED", "address": null, "zip": null, "city": "PROVIDENCE MAHE"},
+{"id": 198414, "swift_code": "INHLSCS1XXX", "bank_code": "INHL", "branch_code": null, "branch": "", "bank": "RM INTERNATIONAL HOLDINGS AG", "address": null, "zip": null, "city": "PROVIDENCE MAHE"}
     ]
 }
