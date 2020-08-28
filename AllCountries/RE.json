@@ -1,0 +1,17 @@
+{
+    "country": "Réunion",
+    "country_code": "RE",
+    "ISO_3166_1": { "name": "Réunion" , "name_fr": "Réunion (La)" , "alpha2": "RE" , "alpha3": "REU" , "numeric": 638 },
+    "list": [
+{ "id": 1, "bank": "CREDIT AGRICOLE", "city": "LE PORT", "branch": null, "swift_code": "AGRIRERXLEO" },
+{ "id": 2, "bank": "CREDIT AGRICOLE", "city": "SAINT LOUIS", "branch": "(LA REUNION BRANCH)", "swift_code": "AGRIRERXSNL" },
+{ "id": 3, "bank": "BANQUE FRANCAISE COMMERCIALE DE L'OCEAN INDIEN", "city": "SAINT DENIS", "branch": null, "swift_code": "BFCORERXXXX" },
+{ "id": 4, "bank": "BNP PARIBAS LA REUNION", "city": "LE PORT", "branch": null, "swift_code": "BNPARERXPOR" },
+{ "id": 5, "bank": "CREDIT AGRICOLE", "city": "SAINT DENIS", "branch": null, "swift_code": "AGRIRERXXXX" },
+{ "id": 6, "bank": "BNP PARIBAS LA REUNION", "city": "SAINT DENIS", "branch": null, "swift_code": "BNPARERXXXX" },
+{ "id": 7, "bank": "CAISSE REGIONALE DE CREDIT AGRICOLE MUTUEL DE LA REUNION", "city": "SAINT DENIS", "branch": null, "swift_code": "CGRARER1XXX" },
+{ "id": 8, "bank": "OCEOR LEASE REUNION", "city": "SAINT DENIS", "branch": null, "swift_code": "OCLRRER1XXX" },
+{ "id": 9, "bank": "SOCIETE FINANCIERE POUR LE DEVELOPPEMENT DE LA REUNION", "city": "SAINT DENIS", "branch": null, "swift_code": "SODIRER1XXX" },
+{ "id": 10, "bank": "SOCIETE REUNIONNAISE DE FINT-SOREFI", "city": "SAINT DENIS", "branch": null, "swift_code": "SORFRER1XXX" }
+    ]
+}
