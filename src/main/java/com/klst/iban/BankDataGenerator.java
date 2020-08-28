@@ -84,7 +84,8 @@ public class BankDataGenerator extends IbanToBankData {
 	        int responseCode = con.getResponseCode();
 	        //LOG.info("Sending 'POST' request to URL "+IBAN_COM_URL + " parameters:"+urlParameters);
 	        if(responseCode!=200) {
-		        LOG.warning("Sending 'POST' request to URL "+IBAN_COM_URL + " parameters:"+urlParameters + " returns "+responseCode);	        	
+		        LOG.warning("Sending 'POST' request to URL "+IBAN_COM_URL + " parameters:"+urlParameters + " returns "+responseCode);	
+		        return;
 	        }
 	        //assertEquals(200, responseCode);
 	 
@@ -124,6 +125,11 @@ public class BankDataGenerator extends IbanToBankData {
 	        if(sepa_data_o instanceof JSONObject) {
 	        	SepaData sepaData = parseSepaDataObject( (JSONObject)sepa_data_o );
 	        	bankData.setBankSupports(sepaData.getBankSupports());
+	        }
+
+	        Object validations_o = jo.get("validations");
+	        if(validations_o instanceof JSONObject) {
+	        	parseValidationObject( (JSONObject)validations_o );
 	        }
 
 	        StringBuffer sb = new StringBuffer();
@@ -172,7 +178,7 @@ public class BankDataGenerator extends IbanToBankData {
     		} else {
     			sb.append("\"").append(bankData.getAddress()).append("\"");
     		}
-    		sb.append(",\"zip\": ");
+    		sb.append(", \"zip\": ");
     		if(bankData.getZipString()==null) {
     			sb.append(bankData.getZipString());
     		} else {
@@ -208,11 +214,6 @@ public class BankDataGenerator extends IbanToBankData {
     		}
     		sb.append ("},");
 			System.out.println(sb.toString());
-
-	        Object validations_o = jo.get("validations");
-	        if(validations_o instanceof JSONObject) {
-	        	parseValidationObject( (JSONObject)validations_o );
-	        }
 
         } catch (MalformedURLException e) {
 			e.printStackTrace();
@@ -413,35 +414,53 @@ public class BankDataGenerator extends IbanToBankData {
 	public static void main(String[] args) throws Exception {
 		BankDataGenerator test = new BankDataGenerator(API_KEY);
 //		test.jsonToList(JSON_DIR+"AZ"+JSON_EXT, "00000000137010001944");
+//		test.jsonToList(JSON_DIR+"BG"+JSON_EXT, "96611020345678"); // +BranchCode TODO
 //		test.jsonToList(JSON_DIR+"BH"+JSON_EXT, "00001299123456");
 //		test.jsonToList(JSON_DIR+"BY"+JSON_EXT, "3600900000002Z00AB00"); // +BranchCode
-		LOG.info("Id of AAAA/00 is "+test.bankCodeToId("AAAA"));
-		LOG.info("Id of BAAA/01 is "+test.bankCodeToId("BAAA"));
-		LOG.info("Id of CAAA/02 is "+test.bankCodeToId("CAAA"));
-		LOG.info("Id of DAAA/03 is "+test.bankCodeToId("DAAA"));
-		LOG.info("Id of EAAA/04 is "+test.bankCodeToId("EAAA"));
-		LOG.info("Id of FAAA/05 is "+test.bankCodeToId("FAAA"));
-		LOG.info("Id of AAAA is "+test.bankCodeToId("GAAA"));
-		LOG.info("Id of AAAA is "+test.bankCodeToId("HAAA"));
-		LOG.info("Id of AAAA is "+test.bankCodeToId("IAAA"));
-		LOG.info("Id of AAAA is "+test.bankCodeToId("JAAA"));
-		LOG.info("Id of AAAA is "+test.bankCodeToId("KAAA"));
-		LOG.info("Id of AAAA is "+test.bankCodeToId("LAAA"));
-		LOG.info("Id of AAAA is "+test.bankCodeToId("MAAA"));
-		LOG.info("Id of AAAA is "+test.bankCodeToId("NAAA"));
-		LOG.info("Id of AAAA is "+test.bankCodeToId("OAAA"));
-		LOG.info("Id of PAAA/15 is "+test.bankCodeToId("PAAA"));
-		LOG.info("Id of AAAA is "+test.bankCodeToId("QAAA"));
-		LOG.info("Id of AAAA is "+test.bankCodeToId("RAAA"));
-		LOG.info("Id of AAAA is "+test.bankCodeToId("SAAA"));
-		LOG.info("Id of AAAA is "+test.bankCodeToId("TAAA"));
-		LOG.info("Id of AAAA is "+test.bankCodeToId("UAAA"));
-		LOG.info("Id of AAAA is "+test.bankCodeToId("VAAA"));
-		LOG.info("Id of AAAA is "+test.bankCodeToId("WAAA"));
-		LOG.info("Id of AAAA is "+test.bankCodeToId("XAAA"));
-		LOG.info("Id of AAAA is "+test.bankCodeToId("YAAA"));
-		LOG.info("Id of ZAAA/25 is "+test.bankCodeToId("ZAAA"));
-		LOG.info("Id of ABAA/26 is "+test.bankCodeToId("ABAA"));
+//		test.jsonToList(JSON_DIR+"DO"+JSON_EXT, "00000001212453611324");
+//		test.jsonToList(JSON_DIR+"GI"+JSON_EXT, "000000007099453");
+//		test.jsonToList(JSON_DIR+"GT"+JSON_EXT, "01020000001210029690");
+//		test.jsonToList(JSON_DIR+"IQ"+JSON_EXT, "850123456789012"); // +BranchCode TODO
+		
+//		test.jsonToList(JSON_DIR+"KW"+JSON_EXT, "0000000000001234560101");
+//		test.jsonToList(JSON_DIR+"LC"+JSON_EXT, "000100010012001200023015");
+//		test.jsonToList(JSON_DIR+"LV"+JSON_EXT, "0000435195001");
+//		test.jsonToList(JSON_DIR+"NL"+JSON_EXT, "0417164300");
+//		test.jsonToList(JSON_DIR+"PK"+JSON_EXT, "0000001123456702");
+//		test.jsonToList(JSON_DIR+"PS"+JSON_EXT, "000000000400123456702");
+//		test.jsonToList(JSON_DIR+"QA"+JSON_EXT, "00001234567890ABCDEFG");
+//		test.jsonToList(JSON_DIR+"RO"+JSON_EXT, "1B31007593840000");
+//		test.jsonToList(JSON_DIR+"SC"+JSON_EXT, "11010000000000001497USD");
+		test.jsonToList(JSON_DIR+"SV"+JSON_EXT, "00000000000000700025");
+//		test.jsonToList(JSON_DIR+"VG"+JSON_EXT, "0000012345678901");
+		
+//		LOG.info("Id of AAAA/00 is "+test.bankCodeToId("AAAA"));
+//		LOG.info("Id of BAAA/01 is "+test.bankCodeToId("BAAA"));
+//		LOG.info("Id of CAAA/02 is "+test.bankCodeToId("CAAA"));
+//		LOG.info("Id of DAAA/03 is "+test.bankCodeToId("DAAA"));
+//		LOG.info("Id of EAAA/04 is "+test.bankCodeToId("EAAA"));
+//		LOG.info("Id of FAAA/05 is "+test.bankCodeToId("FAAA"));
+//		LOG.info("Id of AAAA is "+test.bankCodeToId("GAAA"));
+//		LOG.info("Id of AAAA is "+test.bankCodeToId("HAAA"));
+//		LOG.info("Id of AAAA is "+test.bankCodeToId("IAAA"));
+//		LOG.info("Id of AAAA is "+test.bankCodeToId("JAAA"));
+//		LOG.info("Id of AAAA is "+test.bankCodeToId("KAAA"));
+//		LOG.info("Id of AAAA is "+test.bankCodeToId("LAAA"));
+//		LOG.info("Id of AAAA is "+test.bankCodeToId("MAAA"));
+//		LOG.info("Id of AAAA is "+test.bankCodeToId("NAAA"));
+//		LOG.info("Id of AAAA is "+test.bankCodeToId("OAAA"));
+//		LOG.info("Id of PAAA/15 is "+test.bankCodeToId("PAAA"));
+//		LOG.info("Id of AAAA is "+test.bankCodeToId("QAAA"));
+//		LOG.info("Id of AAAA is "+test.bankCodeToId("RAAA"));
+//		LOG.info("Id of AAAA is "+test.bankCodeToId("SAAA"));
+//		LOG.info("Id of AAAA is "+test.bankCodeToId("TAAA"));
+//		LOG.info("Id of AAAA is "+test.bankCodeToId("UAAA"));
+//		LOG.info("Id of AAAA is "+test.bankCodeToId("VAAA"));
+//		LOG.info("Id of AAAA is "+test.bankCodeToId("WAAA"));
+//		LOG.info("Id of AAAA is "+test.bankCodeToId("XAAA"));
+//		LOG.info("Id of AAAA is "+test.bankCodeToId("YAAA"));
+//		LOG.info("Id of ZAAA/25 is "+test.bankCodeToId("ZAAA"));
+//		LOG.info("Id of ABAA/26 is "+test.bankCodeToId("ABAA"));
 //		//LOG.info("Id of ABAA is "+test.bankCodeToId("AB")); // exception
 	}
 
