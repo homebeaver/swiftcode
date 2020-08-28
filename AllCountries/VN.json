@@ -2,8 +2,6 @@
     "country": "Viet Nam",
     "country_code": "VN",
     "ISO_3166_1": { "name": "Viet Nam" , "name_fr": "Viet Nam (le)" , "alpha2": "VN" , "alpha3": "VNM" , "numeric": 704 },
-// Diese Daten sind aus https://bank-code.net/country/...    
-// Quelle https://currencyaz.com/swift-code/country/vietnam/ hat 720 Eintäge - also etwas mehr. Was ist aktueller?
     "list": [
 { "id": 1, "bank": "AN BINH COMMERCIAL JOINT STOCK BANK", "city": "HO CHI MINH CITY", "branch": null, "swift_code": "ABBKVNVXXXX" },
 { "id": 2, "bank": "AIA (VIETNAM)LIFE INSURANCE COMPANY LIMITED", "city": "HO CHI MINH CITY", "branch": "(GENERAL INVESTMENT OPERATIONS)", "swift_code": "AIACVNVXGIO" },
