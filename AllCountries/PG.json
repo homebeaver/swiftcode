@@ -1,0 +1,16 @@
+{
+    "country": "Papua New Guinea",
+    "country_code": "PG",
+    "ISO_3166_1": { "name": "Papua New Guinea" , "name_fr": "Papouasie-Nouvelle-Guinée (la)" , "alpha2": "PG" , "alpha3": "PNG" , "numeric": 598 },
+    "list": [
+{ "id": 1, "bank": "AUSTRALIA AND NEW ZEALAND BANKING GROUP (PNG) LTD.", "city": "PORT MORESBY", "branch": null, "swift_code": "ANZBPGPXXXX" },
+{ "id": 2, "bank": "BANK OF PAPUA NEW GUINEA", "city": "PORT MORESBY", "branch": null, "swift_code": "BPNGPGPMXXX" },
+{ "id": 3, "bank": "FIRST INVESTMENT FINANCE LIMITED", "city": "PORT MORESBY", "branch": null, "swift_code": "FIVFPGPMXXX" },
+{ "id": 4, "bank": "KINA BANK LIMITED", "city": "PORT MORESBY", "branch": null, "swift_code": "KINIPGPGXXX" },
+{ "id": 5, "bank": "BRITISH AMERICAN TOBACCO (PNG) LIMITED", "city": "PORT MORESBY", "branch": null, "swift_code": "BATSPGA1XXX" },
+{ "id": 6, "bank": "BANK OF SOUTH PACIFIC LIMITED", "city": "PORT MORESBY", "branch": null, "swift_code": "BOSPPGPMXXX" },
+{ "id": 7, "bank": "WESTPAC BANK - PNG - LIMITED", "city": "PORT MORESBY", "branch": null, "swift_code": "WPACPGPMXXX" },
+{ "id": 8, "bank": "TEACHERS SAVINGS AND LOAN SOCIETY LIMITED", "city": "PORT MORESBY", "branch": null, "swift_code": "TSLSPGPPXXX" },
+{ "id": 9, "bank": "OIL SEARCH LIMITED", "city": "PORT MORESBY", "branch": null, "swift_code": "OISEPGPPXXX" }
+    ]
+}
