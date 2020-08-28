@@ -2,6 +2,7 @@
     "country": "Netherlands",
     "country_code": "NL",
     "isSEPAcountry": true,
+     "ISO_3166_1": { "name": "Netherlands (the)" , "name_fr": "Pays-Bas (les)" , "alpha2": "NL" , "alpha3": "NLD" , "numeric": 528 },
     "list": [
 // {"id": 149857, "swift_code": null, "bank_code": "TRNI", "branch_code": null, "branch": null, "bank": null, "address": null, "zip": null, "city": null},
 // {"id": 114705, "swift_code": null, "bank_code": "TRNG", "branch_code": null, "branch": null, "bank": null, "address": null, "zip": null, "city": null},

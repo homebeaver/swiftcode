@@ -2,6 +2,7 @@
     "country": "Gibraltar",
     "country_code": "GI",
     "isSEPAcountry": true,
+    "ISO_3166_1": { "name": "Gibraltar" , "name_fr": "Gibraltar" , "alpha2": "GI" , "alpha3": "GIB" , "numeric": 292 },
     "list": [
 {"id":  39026, "swift_code": "ATFCGI21XXX", "bank_code": "ATFC", "branch_code": null, "branch": "", "bank": "3GT ACTIVE TRADING FUNDS PCC LTD", "address": null, "zip": null, "city": ""},
 {"id": 193363, "swift_code": "BBALGIG1XXX", "bank_code": "BBAL", "branch_code": null, "branch": "", "bank": "BALTICA BANK (GIBRALTAR) LTD", "address": null, "zip": null, "city": ""},

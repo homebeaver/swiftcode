@@ -1,6 +1,7 @@
 {
     "country": "Latvia",
     "country_code": "LV",
+    "isSEPAcountry": true,
     "ISO_3166_1": { "name": "Latvia" , "name_fr": "Lettonie (la)" , "alpha2": "LV" , "alpha3": "LVA" , "numeric": 428 },
     "list": [
 {"id": 300170, "swift_code": "ABCRLV21XXX", "bank_code": "ABCR", "branch_code": null, "branch": "ELIZABETES STREET 23", "bank": "AB.LV CAPITAL MARKETS", "address": null, "zip": null, "city": "RIGA"},
