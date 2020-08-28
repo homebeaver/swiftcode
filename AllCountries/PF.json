@@ -1,0 +1,18 @@
+{
+    "country": "Polynesia",
+    "country_code": "PF",
+    "ISO_3166_1": { "name": "French Polynesia" , "name_fr": "Polynésie française (la)" , "alpha2": "PF" , "alpha3": "PYF" , "numeric": 258 },
+    "list": [
+{ "id": 1, "bank": "BANQUE DE POLYNESIE", "city": "PAPEETE", "branch": null, "swift_code": "BPOLPFTPXXX" },
+{ "id": 2, "bank": "CAISSE DES DEPOTS ET CONSIGNATIONS", "city": "PAPEETE", "branch": null, "swift_code": "CDCGPFTPXXX" },
+{ "id": 3, "bank": "BANQUE DE TAHITI S.A.", "city": "PAPEETE", "branch": null, "swift_code": "CEPAPFTPXXX" },
+{ "id": 4, "bank": "SOCREDO", "city": "PAPEETE", "branch": null, "swift_code": "SOCBPFTXXXX" },
+{ "id": 5, "bank": "IEOM PAPEETE", "city": "PAPEETE", "branch": null, "swift_code": "INDDPFT1XXX" },
+{ "id": 6, "bank": "TRESOR PUBLIC PAPEETE", "city": "PAPEETE", "branch": null, "swift_code": "TRPUPFT1XXX" },
+{ "id": 7, "bank": "OCEANIENNE DE FINANCEMENT", "city": "PAPEETE", "branch": null, "swift_code": "OCFOPFT1XXX" },
+{ "id": 8, "bank": "OCEOR LEASE TAHITI", "city": "PAPEETE", "branch": null, "swift_code": "OCLTPFT1XXX" },
+{ "id": 9, "bank": "OFFICE POSTES ET TELECOM DE POLYNESIE FR", "city": "FAAA", "branch": null, "swift_code": "OFTPPFT1XXX" },
+{ "id": 10, "bank": "SOGELEASE BDP", "city": "PAPEETE", "branch": null, "swift_code": "SOGDPFT1XXX" },
+{ "id": 11, "bank": "BANQUE PARIBAS POLYNESIE", "city": "PAPEETE", "branch": null, "swift_code": "PARBPFT1XXX" }
+    ]
+}
