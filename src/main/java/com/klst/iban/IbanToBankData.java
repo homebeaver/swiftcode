@@ -63,7 +63,7 @@ public class IbanToBankData {
         try {
         	URL url = new URL(IBAN_COM_URL); // throws MalformedURLException
 			HttpsURLConnection con = (HttpsURLConnection) url.openConnection(); // throws IOException
-	        //add reuqest header
+	        //add request header
 	        con.setRequestMethod("POST");
 	        con.setRequestProperty("User-Agent", USER_AGENT);
 	        con.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
@@ -114,8 +114,7 @@ public class IbanToBankData {
 
 	        Object validations_o = jo.get("validations");
 	        if(validations_o instanceof JSONObject) {
-	        	LOG.info("validations for iban "+iban); 
-	        	parseValidationObject( (JSONObject)validations_o, true );
+	        	parseValidationObject(iban, (JSONObject)validations_o, true );
 	        }
 
 	        Object bank_data_o = jo.get("bank_data");
@@ -128,7 +127,7 @@ public class IbanToBankData {
 	        	SepaData sepaData = parseSepaDataObject( (JSONObject)sepa_data_o );
 	        	bankData.setBankSupports(sepaData.getBankSupports());
 	        }
-        	if(bankData.getBic()!=null && !bankData.getBic().isEmpty()) LOG.info(""+bankData); 
+//        	if(bankData.getBic()!=null && !bankData.getBic().isEmpty()) LOG.info(""+bankData); 
 
         } catch (MalformedURLException e) {
 			e.printStackTrace();
@@ -197,6 +196,10 @@ public class IbanToBankData {
              }
 
  */
+	void parseValidationObject(String iban, JSONObject validation, boolean verbose) {
+    	LOG.info("validations for iban "+iban); 
+    	parseValidationObject( validation, verbose );		
+	}
 	void parseValidationObject(JSONObject validation) {
 		parseValidationObject(validation, false);
 	}
@@ -221,23 +224,42 @@ public class IbanToBankData {
 		String bank_code = (String) bank_data.get("bank_code");
 		bankData.setBankIdentifier(bank_code);
 		// optional:
-		bankData = getOptionalKey(bank_data, "branch", bankData);
-		bankData = getOptionalKey(bank_data, "address", bankData);
-		bankData = getOptionalKey(bank_data, "state", bankData);
-//		bankData = getOptionalKey(bank_data, "zip", bankData); // int
-		bankData = getOptionalKey(bank_data, "phone", bankData);
-		bankData = getOptionalKey(bank_data, "fax", bankData);
-		bankData = getOptionalKey(bank_data, "www", bankData);
-		bankData = getOptionalKey(bank_data, "email", bankData);
+		bankData = getOptionalKey(bank_data, BRANCH, bankData);
+		bankData = getOptionalKey(bank_data, ADDRESS, bankData);
+		bankData = getOptionalKey(bank_data, STATE, bankData);
+		bankData = getOptionalKey(bank_data, ZIP, bankData);
+		bankData = getOptionalKey(bank_data, PHONE, bankData);
+		bankData = getOptionalKey(bank_data, FAX, bankData);
+		bankData = getOptionalKey(bank_data, WWW, bankData);
+		bankData = getOptionalKey(bank_data, EMAIL, bankData);
 		// country, country_iso
 		// account
 		return bankData;
 	}
-
-	private BankData getOptionalKey(JSONObject bank_data, String key, BankData bankData) {
-		Object o = bank_data.get(key);
-		if(o!=null) {
-			bankData.setBranch(o);
+	
+    static final String BRANCH = "branch";
+    static final String ADDRESS = "address";
+    static final String STATE = "state";
+    static final String ZIP = "zip";
+    static final String PHONE = "phone";
+    static final String FAX = "fax";
+    static final String WWW = "www";
+    static final String EMAIL = "email";
+    
+ 	private BankData getOptionalKey(JSONObject bank_data, String key, BankData bankData) {
+		Object value = bank_data.get(key);
+		if(value!=null) {
+			if(key.equals(BRANCH)) bankData.setBranch(value);
+			else if(key.equals(ADDRESS)) bankData.setAddress(value);
+			else if(key.equals(STATE)) bankData.setState(value);
+			else if(key.equals(ZIP)) bankData.setZipString((String)value);
+			else if(key.equals(PHONE)) bankData.setPhone(value);
+			else if(key.equals(FAX)) bankData.setFax(value);
+			else if(key.equals(WWW)) bankData.setWww(value);
+			else if(key.equals(EMAIL)) bankData.setEmail(value);
+			else {
+				LOG.severe("unsupported key "+key);
+			}
 		}
 		return bankData;	
 	}
