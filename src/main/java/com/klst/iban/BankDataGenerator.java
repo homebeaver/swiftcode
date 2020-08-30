@@ -52,6 +52,11 @@ public class BankDataGenerator extends IbanToBankData {
 		super(api_key);
 	}
 
+	void parseValidationObject(String iban, JSONObject validation, boolean verbose) {
+//    	LOG.info("validations for iban "+iban); 
+    	parseValidationObject(validation);		
+	}
+
 	void getBankDataViaApi(int id, String iban, String branchCode) {
     	BankData bankData =	super.retrieveBankData(iban);
     	if(bankData==null) return;
@@ -60,11 +65,12 @@ public class BankDataGenerator extends IbanToBankData {
         String bic = bankData.getBic();
         if(bic==null) { // not found ==> comment
         	sb.append("// ");
+        	return;
         }
         sb.append("{\"id\": ").append(id);
 		sb.append(", \"swift_code\": ");
         if(bic==null) {
-			sb.append(bic);	        	
+//			sb.append(bic);	        	
         } else {
 	        if(bic.endsWith("XXX") && branchCode.length()==3) {
     			sb.append("\"").append(bic.substring(0, 8)).append(branchCode).append("\"");
@@ -102,10 +108,8 @@ public class BankDataGenerator extends IbanToBankData {
 		} else {
 			sb.append("\"").append(bankData.getAddress()).append("\"");
 		}
-		sb.append(", \"zip\": ");
-		if(bankData.getZipString()==null) {
-			sb.append(bankData.getZipString());
-		} else {
+		if(bankData.getZipString()!=null && !bankData.getZipString().isEmpty()) {
+			sb.append(", \"zip\": ");
 			sb.append("\"").append(bankData.getZipString()).append("\"");
 		}
 		sb.append(", \"city\": ");
@@ -120,19 +124,19 @@ public class BankDataGenerator extends IbanToBankData {
     		sb.append(", \"support_codes\": ");
 			sb.append(bankData.getBankSupports());
 		}
-		if(bankData.getPhone()!=null) {
+		if(bankData.getPhone()!=null && !bankData.getPhone().toString().isEmpty()) {
     		sb.append(", \"phone\": ");
 			sb.append("\"").append(bankData.getPhone()).append("\"");
 		}
-		if(bankData.getFax()!=null) {
+		if(bankData.getFax()!=null && !bankData.getFax().toString().isEmpty()) {
     		sb.append(", \"fax\": ");
 			sb.append("\"").append(bankData.getFax()).append("\"");
 		}
-		if(bankData.getWww()!=null) {
+		if(bankData.getWww()!=null && !bankData.getWww().toString().isEmpty()) {
     		sb.append(", \"www\": ");
 			sb.append("\"").append(bankData.getWww()).append("\"");
 		}
-		if(bankData.getEmail()!=null) {
+		if(bankData.getEmail()!=null && !bankData.getEmail().toString().isEmpty()) {
     		sb.append(", \"email\": ");
 			sb.append("\"").append(bankData.getEmail()).append("\"");
 		}
@@ -144,7 +148,7 @@ public class BankDataGenerator extends IbanToBankData {
 		LOG.info("filename:"+filename);
 		File file = new File(filename);
 		if(!file.exists()) {
-			LOG.info("not existing file:"+file);
+			LOG.warning("not existing file:"+file);
 			return;
 		}
 		
@@ -203,16 +207,15 @@ public class BankDataGenerator extends IbanToBankData {
 		//LOG.info("id="+id);
 		return id;
 	}
-	private final static String API_KEY = "testKey";
 
 	private final static String JSON_EXT = ".json";
 	private final static String JSON_DIR = "AllCountries/";
 
 	public static void main(String[] args) throws Exception {
-		BankDataGenerator test = new BankDataGenerator(API_KEY);
+		BankDataGenerator test = new BankDataGenerator("testKey");
 //		test.jsonToList(JSON_DIR+"AZ"+JSON_EXT, "00000000137010001944");
-		test.jsonToList(JSON_DIR+"BG"+JSON_EXT, "96611020345678"); // +BranchCode TODO
-//		test.jsonToList(JSON_DIR+"BH"+JSON_EXT, "00001299123456");
+//		test.jsonToList(JSON_DIR+"BG"+JSON_EXT, "96611020345678"); // +BranchCode TODO
+		test.jsonToList(JSON_DIR+"BH"+JSON_EXT, "00001299123456");
 //		test.jsonToList(JSON_DIR+"BY"+JSON_EXT, "3600900000002Z00AB00"); // +BranchCode
 //		test.jsonToList(JSON_DIR+"DO"+JSON_EXT, "00000001212453611324");
 //		test.jsonToList(JSON_DIR+"GI"+JSON_EXT, "000000007099453");
