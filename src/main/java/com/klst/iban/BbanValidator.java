@@ -7,9 +7,20 @@ import org.apache.commons.validator.routines.RegexValidator;
 
 import com.klst.iban.Result.BankData;
 
+/* see https://en.wikipedia.org/wiki/International_Bank_Account_Number
+ *     https://www.ecbs.org/iban.htm
+ * IBAN consists of up to 34 alphanumeric characters, as follows:
+    country code using ISO 3166-1 alpha-2 – two letters,
+    check digits – two digits, and
+    Basic Bank Account Number (BBAN) – up to 30 alphanumeric characters that are country-specific.
+    BBAN format is decided by the national central bank or designated payment authority of each country.
+    
+   You can retrieve BIC from an IBAN with IBAN Validation tool: https://www.iban.com/iban-checker
+   
+   This class extracts BankData from a valid IBAN
+ */
 public class BbanValidator {
 
-    static final Map<String,String> BBAN_FORMATS = new Hashtable<String, String>();
     static final Map<String,BbanValidator> BBAN_DATA = new Hashtable<String, BbanValidator>();
     static {
     	BBAN_DATA.put("AD", new BbanValidator("(\\d{4})(\\d{4})([A-Z0-9]{12})"  , 1)); // 4!n4!n12!c +BranchCode
