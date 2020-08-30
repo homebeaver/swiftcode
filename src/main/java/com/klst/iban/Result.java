@@ -341,6 +341,7 @@ public class Result {
         protected String city;
         @XmlElement(required = true)
         protected Object state;
+        protected String zipString;
         protected int zip;
         @XmlElement(required = true)
         protected Object phone;
@@ -508,6 +509,20 @@ public class Result {
             this.state = value;
         }
 
+        public String getZipString() {
+            return zipString;
+        }
+        
+        public void setZipString(String value) {
+            this.zipString = value;
+            try {
+            	setZip(Integer.parseInt(value));
+            } catch (NumberFormatException e) {
+//            	LOG.info("Zip "+value " is not numeric.");
+            }
+
+        }
+        
         /**
          * Ruft den Wert der zip-Eigenschaft ab.
          * 
@@ -708,9 +723,8 @@ public class Result {
             try {
             	setBankCode(Integer.parseInt(value));
             } catch (NumberFormatException e) {
-//            	LOG.info("BankIdentifier "+value " is not numeric.);
-            }
-          
+//            	LOG.info("BankIdentifier "+value " is not numeric.");
+            }        
         }
 
         /**
@@ -755,7 +769,7 @@ public class Result {
     		if(getBank()!=null) sb.append(", Name:\"").append(getBank()).append("\""); // BankName		
     		if(getAddress()!=null) sb.append(", Address:\"").append(getAddress()).append("\"");	
     		if(getBankSupports()>0) sb.append(", BankSupports:").append(getBankSupports());	
-    		if(getZip()>0) sb.append(", Zip:").append(getZip());		
+    		if(getZipString()!=null) sb.append(", Zip:\"").append(getZipString()).append("\"");		
     		if(getCity()!=null) sb.append(", City:\"").append(getCity()).append("\"");		
     		if(getAccount()>0) sb.append(", Account:").append(getAccount());
     		sb.append ("]");
