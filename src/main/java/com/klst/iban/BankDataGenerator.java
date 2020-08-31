@@ -56,21 +56,32 @@ public class BankDataGenerator extends IbanToBankData {
 //    	LOG.info("validations for iban "+iban); 
     	parseValidationObject(validation);		
 	}
-
 	void getBankDataViaApi(int id, String iban, String branchCode) {
+		getBankDataViaApi(id, iban, branchCode, null, null);
+	}
+
+	void getBankDataViaApi(int id, String iban, String branchCode, Object swift_code, String bank) {
     	BankData bankData =	super.retrieveBankData(iban);
     	if(bankData==null) return;
 
         StringBuffer sb = new StringBuffer();
-        String bic = bankData.getBic();
-        if(bic==null) { // not found ==> comment
-        	sb.append("// ");
-        	return;
+        
+        String bankName = bankData.getBank();
+        if(bankName==null) { // not found 
+        	if(bank==null) return;
+        	bankName = bank;      	
         }
+        
+        String bic = bankData.getBic();
+        if(bic==null) {
+        	if(swift_code==null) return;
+        	bic = swift_code.toString();
+        }
+        
         sb.append("{\"id\": ").append(id);
 		sb.append(", \"swift_code\": ");
         if(bic==null) {
-//			sb.append(bic);	        	
+			sb.append(bic);	        	
         } else {
 	        if(bic.endsWith("XXX") && branchCode.length()==3) {
     			sb.append("\"").append(bic.substring(0, 8)).append(branchCode).append("\"");
@@ -96,11 +107,9 @@ public class BankDataGenerator extends IbanToBankData {
 		} else {
 			sb.append("\"").append(bankData.getBranch()).append("\"");
 		}
-		sb.append(", \"bank\": ");
-		if(bankData.getBank()==null) {
-			sb.append(bankData.getBank());
-		} else {
-			sb.append("\"").append(bankData.getBank()).append("\"");
+		if(bankName!=null) {
+			sb.append(", \"bank\": ");
+			sb.append("\"").append(bankName).append("\"");
 		}
 		sb.append(", \"address\": ");
 		if(bankData.getAddress()==null) {
@@ -188,6 +197,51 @@ public class BankDataGenerator extends IbanToBankData {
 //        JSONObject jo = (JSONObject) o;
 	}
 	
+	private void jsonNLList(String filename, String account) throws FileNotFoundException, IOException {
+		LOG.info("filename:"+filename);
+		File file = new File(filename);
+		if(!file.exists()) {
+			LOG.warning("not existing file:"+file);
+			return;
+		}
+		
+		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
+        JSONParser jsonParser = new JSONParser();
+        try {
+        	Object o = jsonParser.parse(reader);
+        	JSONObject jo = (JSONObject) o;
+        	Object country = jo.get("country");
+        	Object country_code = jo.get("country_code");
+        	LOG.info("country_code:"+country_code + " country:"+country);
+        	Object list = jo.get("list");
+        	List<JSONObject> jList = (JSONArray)list;
+        	LOG.info("jList.size:"+jList.size());
+        	jList.forEach(le -> {
+        		JSONObject je = (JSONObject)le;
+        		String bank = je.get("bank").toString();
+        		Object swift_code = je.get("swift_code");
+        		// create IBAN and use IBANApi
+        		String bankCode = je.get("bank_code").toString();
+//        		String countryCode = swift_code.toString().substring(4,6);
+//        		String locationCode = swift_code.toString().substring(6,8);
+        		String branchCode = "";
+        		if(swift_code.toString().length()==11) {
+        			branchCode = swift_code.toString().substring(8,11);
+        		}   		
+        		int id = bankCodeToId(bankCode);
+        		String iban = country_code.toString() + PP + bankCode + account;
+//            	LOG.info("id="+id + " swift_code:"+swift_code + " iban:"+iban);
+            	getBankDataViaApi(id, iban, branchCode, swift_code, bank);
+        	});
+		} catch (IOException | ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			reader.close();
+		}
+//        Object o = jsonParser.parse(response.toString());
+//        JSONObject jo = (JSONObject) o;
+	}
+
 	private static final int radix = 1+Character.hashCode('Z')-Character.hashCode('A');
 	// AAAA = 0, BAAA = 1, ZAAA = 28
 	static int bankCodeToId(String bankCode) {
@@ -215,7 +269,7 @@ public class BankDataGenerator extends IbanToBankData {
 		BankDataGenerator test = new BankDataGenerator("testKey");
 //		test.jsonToList(JSON_DIR+"AZ"+JSON_EXT, "00000000137010001944");
 //		test.jsonToList(JSON_DIR+"BG"+JSON_EXT, "96611020345678"); // +BranchCode TODO
-		test.jsonToList(JSON_DIR+"BH"+JSON_EXT, "00001299123456");
+//		test.jsonToList(JSON_DIR+"BH"+JSON_EXT, "00001299123456");
 //		test.jsonToList(JSON_DIR+"BY"+JSON_EXT, "3600900000002Z00AB00"); // +BranchCode
 //		test.jsonToList(JSON_DIR+"DO"+JSON_EXT, "00000001212453611324");
 //		test.jsonToList(JSON_DIR+"GI"+JSON_EXT, "000000007099453");
@@ -226,6 +280,7 @@ public class BankDataGenerator extends IbanToBankData {
 //		test.jsonToList(JSON_DIR+"LC"+JSON_EXT, "000100010012001200023015");
 //		test.jsonToList(JSON_DIR+"LV"+JSON_EXT, "0000435195001");
 //		test.jsonToList(JSON_DIR+"NL"+JSON_EXT, "0417164300");
+		test.jsonNLList(JSON_DIR+"NL"+JSON_EXT, "0417164300");		
 //		test.jsonToList(JSON_DIR+"PK"+JSON_EXT, "0000001123456702");
 //		test.jsonToList(JSON_DIR+"PS"+JSON_EXT, "000000000400123456702");
 //		test.jsonToList(JSON_DIR+"QA"+JSON_EXT, "00001234567890ABCDEFG");
