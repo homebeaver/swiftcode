@@ -3,20 +3,18 @@
     "country_code": "LC",
     "ISO_3166_1": { "name": "Saint Lucia" , "name_fr": "Sainte-Lucie" , "alpha2": "LC" , "alpha3": "LCA" , "numeric": 662 },
     "list": [
-{"id": 205869, "swift_code": "BOSLLCLCXXX", "bank_code": "BOSL", "branch_code": null, "branch": "1 BRIDGE STREET", "bank": "BANK OF SAINT LUCIA LTD.", "address": null, "zip": null, "city": "CASTRIES"},
-{"id": 359425, "swift_code": "BSLULCLCXXX", "bank_code": "BSLU", "branch_code": null, "branch": "WILLIE-VOLNEY-DRIVE MASSADE", "bank": "BANK OF SAINT LUCIA INTERNATIONAL LTD.", "address": null, "zip": null, "city": "GROS-ISLET"},
-{"id":  23041, "swift_code": "FCIBLCLCXXX", "bank_code": "FCIB", "branch_code": null, "branch": "BRIDGE STREET", "bank": "FIRSTCARIBBEAN INTERNATIONAL BANK", "address": null, "zip": null, "city": "CASTRIES"},
-{"id":  43140, "swift_code": "GVLCLCLCXXX", "bank_code": "GVLC", "branch_code": null, "branch": "FINANCIAL CENTRE BRIDGE STREET", "bank": "GOVERNMENT OF SAINT LUCIA", "address": null, "zip": null, "city": "CASTRIES"},
-{"id": 219135, "swift_code": "HEMMLCL2XXX", "bank_code": "HEMM", "branch_code": null, "branch": "BELLA ROSA RODNEY BAY", "bank": "HERMES BANK LTD.", "address": null, "zip": null, "city": "GROS-ISLET"},
-{"id":  27571, "swift_code": "LUOBLCLCXXX", "bank_code": "LUOB", "branch_code": null, "branch": "21 BRIDGE STREET", "bank": "1ST NATIONAL BANK ST.LUCIA LTD.", "address": null, "zip": null, "city": "CASTRIES"},
-{"id":  47697, "swift_code": "NOSCLCLCXXX", "bank_code": "NOSC", "branch_code": null, "branch": "6 WILLIAM PETER BOULEVARD", "bank": "BANK OF NOVA SCOTIA", "address": null, "zip": null, "city": "CASTRIES"},
-{"id":  39509, "swift_code": "PLGCLCLCXXX", "bank_code": "PLGC", "branch_code": null, "branch": "BRAZIL STREET 6", "bank": "PLG CAPITAL BANK LTD.", "address": null, "zip": null, "city": "CASTRIES"},
-{"id": 381097, "swift_code": "PTRVLCLCXXX", "bank_code": "PTRV", "branch_code": null, "branch": "5 Marina Village Marigot Bay", "bank": "PETRUS PRIVATE BANK", "address": null, "zip": null, "city": "Castries City"},
-{"id":  51757, "swift_code": "ROYCLCLCXXX", "bank_code": "ROYC", "branch_code": null, "branch": "LABORIE STR. W.PETER BLVD", "bank": "ROYAL BANK OF CANADA", "address": null, "zip": null, "city": "CASTRIES"},
-{"id": 347300, "swift_code": "STTTLCLCXXX", "bank_code": "STTT", "branch_code": null, "branch": "POINTE SERAPHINE", "bank": "STATETRUST BANK AND TRUST LTD.", "address": null, "zip": null, "city": "CASTRIES"},
-// {"id": 255113, "swift_code": null, "bank_code": "BKNO", "branch_code": null, "branch": null, "bank": null, "address": null, "zip": null, "city": null},
-// {"id": 359480, "swift_code": null, "bank_code": "EULU", "branch_code": null, "branch": null, "bank": null, "address": null, "zip": null, "city": null},
-{"id":  39509, "swift_code": "PLGCLCLCBWI", "bank_code": "PLGC", "branch_code": null, "branch": "BRAZIL STREET 6", "bank": "PLG CAPITAL BANK LTD.", "address": null, "zip": null, "city": "CASTRIES"},
-{"id": 379446, "swift_code": "CIPVLCL1XXX", "bank_code": "CIPV", "branch_code": null, "branch": "BOURBON STREET", "bank": "CARIBBEAN PRIVATE BANK LTD.", "address": null, "zip": null, "city": "CASTRIES"}
+{"id": 205869, "swift_code": "BOSLLCLCXXX", "bank_code": "BOSL", "branch_code": null, "branch": null, "bank": "BANK OF SAINT LUCIA LTD.", "address": "1 BRIDGE STREET", "city": "CASTRIES"},
+{"id": 359425, "swift_code": "BSLULCLCXXX", "bank_code": "BSLU", "branch_code": null, "branch": null, "bank": "BANK OF SAINT LUCIA INTERNATIONAL LTD.", "address": "WILLIE-VOLNEY-DRIVE MASSADE", "city": "GROS-ISLET"},
+{"id": 23041, "swift_code": "FCIBLCLCXXX", "bank_code": "FCIB", "branch_code": null, "branch": null, "bank": "FIRSTCARIBBEAN INTERNATIONAL BANK", "address": "BRIDGE STREET", "city": "CASTRIES"},
+{"id": 43140, "swift_code": "GVLCLCLCXXX", "bank_code": "GVLC", "branch_code": null, "branch": null, "bank": "GOVERNMENT OF SAINT LUCIA", "address": "FINANCIAL CENTRE BRIDGE STREET", "city": "CASTRIES"},
+{"id": 219135, "swift_code": "HEMMLCL2XXX", "bank_code": "HEMM", "branch_code": null, "branch": null, "bank": "HERMES BANK LTD.", "address": "BELLA ROSA RODNEY BAY", "city": "GROS-ISLET"},
+{"id": 27571, "swift_code": "LUOBLCLCXXX", "bank_code": "LUOB", "branch_code": null, "branch": null, "bank": "1ST NATIONAL BANK ST.LUCIA LTD.", "address": "21 BRIDGE STREET", "city": "CASTRIES"},
+{"id": 47697, "swift_code": "NOSCLCLCXXX", "bank_code": "NOSC", "branch_code": null, "branch": null, "bank": "BANK OF NOVA SCOTIA", "address": "6 WILLIAM PETER BOULEVARD", "city": "CASTRIES"},
+{"id": 39509, "swift_code": "PLGCLCLCXXX", "bank_code": "PLGC", "branch_code": null, "branch": null, "bank": "PLG CAPITAL BANK LTD.", "address": "BRAZIL STREET 6", "city": "CASTRIES"},
+{"id": 381097, "swift_code": "PTRVLCLCXXX", "bank_code": "PTRV", "branch_code": null, "branch": null, "bank": "PETRUS PRIVATE BANK", "address": "5 Marina Village Marigot Bay", "city": "Castries City"},
+{"id": 51757, "swift_code": "ROYCLCLCXXX", "bank_code": "ROYC", "branch_code": null, "branch": null, "bank": "ROYAL BANK OF CANADA", "address": "LABORIE STR. W.PETER BLVD", "city": "CASTRIES"},
+{"id": 347300, "swift_code": "STTTLCLCXXX", "bank_code": "STTT", "branch_code": null, "branch": null, "bank": "STATETRUST BANK AND TRUST LTD.", "address": "POINTE SERAPHINE", "city": "CASTRIES"},
+{"id": 39509, "swift_code": "PLGCLCLCBWI", "bank_code": "PLGC", "branch_code": null, "branch": null, "bank": "PLG CAPITAL BANK LTD.", "address": "BRAZIL STREET 6", "city": "CASTRIES"},
+{"id": 379446, "swift_code": "CIPVLCL1XXX", "bank_code": "CIPV", "branch_code": null, "branch": null, "bank": "CARIBBEAN PRIVATE BANK LTD.", "address": "BOURBON STREET", "city": "CASTRIES"}
     ]
 }
