@@ -1,3772 +1,794 @@
 {
     "country": "Belgium",
     "country_code": "BE",
+    "isSEPAcountry": true,
+    "ISO_3166_1": { "name": "Belgium" , "name_fr": "Belgique (la)" , "alpha2": "BE" , "alpha3": "BEL" , "numeric": 56  },
     "list": [
-        {
-            "id": 1,
-            "bank": "AAREAL BANK AG",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "AARBBEB1"
-        },
-        {
-            "id": 2,
-            "bank": "ABE CLEARING SAS\/EBA CLEARING",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "EBATBEBB"
-        },
-        {
-            "id": 3,
-            "bank": "ABE CLEARING SAS\/EBA CLEARING",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "EBACBEBB"
-        },
-        {
-            "id": 4,
-            "bank": "ABK BANK CVBA (FORMERLY ANTWERPS BEROEPSKREDIET CV)",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "ABERBE21"
-        },
-        {
-            "id": 5,
-            "bank": "ABN AMRO BANK N.V. BELGIAN BRANCH",
-            "city": "ANTWERPEN",
-            "branch": "(INTERNATIONAL DIAMOND AND JEWELRY GROUP)",
-            "swift_code": "ABNABE2AIDJ"
-        },
-        {
-            "id": 6,
-            "bank": "ABN AMRO BANK N.V. BELGIAN BRANCH",
-            "city": "ANTWERPEN",
-            "branch": "(MONEYOU)",
-            "swift_code": "ABNABE2AMYO"
-        },
-        {
-            "id": 7,
-            "bank": "ABN AMRO BANK N.V. BELGIAN BRANCH",
-            "city": "BERCHEM",
-            "branch": "(INTERNATIONAL PRIVATE CLIENTS DEPARTMENT)",
-            "swift_code": "ABNABE2AIPC"
-        },
-        {
-            "id": 8,
-            "bank": "ABN AMRO BANK N.V. BELGIAN BRANCH",
-            "city": "BERCHEM",
-            "branch": null,
-            "swift_code": "FTSBBE22"
-        },
-        {
-            "id": 9,
-            "bank": "ABN AMRO BANK N.V. BELGIAN BRANCH",
-            "city": "BERCHEM",
-            "branch": null,
-            "swift_code": "ABNABE2A"
-        },
-        {
-            "id": 10,
-            "bank": "ACCORD",
-            "city": "LA HULPE",
-            "branch": null,
-            "swift_code": "ACCOBEB3"
-        },
-        {
-            "id": 11,
-            "bank": "AG INSURANCE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ISSUBEB1"
-        },
-        {
-            "id": 12,
-            "bank": "AGFA-GEVAERT NV",
-            "city": "MORTSEL",
-            "branch": null,
-            "swift_code": "AGFGBEBB"
-        },
-        {
-            "id": 13,
-            "bank": "ALENA SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ALENBEB1"
-        },
-        {
-            "id": 14,
-            "bank": "ANHEUSER-BUSCH INBEV NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ABIXBEBB"
-        },
-        {
-            "id": 15,
-            "bank": "ARGENTA",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "ARSPBE22"
-        },
-        {
-            "id": 16,
-            "bank": "ASSOCIATED STOCKBROKERS, BVBA",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "ASSTBE21"
-        },
-        {
-            "id": 17,
-            "bank": "ATTIJARIWAFA BANK (FORMERLY WAFABANK)",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "WAFABEBBANT"
-        },
-        {
-            "id": 18,
-            "bank": "ATTIJARIWAFA BANK (FORMERLY WAFABANK)",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "WAFABEBB"
-        },
-        {
-            "id": 19,
-            "bank": "AUDI NV",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "AUETBE21"
-        },
-        {
-            "id": 20,
-            "bank": "AUXIFINA SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "AUXIBEB1"
-        },
-        {
-            "id": 21,
-            "bank": "AVEVE SA",
-            "city": "MERKSEM",
-            "branch": null,
-            "swift_code": "AVEVBE21"
-        },
-        {
-            "id": 22,
-            "bank": "AXA BANK EUROPE (FORMERLY AXA BANK BELGIUM)",
-            "city": "BERCHEM",
-            "branch": null,
-            "swift_code": "AXABBE22"
-        },
-        {
-            "id": 23,
-            "bank": "AXA BELGIUM",
-            "city": "WATERMAEL BOITSFORT",
-            "branch": null,
-            "swift_code": "AXBIBEBB"
-        },
-        {
-            "id": 24,
-            "bank": "B AND BT NV",
-            "city": "ANTWERPEN",
-            "branch": "(WOMMELGEM)",
-            "swift_code": "BNDDBE21326"
-        },
-        {
-            "id": 25,
-            "bank": "B AND BT NV",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "BNDDBE21"
-        },
-        {
-            "id": 26,
-            "bank": "BANCA MONTE PASCHI BELGIO",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BMPBBEBB"
-        },
-        {
-            "id": 27,
-            "bank": "BANCA MONTE PASCHI BELGIO",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BMPBBEBBTGT"
-        },
-        {
-            "id": 28,
-            "bank": "BANCO BILBAO VIZCAYA ARGENTARIA S.A.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BBVABEBB"
-        },
-        {
-            "id": 29,
-            "bank": "BANCO SANTANDER CENTRAL HISPANO",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BSCHBEBR"
-        },
-        {
-            "id": 30,
-            "bank": "BANCONTACT-MISTERCASH SA\/NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BCMCBEBB"
-        },
-        {
-            "id": 31,
-            "bank": "BANK DELEN NV",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "DELEBE22"
-        },
-        {
-            "id": 32,
-            "bank": "BANK DELEN NV",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "DELEBE22NRA"
-        },
-        {
-            "id": 33,
-            "bank": "BANK DELEN NV",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "DELEBE22THE"
-        },
-        {
-            "id": 34,
-            "bank": "BANK J. VAN BREDA AND CO NV",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "JVBABE22"
-        },
-        {
-            "id": 35,
-            "bank": "BANK OF AMERICA, N.A. ANTWERP",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "BOFABE3X"
-        },
-        {
-            "id": 36,
-            "bank": "BANK OF BARODA (BRUSSELS BRANCH)",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BARBBEBB"
-        },
-        {
-            "id": 37,
-            "bank": "BANK OF CHINA (LUXEMBOURG) S.A. BRUSSELS BRANCH",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BKCHBEBB"
-        },
-        {
-            "id": 38,
-            "bank": "BANK OF INDIA",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "BKIDBE22"
-        },
-        {
-            "id": 39,
-            "bank": "BANK OF NEW YORK (LUXEMBOURG)SA, THE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "IRVTBEB1"
-        },
-        {
-            "id": 40,
-            "bank": "BANK OF TOKYO-MITSUBISHI UFJ, LTD., THE",
-            "city": "BRUSSELS",
-            "branch": "(BRUSSELS BRANCH)",
-            "swift_code": "BOTKBEBX"
-        },
-        {
-            "id": 41,
-            "bank": "BANQUE BCP S.A. LUXEMBOURG-SUCCURSALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BMECBEB1"
-        },
-        {
-            "id": 42,
-            "bank": "BANQUE CENTRALE POPULAIRE SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BCPOBEB1"
-        },
-        {
-            "id": 43,
-            "bank": "BANQUE CHAABI DU MAROC",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BCDMBEBB"
-        },
-        {
-            "id": 44,
-            "bank": "BANQUE DE LUXEMBOURG, SUCCURSALE DE BELGIQUE",
-            "city": "ARLON",
-            "branch": null,
-            "swift_code": "BLUXBE41"
-        },
-        {
-            "id": 45,
-            "bank": "BANQUE DEGROOF PETERCAM SA\/NV (FORMERLY BANQUE DEGROOF)",
-            "city": "BRUSSELS",
-            "branch": "(TARGET 2 SECURITIES PARTICIPATION)",
-            "swift_code": "DEGRBEBBTG2"
-        },
-        {
-            "id": 46,
-            "bank": "BANQUE DEGROOF PETERCAM SA\/NV (FORMERLY BANQUE DEGROOF)",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "DEGRBEBB"
-        },
-        {
-            "id": 47,
-            "bank": "BANQUE DEGROOF PETERCAM SA\/NV (FORMERLY PETERCAM SA)",
-            "city": "BRUSSELS",
-            "branch": "(BACK -OFFICE CLIENTS NOT IN CUSTODY)",
-            "swift_code": "PECSBEBB009"
-        },
-        {
-            "id": 48,
-            "bank": "BANQUE DEGROOF PETERCAM SA\/NV (FORMERLY PETERCAM SA)",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "PECSBEBB"
-        },
-        {
-            "id": 49,
-            "bank": "BANQUE DREZE",
-            "city": "VERVIERS",
-            "branch": null,
-            "swift_code": "BDREBE41"
-        },
-        {
-            "id": 50,
-            "bank": "BANQUE ENI S.A.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ENIBBEBB"
-        },
-        {
-            "id": 51,
-            "bank": "BANQUE NAGELMACKERS S.A. - BANK NAGELMACKERS NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BNAGBEBB"
-        },
-        {
-            "id": 52,
-            "bank": "BANQUE NATIONALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": "(ACCOUNTS DIVISION)",
-            "swift_code": "NBBEBEBB273"
-        },
-        {
-            "id": 53,
-            "bank": "BANQUE NATIONALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": "(BACK OFFICE DIVISION)",
-            "swift_code": "NBBEBEBB243"
-        },
-        {
-            "id": 54,
-            "bank": "BANQUE NATIONALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": "(BELGIAN TREASURY)",
-            "swift_code": "NBBEBEBBTRE"
-        },
-        {
-            "id": 55,
-            "bank": "BANQUE NATIONALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": "(CEC TECHNICAL ACCOUNT)",
-            "swift_code": "NBBEBEBBCEC"
-        },
-        {
-            "id": 56,
-            "bank": "BANQUE NATIONALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": "(CURRENT ACCOUNTS DIVISION)",
-            "swift_code": "NBBEBEBB203"
-        },
-        {
-            "id": 57,
-            "bank": "BANQUE NATIONALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": "(EUROCLEAR SETTLEMENT SERVICES)",
-            "swift_code": "NBBEBEBBEOC"
-        },
-        {
-            "id": 58,
-            "bank": "BANQUE NATIONALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": "(NBB\/ESES CONTINGENCY ACCOUNT)",
-            "swift_code": "NBBEBEBBCAC"
-        },
-        {
-            "id": 59,
-            "bank": "BANQUE NATIONALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": "(NBB\/ESES CROSS NCB POSITION WITH DNB)",
-            "swift_code": "NBBEBEBBNLX"
-        },
-        {
-            "id": 60,
-            "bank": "BANQUE NATIONALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": "(NBB\/ESES CROSS-NCB POSITION WITH BDF)",
-            "swift_code": "NBBEBEBBFRX"
-        },
-        {
-            "id": 61,
-            "bank": "BANQUE NATIONALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": "(NBB\/ESES MIRRO\/TECHNICAL ACCOUNT)",
-            "swift_code": "NBBEBEBBECL"
-        },
-        {
-            "id": 62,
-            "bank": "BANQUE NATIONALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": "(NBB\/SSS MIRROR\/TECHNICAL  ACCOUNT)",
-            "swift_code": "NBBEBEBBMAC"
-        },
-        {
-            "id": 63,
-            "bank": "BANQUE NATIONALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": "(NBB-SSS)",
-            "swift_code": "NBBEBEBB223"
-        },
-        {
-            "id": 64,
-            "bank": "BANQUE NATIONALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": "(OVP TECHNICAL ACCOUNT)",
-            "swift_code": "NBBEBEBBOVP"
-        },
-        {
-            "id": 65,
-            "bank": "BANQUE NATIONALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": "(SECURITIES CLEARING SYSTEM)",
-            "swift_code": "NBBEBEBB216"
-        },
-        {
-            "id": 66,
-            "bank": "BANQUE NATIONALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": "(T2S MIGRATION)",
-            "swift_code": "NBBEBEBBMIG"
-        },
-        {
-            "id": 67,
-            "bank": "BANQUE NATIONALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": "(WITHOLDING TAX)",
-            "swift_code": "NBBEBEBBWTX"
-        },
-        {
-            "id": 68,
-            "bank": "BANQUE NATIONALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "NBBEBEBB"
-        },
-        {
-            "id": 69,
-            "bank": "BANQUE NATIONALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ECMSBEBB"
-        },
-        {
-            "id": 70,
-            "bank": "BANQUE NATIONALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ECMSBEBBCCB"
-        },
-        {
-            "id": 71,
-            "bank": "BANQUE NATIONALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "NBBEBEBBCON"
-        },
-        {
-            "id": 72,
-            "bank": "BANQUE NATIONALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "NBBEBEBBDCK"
-        },
-        {
-            "id": 73,
-            "bank": "BANQUE NATIONALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "NBBEBEBBGLB"
-        },
-        {
-            "id": 74,
-            "bank": "BANQUE PRIVEE EDMOND DE ROTHSCHILD EUROPE, BELGIANBRANCH",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "PRIBBEBB"
-        },
-        {
-            "id": 75,
-            "bank": "BANQUE PSA FINANCE SUCCURSALE EN BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "PSABBEB1"
-        },
-        {
-            "id": 76,
-            "bank": "BAUDOUX VERTONGEN ET CIE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BAUVBEB1"
-        },
-        {
-            "id": 77,
-            "bank": "BEECKMANS, VAN GAVER ET CIE, SCS",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "BGHVBE21"
-        },
-        {
-            "id": 78,
-            "bank": "BELFIUS BANK SA\/NV",
-            "city": "BRUSSELS",
-            "branch": "(HEAD OFFICE)",
-            "swift_code": "GKCCBEBB"
-        },
-        {
-            "id": 79,
-            "bank": "BELGIAN NATIONAL REGISTRY",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BENGBEB1"
-        },
-        {
-            "id": 80,
-            "bank": "BELHYPERION",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BELHBEB1"
-        },
-        {
-            "id": 81,
-            "bank": "BEMO HOLDING SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BEMBBEB1"
-        },
-        {
-            "id": 82,
-            "bank": "BEOBANK NV\/SA",
-            "city": "BRUSSELS",
-            "branch": "(TARGET2)",
-            "swift_code": "CTBKBEBXTGT"
-        },
-        {
-            "id": 83,
-            "bank": "BEOBANK NV\/SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "CTBKBEBX"
-        },
-        {
-            "id": 84,
-            "bank": "BEURS VAN ANTWERPEN (ANTWERP STOCK EXCHANGE)",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "XANTBE21"
-        },
-        {
-            "id": 85,
-            "bank": "BHW BAUSPARKASSE AG",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BHBEBEB1"
-        },
-        {
-            "id": 86,
-            "bank": "BINCKBANK NV",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "BIBLBE21"
-        },
-        {
-            "id": 87,
-            "bank": "BIOPARTICIPATIONS SA",
-            "city": "MARQUAIN",
-            "branch": null,
-            "swift_code": "BIOABE71"
-        },
-        {
-            "id": 88,
-            "bank": "BKCP SECURITIES NV",
-            "city": "KNOKKE-HEIST",
-            "branch": null,
-            "swift_code": "BUSSBE81"
-        },
-        {
-            "id": 89,
-            "bank": "BMCE EUROSERVICES",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BMEUBEB1"
-        },
-        {
-            "id": 90,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "AALST",
-            "branch": null,
-            "swift_code": "GEBABEBB01A"
-        },
-        {
-            "id": 91,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "GEBABEBB18A"
-        },
-        {
-            "id": 92,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "ARLON",
-            "branch": null,
-            "swift_code": "GEBABEBB02A"
-        },
-        {
-            "id": 93,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "BRUGGE",
-            "branch": null,
-            "swift_code": "GEBABEBB13A"
-        },
-        {
-            "id": 94,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "BRUSSELS",
-            "branch": "(ALL BELGIAN OFFICES)",
-            "swift_code": "GEBABEBB"
-        },
-        {
-            "id": 95,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "BRUSSELS",
-            "branch": "(EQUITY TRADING LSE)",
-            "swift_code": "GEBABEBBLDN"
-        },
-        {
-            "id": 96,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "BRUSSELS",
-            "branch": "(HEAD OFFICE)",
-            "swift_code": "GEBABEBB36A"
-        },
-        {
-            "id": 97,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "BRUSSELS",
-            "branch": "(INTERNAL PROCESS ACCOUNT)",
-            "swift_code": "GEBABEBBIPA"
-        },
-        {
-            "id": 98,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "BRUSSELS",
-            "branch": "(PROPRIETARY TRADING EQUITIES)",
-            "swift_code": "GEBABEBBSSD"
-        },
-        {
-            "id": 99,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "GEBABEBB00A"
-        },
-        {
-            "id": 100,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "GEBABEBBALM"
-        },
-        {
-            "id": 101,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "GEBABEBBDBK"
-        },
-        {
-            "id": 102,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "CHARLEROI",
-            "branch": null,
-            "swift_code": "GEBABEBB03A"
-        },
-        {
-            "id": 103,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "GENK",
-            "branch": null,
-            "swift_code": "GEBABEBB08E"
-        },
-        {
-            "id": 104,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "GENT",
-            "branch": null,
-            "swift_code": "GEBABEBB05A"
-        },
-        {
-            "id": 105,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "HASSELT",
-            "branch": null,
-            "swift_code": "GEBABEBB14A"
-        },
-        {
-            "id": 106,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "HUY",
-            "branch": null,
-            "swift_code": "GEBABEBB07B"
-        },
-        {
-            "id": 107,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "KORTRIJK",
-            "branch": null,
-            "swift_code": "GEBABEBB04A"
-        },
-        {
-            "id": 108,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "LA LOUVIERE",
-            "branch": null,
-            "swift_code": "GEBABEBB06A"
-        },
-        {
-            "id": 109,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "LEUVEN",
-            "branch": null,
-            "swift_code": "GEBABEBB08A"
-        },
-        {
-            "id": 110,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "LIEGE",
-            "branch": null,
-            "swift_code": "GEBABEBB07A"
-        },
-        {
-            "id": 111,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "MECHELEN",
-            "branch": null,
-            "swift_code": "GEBABEBB08B"
-        },
-        {
-            "id": 112,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "MONS",
-            "branch": null,
-            "swift_code": "GEBABEBB09A"
-        },
-        {
-            "id": 113,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "NAMUR",
-            "branch": null,
-            "swift_code": "GEBABEBB10A"
-        },
-        {
-            "id": 114,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "NINOVE",
-            "branch": null,
-            "swift_code": "GEBABEBB18B"
-        },
-        {
-            "id": 115,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "NIVELLES",
-            "branch": null,
-            "swift_code": "GEBABEBB06B"
-        },
-        {
-            "id": 116,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "ROESELARE",
-            "branch": null,
-            "swift_code": "GEBABEBB05B"
-        },
-        {
-            "id": 117,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "SINT-NIKLAAS",
-            "branch": null,
-            "swift_code": "GEBABEBB01B"
-        },
-        {
-            "id": 118,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "TIENEN",
-            "branch": null,
-            "swift_code": "GEBABEBB08C"
-        },
-        {
-            "id": 119,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "TOURNAI",
-            "branch": null,
-            "swift_code": "GEBABEBB11A"
-        },
-        {
-            "id": 120,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "TURNHOUT",
-            "branch": null,
-            "swift_code": "GEBABEBB08D"
-        },
-        {
-            "id": 121,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "VERVIERS",
-            "branch": null,
-            "swift_code": "GEBABEBB12A"
-        },
-        {
-            "id": 122,
-            "bank": "BNP PARIBAS FORTIS (FORTIS BANK SA\/NV)",
-            "city": "WAREMME",
-            "branch": null,
-            "swift_code": "GEBABEBB07C"
-        },
-        {
-            "id": 123,
-            "bank": "BNP PARIBAS IP BELGIUM SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "FIMGBEBB"
-        },
-        {
-            "id": 124,
-            "bank": "BNP PARIBAS PRIVATE BANK",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BPPBBEB1"
-        },
-        {
-            "id": 125,
-            "bank": "BNP PARIBAS S.A. BELGIUM - BELGIUM BRANCH",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BNPABEBB"
-        },
-        {
-            "id": 126,
-            "bank": "BNP PARIBAS SECURITIES SERVICES, BELGIUM",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "PARBBEBZ"
-        },
-        {
-            "id": 127,
-            "bank": "BNP PARIBAS SECURITIES SERVICES, BELGIUM",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "PARBBEBZISI"
-        },
-        {
-            "id": 128,
-            "bank": "BNP PARIBAS SECURITIES SERVICES, BRUSSELS BRANCH",
-            "city": "BRUSSELS",
-            "branch": "(PARIBAS MULTIDIRECT CUSTODY AND CLEARING.MDCC)",
-            "swift_code": "PARBBEBZMDC"
-        },
-        {
-            "id": 129,
-            "bank": "BNY MELLON CSD SA\/NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "GCSDBEBB"
-        },
-        {
-            "id": 130,
-            "bank": "BOREALIS FINANCIAL SERVICES NV",
-            "city": "MECHELEN",
-            "branch": null,
-            "swift_code": "BOALBE22"
-        },
-        {
-            "id": 131,
-            "bank": "BPOST",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "PCHQBEBB"
-        },
-        {
-            "id": 132,
-            "bank": "BPOST BANK-BPOST BANQUE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BPOTBEBE"
-        },
-        {
-            "id": 133,
-            "bank": "BPOSTBANK-BPOSTBANQUE",
-            "city": "BRUSSELS",
-            "branch": "(RESTRICTED USE)",
-            "swift_code": "BPOTBEB1ISA"
-        },
-        {
-            "id": 134,
-            "bank": "BPOSTBANK-BPOSTBANQUE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BPOTBEB1"
-        },
-        {
-            "id": 135,
-            "bank": "BRANQUART COSTERMANS SECURITIES SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BCSEBEB1"
-        },
-        {
-            "id": 136,
-            "bank": "BRUGS LEENKREDIET BVBA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BRLEBEB1"
-        },
-        {
-            "id": 137,
-            "bank": "BRUSSELS EXCHANGES CLEARING HOUSE NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "XBFOBEB1"
-        },
-        {
-            "id": 138,
-            "bank": "BYBLOS BANK EUROPE S.A.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BYBBBEBB"
-        },
-        {
-            "id": 139,
-            "bank": "CACEIS BANK LUXEMBOURG BRUSSELS BRANCH",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ISAEBEBB"
-        },
-        {
-            "id": 140,
-            "bank": "CACEIS BELGIUM",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "FNETBEBB"
-        },
-        {
-            "id": 141,
-            "bank": "CAISSE D'EPARGNE DE LA VILLE DE NIVELLES",
-            "city": "NIVELLES",
-            "branch": null,
-            "swift_code": "CEVNBEB1"
-        },
-        {
-            "id": 142,
-            "bank": "CAISSE D'EPARGNE LA FAMILLE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "FCECBEB1"
-        },
-        {
-            "id": 143,
-            "bank": "CAISSE INTERPROFESSIONNELLE DE DEPOTS ET DE VIREMENTS DE TITRES",
-            "city": "BRUSSELS",
-            "branch": "(ESES MIGRATION)",
-            "swift_code": "ESESBEBBMIG"
-        },
-        {
-            "id": 144,
-            "bank": "CAISSE INTERPROFESSIONNELLE DE DEPOTS ET DE VIREMENTS DE TITRES",
-            "city": "BRUSSELS",
-            "branch": "(ESIDC)",
-            "swift_code": "ESESBEBBCSD"
-        },
-        {
-            "id": 145,
-            "bank": "CAISSE INTERPROFESSIONNELLE DE DEPOTS ET DE VIREMENTS DE TITRES",
-            "city": "BRUSSELS",
-            "branch": "(ISSUER AGENT COUPON)",
-            "swift_code": "ESESBEBBIAC"
-        },
-        {
-            "id": 146,
-            "bank": "CAISSE INTERPROFESSIONNELLE DE DEPOTS ET DE VIREMENTS DE TITRES",
-            "city": "BRUSSELS",
-            "branch": "(ISSUER AGENT DIVIDEND)",
-            "swift_code": "ESESBEBBIAD"
-        },
-        {
-            "id": 147,
-            "bank": "CAISSE INTERPROFESSIONNELLE DE DEPOTS ET DE VIREMENTS DE TITRES",
-            "city": "BRUSSELS",
-            "branch": "(SECURITIES AND COUPON CENTER)",
-            "swift_code": "ESESBEBBSCC"
-        },
-        {
-            "id": 148,
-            "bank": "CAISSE INTERPROFESSIONNELLE DE DEPOTS ET DE VIREMENTS DE TITRES",
-            "city": "BRUSSELS",
-            "branch": "(TARGET2)",
-            "swift_code": "ESESBEBBT2X"
-        },
-        {
-            "id": 149,
-            "bank": "CAISSE INTERPROFESSIONNELLE DE DEPOTS ET DE VIREMENTS DE TITRES",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ESESBEBB"
-        },
-        {
-            "id": 150,
-            "bank": "CAISSE INTERPROFESSIONNELLE DE DEPOTS ET DE VIREMENTS DE TITRES",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ESESBEBBFDB"
-        },
-        {
-            "id": 151,
-            "bank": "CAISSE INTERPROFESSIONNELLE DE DEPOTS ET DE VIREMENTS DE TITRES",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ESESBEBBINT"
-        },
-        {
-            "id": 152,
-            "bank": "CAISSE INTERPROFESSIONNELLE DE DEPOTS ET DE VIREMENTS DE TITRES",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ESESBEBBLE1"
-        },
-        {
-            "id": 153,
-            "bank": "CAISSE INTERPROFESSIONNELLE DE DEPOTS ET DE VIREMENTS DE TITRES",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ESESBEBBLE2"
-        },
-        {
-            "id": 154,
-            "bank": "CANDRIAM BELGIUM",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "DXAMBEBB"
-        },
-        {
-            "id": 155,
-            "bank": "CAPITAL AND FINANCE ASSET MANAGEMENT SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "CFENBEB1"
-        },
-        {
-            "id": 156,
-            "bank": "CAPITAL AT WORK SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "CAPWBEBB"
-        },
-        {
-            "id": 157,
-            "bank": "CARDIF LEVEN",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "CAFVBEB1"
-        },
-        {
-            "id": 158,
-            "bank": "CARFIN SA",
-            "city": "LOUVAIN-LA-NEUVE",
-            "branch": null,
-            "swift_code": "CARGBEBL"
-        },
-        {
-            "id": 159,
-            "bank": "CARREFOUR FINANCE SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "CAFIBEBB"
-        },
-        {
-            "id": 160,
-            "bank": "CATERPILLAR FINANCE FRANCE SA",
-            "city": "BRUSSELS",
-            "branch": "(SUCCURSALE BELGE)",
-            "swift_code": "CAFFBEB1"
-        },
-        {
-            "id": 161,
-            "bank": "CBC BANQUE S.A.",
-            "city": "BRUSSELS",
-            "branch": "(ALL OFFICES)",
-            "swift_code": "CREGBEBB"
-        },
-        {
-            "id": 162,
-            "bank": "CBC BANQUE S.A.",
-            "city": "BRUSSELS",
-            "branch": "(BIC ONLY USED FOR OPEN MARKET TRANSACTIONS AND MONETARY RESERVE)",
-            "swift_code": "CREGBEBBTGT"
-        },
-        {
-            "id": 163,
-            "bank": "CBC BANQUE S.A.",
-            "city": "BRUSSELS",
-            "branch": "(BIC TO BE USED IN THE NBB-SSS FOR IDENTIFYING CBC CLIENT ACCOUNT)",
-            "swift_code": "CREGBEBBNBB"
-        },
-        {
-            "id": 164,
-            "bank": "CBP QUILVEST S.A. (LUXEMBOURG) SUCCURSALE BELGIQUE",
-            "city": "SINT-DENIJS-WESTREM",
-            "branch": null,
-            "swift_code": "CBPXBE99"
-        },
-        {
-            "id": 165,
-            "bank": "CELIO INTERNATIONAL",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "CEINBEBB"
-        },
-        {
-            "id": 166,
-            "bank": "CELS SECURITIES N.V.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "GUSEBEB1"
-        },
-        {
-            "id": 167,
-            "bank": "CENTEA",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "HSAABE21"
-        },
-        {
-            "id": 168,
-            "bank": "CENTRALE KREDIETVERLENING",
-            "city": "WAREGEM",
-            "branch": null,
-            "swift_code": "CEKVBE81"
-        },
-        {
-            "id": 169,
-            "bank": "CENTRE FOR EXCHANGE AND CLEARING",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BCSMBEB1"
-        },
-        {
-            "id": 170,
-            "bank": "CENTRE FOR EXCHANGE AND CLEARING",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BCSMBEB1STT"
-        },
-        {
-            "id": 171,
-            "bank": "CENTURY INVESTMENT",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "CEIPBE21"
-        },
-        {
-            "id": 172,
-            "bank": "CHEVRON PHILLIPS CHEMICALS INTERNATIONAL NV",
-            "city": "OVERIJSE",
-            "branch": null,
-            "swift_code": "CPCHBEBB"
-        },
-        {
-            "id": 173,
-            "bank": "CHOPPINET SPRL",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "CHOCBEB1"
-        },
-        {
-            "id": 174,
-            "bank": "CITIBANK INTERNATIONAL LIMITED BELGIUM BRANCH",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "CITIBEBX"
-        },
-        {
-            "id": 175,
-            "bank": "CLEARNET BRUSSELS BRANCH",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "CLIQBEB1"
-        },
-        {
-            "id": 176,
-            "bank": "CM-CIC BELGIUM",
-            "city": "BRUSSELS",
-            "branch": "(CM-CIC BANQUE TRANSATLANTIQUE)",
-            "swift_code": "CMCIBEB1BTB"
-        },
-        {
-            "id": 177,
-            "bank": "CM-CIC BELGIUM",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "CMCIBEB1"
-        },
-        {
-            "id": 178,
-            "bank": "CM-CIC BELGIUM",
-            "city": "DIEGEM",
-            "branch": "(CM-CIC SECURITIES BELGIUM)",
-            "swift_code": "CMCIBEB1SEC"
-        },
-        {
-            "id": 179,
-            "bank": "CODABOX SA",
-            "city": "LEUVEN",
-            "branch": null,
-            "swift_code": "CDBXBE33"
-        },
-        {
-            "id": 180,
-            "bank": "COMMERZBANK AG,THE,BRUSSELS BRANCH",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "COBABEB1022"
-        },
-        {
-            "id": 181,
-            "bank": "COMMERZBANK AG,THE,BRUSSELS BRANCH",
-            "city": "BRUSSELS",
-            "branch": "(ADMINISTRATION)",
-            "swift_code": "COBABEBXTBU"
-        },
-        {
-            "id": 182,
-            "bank": "COMMERZBANK AG,THE,BRUSSELS BRANCH",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "COBABEBX"
-        },
-        {
-            "id": 183,
-            "bank": "COMMERZBANK AG,THE,BRUSSELS BRANCH",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "COBABEBXTSU"
-        },
-        {
-            "id": 184,
-            "bank": "COMMISSION DES COMMUNAUTES EUROPEENNES",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "EUCOBEBB"
-        },
-        {
-            "id": 185,
-            "bank": "CORPORATE EXPRESS SHARED SERVICE CENTER (EUROPE) NV",
-            "city": "HASSELT",
-            "branch": null,
-            "swift_code": "CEXPBE33"
-        },
-        {
-            "id": 186,
-            "bank": "CPH BANQUE",
-            "city": "TOURNAI",
-            "branch": null,
-            "swift_code": "CPHBBE75"
-        },
-        {
-            "id": 187,
-            "bank": "CPH BANQUE",
-            "city": "TOURNAI",
-            "branch": null,
-            "swift_code": "CPHBBE75TG2"
-        },
-        {
-            "id": 188,
-            "bank": "CREDIBE SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "OCCHBEB1"
-        },
-        {
-            "id": 189,
-            "bank": "CREDIMO N.V.",
-            "city": "ASSE",
-            "branch": null,
-            "swift_code": "CREOBEB1"
-        },
-        {
-            "id": 190,
-            "bank": "CREDISHOP S.A.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "CREPBEB1"
-        },
-        {
-            "id": 191,
-            "bank": "CREDIT AGRICOLE CIB BELGIUM",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "CRLYBEBB"
-        },
-        {
-            "id": 192,
-            "bank": "CREDIT AGRICOLE LUXEMBOURG, SUCCURSALE EN BELGIQUE,BIJBANK IN BELGIE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "CVMCBEBB"
-        },
-        {
-            "id": 193,
-            "bank": "CREDIT EUROPE BANK N.V. ANTWERP BRANCH",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "FBHLBE22"
-        },
-        {
-            "id": 194,
-            "bank": "CREDIT PROFESSIONNEL SA \/ BEROEPSKREDIET NV",
-            "city": "BRUSSELS",
-            "branch": "(TARGET2)",
-            "swift_code": "BKCPBEBBTGT"
-        },
-        {
-            "id": 195,
-            "bank": "CREDIT PROFESSIONNEL SA \/ BEROEPSKREDIET NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BKCPBEBB"
-        },
-        {
-            "id": 196,
-            "bank": "CRELAN SA\/NV (FORMERLY CENTEA NV)",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "SPAABE22"
-        },
-        {
-            "id": 197,
-            "bank": "CRELAN SA\/NV (FORMERLY CREDIT AGRICOLE SA\/LANDBOUWKREDIET NV)",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "NICABEBB"
-        },
-        {
-            "id": 198,
-            "bank": "CRISTAL BELGIUM",
-            "city": "WILLEBROEK",
-            "branch": null,
-            "swift_code": "CRSLBE21"
-        },
-        {
-            "id": 199,
-            "bank": "CYTEC BELGIUM BVBA",
-            "city": "DIEGEM",
-            "branch": null,
-            "swift_code": "CYTEBEBB"
-        },
-        {
-            "id": 200,
-            "bank": "DAMIEN COURTENS, SPRL",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "DAMCBEB1"
-        },
-        {
-            "id": 201,
-            "bank": "DAVENPORT VERMOGENSBEHEER NV",
-            "city": "ROESELARE",
-            "branch": null,
-            "swift_code": "DAVRBE81"
-        },
-        {
-            "id": 202,
-            "bank": "DE BOODT ET CIE, GCV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "DBOOBEB1"
-        },
-        {
-            "id": 203,
-            "bank": "DE BUCK EN CIE N.V.",
-            "city": "GENT",
-            "branch": null,
-            "swift_code": "DBUCBE91"
-        },
-        {
-            "id": 204,
-            "bank": "DE MOFFARTS, ROLIN JACQUEMYNS S.A.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MOFFBEB1"
-        },
-        {
-            "id": 205,
-            "bank": "DE MULDER",
-            "city": "BEERSE",
-            "branch": null,
-            "swift_code": "DMULBEB1"
-        },
-        {
-            "id": 206,
-            "bank": "DE POSSON ET CIE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "POSSBEB1"
-        },
-        {
-            "id": 207,
-            "bank": "DECLERCQ AND CO G.C.V. BEURSVENNOOTSCHAP",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "DEGBBEB1"
-        },
-        {
-            "id": 208,
-            "bank": "DEGROOF SECURITIES, S.A.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "DEGFBEB1"
-        },
-        {
-            "id": 209,
-            "bank": "DELANDE ET CIE SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "DELNBEB1"
-        },
-        {
-            "id": 210,
-            "bank": "DELTA BEURSVENNOOTSCHAP, BVBA",
-            "city": "GENT",
-            "branch": null,
-            "swift_code": "BONVBE91"
-        },
-        {
-            "id": 211,
-            "bank": "DEMIR-HALK BANK (NEDERLAND) N.V. BRUSSELS BRANCH",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "DHBNBEBB"
-        },
-        {
-            "id": 212,
-            "bank": "DEUTSCHE BANK A.G.",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "DEUTBEBEANT"
-        },
-        {
-            "id": 213,
-            "bank": "DEUTSCHE BANK A.G.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "DEUTBEBE"
-        },
-        {
-            "id": 214,
-            "bank": "DEUTSCHE BANK A.G.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "DEUTBEBEUNP"
-        },
-        {
-            "id": 215,
-            "bank": "DEXIA SECURITIES BELGIUM SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BASCBEB1"
-        },
-        {
-            "id": 216,
-            "bank": "DIERICKX LEYS EN CIE EFFECTENBANK NV",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "DIERBE21"
-        },
-        {
-            "id": 217,
-            "bank": "DRIEGE EN CO, BVBA",
-            "city": "GENT",
-            "branch": null,
-            "swift_code": "DRIEBE91"
-        },
-        {
-            "id": 218,
-            "bank": "EASDAQ S.A.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "XEASBEB1"
-        },
-        {
-            "id": 219,
-            "bank": "EDF INVESTISSEMENTS GROUPE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "EDFRBEB1"
-        },
-        {
-            "id": 220,
-            "bank": "ELECTRABEL SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ELERBEB1"
-        },
-        {
-            "id": 221,
-            "bank": "ENERGY EUROPE INVEST",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ENEIBEB1"
-        },
-        {
-            "id": 222,
-            "bank": "EPBF",
-            "city": "WATERMAEL BOITSFORT",
-            "branch": null,
-            "swift_code": "EPBFBEBB"
-        },
-        {
-            "id": 223,
-            "bank": "ES SECURITIES",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "SECUBEB1"
-        },
-        {
-            "id": 224,
-            "bank": "ETEX S.A.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ETEXBEBB"
-        },
-        {
-            "id": 225,
-            "bank": "ETHIAS DROIT COMMUN, ASSOCIATION D'ASS. MUTUELLES",
-            "city": "LIEGE",
-            "branch": null,
-            "swift_code": "ETHDBE44"
-        },
-        {
-            "id": 226,
-            "bank": "ETHIAS SA",
-            "city": "LIEGE",
-            "branch": null,
-            "swift_code": "NAETBE21"
-        },
-        {
-            "id": 227,
-            "bank": "ETHIAS VIE, ASSOCIATION D'ASSURANCES MUTUELLES",
-            "city": "LIEGE",
-            "branch": null,
-            "swift_code": "ETHVBE44"
-        },
-        {
-            "id": 228,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": "(BUSINESS BRANCH)",
-            "swift_code": "MGTCBEBEE16"
-        },
-        {
-            "id": 229,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": "(BUSINESS BRANCH)",
-            "swift_code": "MGTCBEBEE17"
-        },
-        {
-            "id": 230,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": "(ESES IMPACT EB)",
-            "swift_code": "MGTCBEBEEB2"
-        },
-        {
-            "id": 231,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": "(ESES IMPACT EB)",
-            "swift_code": "MGTCBEBEEBE"
-        },
-        {
-            "id": 232,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": "(ESES IMPACT EB)",
-            "swift_code": "MGTCBEBEEF2"
-        },
-        {
-            "id": 233,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": "(ESES IMPACT EB)",
-            "swift_code": "MGTCBEBEEFR"
-        },
-        {
-            "id": 234,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": "(ESES IMPACT EB)",
-            "swift_code": "MGTCBEBEEN2"
-        },
-        {
-            "id": 235,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": "(ESES IMPACT EB)",
-            "swift_code": "MGTCBEBEENL"
-        },
-        {
-            "id": 236,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": "(EUROCLEAR BELGIUM\/CIK SETTLEMENT EXCLUSIVELY)",
-            "swift_code": "MGTCBEBEE01"
-        },
-        {
-            "id": 237,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": "(FUNDSETTLE)",
-            "swift_code": "MGTCBEBEFND"
-        },
-        {
-            "id": 238,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBE"
-        },
-        {
-            "id": 239,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBEECL"
-        },
-        {
-            "id": 240,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBECLT"
-        },
-        {
-            "id": 241,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBEE14"
-        },
-        {
-            "id": 242,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBET01"
-        },
-        {
-            "id": 243,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBET02"
-        },
-        {
-            "id": 244,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBET03"
-        },
-        {
-            "id": 245,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBET04"
-        },
-        {
-            "id": 246,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBET05"
-        },
-        {
-            "id": 247,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBET06"
-        },
-        {
-            "id": 248,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBET07"
-        },
-        {
-            "id": 249,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBET08"
-        },
-        {
-            "id": 250,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBET09"
-        },
-        {
-            "id": 251,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBET10"
-        },
-        {
-            "id": 252,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBET11"
-        },
-        {
-            "id": 253,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBET12"
-        },
-        {
-            "id": 254,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBET13"
-        },
-        {
-            "id": 255,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBET14"
-        },
-        {
-            "id": 256,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBET15"
-        },
-        {
-            "id": 257,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBET16"
-        },
-        {
-            "id": 258,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBET17"
-        },
-        {
-            "id": 259,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBET18"
-        },
-        {
-            "id": 260,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBET19"
-        },
-        {
-            "id": 261,
-            "bank": "EUROCLEAR BANK S.A \/ N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MGTCBEBET20"
-        },
-        {
-            "id": 262,
-            "bank": "EUROCLEAR BELGIUM (PREVIOUSLY KNOWN AS CIK BELGIUM)",
-            "city": "BRUSSELS",
-            "branch": "(DOMESTIC INVESTMENT FUNDS SETTLEMENT)",
-            "swift_code": "CIKBBEBBDIF"
-        },
-        {
-            "id": 263,
-            "bank": "EUROCLEAR BELGIUM (PREVIOUSLY KNOWN AS CIK BELGIUM)",
-            "city": "BRUSSELS",
-            "branch": "(ESES ACPT 1)",
-            "swift_code": "CIKBBEBBEA1"
-        },
-        {
-            "id": 264,
-            "bank": "EUROCLEAR BELGIUM (PREVIOUSLY KNOWN AS CIK BELGIUM)",
-            "city": "BRUSSELS",
-            "branch": "(ESES ACPT 2)",
-            "swift_code": "CIKBBEBBEA2"
-        },
-        {
-            "id": 265,
-            "bank": "EUROCLEAR BELGIUM (PREVIOUSLY KNOWN AS CIK BELGIUM)",
-            "city": "BRUSSELS",
-            "branch": "(ESES ACPT 3)",
-            "swift_code": "CIKBBEBBEA3"
-        },
-        {
-            "id": 266,
-            "bank": "EUROCLEAR BELGIUM (PREVIOUSLY KNOWN AS CIK BELGIUM)",
-            "city": "BRUSSELS",
-            "branch": "(ESES MIGRATION)",
-            "swift_code": "CIKBBEBBMIG"
-        },
-        {
-            "id": 267,
-            "bank": "EUROCLEAR BELGIUM (PREVIOUSLY KNOWN AS CIK BELGIUM)",
-            "city": "BRUSSELS",
-            "branch": "(SETTLEMENT DEPARTMENT)",
-            "swift_code": "CIKBBEBBCLR"
-        },
-        {
-            "id": 268,
-            "bank": "EUROCLEAR BELGIUM (PREVIOUSLY KNOWN AS CIK BELGIUM)",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "CIKBBEBB"
-        },
-        {
-            "id": 269,
-            "bank": "EUROCLEAR SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "TRGGBEB1"
-        },
-        {
-            "id": 270,
-            "bank": "EURONEXT BRUSSELS NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ENXBBEB1"
-        },
-        {
-            "id": 271,
-            "bank": "EUROP ASSISTANCE BELGIUM SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "EUALBEB1"
-        },
-        {
-            "id": 272,
-            "bank": "EUROPABANK N.V.",
-            "city": "GENT",
-            "branch": null,
-            "swift_code": "EURBBE99"
-        },
-        {
-            "id": 273,
-            "bank": "EVI",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "FVLBBE2E"
-        },
-        {
-            "id": 274,
-            "bank": "F. DELCOUR, A. VANCRAYEBECK ET F. SACRE, SPRL",
-            "city": "LIEGE",
-            "branch": null,
-            "swift_code": "DEVSBE41"
-        },
-        {
-            "id": 275,
-            "bank": "F. VAN LANSCHOT BANKIERS BELGIE N.V.",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "FVLBBE22"
-        },
-        {
-            "id": 276,
-            "bank": "FAGRON N.V.",
-            "city": "WAREGEM",
-            "branch": null,
-            "swift_code": "FGRNBE88"
-        },
-        {
-            "id": 277,
-            "bank": "FCE BANK PLC",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "FCEFBE21"
-        },
-        {
-            "id": 278,
-            "bank": "FINACOR",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "FINRBEB1"
-        },
-        {
-            "id": 279,
-            "bank": "FINANCIERE REMY COINTREAU SA\/NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "FRCSBEBB"
-        },
-        {
-            "id": 280,
-            "bank": "FINPARTNER",
-            "city": "BERCHEM",
-            "branch": null,
-            "swift_code": "FNNPBE21"
-        },
-        {
-            "id": 281,
-            "bank": "FORD CREDIT EUROPE PLC",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "FORDBE21"
-        },
-        {
-            "id": 282,
-            "bank": "FORTUNEO BELGIUM",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "FTNOBEB1"
-        },
-        {
-            "id": 283,
-            "bank": "FPS HEALTH",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "FPHEBEB1"
-        },
-        {
-            "id": 284,
-            "bank": "FUJI BANK, LTD., THE, BRUSSELS BRANCH",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "FUJIBEB1"
-        },
-        {
-            "id": 285,
-            "bank": "FX4BIZ",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "FXBBBEBB"
-        },
-        {
-            "id": 286,
-            "bank": "GESTRABEL, SPRL",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "GEBLBEB1"
-        },
-        {
-            "id": 287,
-            "bank": "GOETHALS EN CO, GCV",
-            "city": "AALST",
-            "branch": null,
-            "swift_code": "GOETBE91"
-        },
-        {
-            "id": 288,
-            "bank": "GOFFIN - LANNOY ET CIE, S.A.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "GOLABEB1"
-        },
-        {
-            "id": 289,
-            "bank": "GOLD COMMODITIES FOREX",
-            "city": "ALSEMBERG",
-            "branch": null,
-            "swift_code": "GOCFBEB1"
-        },
-        {
-            "id": 290,
-            "bank": "GROUP S - SOCIAAL SECRETARIAAT V.Z.W",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "GSSSBEB1"
-        },
-        {
-            "id": 291,
-            "bank": "HABIB BANK LTD.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "HABBBEBB"
-        },
-        {
-            "id": 292,
-            "bank": "HEWLETT-PACKARD BELGIUM S.P.R.L.\/ B.V.B.A.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "HEBBBEB1"
-        },
-        {
-            "id": 293,
-            "bank": "HEWLETT-PACKARD COORDINATION CENTER C.V.B.A.\/S.C.R.L.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "HCCCBEB1"
-        },
-        {
-            "id": 294,
-            "bank": "HOULIHAN ROVERS S.A.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "HNRSBEB1"
-        },
-        {
-            "id": 295,
-            "bank": "HSBC BANK PLC",
-            "city": "BRUSSELS",
-            "branch": "(SEPA DIRECT DEBITS)",
-            "swift_code": "HSBCBEBBSDD"
-        },
-        {
-            "id": 296,
-            "bank": "HSBC BANK PLC",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "HSBCBEBB"
-        },
-        {
-            "id": 297,
-            "bank": "HULPKAS VOOR VOLKSKREDIET N.V.",
-            "city": "AALST",
-            "branch": null,
-            "swift_code": "HUVVBE91"
-        },
-        {
-            "id": 298,
-            "bank": "HYPOTHEEK-, BELEGGINGSMAATSCHAPPIJ EN SPAARBANK",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "HBMSBE21"
-        },
-        {
-            "id": 299,
-            "bank": "HYPOTHEEKMAATSCHAPPIJ DE BEIDE VLAANDEREN NV",
-            "city": "KORTEMARK",
-            "branch": null,
-            "swift_code": "HYBVBE81"
-        },
-        {
-            "id": 300,
-            "bank": "IBA PHARMA SPRL",
-            "city": "LOUVAIN-LA-NEUVE",
-            "branch": null,
-            "swift_code": "IBAPBEBL"
-        },
-        {
-            "id": 301,
-            "bank": "ICBC BRUSSELS BRANCH",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ICBKBEBB"
-        },
-        {
-            "id": 302,
-            "bank": "ICICI BANK UK PLC",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "ICICBE2X"
-        },
-        {
-            "id": 303,
-            "bank": "ING BANK NV BELGIAN BRANCH",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "INGBBEB1"
-        },
-        {
-            "id": 304,
-            "bank": "ING BELGIUM NV\/SA (FORMERLY BANK BRUSSELS LAMBERT SA) ANTWERPEN",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "BBRUBEBB200"
-        },
-        {
-            "id": 305,
-            "bank": "ING BELGIUM NV\/SA (FORMERLY BANK BRUSSELS LAMBERT SA), AALST",
-            "city": "AALST",
-            "branch": null,
-            "swift_code": "BBRUBEBB930"
-        },
-        {
-            "id": 306,
-            "bank": "ING BELGIUM NV\/SA (FORMERLY BANK BRUSSELS LAMBERT SA), BRUGGE",
-            "city": "BRUGGE",
-            "branch": null,
-            "swift_code": "BBRUBEBB800"
-        },
-        {
-            "id": 307,
-            "bank": "ING BELGIUM NV\/SA (FORMERLY BANK BRUSSELS LAMBERT SA), BRUSSELS",
-            "city": "BRUSSELS",
-            "branch": "(ALL BRANCHES)",
-            "swift_code": "BBRUBEBB"
-        },
-        {
-            "id": 308,
-            "bank": "ING BELGIUM NV\/SA (FORMERLY BANK BRUSSELS LAMBERT SA), BRUSSELS",
-            "city": "BRUSSELS",
-            "branch": "(BRANCH)",
-            "swift_code": "BBRUBEBB100"
-        },
-        {
-            "id": 309,
-            "bank": "ING BELGIUM NV\/SA (FORMERLY BANK BRUSSELS LAMBERT SA), BRUSSELS",
-            "city": "BRUSSELS",
-            "branch": "(CONTINUOUS LINKED SETTLEMENT)",
-            "swift_code": "BBRUBEBBCLS"
-        },
-        {
-            "id": 310,
-            "bank": "ING BELGIUM NV\/SA (FORMERLY BANK BRUSSELS LAMBERT SA), BRUSSELS",
-            "city": "BRUSSELS",
-            "branch": "(HEAD OFFICE)",
-            "swift_code": "BBRUBEBB010"
-        },
-        {
-            "id": 311,
-            "bank": "ING BELGIUM NV\/SA (FORMERLY BANK BRUSSELS LAMBERT SA), BRUSSELS",
-            "city": "BRUSSELS",
-            "branch": "(MT940 ROUTING INDIA)",
-            "swift_code": "BBRUBEBBVYS"
-        },
-        {
-            "id": 312,
-            "bank": "ING BELGIUM NV\/SA (FORMERLY BANK BRUSSELS LAMBERT SA), CHARLEROI",
-            "city": "CHARLEROI",
-            "branch": null,
-            "swift_code": "BBRUBEBB600"
-        },
-        {
-            "id": 313,
-            "bank": "ING BELGIUM NV\/SA (FORMERLY BANK BRUSSELS LAMBERT SA), GENT",
-            "city": "GENT",
-            "branch": null,
-            "swift_code": "BBRUBEBB900"
-        },
-        {
-            "id": 314,
-            "bank": "ING BELGIUM NV\/SA (FORMERLY BANK BRUSSELS LAMBERT SA), HASSELT",
-            "city": "HASSELT",
-            "branch": null,
-            "swift_code": "BBRUBEBB350"
-        },
-        {
-            "id": 315,
-            "bank": "ING BELGIUM NV\/SA (FORMERLY BANK BRUSSELS LAMBERT SA), KORTRIJK",
-            "city": "KORTRIJK",
-            "branch": null,
-            "swift_code": "BBRUBEBB850"
-        },
-        {
-            "id": 316,
-            "bank": "ING BELGIUM NV\/SA (FORMERLY BANK BRUSSELS LAMBERT SA), LEUVEN",
-            "city": "LEUVEN",
-            "branch": null,
-            "swift_code": "BBRUBEBB300"
-        },
-        {
-            "id": 317,
-            "bank": "ING BELGIUM NV\/SA (FORMERLY BANK BRUSSELS LAMBERT SA), LIEGE",
-            "city": "LIEGE",
-            "branch": null,
-            "swift_code": "BBRUBEBB400"
-        },
-        {
-            "id": 318,
-            "bank": "ING BELGIUM NV\/SA (FORMERLY BANK BRUSSELS LAMBERT SA), MONS",
-            "city": "MONS",
-            "branch": null,
-            "swift_code": "BBRUBEBB700"
-        },
-        {
-            "id": 319,
-            "bank": "IRIS SECURITIES, STE. COOP.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "IRISBEB1"
-        },
-        {
-            "id": 320,
-            "bank": "ISABEL NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ISAZBEB1"
-        },
-        {
-            "id": 321,
-            "bank": "J. QUATANNENS EN CO NV",
-            "city": "ANZEGEM",
-            "branch": null,
-            "swift_code": "QUATBE81"
-        },
-        {
-            "id": 322,
-            "bank": "J.P. MORGAN EUROPE LIMITED",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "CHASBEE1"
-        },
-        {
-            "id": 323,
-            "bank": "JC GENERAL SERVICES CVBA",
-            "city": "BEERSE",
-            "branch": null,
-            "swift_code": "JOJOBE22"
-        },
-        {
-            "id": 324,
-            "bank": "JOHNSON CONTROLS AUTOMOTIVE N.V.",
-            "city": "ASSENEDE",
-            "branch": null,
-            "swift_code": "JCAEBE9A"
-        },
-        {
-            "id": 325,
-            "bank": "JOHNSON CONTROLS INTERNATIONAL NV",
-            "city": "DIEGEM",
-            "branch": null,
-            "swift_code": "JOCIBEBB"
-        },
-        {
-            "id": 326,
-            "bank": "JP MORGAN INTERNATIONAL BANK",
-            "city": "BRUSSELS",
-            "branch": "(MOM DEPARTMENT)",
-            "swift_code": "JPMGBEBBMOM"
-        },
-        {
-            "id": 327,
-            "bank": "JP MORGAN INTERNATIONAL BANK",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "JPMGBEBB"
-        },
-        {
-            "id": 328,
-            "bank": "JPMORGAN CHASE BANK, N.A.",
-            "city": "BRUSSELS",
-            "branch": "(TELEX AND S.W.I.F.T. MESSAGE ENQUIRIES)",
-            "swift_code": "CHASBEBXENQ"
-        },
-        {
-            "id": 329,
-            "bank": "JPMORGAN CHASE BANK, N.A.",
-            "city": "BRUSSELS",
-            "branch": "(TEST KEY AND BKE ADMINISTRATION)",
-            "swift_code": "CHASBEBXKEY"
-        },
-        {
-            "id": 330,
-            "bank": "JPMORGAN CHASE BANK, N.A.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "CHASBEBX"
-        },
-        {
-            "id": 331,
-            "bank": "KBC ASSET MANAGEMENT",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "KBCABEBB"
-        },
-        {
-            "id": 332,
-            "bank": "KBC BANK N.V. BC DIAMANT",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "ADIABE22"
-        },
-        {
-            "id": 333,
-            "bank": "KBC BANK NV",
-            "city": "AALST",
-            "branch": null,
-            "swift_code": "KREDBEBB250"
-        },
-        {
-            "id": 334,
-            "bank": "KBC BANK NV",
-            "city": "ANTWERPEN",
-            "branch": "(TRADE FIN. ANTWERP)",
-            "swift_code": "KREDBEBB022"
-        },
-        {
-            "id": 335,
-            "bank": "KBC BANK NV",
-            "city": "BRUSSELS",
-            "branch": "(CLS SERVICES)",
-            "swift_code": "KREDBEBBCLS"
-        },
-        {
-            "id": 336,
-            "bank": "KBC BANK NV",
-            "city": "BRUSSELS",
-            "branch": "(TO IDENTIFY SEP. CASH ACCOUNT (FOR LCH.REPOCLEAR LONDON) WITHIN NBB)",
-            "swift_code": "KREDBEBBLCH"
-        },
-        {
-            "id": 337,
-            "bank": "KBC BANK NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "KREDBEBB"
-        },
-        {
-            "id": 338,
-            "bank": "KBC BANK NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "KREDBEBB100"
-        },
-        {
-            "id": 339,
-            "bank": "KBC BANK NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "KREDBEBB387"
-        },
-        {
-            "id": 340,
-            "bank": "KBC BANK NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "KREDBEBBCLE"
-        },
-        {
-            "id": 341,
-            "bank": "KBC BANK NV",
-            "city": "GENT",
-            "branch": "(TRADE FIN. FLANDERS)",
-            "swift_code": "KREDBEBB085"
-        },
-        {
-            "id": 342,
-            "bank": "KBC BANK NV",
-            "city": "TIENEN",
-            "branch": null,
-            "swift_code": "KREDBEBB460"
-        },
-        {
-            "id": 343,
-            "bank": "KBC LEASE HOLDING NV",
-            "city": "LEUVEN",
-            "branch": null,
-            "swift_code": "FDCOBEB1"
-        },
-        {
-            "id": 344,
-            "bank": "KBC SECURITIES N.V.",
-            "city": "ANTWERPEN",
-            "branch": "(BIC TO IDENTIFY CASHACCOUNT AT NBB (USED FOR CLEARSTREAM BANKING LUX)",
-            "swift_code": "KBSEBE22CBL"
-        },
-        {
-            "id": 345,
-            "bank": "KBC SECURITIES N.V.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "KBSEBE22"
-        },
-        {
-            "id": 346,
-            "bank": "KBC SECURITIES N.V.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "KBSEBE22882"
-        },
-        {
-            "id": 347,
-            "bank": "KEMPEN EN CO. BELGIE",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "KECOBE21"
-        },
-        {
-            "id": 348,
-            "bank": "KEYTRADE BANK SA\/NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "KEYTBEBB"
-        },
-        {
-            "id": 349,
-            "bank": "KEYTRADE BANK SA\/NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "KEYTBEBBADM"
-        },
-        {
-            "id": 350,
-            "bank": "KREFIMA N.V.\/S.A.",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "KREFBE21"
-        },
-        {
-            "id": 351,
-            "bank": "LA CAMBRE FUNDS BRUXELLES",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "CAFXBEB1"
-        },
-        {
-            "id": 352,
-            "bank": "LAWAISSE PHILIPPE EN CO, GCV",
-            "city": "KORTRIJK",
-            "branch": null,
-            "swift_code": "LWAIBE81"
-        },
-        {
-            "id": 353,
-            "bank": "LAZARD FRERES GESTION BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "LFGBBEB1"
-        },
-        {
-            "id": 354,
-            "bank": "LE PEIGNE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "LPEIBEBB"
-        },
-        {
-            "id": 355,
-            "bank": "LEDENT EN CO.",
-            "city": "KNOKKE-HEIST",
-            "branch": null,
-            "swift_code": "LDENBE81"
-        },
-        {
-            "id": 356,
-            "bank": "LEEN- EN DEPOSITOKAS",
-            "city": "IEPER",
-            "branch": null,
-            "swift_code": "LEDSBE81"
-        },
-        {
-            "id": 357,
-            "bank": "LELEUX ASSOCIATED BROKERS",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "LABEBEBB"
-        },
-        {
-            "id": 358,
-            "bank": "LELEUX ASSOCIATED BROKERS SA",
-            "city": "SOIGNIES",
-            "branch": null,
-            "swift_code": "JLECBE71"
-        },
-        {
-            "id": 359,
-            "bank": "LELEUX PARTNERS SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "LEPSBEB1"
-        },
-        {
-            "id": 360,
-            "bank": "LEO STEVENS EN CIE BVBA",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "LSTVBE21"
-        },
-        {
-            "id": 361,
-            "bank": "LIEKENS R.",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "LIEKBE21"
-        },
-        {
-            "id": 362,
-            "bank": "LOGE ET ASSOCIES, SPRL",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "LOGEBEB1"
-        },
-        {
-            "id": 363,
-            "bank": "LOGINVEST SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "LOGIBEB1"
-        },
-        {
-            "id": 364,
-            "bank": "LOMBARD ODIER (EUROPE) S.A.",
-            "city": "BRUSSELS",
-            "branch": "(NDP DEPT)",
-            "swift_code": "LOCYBEBBNDP"
-        },
-        {
-            "id": 365,
-            "bank": "LOMBARD ODIER (EUROPE) S.A.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "LOCYBEBB"
-        },
-        {
-            "id": 366,
-            "bank": "M .FINANCE DEBT AGENCY BELGIUM",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "FDABBEB1"
-        },
-        {
-            "id": 367,
-            "bank": "MAPFRE RE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MPPFBEB1"
-        },
-        {
-            "id": 368,
-            "bank": "MEDIRECT BANK",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MBWMBEBB"
-        },
-        {
-            "id": 369,
-            "bank": "MELICE ET CIE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MELCBEB1"
-        },
-        {
-            "id": 370,
-            "bank": "MELIS EN CO, VOF",
-            "city": "MELSELE",
-            "branch": null,
-            "swift_code": "MELSBE91"
-        },
-        {
-            "id": 371,
-            "bank": "MERIT CAPITAL",
-            "city": "BERCHEM",
-            "branch": null,
-            "swift_code": "MEPTBE21"
-        },
-        {
-            "id": 372,
-            "bank": "MICHEL GOFFIN ET CIE S.A.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MIGOBEB1"
-        },
-        {
-            "id": 373,
-            "bank": "MIGNON HANART DECLERCK SPRL",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MDELBEB1"
-        },
-        {
-            "id": 374,
-            "bank": "MIZUHO BANK NEDERLAND N.V. BRUSSELS BRANCH",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MHCBBEBB"
-        },
-        {
-            "id": 375,
-            "bank": "MKG-BANK BELGIEN (BRANCH OF MCE BANK GMBH)",
-            "city": "KONTICH",
-            "branch": null,
-            "swift_code": "MBBMBE21"
-        },
-        {
-            "id": 376,
-            "bank": "MOBIS PARTS EUROPE N.V.",
-            "city": "LUMMEN",
-            "branch": null,
-            "swift_code": "HYMOBE31"
-        },
-        {
-            "id": 377,
-            "bank": "MONABANQ SOCIETE ANONYME",
-            "city": "TOURNAI",
-            "branch": null,
-            "swift_code": "COVEBE71"
-        },
-        {
-            "id": 378,
-            "bank": "MTS ASSOCIATED MARKETS",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BMTSBEBB"
-        },
-        {
-            "id": 379,
-            "bank": "MUNTERS ROGER ET CIE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MUROBEB1"
-        },
-        {
-            "id": 380,
-            "bank": "N.V. CREDITMAR",
-            "city": "ANTWERPEN",
-            "branch": "(MAATSCHAPPELIJKE ZETEL)",
-            "swift_code": "CRARBE21"
-        },
-        {
-            "id": 381,
-            "bank": "NATEUS NV",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "NANLBE21"
-        },
-        {
-            "id": 382,
-            "bank": "NATIXIS BANK (LUXEMBOURG) SUCCURSALE DE BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "NATXBEB1"
-        },
-        {
-            "id": 383,
-            "bank": "NEDEE AND CO C.V.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "NEDEBEB1"
-        },
-        {
-            "id": 384,
-            "bank": "NEXANS SERVICES SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "NEXABEBB"
-        },
-        {
-            "id": 385,
-            "bank": "NIBC BANK N.V",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "DNIBBE21"
-        },
-        {
-            "id": 386,
-            "bank": "NJR INVESTMENT",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "NJRIBEB1"
-        },
-        {
-            "id": 387,
-            "bank": "NLMK BELGIUM HOLDINGS SA",
-            "city": "LA LOUVIERE",
-            "branch": null,
-            "swift_code": "NLMKBE6L"
-        },
-        {
-            "id": 388,
-            "bank": "NV IKEA SERVICE CENTRE SA",
-            "city": "ZAVENTEM",
-            "branch": null,
-            "swift_code": "IKEABEBB"
-        },
-        {
-            "id": 389,
-            "bank": "OMEGA PHARMA CAPITAL NV",
-            "city": "NAZARETH",
-            "branch": null,
-            "swift_code": "OMEGBE9A"
-        },
-        {
-            "id": 390,
-            "bank": "OPTIMABANK NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ETHIBEBB"
-        },
-        {
-            "id": 391,
-            "bank": "OPTIMABANK NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ETHIBEBBRTG"
-        },
-        {
-            "id": 392,
-            "bank": "OPTION TRADING COMPANY SA\/NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "OTCSBEB1"
-        },
-        {
-            "id": 393,
-            "bank": "ORBIT PRIVATE ASSET MANAGEMENT SARL",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "OPAABE21"
-        },
-        {
-            "id": 394,
-            "bank": "P AND V ASSURANCES",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ASUUBEB1"
-        },
-        {
-            "id": 395,
-            "bank": "P. SPRIET EN CO, BVBA",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "SPRIBE21"
-        },
-        {
-            "id": 396,
-            "bank": "P.E. SECURITIES, SPRL",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "PESCBEB1"
-        },
-        {
-            "id": 397,
-            "bank": "PH. ET Y. DE COSTER SPRL",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "PYDEBEB1"
-        },
-        {
-            "id": 398,
-            "bank": "PIRE ET CIE SA",
-            "city": "CHARLEROI",
-            "branch": null,
-            "swift_code": "PIREBE61"
-        },
-        {
-            "id": 399,
-            "bank": "PROCAPITAL BELGIUM",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "PBELBEB1"
-        },
-        {
-            "id": 400,
-            "bank": "PUILAETCO DEWAAY PRIVATE BANKERS",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "PUILBEBB"
-        },
-        {
-            "id": 401,
-            "bank": "Q-PARK FINANCIAL SERVICES NV",
-            "city": "DIEGEM",
-            "branch": null,
-            "swift_code": "QPFSBEBB"
-        },
-        {
-            "id": 402,
-            "bank": "R. HAVAUX ET CIE, SCS",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "HAVABEB1"
-        },
-        {
-            "id": 403,
-            "bank": "R.B. ET F. ROPSY ET CIE, SPRL",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ROPSBEB1"
-        },
-        {
-            "id": 404,
-            "bank": "RABOBANK INTERNATIONAL ANTWERP BRANCH",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "RABOBE22"
-        },
-        {
-            "id": 405,
-            "bank": "RABOBANK INTERNATIONAL ANTWERP BRANCH - CORPORATE BANK",
-            "city": "BERCHEM",
-            "branch": null,
-            "swift_code": "RABOBE23"
-        },
-        {
-            "id": 406,
-            "bank": "RAMPELBERGS ET CIE SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "RMPLBEB1"
-        },
-        {
-            "id": 407,
-            "bank": "RBC INVESTOR SERVICES BELGIUM",
-            "city": "BRUSSELS",
-            "branch": "(FUND ADMINISTRATION)",
-            "swift_code": "DXFSBEBBFAD"
-        },
-        {
-            "id": 408,
-            "bank": "RBC INVESTOR SERVICES BELGIUM",
-            "city": "BRUSSELS",
-            "branch": "(SHAREHOLDERS SERVICES)",
-            "swift_code": "DXFSBEBBSHS"
-        },
-        {
-            "id": 409,
-            "bank": "RBC INVESTOR SERVICES BELGIUM",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "DXFSBEBB"
-        },
-        {
-            "id": 410,
-            "bank": "RECORD BANK NV",
-            "city": "GENT",
-            "branch": null,
-            "swift_code": "HBKABE22"
-        },
-        {
-            "id": 411,
-            "bank": "RECORD BANK NV",
-            "city": "GENT",
-            "branch": null,
-            "swift_code": "HBKABE22TA2"
-        },
-        {
-            "id": 412,
-            "bank": "REMY FRERES ET FILS S.A.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "REFFBEB1"
-        },
-        {
-            "id": 413,
-            "bank": "REYERS BEAUVOIS DE VILLENFAGNE SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "RETSBEB1"
-        },
-        {
-            "id": 414,
-            "bank": "RIGA ET CIE, S.A.",
-            "city": "WAVRE",
-            "branch": null,
-            "swift_code": "RIGABEB1"
-        },
-        {
-            "id": 415,
-            "bank": "ROBECO",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "RBCOBEB1"
-        },
-        {
-            "id": 416,
-            "bank": "RONFLETTE ET CIE, SPRL",
-            "city": "CHARLEROI",
-            "branch": null,
-            "swift_code": "RONFBE61"
-        },
-        {
-            "id": 417,
-            "bank": "ROTHSCHILD BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "RCBPBEBB"
-        },
-        {
-            "id": 418,
-            "bank": "ROYAL PARK INVESTMENTS",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "RPINBEBB"
-        },
-        {
-            "id": 419,
-            "bank": "S.W.I.F.T. HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": null,
-            "swift_code": "AFFEBEB3"
-        },
-        {
-            "id": 420,
-            "bank": "S.W.I.F.T. HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": null,
-            "swift_code": "SWLIBEBB"
-        },
-        {
-            "id": 421,
-            "bank": "S.W.I.F.T. HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": null,
-            "swift_code": "SWTDBEBB"
-        },
-        {
-            "id": 422,
-            "bank": "SAGIP S.A. (S.A. DE GESTION, D'INVESTISSEMENT ET DE PARTICIPATION)",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BNPABEBS"
-        },
-        {
-            "id": 423,
-            "bank": "SAMSUNG ELECTRONICS BENELUX BELGIUM",
-            "city": "VILVOORDE",
-            "branch": "(SEBN-B)",
-            "swift_code": "SECTBEB14B2"
-        },
-        {
-            "id": 424,
-            "bank": "SAMSUNG ELECTRONICS BENELUX BELGIUM",
-            "city": "VILVOORDE",
-            "branch": null,
-            "swift_code": "SECTBEB1"
-        },
-        {
-            "id": 425,
-            "bank": "SANTANDER BENELUX SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BSCHBEBB"
-        },
-        {
-            "id": 426,
-            "bank": "SANTANDER BENELUX SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BSCHBEBBBLX"
-        },
-        {
-            "id": 427,
-            "bank": "SAXO BANK BELGIQUE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "SAXBBEB1"
-        },
-        {
-            "id": 428,
-            "bank": "SCA CAPITAL NV",
-            "city": "DIEGEM",
-            "branch": null,
-            "swift_code": "SCCPBEBB"
-        },
-        {
-            "id": 429,
-            "bank": "SCHRETLEN AND CO. N.V.",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "SCRTBE21"
-        },
-        {
-            "id": 430,
-            "bank": "SG PRIVATE BANKING BELGIUM",
-            "city": "GENT",
-            "branch": null,
-            "swift_code": "SGPBBE99"
-        },
-        {
-            "id": 431,
-            "bank": "SG PRIVATE BANKING BELGIUM",
-            "city": "GENT",
-            "branch": null,
-            "swift_code": "SGPBBE99TG2"
-        },
-        {
-            "id": 432,
-            "bank": "SHIZUOKA BANK (EUROPE) S.A.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "SHIZBEBB"
-        },
-        {
-            "id": 433,
-            "bank": "SIBEKA, SOCIETE D'ENTREPRISE ET D'INVESTISSEMENTS SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "SSDDBEB1"
-        },
-        {
-            "id": 434,
-            "bank": "SIRIUS INTERNATIONAL INSURANCE CORP",
-            "city": "LIEGE",
-            "branch": null,
-            "swift_code": "SIIIBE41"
-        },
-        {
-            "id": 435,
-            "bank": "SOCIETE FINANCIERE ET DE GESTION TEXAF SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "TSFGBEB1"
-        },
-        {
-            "id": 436,
-            "bank": "SOCIETE FINANCIERE ET FONCIERE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "SOFFBEB1"
-        },
-        {
-            "id": 437,
-            "bank": "SOCIETE FINANCIERE G.P. PHILIPPSON ET CO SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "SOFPBEB1"
-        },
-        {
-            "id": 438,
-            "bank": "SOCIETE GENERALE (BELGIAN HEAD OFFICE)",
-            "city": "BRUSSELS",
-            "branch": "(BELGIAN HEAD OFFICE)",
-            "swift_code": "SGABBEB2"
-        },
-        {
-            "id": 439,
-            "bank": "SOCIETE GENERALE (BELGIAN HEAD OFFICE)",
-            "city": "BRUSSELS",
-            "branch": "(BRANCH)",
-            "swift_code": "SGABBEB2BRU"
-        },
-        {
-            "id": 440,
-            "bank": "SOCIETE GENERALE (BELGIAN HEAD OFFICE)",
-            "city": "BRUSSELS",
-            "branch": "(SG BRUXELLES TRADE SERVICES)",
-            "swift_code": "SGABBEB2TRA"
-        },
-        {
-            "id": 441,
-            "bank": "SOFIHOLDING SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "SOFIBEB1"
-        },
-        {
-            "id": 442,
-            "bank": "SOLVAY CICC S.A",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "SOLVBEBB"
-        },
-        {
-            "id": 443,
-            "bank": "STATE BANK OF INDIA",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "SBINBE2X"
-        },
-        {
-            "id": 444,
-            "bank": "STATE STREET BANK EUROPE LTD.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "SBOSBEB1"
-        },
-        {
-            "id": 445,
-            "bank": "STORA FINACIAL SERVICES (BRUSSELS)",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "SFSRBEB1"
-        },
-        {
-            "id": 446,
-            "bank": "SUCCURSALE CREDIT FONCIER DE FRANCE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "CFFRBEB1"
-        },
-        {
-            "id": 447,
-            "bank": "SUMITOMO MITSUI BANKING CORPORATION",
-            "city": "BRUSSELS",
-            "branch": "(RESTRICTED USE FOR TARGET 2 BRUSSELS ONLY)",
-            "swift_code": "SMBCBEBBGEB"
-        },
-        {
-            "id": 448,
-            "bank": "SUMITOMO MITSUI BANKING CORPORATION",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "SMBCBEBB"
-        },
-        {
-            "id": 449,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "BRUSSELS",
-            "branch": "(SECURITY MANAGEMENT CENTRE)",
-            "swift_code": "SWHQBECACIO"
-        },
-        {
-            "id": 450,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "SWHTBEBBAC1"
-        },
-        {
-            "id": 451,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "SWHTBEBBAC2"
-        },
-        {
-            "id": 452,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "SWHTBEBBAC3"
-        },
-        {
-            "id": 453,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(ADMINISTRATION SERVICES)",
-            "swift_code": "SWHQBEBBADS"
-        },
-        {
-            "id": 454,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(BROADCAST REQUESTS ONLY)",
-            "swift_code": "SWHQBEBBBCT"
-        },
-        {
-            "id": 455,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(CORPORATE EVENTS DEPARTMENT)",
-            "swift_code": "SWHQBEBBEVE"
-        },
-        {
-            "id": 456,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(CUSTOMER BILLING SERVICES)",
-            "swift_code": "SWHQBEBBBIL"
-        },
-        {
-            "id": 457,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(ENCRYPTOR ACKNOWLEDGEMENT)",
-            "swift_code": "SWHQBECAENC"
-        },
-        {
-            "id": 458,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(END-TO-END ORDERING DEPARTMENT)",
-            "swift_code": "SWHQBEBBE2E"
-        },
-        {
-            "id": 459,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(FINANCE DIVISION)",
-            "swift_code": "SWHQBEBBFIN"
-        },
-        {
-            "id": 460,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(GENERAL MANAGEMENT)",
-            "swift_code": "SWHQBEBBGMT"
-        },
-        {
-            "id": 461,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(INTERFACES TECHNICAL SUPPORT DEPARTMENT)",
-            "swift_code": "SWHQBEBBTSD"
-        },
-        {
-            "id": 462,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(MARKETING)",
-            "swift_code": "SWHQBEBBMKT"
-        },
-        {
-            "id": 463,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(MEMBERSHIP MANAGEMENT)",
-            "swift_code": "SWHQBEBBMEM"
-        },
-        {
-            "id": 464,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(PRODUCT MANAGEMENT DIVISION)",
-            "swift_code": "SWHQBEBBPRM"
-        },
-        {
-            "id": 465,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(QUALITY ENGINEERING DEPARTMENT)",
-            "swift_code": "SWHQBEBBQED"
-        },
-        {
-            "id": 466,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(S.W.I.F.T. CARD MANAGEMENT CENTER)",
-            "swift_code": "SWHQBECACMC"
-        },
-        {
-            "id": 467,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(S.W.I.F.T. KEY CERTIFICATE CENTER)",
-            "swift_code": "SWHQBECACKC"
-        },
-        {
-            "id": 468,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(S.W.I.F.T. TRANSITION TEAM)",
-            "swift_code": "SWHQBEBBTTT"
-        },
-        {
-            "id": 469,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(SALES DIVISION - GENERAL)",
-            "swift_code": "SWHQBEBBSAL"
-        },
-        {
-            "id": 470,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(SHAREHOLDING)",
-            "swift_code": "SWHQBEBBSHR"
-        },
-        {
-            "id": 471,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(STANDARDS DEPARTMENT)",
-            "swift_code": "SWHQBEBBSTD"
-        },
-        {
-            "id": 472,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(SWIFT LOGISTICS DEPT)",
-            "swift_code": "SWHQBEBBLOG"
-        },
-        {
-            "id": 473,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(SWIFT TRAINING DEPARTMENT)",
-            "swift_code": "SWHQBEBBEDU"
-        },
-        {
-            "id": 474,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(SWIFTNET FIN MIGRATION)",
-            "swift_code": "SWHQBEBBSNF"
-        },
-        {
-            "id": 475,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": "(TELECOM. PROJECTS)",
-            "swift_code": "SWHQBEBBTLC"
-        },
-        {
-            "id": 476,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": null,
-            "swift_code": "SWHQBEBB"
-        },
-        {
-            "id": 477,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": null,
-            "swift_code": "SWHQBEBB111"
-        },
-        {
-            "id": 478,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": null,
-            "swift_code": "SWHQBEBBODD"
-        },
-        {
-            "id": 479,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": null,
-            "swift_code": "SWHQBEBBREF"
-        },
-        {
-            "id": 480,
-            "bank": "SWIFT HEADQUARTERS",
-            "city": "LA HULPE",
-            "branch": null,
-            "swift_code": "SWHTBEBB"
-        },
-        {
-            "id": 481,
-            "bank": "TESSENDERLO CHEMIE NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "MMMVBEBB"
-        },
-        {
-            "id": 482,
-            "bank": "THE BANK OF NEW YORK MELLON SA\/NV",
-            "city": "BRUSSELS",
-            "branch": "(ALLIANZ DISCRETIONARY MANDATES)",
-            "swift_code": "IRVTBEBBADM"
-        },
-        {
-            "id": 483,
-            "bank": "THE BANK OF NEW YORK MELLON SA\/NV",
-            "city": "BRUSSELS",
-            "branch": "(GLOBAL BROKERAGE)",
-            "swift_code": "IRVTBEBBBKR"
-        },
-        {
-            "id": 484,
-            "bank": "THE BANK OF NEW YORK MELLON SA\/NV",
-            "city": "BRUSSELS",
-            "branch": "(GLOBAL SECURITIES SERVICES DEPT.)",
-            "swift_code": "IRVTBEBBGSS"
-        },
-        {
-            "id": 485,
-            "bank": "THE BANK OF NEW YORK MELLON SA\/NV",
-            "city": "BRUSSELS",
-            "branch": "(INTERNATIONAL MASTER CUSTODY)",
-            "swift_code": "IRVTBEBBIMC"
-        },
-        {
-            "id": 486,
-            "bank": "THE BANK OF NEW YORK MELLON SA\/NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "IRVTBEBB"
-        },
-        {
-            "id": 487,
-            "bank": "THE BANK OF NEW YORK MELLON SA\/NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "IRVTBEBBB01"
-        },
-        {
-            "id": 488,
-            "bank": "THE BANK OF NEW YORK MELLON SA\/NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "IRVTBEBBB02"
-        },
-        {
-            "id": 489,
-            "bank": "THE BANK OF NEW YORK MELLON SA\/NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "IRVTBEBBB02"
-        },
-        {
-            "id": 490,
-            "bank": "THE BANK OF NEW YORK MELLON SA\/NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "IRVTBEBBB04"
-        },
-        {
-            "id": 491,
-            "bank": "THE BANK OF NEW YORK MELLON SA\/NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "IRVTBEBBB05"
-        },
-        {
-            "id": 492,
-            "bank": "THE BANK OF NEW YORK MELLON SA\/NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "IRVTBEBBB06"
-        },
-        {
-            "id": 493,
-            "bank": "THE BANK OF NEW YORK MELLON SA\/NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "IRVTBEBBB07"
-        },
-        {
-            "id": 494,
-            "bank": "THE BANK OF NEW YORK MELLON SA\/NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "IRVTBEBBBNY"
-        },
-        {
-            "id": 495,
-            "bank": "THE BANK OF NEW YORK MELLON SA\/NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "IRVTBEBBBSK"
-        },
-        {
-            "id": 496,
-            "bank": "THE BANK OF NEW YORK MELLON SA\/NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "IRVTBEBBDCP"
-        },
-        {
-            "id": 497,
-            "bank": "THE BANK OF NEW YORK MELLON SA\/NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "IRVTBEBBICP"
-        },
-        {
-            "id": 498,
-            "bank": "THE BANK OF NEW YORK MELLON SA\/NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "IRVTBEBBLUX"
-        },
-        {
-            "id": 499,
-            "bank": "THE BANK OF NEW YORK MELLON, BRUSSELS BRANCH",
-            "city": "BRUSSELS",
-            "branch": "(3RD PARTY FUNDS ORDERS EXECUTION SERVICE)",
-            "swift_code": "BNYMBEBBFND"
-        },
-        {
-            "id": 500,
-            "bank": "THE BANK OF NEW YORK MELLON, BRUSSELS BRANCH",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "BNYMBEBB"
-        },
-        {
-            "id": 501,
-            "bank": "THE ROYAL BANK OF SCOTLAND PLC BELGIUM (FORMERLY KNOWN AS RBS NV)",
-            "city": "BRUSSELS",
-            "branch": "(HEAD OFFICE)",
-            "swift_code": "ABNABEBR"
-        },
-        {
-            "id": 502,
-            "bank": "THIBAUT LUC EN CO FINANCIERS NW",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "THLFBE21"
-        },
-        {
-            "id": 503,
-            "bank": "THIEREN EN CO, VEG",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "THIEBE21"
-        },
-        {
-            "id": 504,
-            "bank": "TRAX NAAMLOZE VENNOOTSCHAP",
-            "city": "MECHELEN",
-            "branch": null,
-            "swift_code": "TRAXBE21"
-        },
-        {
-            "id": 505,
-            "bank": "TRIODOS BANK",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "TRIOBEBB"
-        },
-        {
-            "id": 506,
-            "bank": "TUNZ.COM",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "TUNZBEB1"
-        },
-        {
-            "id": 507,
-            "bank": "U.B.B., SC",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "SUBCBEB1"
-        },
-        {
-            "id": 508,
-            "bank": "UBS (LUXEMBOURG) S.A. BELGIUM BRANCH",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "UBSWBEBB"
-        },
-        {
-            "id": 509,
-            "bank": "UNION BANK OF INDIA",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "UBINBE22"
-        },
-        {
-            "id": 510,
-            "bank": "UNITED TAIWAN BANK S.A.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "UTWBBEBB"
-        },
-        {
-            "id": 511,
-            "bank": "UPAR",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "UPANBE21"
-        },
-        {
-            "id": 512,
-            "bank": "V. HERMANS, SPRL",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "VHERBEB1"
-        },
-        {
-            "id": 513,
-            "bank": "VAN BAUWEL AND CO",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "BAUWBE21"
-        },
-        {
-            "id": 514,
-            "bank": "VAN DE PUT EN CO EFFECTENBANK - BANQUE DE TITRES",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "VAPEBE22"
-        },
-        {
-            "id": 515,
-            "bank": "VAN DE PUT EN CO, EFFECTENBANK - BANQUE DE TITRES",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "VAPEBE21"
-        },
-        {
-            "id": 516,
-            "bank": "VAN GLABBEEK EN CO BVBA BEURSVENNOOTSCHAP",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "VGLABE21"
-        },
-        {
-            "id": 517,
-            "bank": "VAN GOETHEM EN CO",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "VGOEBE21"
-        },
-        {
-            "id": 518,
-            "bank": "VAN GOOLEN EN CO BVBA",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "VOBVBE21"
-        },
-        {
-            "id": 519,
-            "bank": "VAN HERREWEGHE, SPRL",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "VHRRBEB1"
-        },
-        {
-            "id": 520,
-            "bank": "VANHERREWEGHE",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "VANHBEB1"
-        },
-        {
-            "id": 521,
-            "bank": "VDK SPAARBANK NV",
-            "city": "GENT",
-            "branch": null,
-            "swift_code": "VDSPBE22"
-        },
-        {
-            "id": 522,
-            "bank": "VDK SPAARBANK NV",
-            "city": "GENT",
-            "branch": null,
-            "swift_code": "VDSPBE91"
-        },
-        {
-            "id": 523,
-            "bank": "VERCAMMEN EN CO, CGV",
-            "city": "LIER",
-            "branch": null,
-            "swift_code": "VCAMBEB1"
-        },
-        {
-            "id": 524,
-            "bank": "VERHAEGEN, GOOSSENS, DE ROECK EN CO NAAMLOZE VENNOOTSCHAP",
-            "city": "ANTWERPEN",
-            "branch": null,
-            "swift_code": "VEGRBE21"
-        },
-        {
-            "id": 525,
-            "bank": "VF EUROPE BVBA",
-            "city": "BORNEM",
-            "branch": null,
-            "swift_code": "VFCOBE2B"
-        },
-        {
-            "id": 526,
-            "bank": "VIATOUR, DE COCK, HERMESSE ET DEBLANC, S.A.",
-            "city": "LIEGE",
-            "branch": null,
-            "swift_code": "VDHDBE41"
-        },
-        {
-            "id": 527,
-            "bank": "VOLKSWAGEN BANK GMBH",
-            "city": "DIEGEM",
-            "branch": null,
-            "swift_code": "VOWABEB1"
-        },
-        {
-            "id": 528,
-            "bank": "VOLKSWAGEN FINANCE BELGIUM",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "VOFBBEB1"
-        },
-        {
-            "id": 529,
-            "bank": "VOLKSWAGEN GROUP SERVICES SA\/NV",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "VWAGBEBB"
-        },
-        {
-            "id": 530,
-            "bank": "WABCO FINANCIAL SERVICES BVBA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "WABCBEBB"
-        },
-        {
-            "id": 531,
-            "bank": "WAL.AGRI SA",
-            "city": "SOMBREFFE",
-            "branch": null,
-            "swift_code": "WALGBE61"
-        },
-        {
-            "id": 532,
-            "bank": "WEEKERS ET PARTNERS, S.A.",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "WEEKBEB1"
-        },
-        {
-            "id": 533,
-            "bank": "WEGHSTEEN EN DRIEGE NV",
-            "city": "GENT",
-            "branch": null,
-            "swift_code": "WBDWBE91"
-        },
-        {
-            "id": 534,
-            "bank": "WINTERTHUR ASSURANCES",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "WIAUBEB1"
-        },
-        {
-            "id": 535,
-            "bank": "WORLDLINE SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "ATWSBEBB"
-        },
-        {
-            "id": 536,
-            "bank": "WPP GROUP SERVICES SNC",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "WPPGBEBB"
-        },
-        {
-            "id": 537,
-            "bank": "WULLAERT EN CO SA",
-            "city": "BRUSSELS",
-            "branch": null,
-            "swift_code": "YWULBEB1"
-        },
-        {
-            "id": 538,
-            "bank": "ZOETIS TREASURY CENTER BVBA FINANCIAL DEPARTMENT",
-            "city": "ZAVENTEM",
-            "branch": null,
-            "swift_code": "ZOETBEBB"
-        }
+{ "id": 0, "bank_code": "000", "bank": "bpost bank", "city": "", "swift_code": "BPOTBEB1" },
+{ "id": 1, "bank_code": "001", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 2, "bank_code": "002", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 3, "bank_code": "003", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 4, "bank_code": "004", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 5, "bank_code": "005", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 6, "bank_code": "006", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 7, "bank_code": "007", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 8, "bank_code": "008", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 9, "bank_code": "009", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 10, "bank_code": "010", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 11, "bank_code": "011", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 12, "bank_code": "012", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 13, "bank_code": "013", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 14, "bank_code": "014", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 15, "bank_code": "015", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 16, "bank_code": "016", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 17, "bank_code": "017", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 18, "bank_code": "018", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 19, "bank_code": "019", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 20, "bank_code": "020", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 21, "bank_code": "021", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 22, "bank_code": "022", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 23, "bank_code": "023", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 24, "bank_code": "024", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 25, "bank_code": "025", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 26, "bank_code": "026", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 27, "bank_code": "027", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 28, "bank_code": "028", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 29, "bank_code": "029", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 30, "bank_code": "030", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 31, "bank_code": "031", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 32, "bank_code": "032", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 33, "bank_code": "033", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 34, "bank_code": "034", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 35, "bank_code": "035", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 36, "bank_code": "036", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 37, "bank_code": "037", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 38, "bank_code": "038", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 39, "bank_code": "039", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 40, "bank_code": "040", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 41, "bank_code": "041", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 42, "bank_code": "042", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 43, "bank_code": "043", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 44, "bank_code": "044", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 45, "bank_code": "045", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 46, "bank_code": "046", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 47, "bank_code": "047", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 48, "bank_code": "048", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 49, "bank_code": "049", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 50, "bank_code": "050", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 51, "bank_code": "051", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 52, "bank_code": "052", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 53, "bank_code": "053", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 54, "bank_code": "054", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 55, "bank_code": "055", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 56, "bank_code": "056", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 57, "bank_code": "057", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 58, "bank_code": "058", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 59, "bank_code": "059", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 60, "bank_code": "060", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 61, "bank_code": "061", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 62, "bank_code": "062", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 63, "bank_code": "063", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 64, "bank_code": "064", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 65, "bank_code": "065", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 66, "bank_code": "066", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 67, "bank_code": "067", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 68, "bank_code": "068", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 69, "bank_code": "069", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 70, "bank_code": "070", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 71, "bank_code": "071", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 72, "bank_code": "072", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 73, "bank_code": "073", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 74, "bank_code": "074", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 75, "bank_code": "075", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 76, "bank_code": "076", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 77, "bank_code": "077", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 78, "bank_code": "078", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 79, "bank_code": "079", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 80, "bank_code": "080", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 81, "bank_code": "081", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 82, "bank_code": "082", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 83, "bank_code": "083", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 84, "bank_code": "084", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 85, "bank_code": "085", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 86, "bank_code": "086", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 87, "bank_code": "087", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 88, "bank_code": "088", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 89, "bank_code": "089", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 90, "bank_code": "090", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 91, "bank_code": "091", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 92, "bank_code": "092", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 93, "bank_code": "093", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 94, "bank_code": "094", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 95, "bank_code": "095", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 96, "bank_code": "096", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 97, "bank_code": "097", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 98, "bank_code": "098", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 99, "bank_code": "099", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 100, "bank_code": "100", "bank": "Nationale Bank van België", "city": "", "swift_code": "NBBEBEBB203" },
+{ "id": 101, "bank_code": "101", "bank": "Nationale Bank van België", "city": "", "swift_code": "NBBEBEBB203" },
+{ "id": 103, "bank_code": "103", "bank": "Crelan", "city": "", "swift_code": "NICABEBB" },
+{ "id": 104, "bank_code": "104", "bank": "Crelan", "city": "", "swift_code": "NICABEBB" },
+{ "id": 105, "bank_code": "105", "bank": "Crelan", "city": "", "swift_code": "NICABEBB" },
+{ "id": 106, "bank_code": "106", "bank": "Crelan", "city": "", "swift_code": "NICABEBB" },
+{ "id": 107, "bank_code": "107", "bank": "Crelan", "city": "", "swift_code": "NICABEBB" },
+{ "id": 108, "bank_code": "108", "bank": "Crelan", "city": "", "swift_code": "NICABEBB" },
+{ "id": 109, "bank_code": "109", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 110, "bank_code": "110", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 111, "bank_code": "111", "bank": "Bank J. Van Breda & C°", "city": "", "swift_code": "ABERBE22" },
+{ "id": 113, "bank_code": "113", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 114, "bank_code": "114", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 119, "bank_code": "119", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 120, "bank_code": "120", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 121, "bank_code": "121", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 122, "bank_code": "122", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 123, "bank_code": "123", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 124, "bank_code": "124", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 125, "bank_code": "125", "bank": "Banque CPH", "city": "", "swift_code": "CPHBBE75" },
+{ "id": 126, "bank_code": "126", "bank": "Banque CPH", "city": "", "swift_code": "CPHBBE75" },
+{ "id": 127, "bank_code": "127", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 129, "bank_code": "129", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 131, "bank_code": "131", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 132, "bank_code": "132", "bank": "Bank Nagelmackers", "city": "", "swift_code": "BNAGBEBB" },
+{ "id": 133, "bank_code": "133", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 134, "bank_code": "134", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 137, "bank_code": "137", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 140, "bank_code": "140", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 141, "bank_code": "141", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 142, "bank_code": "142", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 143, "bank_code": "143", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 144, "bank_code": "144", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 145, "bank_code": "145", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 146, "bank_code": "146", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 147, "bank_code": "147", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 148, "bank_code": "148", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 149, "bank_code": "149", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 150, "bank_code": "150", "bank": "Bancontact Payconiq Company", "city": "", "swift_code": "BCMCBEBB" },
+{ "id": 171, "bank_code": "171", "bank": "Banque CPH", "city": "", "swift_code": "CPHBBE75" },
+{ "id": 172, "bank_code": "172", "bank": "Coöperatieve Rabobank U.A.", "city": "", "swift_code": "RABOBE23" },
+{ "id": 173, "bank_code": "173", "bank": "Coöperatieve Rabobank U.A.", "city": "", "swift_code": "RABOBE23" },
+{ "id": 176, "bank_code": "176", "bank": "Santander Consumer Bank", "city": "", "swift_code": "BSCHBEBBRET" },
+{ "id": 178, "bank_code": "178", "bank": "Commerzbank", "city": "", "swift_code": "COBABEBX" },
+{ "id": 179, "bank_code": "179", "bank": "Commerzbank", "city": "", "swift_code": "COBABEBX" },
+{ "id": 183, "bank_code": "183", "bank": "Bank of Baroda", "city": "", "swift_code": "BARBBEBB" },
+{ "id": 185, "bank_code": "185", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 189, "bank_code": "189", "bank": "Sumitomo Mitsui Banking Corporation (SMBC)", "city": "", "swift_code": "SMBCBEBB" },
+{ "id": 190, "bank_code": "190", "bank": "CBC Banque et Assurances", "city": "", "swift_code": "CREGBEBB" },
+{ "id": 191, "bank_code": "191", "bank": "CBC Banque et Assurances", "city": "", "swift_code": "CREGBEBB" },
+{ "id": 192, "bank_code": "192", "bank": "CBC Banque et Assurances", "city": "", "swift_code": "CREGBEBB" },
+{ "id": 193, "bank_code": "193", "bank": "CBC Banque et Assurances", "city": "", "swift_code": "CREGBEBB" },
+{ "id": 194, "bank_code": "194", "bank": "CBC Banque et Assurances", "city": "", "swift_code": "CREGBEBB" },
+{ "id": 195, "bank_code": "195", "bank": "CBC Banque et Assurances", "city": "", "swift_code": "CREGBEBB" },
+{ "id": 196, "bank_code": "196", "bank": "CBC Banque et Assurances", "city": "", "swift_code": "CREGBEBB" },
+{ "id": 197, "bank_code": "197", "bank": "CBC Banque et Assurances", "city": "", "swift_code": "CREGBEBB" },
+{ "id": 198, "bank_code": "198", "bank": "CBC Banque et Assurances", "city": "", "swift_code": "CREGBEBB" },
+{ "id": 199, "bank_code": "199", "bank": "CBC Banque et Assurances", "city": "", "swift_code": "CREGBEBB" },
+{ "id": 200, "bank_code": "200", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 201, "bank_code": "201", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 202, "bank_code": "202", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 203, "bank_code": "203", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 204, "bank_code": "204", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 205, "bank_code": "205", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 206, "bank_code": "206", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 207, "bank_code": "207", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 208, "bank_code": "208", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 209, "bank_code": "209", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 210, "bank_code": "210", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 211, "bank_code": "211", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 212, "bank_code": "212", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 213, "bank_code": "213", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 214, "bank_code": "214", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 220, "bank_code": "220", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 221, "bank_code": "221", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 222, "bank_code": "222", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 223, "bank_code": "223", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 224, "bank_code": "224", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 225, "bank_code": "225", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 226, "bank_code": "226", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 227, "bank_code": "227", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 228, "bank_code": "228", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 229, "bank_code": "229", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 230, "bank_code": "230", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 231, "bank_code": "231", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 232, "bank_code": "232", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 233, "bank_code": "233", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 234, "bank_code": "234", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 235, "bank_code": "235", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 236, "bank_code": "236", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 237, "bank_code": "237", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 238, "bank_code": "238", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 239, "bank_code": "239", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 240, "bank_code": "240", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 241, "bank_code": "241", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 242, "bank_code": "242", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 243, "bank_code": "243", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 244, "bank_code": "244", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 245, "bank_code": "245", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 246, "bank_code": "246", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 247, "bank_code": "247", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 248, "bank_code": "248", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 249, "bank_code": "249", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 250, "bank_code": "250", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 251, "bank_code": "251", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 252, "bank_code": "252", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 253, "bank_code": "253", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 254, "bank_code": "254", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 255, "bank_code": "255", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 256, "bank_code": "256", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 257, "bank_code": "257", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 258, "bank_code": "258", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 259, "bank_code": "259", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 260, "bank_code": "260", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 261, "bank_code": "261", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 262, "bank_code": "262", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 263, "bank_code": "263", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 264, "bank_code": "264", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 265, "bank_code": "265", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 266, "bank_code": "266", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 267, "bank_code": "267", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 268, "bank_code": "268", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 269, "bank_code": "269", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 270, "bank_code": "270", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 271, "bank_code": "271", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 272, "bank_code": "272", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 273, "bank_code": "273", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 274, "bank_code": "274", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 275, "bank_code": "275", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 276, "bank_code": "276", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 277, "bank_code": "277", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 278, "bank_code": "278", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 279, "bank_code": "279", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 280, "bank_code": "280", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 281, "bank_code": "281", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 282, "bank_code": "282", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 283, "bank_code": "283", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 284, "bank_code": "284", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 285, "bank_code": "285", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 286, "bank_code": "286", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 287, "bank_code": "287", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 288, "bank_code": "288", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 289, "bank_code": "289", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 290, "bank_code": "290", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 291, "bank_code": "291", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 292, "bank_code": "292", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 293, "bank_code": "293", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 294, "bank_code": "294", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 295, "bank_code": "295", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 296, "bank_code": "296", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 297, "bank_code": "297", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 298, "bank_code": "298", "bank": "BNP Paribas Fortis", "city": "", "swift_code": "GEBABEBB" },
+{ "id": 299, "bank_code": "299", "bank": "bpost bank", "city": "", "swift_code": "BPOTBEB1" },
+{ "id": 300, "bank_code": "300", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 301, "bank_code": "301", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 302, "bank_code": "302", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 303, "bank_code": "303", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 304, "bank_code": "304", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 305, "bank_code": "305", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 306, "bank_code": "306", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 307, "bank_code": "307", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 308, "bank_code": "308", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 309, "bank_code": "309", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 310, "bank_code": "310", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 311, "bank_code": "311", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 312, "bank_code": "312", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 313, "bank_code": "313", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 314, "bank_code": "314", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 315, "bank_code": "315", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 316, "bank_code": "316", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 317, "bank_code": "317", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 318, "bank_code": "318", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 319, "bank_code": "319", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 320, "bank_code": "320", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 321, "bank_code": "321", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 322, "bank_code": "322", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 323, "bank_code": "323", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 324, "bank_code": "324", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 325, "bank_code": "325", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 326, "bank_code": "326", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 327, "bank_code": "327", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 328, "bank_code": "328", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 329, "bank_code": "329", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 330, "bank_code": "330", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 331, "bank_code": "331", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 332, "bank_code": "332", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 333, "bank_code": "333", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 334, "bank_code": "334", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 335, "bank_code": "335", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 336, "bank_code": "336", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 337, "bank_code": "337", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 338, "bank_code": "338", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 339, "bank_code": "339", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 340, "bank_code": "340", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 341, "bank_code": "341", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 342, "bank_code": "342", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 343, "bank_code": "343", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 344, "bank_code": "344", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 345, "bank_code": "345", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 346, "bank_code": "346", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 347, "bank_code": "347", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 348, "bank_code": "348", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 349, "bank_code": "349", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 350, "bank_code": "350", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 351, "bank_code": "351", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 352, "bank_code": "352", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 353, "bank_code": "353", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 354, "bank_code": "354", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 355, "bank_code": "355", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 356, "bank_code": "356", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 357, "bank_code": "357", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 358, "bank_code": "358", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 359, "bank_code": "359", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 360, "bank_code": "360", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 361, "bank_code": "361", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 362, "bank_code": "362", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 363, "bank_code": "363", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 364, "bank_code": "364", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 365, "bank_code": "365", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 366, "bank_code": "366", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 367, "bank_code": "367", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 368, "bank_code": "368", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 369, "bank_code": "369", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 370, "bank_code": "370", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 371, "bank_code": "371", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 372, "bank_code": "372", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 373, "bank_code": "373", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 374, "bank_code": "374", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 375, "bank_code": "375", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 376, "bank_code": "376", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 377, "bank_code": "377", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 378, "bank_code": "378", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 379, "bank_code": "379", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 380, "bank_code": "380", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 381, "bank_code": "381", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 382, "bank_code": "382", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 383, "bank_code": "383", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 384, "bank_code": "384", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 385, "bank_code": "385", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 386, "bank_code": "386", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 387, "bank_code": "387", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 388, "bank_code": "388", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 389, "bank_code": "389", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 390, "bank_code": "390", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 391, "bank_code": "391", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 392, "bank_code": "392", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 393, "bank_code": "393", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 394, "bank_code": "394", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 395, "bank_code": "395", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 396, "bank_code": "396", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 397, "bank_code": "397", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 398, "bank_code": "398", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 399, "bank_code": "399", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 400, "bank_code": "400", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 401, "bank_code": "401", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 402, "bank_code": "402", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 403, "bank_code": "403", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 404, "bank_code": "404", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 405, "bank_code": "405", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 406, "bank_code": "406", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 407, "bank_code": "407", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 408, "bank_code": "408", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 409, "bank_code": "409", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 410, "bank_code": "410", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 411, "bank_code": "411", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 412, "bank_code": "412", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 413, "bank_code": "413", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 414, "bank_code": "414", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 415, "bank_code": "415", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 416, "bank_code": "416", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 417, "bank_code": "417", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 418, "bank_code": "418", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 419, "bank_code": "419", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 420, "bank_code": "420", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 421, "bank_code": "421", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 422, "bank_code": "422", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 423, "bank_code": "423", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 424, "bank_code": "424", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 425, "bank_code": "425", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 426, "bank_code": "426", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 427, "bank_code": "427", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 428, "bank_code": "428", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 429, "bank_code": "429", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 430, "bank_code": "430", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 431, "bank_code": "431", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 432, "bank_code": "432", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 433, "bank_code": "433", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 434, "bank_code": "434", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 435, "bank_code": "435", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 436, "bank_code": "436", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 437, "bank_code": "437", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 438, "bank_code": "438", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 439, "bank_code": "439", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 440, "bank_code": "440", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 441, "bank_code": "441", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 442, "bank_code": "442", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 443, "bank_code": "443", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 444, "bank_code": "444", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 445, "bank_code": "445", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 446, "bank_code": "446", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 447, "bank_code": "447", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 448, "bank_code": "448", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 449, "bank_code": "449", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 450, "bank_code": "450", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 451, "bank_code": "451", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 452, "bank_code": "452", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 453, "bank_code": "453", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 454, "bank_code": "454", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 455, "bank_code": "455", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 456, "bank_code": "456", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 457, "bank_code": "457", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 458, "bank_code": "458", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 459, "bank_code": "459", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 460, "bank_code": "460", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 461, "bank_code": "461", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 462, "bank_code": "462", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 463, "bank_code": "463", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 464, "bank_code": "464", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 465, "bank_code": "465", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 466, "bank_code": "466", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 467, "bank_code": "467", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 468, "bank_code": "468", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 469, "bank_code": "469", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 470, "bank_code": "470", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 471, "bank_code": "471", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 472, "bank_code": "472", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 473, "bank_code": "473", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 474, "bank_code": "474", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 475, "bank_code": "475", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 476, "bank_code": "476", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 477, "bank_code": "477", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 478, "bank_code": "478", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 479, "bank_code": "479", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 480, "bank_code": "480", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 481, "bank_code": "481", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 482, "bank_code": "482", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 483, "bank_code": "483", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 484, "bank_code": "484", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 485, "bank_code": "485", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 486, "bank_code": "486", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 487, "bank_code": "487", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 488, "bank_code": "488", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 489, "bank_code": "489", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 490, "bank_code": "490", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 491, "bank_code": "491", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 492, "bank_code": "492", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 493, "bank_code": "493", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 494, "bank_code": "494", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 495, "bank_code": "495", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 496, "bank_code": "496", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 497, "bank_code": "497", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 498, "bank_code": "498", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 499, "bank_code": "499", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 500, "bank_code": "500", "bank": "Moneytrans Payment Services", "city": "", "swift_code": "MTPSBEBB" },
+{ "id": 501, "bank_code": "501", "bank": "Demir-Halk Bank (Nederland) (DHB)", "city": "", "swift_code": "DHBNBEBB" },
+{ "id": 504, "bank_code": "504", "bank": "PAY-NXT", "city": "", "swift_code": "PANXBEB1" },
+{ "id": 507, "bank_code": "507", "bank": "Dierickx, Leys & Cie Effectenbank", "city": "", "swift_code": "DIERBE21" },
+{ "id": 508, "bank_code": "508", "bank": "BNP Paribas Securities Services", "city": "", "swift_code": "PARBBEBZMDC" },
+{ "id": 509, "bank_code": "509", "bank": "ABN AMRO Bank N.V.", "city": "", "swift_code": "ABNABE2AIPC" },
+{ "id": 510, "bank_code": "510", "bank": "VAN DE PUT & CO Privaatbankiers", "city": "", "swift_code": "VAPEBE22" },
+{ "id": 512, "bank_code": "512", "bank": "NIBC BANK", "city": "", "swift_code": "DNIBBE21" },
+{ "id": 513, "bank_code": "513", "bank": "ABN AMRO Bank N.V.", "city": "", "swift_code": "ABNABE2AIPC" },
+{ "id": 514, "bank_code": "514", "bank": "Puilaetco Dewaay Private Bankers", "city": "", "swift_code": "PUILBEBB" },
+{ "id": 515, "bank_code": "515", "bank": "The Bank of New York Mellon NV/SA", "city": "", "swift_code": "IRVTBEBB" },
+{ "id": 521, "bank_code": "521", "bank": "F. van Lanschot Bankiers", "city": "", "swift_code": "FVLBBE22" },
+{ "id": 522, "bank_code": "522", "bank": "United Taiwan Bank", "city": "", "swift_code": "UTWBBEBB" },
+{ "id": 523, "bank_code": "523", "bank": "Triodos Bank", "city": "", "swift_code": "TRIOBEBB" },
+{ "id": 524, "bank_code": "524", "bank": "Attijariwafa bank Europe", "city": "", "swift_code": "WAFABEBB" },
+{ "id": 525, "bank_code": "525", "bank": "F. van Lanschot Bankiers", "city": "", "swift_code": "FVLBBE2E" },
+{ "id": 530, "bank_code": "530", "bank": "Shizuoka Bank (Europe)", "city": "", "swift_code": "SHIZBEBB" },
+{ "id": 535, "bank_code": "535", "bank": "CREDIT EUROPE BANK NV", "city": "", "swift_code": "FBHLBE22" },
+{ "id": 541, "bank_code": "541", "bank": "BANK OF INDIA", "city": "", "swift_code": "BKIDBE22" },
+{ "id": 546, "bank_code": "546", "bank": "Attijariwafa bank Europe", "city": "", "swift_code": "WAFABEBB" },
+{ "id": 548, "bank_code": "548", "bank": "Lombard Odier (Europe)", "city": "", "swift_code": "LOCYBEBB" },
+{ "id": 549, "bank_code": "549", "bank": "JP Morgan Chase Bank", "city": "", "swift_code": "CHASBEBX" },
+{ "id": 550, "bank_code": "550", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 551, "bank_code": "551", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 552, "bank_code": "552", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 553, "bank_code": "553", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 554, "bank_code": "554", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 555, "bank_code": "555", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 556, "bank_code": "556", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 557, "bank_code": "557", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 558, "bank_code": "558", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 559, "bank_code": "559", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 560, "bank_code": "560", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 562, "bank_code": "562", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 563, "bank_code": "563", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 564, "bank_code": "564", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 565, "bank_code": "565", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 566, "bank_code": "566", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 567, "bank_code": "567", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 568, "bank_code": "568", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 569, "bank_code": "569", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 570, "bank_code": "570", "bank": "Citibank Europe Plc - Belgium Branch", "city": "", "swift_code": "CITIBEBX" },
+{ "id": 571, "bank_code": "571", "bank": "Citibank Europe Plc - Belgium Branch", "city": "", "swift_code": "CITIBEBX" },
+{ "id": 572, "bank_code": "572", "bank": "Citibank Europe Plc - Belgium Branch", "city": "", "swift_code": "CITIBEBX" },
+{ "id": 573, "bank_code": "573", "bank": "Citibank Europe Plc - Belgium Branch", "city": "", "swift_code": "CITIBEBX" },
+{ "id": 574, "bank_code": "574", "bank": "Citibank Europe Plc - Belgium Branch", "city": "", "swift_code": "CITIBEBX" },
+{ "id": 575, "bank_code": "575", "bank": "Citibank Europe Plc - Belgium Branch", "city": "", "swift_code": "CITIBEBX" },
+{ "id": 576, "bank_code": "576", "bank": "Citibank Europe Plc - Belgium Branch", "city": "", "swift_code": "CITIBEBX" },
+{ "id": 577, "bank_code": "577", "bank": "Citibank Europe Plc - Belgium Branch", "city": "", "swift_code": "CITIBEBX" },
+{ "id": 578, "bank_code": "578", "bank": "Citibank Europe Plc - Belgium Branch", "city": "", "swift_code": "CITIBEBX" },
+{ "id": 579, "bank_code": "579", "bank": "Citibank Europe Plc - Belgium Branch", "city": "", "swift_code": "CITIBEBX" },
+{ "id": 581, "bank_code": "581", "bank": "Mizuho Bank Europe N.V. Brussels Branch", "city": "", "swift_code": "MHCBBEBB" },
+{ "id": 583, "bank_code": "583", "bank": "Banque Degroof Petercam Luxembourg", "city": "", "swift_code": "DEGRBEBB" },
+{ "id": 585, "bank_code": "585", "bank": "Rothschild Belgique Succursale Rothschild Martin Maurel", "city": "", "swift_code": "RCBPBEBB" },
+{ "id": 586, "bank_code": "586", "bank": "Crédit Foncier de France", "city": "", "swift_code": "CFFRBEB1" },
+{ "id": 587, "bank_code": "587", "bank": "BinckBank", "city": "", "swift_code": "BIBLBE21" },
+{ "id": 588, "bank_code": "588", "bank": "Banque Transatlantique Belgium", "city": "", "swift_code": "CMCIBEB1BTB" },
+{ "id": 590, "bank_code": "590", "bank": "Santander Consumer Bank", "city": "", "swift_code": "BSCHBEBB" },
+{ "id": 591, "bank_code": "591", "bank": "Santander Consumer Bank", "city": "", "swift_code": "BSCHBEBB" },
+{ "id": 592, "bank_code": "592", "bank": "Santander Consumer Bank", "city": "", "swift_code": "BSCHBEBB" },
+{ "id": 593, "bank_code": "593", "bank": "Santander Consumer Bank", "city": "", "swift_code": "BSCHBEBB" },
+{ "id": 594, "bank_code": "594", "bank": "Santander Consumer Bank", "city": "", "swift_code": "BSCHBEBB" },
+{ "id": 595, "bank_code": "595", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 596, "bank_code": "596", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 597, "bank_code": "597", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 598, "bank_code": "598", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 599, "bank_code": "599", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 600, "bank_code": "600", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 601, "bank_code": "601", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 605, "bank_code": "605", "bank": "Bank of China (Luxembourg) S.A., Brussels Branch", "city": "", "swift_code": "BKCHBEBB" },
+{ "id": 607, "bank_code": "607", "bank": "Industrial and Commercial Bank of China (Europe)", "city": "", "swift_code": "ICBKBEBB" },
+{ "id": 610, "bank_code": "610", "bank": "Deutsche Bank AG", "city": "", "swift_code": "DEUTBEBE" },
+{ "id": 611, "bank_code": "611", "bank": "Deutsche Bank AG", "city": "", "swift_code": "DEUTBEBE" },
+{ "id": 612, "bank_code": "612", "bank": "Deutsche Bank AG", "city": "", "swift_code": "DEUTBEBE" },
+{ "id": 613, "bank_code": "613", "bank": "Deutsche Bank AG", "city": "", "swift_code": "DEUTBEBE" },
+{ "id": 624, "bank_code": "624", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 625, "bank_code": "625", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 630, "bank_code": "630", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 631, "bank_code": "631", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 634, "bank_code": "634", "bank": "Bank Nagelmackers", "city": "", "swift_code": "BNAGBEBB" },
+{ "id": 635, "bank_code": "635", "bank": "Bank Nagelmackers", "city": "", "swift_code": "BNAGBEBB" },
+{ "id": 636, "bank_code": "636", "bank": "Bank Nagelmackers", "city": "", "swift_code": "BNAGBEBB" },
+{ "id": 638, "bank_code": "638", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 640, "bank_code": "640", "bank": "KBC Bank N.V. Business Center Diamant", "city": "", "swift_code": "ADIABE22" },
+{ "id": 642, "bank_code": "642", "bank": "Banco Bilbao Vizcaya Argentaria", "city": "", "swift_code": "BBVABEBB" },
+{ "id": 643, "bank_code": "643", "bank": "Aion", "city": "", "swift_code": "BMPBBEBB" },
+{ "id": 645, "bank_code": "645", "bank": "Bank J. Van Breda & C°", "city": "", "swift_code": "JVBABE22" },
+{ "id": 646, "bank_code": "646", "bank": "Bank Nagelmackers", "city": "", "swift_code": "BNAGBEBB" },
+{ "id": 647, "bank_code": "647", "bank": "Bank Nagelmackers", "city": "", "swift_code": "BNAGBEBB" },
+{ "id": 648, "bank_code": "648", "bank": "Aion", "city": "", "swift_code": "BMPBBEBBVOD" },
+{ "id": 651, "bank_code": "651", "bank": "Arkéa Direct Bank (nom commercial / commerciële naam: Keytrade Bank)", "city": "", "swift_code": "KEYTBEBB" },
+{ "id": 652, "bank_code": "652", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 653, "bank_code": "653", "bank": "Barclays Bank Ireland Plc Brussels Branch", "city": "", "swift_code": "BARCBEBB" },
+{ "id": 657, "bank_code": "657", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 658, "bank_code": "658", "bank": "Habib Bank", "city": "", "swift_code": "HABBBEBB" },
+{ "id": 663, "bank_code": "663", "bank": "BMCE Euro Services", "city": "", "swift_code": "BMEUBEB1" },
+{ "id": 664, "bank_code": "664", "bank": "Banque Chaabi du Maroc", "city": "", "swift_code": "BCDMBEBB" },
+{ "id": 667, "bank_code": "667", "bank": "Crédit Industriel et Commercial - Succursale de Bruxelles", "city": "", "swift_code": "CMCIBEB1CIC" },
+{ "id": 668, "bank_code": "668", "bank": "State Bank of India", "city": "", "swift_code": "SBINBE2X" },
+{ "id": 671, "bank_code": "671", "bank": "Europabank", "city": "", "swift_code": "EURBBE99" },
+{ "id": 672, "bank_code": "672", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 673, "bank_code": "673", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 674, "bank_code": "674", "bank": "ABN AMRO Bank N.V.", "city": "", "swift_code": "ABNABE2AIDJ" },
+{ "id": 675, "bank_code": "675", "bank": "Byblos Bank Europe", "city": "", "swift_code": "BYBBBEBB" },
+{ "id": 676, "bank_code": "676", "bank": "Bank Degroof Petercam", "city": "", "swift_code": "DEGRBEBB" },
+{ "id": 677, "bank_code": "677", "bank": "Compagnie de Banque Privée Quilvest", "city": "", "swift_code": "CBPXBE99" },
+{ "id": 678, "bank_code": "678", "bank": "Delen Private Bank", "city": "", "swift_code": "DELEBE22" },
+{ "id": 679, "bank_code": "679", "bank": "bpost", "city": "", "swift_code": "PCHQBEBB" },
+{ "id": 680, "bank_code": "680", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 682, "bank_code": "682", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 683, "bank_code": "683", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 684, "bank_code": "684", "bank": "Société Générale", "city": "", "swift_code": "SGABBEB2" },
+{ "id": 685, "bank_code": "685", "bank": "Bank of Amerika Merrill Lynch International DAC - Brussels Branch", "city": "", "swift_code": "BOFABE3X" },
+{ "id": 686, "bank_code": "686", "bank": "Bank of Amerika Merrill Lynch International DAC - Brussels Branch", "city": "", "swift_code": "BOFABE3X" },
+{ "id": 687, "bank_code": "687", "bank": "Euroclear Bank", "city": "", "swift_code": "MGTCBEBE" },
+{ "id": 688, "bank_code": "688", "bank": "Société Générale", "city": "", "swift_code": "SGABBEB2" },
+{ "id": 693, "bank_code": "693", "bank": "MUFG Bank (Europe)", "city": "", "swift_code": "BOTKBEBX" },
+{ "id": 694, "bank_code": "694", "bank": "Deutsche Bank AG", "city": "", "swift_code": "DEUTBEBE" },
+{ "id": 696, "bank_code": "696", "bank": "Crédit Agricole Corporate & Investment Bank", "city": "", "swift_code": "CRLYBEBB" },
+{ "id": 698, "bank_code": "698", "bank": "Natixis Bank", "city": "", "swift_code": "NATXBEB1" },
+{ "id": 700, "bank_code": "700", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 701, "bank_code": "701", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 702, "bank_code": "702", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 703, "bank_code": "703", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 704, "bank_code": "704", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 705, "bank_code": "705", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 706, "bank_code": "706", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 707, "bank_code": "707", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 708, "bank_code": "708", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 709, "bank_code": "709", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 719, "bank_code": "719", "bank": "ABN AMRO Bank N.V.", "city": "", "swift_code": "ABNABE2AXXX" },
+{ "id": 722, "bank_code": "722", "bank": "ABN AMRO Bank N.V.", "city": "", "swift_code": "ABNABE2AIPC" },
+{ "id": 725, "bank_code": "725", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 726, "bank_code": "726", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 727, "bank_code": "727", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 728, "bank_code": "728", "bank": "CBC Banque et Assurances", "city": "", "swift_code": "CREGBEBB" },
+{ "id": 729, "bank_code": "729", "bank": "CBC Banque et Assurances", "city": "", "swift_code": "CREGBEBB" },
+{ "id": 730, "bank_code": "730", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 731, "bank_code": "731", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 732, "bank_code": "732", "bank": "CBC Banque et Assurances", "city": "", "swift_code": "CREGBEBB" },
+{ "id": 733, "bank_code": "733", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 734, "bank_code": "734", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 735, "bank_code": "735", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 736, "bank_code": "736", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 737, "bank_code": "737", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 738, "bank_code": "738", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 739, "bank_code": "739", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 740, "bank_code": "740", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 741, "bank_code": "741", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 742, "bank_code": "742", "bank": "CBC Banque et Assurances", "city": "", "swift_code": "CREGBEBB" },
+{ "id": 743, "bank_code": "743", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 744, "bank_code": "744", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 745, "bank_code": "745", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 746, "bank_code": "746", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 747, "bank_code": "747", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 748, "bank_code": "748", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 749, "bank_code": "749", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 750, "bank_code": "750", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 751, "bank_code": "751", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 752, "bank_code": "752", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 753, "bank_code": "753", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 754, "bank_code": "754", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 755, "bank_code": "755", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 756, "bank_code": "756", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 757, "bank_code": "757", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 758, "bank_code": "758", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 759, "bank_code": "759", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 760, "bank_code": "760", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 761, "bank_code": "761", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 762, "bank_code": "762", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 763, "bank_code": "763", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 764, "bank_code": "764", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 765, "bank_code": "765", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 766, "bank_code": "766", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 767, "bank_code": "767", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 768, "bank_code": "768", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 769, "bank_code": "769", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 770, "bank_code": "770", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 771, "bank_code": "771", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 772, "bank_code": "772", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 773, "bank_code": "773", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 774, "bank_code": "774", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 775, "bank_code": "775", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 776, "bank_code": "776", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 777, "bank_code": "777", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 778, "bank_code": "778", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 779, "bank_code": "779", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 780, "bank_code": "780", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 781, "bank_code": "781", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 782, "bank_code": "782", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 783, "bank_code": "783", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 784, "bank_code": "784", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 785, "bank_code": "785", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 786, "bank_code": "786", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 787, "bank_code": "787", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 788, "bank_code": "788", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 789, "bank_code": "789", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 790, "bank_code": "790", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 791, "bank_code": "791", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 792, "bank_code": "792", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 793, "bank_code": "793", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 794, "bank_code": "794", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 795, "bank_code": "795", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 796, "bank_code": "796", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 797, "bank_code": "797", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 798, "bank_code": "798", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 799, "bank_code": "799", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 800, "bank_code": "800", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 801, "bank_code": "801", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 802, "bank_code": "802", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 803, "bank_code": "803", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 804, "bank_code": "804", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 805, "bank_code": "805", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 806, "bank_code": "806", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 807, "bank_code": "807", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 808, "bank_code": "808", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 809, "bank_code": "809", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 810, "bank_code": "810", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 811, "bank_code": "811", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 812, "bank_code": "812", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 813, "bank_code": "813", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 814, "bank_code": "814", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 815, "bank_code": "815", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 816, "bank_code": "816", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 817, "bank_code": "817", "bank": "CACEIS Bank Belgian Branch", "city": "", "swift_code": "ISAEBEBB" },
+{ "id": 823, "bank_code": "823", "bank": "Banque de Luxembourg", "city": "", "swift_code": "BLUXBEBB" },
+{ "id": 825, "bank_code": "825", "bank": "Deutsche Bank AG", "city": "", "swift_code": "DEUTBEBE" },
+{ "id": 826, "bank_code": "826", "bank": "Deutsche Bank AG", "city": "", "swift_code": "DEUTBEBE" },
+{ "id": 828, "bank_code": "828", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 830, "bank_code": "830", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 831, "bank_code": "831", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 832, "bank_code": "832", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 833, "bank_code": "833", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 834, "bank_code": "834", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 835, "bank_code": "835", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 836, "bank_code": "836", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 837, "bank_code": "837", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 838, "bank_code": "838", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 839, "bank_code": "839", "bank": "BELFIUS BANK", "city": "", "swift_code": "GKCCBEBB" },
+{ "id": 840, "bank_code": "840", "bank": "Edmond de Rothschild (Europe)", "city": "", "swift_code": "PRIBBEBB" },
+{ "id": 844, "bank_code": "844", "bank": "Rabobank.be", "city": "", "swift_code": "RABOBE22" },
+{ "id": 845, "bank_code": "845", "bank": "Bank Degroof Petercam", "city": "", "swift_code": "DEGRBEBB" },
+{ "id": 850, "bank_code": "850", "bank": "Crelan", "city": "", "swift_code": "NICABEBB" },
+{ "id": 851, "bank_code": "851", "bank": "Crelan", "city": "", "swift_code": "NICABEBB" },
+{ "id": 852, "bank_code": "852", "bank": "Crelan", "city": "", "swift_code": "NICABEBB" },
+{ "id": 853, "bank_code": "853", "bank": "Crelan", "city": "", "swift_code": "NICABEBB" },
+{ "id": 859, "bank_code": "859", "bank": "Crelan", "city": "", "swift_code": "NICABEBB" },
+{ "id": 860, "bank_code": "860", "bank": "Crelan", "city": "", "swift_code": "NICABEBB" },
+{ "id": 862, "bank_code": "862", "bank": "Crelan", "city": "", "swift_code": "NICABEBB" },
+{ "id": 863, "bank_code": "863", "bank": "Crelan", "city": "", "swift_code": "NICABEBB" },
+{ "id": 865, "bank_code": "865", "bank": "Crelan", "city": "", "swift_code": "NICABEBB" },
+{ "id": 866, "bank_code": "866", "bank": "Crelan", "city": "", "swift_code": "NICABEBB" },
+{ "id": 868, "bank_code": "868", "bank": "KBC Bank", "city": "", "swift_code": "KREDBEBB" },
+{ "id": 871, "bank_code": "871", "bank": "Bank Nagelmackers", "city": "", "swift_code": "BNAGBEBB" },
+{ "id": 873, "bank_code": "873", "bank": "bpost", "city": "", "swift_code": "PCHQBEBB" },
+{ "id": 876, "bank_code": "876", "bank": "MeDirect Bank S.A.", "city": "", "swift_code": "MBWMBEBB" },
+{ "id": 877, "bank_code": "877", "bank": "Bank Nagelmackers", "city": "", "swift_code": "BNAGBEBB" },
+{ "id": 878, "bank_code": "878", "bank": "Bank Nagelmackers", "city": "", "swift_code": "BNAGBEBB" },
+{ "id": 879, "bank_code": "879", "bank": "Bank Nagelmackers", "city": "", "swift_code": "BNAGBEBB" },
+{ "id": 880, "bank_code": "880", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 881, "bank_code": "881", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 883, "bank_code": "883", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 884, "bank_code": "884", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 887, "bank_code": "887", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 888, "bank_code": "888", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 890, "bank_code": "890", "bank": "vdk bank", "city": "", "swift_code": "VDSPBE91" },
+{ "id": 891, "bank_code": "891", "bank": "vdk bank", "city": "", "swift_code": "VDSPBE91" },
+{ "id": 892, "bank_code": "892", "bank": "vdk bank", "city": "", "swift_code": "VDSPBE91" },
+{ "id": 893, "bank_code": "893", "bank": "vdk bank", "city": "", "swift_code": "VDSPBE91" },
+{ "id": 894, "bank_code": "894", "bank": "vdk bank", "city": "", "swift_code": "VDSPBE91" },
+{ "id": 895, "bank_code": "895", "bank": "vdk bank", "city": "", "swift_code": "VDSPBE91" },
+{ "id": 896, "bank_code": "896", "bank": "vdk bank", "city": "", "swift_code": "VDSPBE91" },
+{ "id": 897, "bank_code": "897", "bank": "vdk bank", "city": "", "swift_code": "VDSPBE91" },
+{ "id": 898, "bank_code": "898", "bank": "vdk bank", "city": "", "swift_code": "VDSPBE91" },
+{ "id": 899, "bank_code": "899", "bank": "vdk bank", "city": "", "swift_code": "VDSPBE91" },
+{ "id": 906, "bank_code": "906", "bank": "Centrale Kredietverlening (C.K.V.)", "city": "", "swift_code": "CEKVBE88" },
+{ "id": 908, "bank_code": "908", "bank": "Centrale Kredietverlening (C.K.V.)", "city": "", "swift_code": "CEKVBE88" },
+{ "id": 910, "bank_code": "910", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 911, "bank_code": "911", "bank": "Ingenico Financial Solutions", "city": "", "swift_code": "TUNZBEB1" },
+{ "id": 913, "bank_code": "913", "bank": "EPBF", "city": "", "swift_code": "EPBFBEBB" },
+{ "id": 914, "bank_code": "914", "bank": "FX4BIZ", "city": "", "swift_code": "FXBBBEBB" },
+{ "id": 915, "bank_code": "915", "bank": "Oonex", "city": "", "swift_code": "OONXBEBB" },
+{ "id": 916, "bank_code": "916", "bank": "GOLD COMMODITIES FOREX (G.C.F.)", "city": "", "swift_code": "GOCFBEB1" },
+{ "id": 920, "bank_code": "920", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 922, "bank_code": "922", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 923, "bank_code": "923", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 924, "bank_code": "924", "bank": "Fimaser", "city": "", "swift_code": "FMMSBEB1" },
+{ "id": 926, "bank_code": "926", "bank": "Ebury Partners Belgium", "city": "", "swift_code": "EBPBBEB1" },
+{ "id": 928, "bank_code": "928", "bank": "VIVA Payment Services", "city": "", "swift_code": "VPAYBE21" },
+{ "id": 929, "bank_code": "929", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 930, "bank_code": "930", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 931, "bank_code": "931", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 934, "bank_code": "934", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 936, "bank_code": "936", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 939, "bank_code": "939", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 940, "bank_code": "940", "bank": "Banque Centrale de Compensation (Clearnet)", "city": "", "swift_code": "CLIQBEB1" },
+{ "id": 941, "bank_code": "941", "bank": "C A Indosuez Wealth (Europe)", "city": "", "swift_code": "CVMCBEBB" },
+{ "id": 942, "bank_code": "942", "bank": "Puilaetco Dewaay Private Bankers", "city": "", "swift_code": "PUILBEBB" },
+{ "id": 945, "bank_code": "945", "bank": "J.P. Morgan Bank Luxembourg - Brussels Branch", "city": "", "swift_code": "JPMGBEBB" },
+{ "id": 949, "bank_code": "949", "bank": "HSBC France Belgian Branch", "city": "", "swift_code": "HSBCBEBB" },
+{ "id": 950, "bank_code": "950", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 951, "bank_code": "951", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 952, "bank_code": "952", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 953, "bank_code": "953", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 954, "bank_code": "954", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 955, "bank_code": "955", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 956, "bank_code": "956", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 957, "bank_code": "957", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 958, "bank_code": "958", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 959, "bank_code": "959", "bank": "Beobank", "city": "", "swift_code": "CTBKBEBX" },
+{ "id": 960, "bank_code": "960", "bank": "ABN AMRO Bank N.V.", "city": "", "swift_code": "ABNABE2AIPC" },
+{ "id": 961, "bank_code": "961", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 963, "bank_code": "963", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 966, "bank_code": "966", "bank": "NewB", "city": "", "swift_code": "NEECBEB2" },
+{ "id": 967, "bank_code": "967", "bank": "TransferWise", "city": "", "swift_code": "TRWIBEB1" },
+{ "id": 968, "bank_code": "968", "bank": "Banque Eni", "city": "", "swift_code": "ENIBBEBB" },
+{ "id": 969, "bank_code": "969", "bank": "Puilaetco Dewaay Private Bankers", "city": "", "swift_code": "PUILBEBB" },
+{ "id": 971, "bank_code": "971", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 973, "bank_code": "973", "bank": "Argenta Spaarbank (ASPA)", "city": "", "swift_code": "ARSPBE22" },
+{ "id": 974, "bank_code": "974", "bank": "PPS EU SA", "city": "", "swift_code": "PESOBEB1" },
+{ "id": 975, "bank_code": "975", "bank": "AXA Bank Belgium", "city": "", "swift_code": "AXABBE22" },
+{ "id": 976, "bank_code": "976", "bank": "ING België", "city": "", "swift_code": "BBRUBEBB" },
+{ "id": 978, "bank_code": "978", "bank": "Argenta Spaarbank (ASPA)", "city": "", "swift_code": "ARSPBE22" },
+{ "id": 979, "bank_code": "979", "bank": "Argenta Spaarbank (ASPA)", "city": "", "swift_code": "ARSPBE22" },
+{ "id": 980, "bank_code": "980", "bank": "Argenta Spaarbank (ASPA)", "city": "", "swift_code": "ARSPBE22" },
+{ "id": 981, "bank_code": "981", "bank": "bpost", "city": "", "swift_code": "PCHQBEBB" },
+{ "id": 982, "bank_code": "982", "bank": "bpost", "city": "", "swift_code": "PCHQBEBB" },
+{ "id": 983, "bank_code": "983", "bank": "bpost", "city": "", "swift_code": "PCHQBEBB" },
+{ "id": 984, "bank_code": "984", "bank": "bpost", "city": "", "swift_code": "PCHQBEBB" },
+{ "id": 985, "bank_code": "985", "bank": "bpost bank", "city": "", "swift_code": "BPOTBEB1" },
+{ "id": 986, "bank_code": "986", "bank": "bpost bank", "city": "", "swift_code": "BPOTBEB1" },
+{ "id": 987, "bank_code": "987", "bank": "bpost bank", "city": "", "swift_code": "BPOTBEB1" },
+{ "id": 988, "bank_code": "988", "bank": "bpost bank", "city": "", "swift_code": "BPOTBEB1" }
     ]
 }
