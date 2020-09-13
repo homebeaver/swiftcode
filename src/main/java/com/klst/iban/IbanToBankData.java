@@ -217,7 +217,7 @@ public class IbanToBankData {
 		BankData bankData = new BankData();
 		String bic = (String) bank_data.get("bic");
 		bankData.setBic(bic);
-		String bank = (String) bank_data.get("bank"); // aka bank nam
+		String bank = (String) bank_data.get("bank"); // aka bank name
 		bankData.setBank(bank);
 		String city = (String) bank_data.get("city");
 		bankData.setCity(city);
@@ -326,6 +326,12 @@ public class IbanToBankData {
 		test.getBankData("BA391290079401028494");
 		test.getBankData("BE94049123456789");
 		test.getBankData("BG80BNBG96611020345678");
+/*
+{"bank_data":{"bic":"BNBGBGSFXXX","branch":"","bank":"BULGARIAN NATIONAL BANK","address":"ALEXANDER BATTENBERG SQUARE 1","city":" SOFIA","state":null,"zip":"1000","phone":"","fax":null,"www":null,"email":null,"country":"Bulgaria","country_iso":"BG"
+             ,"account":"1020345678","bank_code":"BNBG","branch_code":"9661"}
+,"sepa_data":{"SCT":"YES","SDD":"NO","COR1":"NO","B2B":"NO","SCC":"NO"}
+,"validations":{"chars":{"code":"006","message":"IBAN does not contain illegal characters"},"account":{"code":"004","message":"Account Number check digit is not performed for this bank or branch"},"iban":{"code":"001","message":"IBAN Check digit is correct"},"structure":{"code":"005","message":"IBAN structure is correct"},"length":{"code":"003","message":"IBAN Length is correct"},"country_support":{"code":"007","message":"Country supports IBAN standard"}},"errors":[]}
+ */
 		test.getBankData("BH67BMAG00001299123456");
 		test.getBankData("BR1800360305000010009795493C1");
 		test.getBankData("BY13NBRB3600900000002Z00AB00");
@@ -356,7 +362,7 @@ public class IbanToBankData {
 		test.getBankData("FR1420041010050500013M02606");
 /*
 {"bank_data":{"bic":"PSSTFRPPLIL","branch":null,"bank":"LA BANQUE POSTALE","address":"3 RUE PAUL DUEZ","city":"LILLE CEDEX 9","state":null,"zip":"59900","phone":null,"fax":null,"www":null,"email":null,"country":"FRANCE","country_iso":"FR"
-,"account":"0500013M026","bank_code":"20041","branch_code":"01005"}
+             ,"account":"0500013M026","bank_code":"20041","branch_code":"01005"}
 ,"sepa_data":{"SCT":"YES","SDD":"YES","COR1":"YES","B2B":"YES","SCC":"NO"}
 ,"validations":{"chars":{"code":"006","message":"IBAN does not contain illegal characters"},"account":{"code":"002","message":"Account Number check digit is correct"},"iban":{"code":"001","message":"IBAN Check digit is correct"},"structure":{"code":"005","message":"IBAN structure is correct"},"length":{"code":"003","message":"IBAN Length is correct"},"country_support":{"code":"007","message":"Country supports IBAN standard"}},"errors":[]}
  */
@@ -374,7 +380,7 @@ public class IbanToBankData {
 		test.getBankData("IS140159260076545510730339");
 /*
 {"bank_data":{"bic":"NBIIISREXXX","branch":null,"bank":"Landsbankinn hf","address":"AUSTURSTRAETI 11","city":"REYKJAVIK","state":null,"zip":"155","phone":null,"fax":null,"www":null,"email":null,"country":"Iceland","country_iso":"IS"
-,"account":"007654","bank_code":"0159","branch_code":""}
+             ,"account":"007654","bank_code":"0159","branch_code":""}
 ,"sepa_data":{"SCT":"YES","SDD":"NO","COR1":"NO","B2B":"NO","SCC":"NO"}
 ,"validations":{"chars":{"code":"006","message":"IBAN does not contain illegal characters"},"account":{"code":"002","message":"Account Number check digit is correct"},"iban":{"code":"001","message":"IBAN Check digit is correct"},"structure":{"code":"005","message":"IBAN structure is correct"},"length":{"code":"003","message":"IBAN Length is correct"},"country_support":{"code":"007","message":"Country supports IBAN standard"}},"errors":[]}
  */
@@ -382,7 +388,7 @@ public class IbanToBankData {
 		test.getBankData("JO94CBJO0010000000000131000302");
 /*
 {"bank_data":{"bic":"CBJOJOAXXXX","branch":null,"bank":"CENTRAL BANK OF JORDAN","address":"King Hussein Street 11118 AMMAN","city":"","state":null,"zip":"","phone":null,"fax":null,"www":null,"email":null,"country":"Jordan","country_iso":"JO"
-,"account":"0010000000000131000302","bank_code":"CBJO","branch_code":""}
+             ,"account":"0010000000000131000302","bank_code":"CBJO","branch_code":""}
 ,"sepa_data":{"SCT":"NO","SDD":"NO","COR1":"NO","B2B":"NO","SCC":"NO"}
 ,"validations":{"chars":{"code":"006","message":"IBAN does not contain illegal characters"},"account":{"code":"004","message":"Account Number check digit is not performed for this bank or branch"},"iban":{"code":"001","message":"IBAN Check digit is correct"},"structure":{"code":"005","message":"IBAN structure is correct"},"length":{"code":"003","message":"IBAN Length is correct"},"country_support":{"code":"007","message":"Country supports IBAN standard"}},"errors":[]}
  */
@@ -447,6 +453,12 @@ public class IbanToBankData {
 		test = new IbanToBankData();
 		test.retrieveBankData("XK0512120123 5678906");
 		test.retrieveBankData("XK051212012345678906");
+/*
+{"bank_data":{"bic":"NLPRXKPRXXX","branch":null,"bank":"NLB PRISHTINA","address":"KOSTA NOVAKOVIQ PN","city":"PRISTINA","state":null,"zip":"10000","phone":null,"fax":null,"www":null,"email":null,"country":"Kosovo","country_iso":"XK"
+             ,"account":"012345678906","bank_code":"12","branch_code":"12"}
+,"sepa_data":{"SCT":"NO","SDD":"NO","COR1":"NO","B2B":"NO","SCC":"NO"}
+,"validations":{"chars":{"code":"006","message":"IBAN does not contain illegal characters"},"account":{"code":"002","message":"Account Number check digit is correct"},"iban":{"code":"001","message":"IBAN Check digit is correct"},"structure":{"code":"005","message":"IBAN structure is correct"},"length":{"code":"003","message":"IBAN Length is correct"},"country_support":{"code":"007","message":"Country supports IBAN standard"}},"errors":[]}<
 
+ */
 	}
 }
