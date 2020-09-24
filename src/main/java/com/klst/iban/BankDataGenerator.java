@@ -6,7 +6,11 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Hashtable;
 import java.util.List;
+import java.util.Map;
 import java.util.logging.Logger;
 
 import org.json.simple.JSONArray;
@@ -18,7 +22,7 @@ import com.klst.iban.Result.BankData;
 
 /*
 
-bic aka AZ.json hat folgende Felder:
+bic Bsp AZ.json hat folgende Felder:
             "id": 1,
             "bank": "ACCESSBANK",
             "city": "BAKU",
@@ -30,7 +34,7 @@ forAll json's:
 	generatedAccount = 00000000137010001944
 	pp = 99 // muss nicht korrekt sein
 	try IbanApi AZ+pp+bank_code+generatedAccount
-		get bic
+		get bic // aka swift_code
 		get bank aka name
 		get bank_code, id aus bank_code A=0,Z=27
 		get sepa.getBankSupports()
@@ -41,12 +45,13 @@ forAll json's:
              ,"city":"Baku","state":null,"zip":""
              ,"phone":"493-11-22","fax":null,"www":null,"email":null
              ,"account":"00000000137010001944","bank_code":"NABZ","branch_code":""}
+branch_code ist nicht der (optional)bic.branch
  */
 public class BankDataGenerator extends IbanToBankData {
 
 	private static final Logger LOG = Logger.getLogger(BankDataGenerator.class.getName());
 
-	private final static String PP = "99";
+	final static String PP = "99";
 
 	BankDataGenerator(String api_key) {
 		super(api_key);
@@ -56,11 +61,108 @@ public class BankDataGenerator extends IbanToBankData {
 //    	LOG.info("validations for iban "+iban); 
     	parseValidationObject(validation);		
 	}
-	void getBankDataViaApi(int id, String iban, String branchCode) {
-		getBankDataViaApi(id, iban, branchCode, null, null);
+	
+	final static List<String> OPTIONAL_KEYS = Arrays.asList("support_codes", "phone", "fax", "www", "email");
+	JSONObject updateJSONObject(JSONObject jo, BankData bankData, String key, Object value) { // TODO ohne bankData
+		//LOG.info("key:"+key + " old/new: "+jo.get(key)+"/"+value);	
+		if(OPTIONAL_KEYS.contains(key) && value==null) {
+			// nix tun
+		} else { // MANDATORY_KEYS || value!=null
+			jo.put(key, value);
+		}
+		return jo;
+	}
+	
+	List<JSONObject> getBranchList(String bic, Map<String, List<JSONObject>> jMap) {
+		List<JSONObject> branchList = jMap.get(bic);
+        if(branchList==null) { // id:16, bic:COBALULXXXX, branchList#=null, bankName:BANK JULIUS BAER LUXEMBOURG S.A.
+    		branchList = new ArrayList<JSONObject>();
+    		JSONObject le = new JSONObject();
+    		updateJSONObject(le, null, "swift_code", bic);
+        	branchList.add(le);        	
+        }
+		return branchList;
+	}
+	
+	void printBankDataViaApi(int id, String iban, Map<String, List<JSONObject>> jMap) {
+    	BankData bankData =	super.retrieveBankData(iban);
+    	if(bankData==null) return;
+        String bankName = bankData.getBank();
+        if(bankName==null) { // not found 
+        	return;
+        }
+        String bic = bankData.getBic();
+        if(bic==null) {
+        	return;
+        }
+        
+        Object branch = bankData.getBranch();
+        String city = bankData.getCity();
+        
+        List<JSONObject> branchList = jMap.get(bic);
+//      LOG.info("id:"+id + ", bic:"+bic + ", branchList#="+(branchList==null ? "null" : branchList.size()) + ", bankName:"+bankName);
+        branchList = getBranchList(bic, jMap);
+        
+		for(int i=0; i<branchList.size(); i++) {
+			JSONObject le = branchList.get(i);
+			// LU: bei XXX id*1000, sonst id*1000 +i+1
+			int listIndex = i+1;
+			if(bic.equals(le.get("swift_code"))) {
+				listIndex = 0;
+			}
+			le = updateJSONObject(le, bankData, "id", id*1000 +listIndex);
+			//le = updateJSONObject(le, bankData, "swift_code", bic);
+			le = updateJSONObject(le, bankData, "bank_code", id);
+			le = updateJSONObject(le, bankData, "bank", bankName);
+			le = updateJSONObject(le, bankData, "branch_code", bankData.getBranchCode());
+			if(branch==null) { 
+				// branch aus le belassen
+			} else {
+				Object branchAlt = le.get("branch");
+            	if(!branch.toString().equals(branchAlt)) {
+            		LOG.warning("le:"+le + ", le.branch ANDERS branch:"+branch);
+            	}
+				le = updateJSONObject(le, bankData, "branch", branch);
+			}
+			if(city==null) {
+				// city aus le belassen
+			} else {
+				Object cityAlt = le.get("city");
+				if(!city.equals(cityAlt) && i>0) {
+					LOG.warning("le:"+le + ", le.city ANDERS city:"+city);
+				}
+				le = updateJSONObject(le, bankData, "address", bankData.getAddress());
+				le = updateJSONObject(le, bankData, "zip", bankData.getZipString());
+				le = updateJSONObject(le, bankData, "city", bankData.getCity());
+			}
+			// optional:
+			le = updateJSONObject(le, bankData, "support_codes", bankData.getBankSupports());
+			le = updateJSONObject(le, bankData, "phone", bankData.getPhone());
+			le = updateJSONObject(le, bankData, "fax", bankData.getFax());
+			le = updateJSONObject(le, bankData, "www", bankData.getWww());
+			le = updateJSONObject(le, bankData, "email", bankData.getEmail());
+			System.out.println(le.toString() + ",");
+		}
+		
+	}
+	
+	void getBankDataViaApi(int id, String iban, Object branchCode) {
+		getBankDataViaApi(id, iban, branchCode, null, null, null);
 	}
 
-	void getBankDataViaApi(int id, String iban, String branchCode, Object swift_code, String bank) {
+	/* ermittelt BankData per iban-checker iban.com api und gibt das Ergebnis aus
+	 * 
+	 * @param id - (nicht immer) eindeutige Id für die Institution/Bank
+	 * @param iban - generierte nicht valide IBAN, countryCode+PP+BBAN
+	 * @param branchCode - der branchCode aus der BBAN (das ist nicht bic.branchCode!)
+	 * 
+	 * @param swift_code (optional): bic aka swift_code liefert die iban-api, allerdings immer die PRIMARY_OFFICE
+	 *        dadurch werden keine IBANs für "swift_code": "UNCRBGSF720" , "(PLOVDIV BRANCH)"gefunden
+	 * @param bank (optional): alternativer bankName wenn vorhanden 
+	 * @param branchName (optional): alternativer Name wenn vorhanden 
+	 * TODO @param cityName (optional): alternativer Name wenn vorhanden 
+	 */
+	void getBankDataViaApi(int id, String iban, Object branchCode, BusinessIdentifierCode swift_code, String bank, String branchName) {
     	BankData bankData =	super.retrieveBankData(iban);
     	if(bankData==null) return;
 
@@ -71,23 +173,40 @@ public class BankDataGenerator extends IbanToBankData {
         	if(bank==null) return;
         	bankName = bank;      	
         }
+//    	bankName = bank; // wg. BE encoding   	
         
         String bic = bankData.getBic();
         if(bic==null) {
         	if(swift_code==null) return;
-        	bic = swift_code.toString();
+        	bic = swift_code.toString(); // wg. NL ?
         }
-        
+//LOG.info("bic:"+bic);        
         sb.append("{\"id\": ").append(id);
+        
 		sb.append(", \"swift_code\": ");
         if(bic==null) {
 			sb.append(bic);	        	
         } else {
-	        if(bic.endsWith("XXX") && branchCode.length()==3) {
-    			sb.append("\"").append(bic.substring(0, 8)).append(branchCode).append("\"");
+        	if(bic.endsWith("XXX")) {
+        		if(branchCode instanceof String) {
+        			String branchCodeS = (String)branchCode;
+        			if(branchCodeS.length()==3) {
+        				sb.append("\"").append(bic.substring(0, 8)).append(branchCode).append("\"");
+        	        } else {
+            			sb.append("\"").append(bic).append("\"");
+        	        }
+       			} else {
+       				// branchCode kann auch int sein, z.B. für BG
+       				sb.append("\"").append(bic).append("\"");
+        		}
 	        } else {
     			sb.append("\"").append(bic).append("\"");
-	        }
+        	}
+//	        if(bic.endsWith("XXX") && branchCode.length()==3) {
+//    			sb.append("\"").append(bic.substring(0, 8)).append(branchCode).append("\"");
+//	        } else {
+//    			sb.append("\"").append(bic).append("\"");
+//	        }
         }
 		sb.append(", \"bank_code\": ");
 		if(bankData.getBankCode()==0) {
@@ -97,7 +216,11 @@ public class BankDataGenerator extends IbanToBankData {
 		}
 		sb.append(", \"branch_code\": ");
 		if(bankData.getBranchCode()==null) {
-			sb.append(bankData.getBranchCode());
+			if(branchCode instanceof String) {
+				sb.append(bankData.getBranchCode());
+			} else {
+				sb.append(branchCode);
+			}			
 		} else {
 			sb.append("\"").append(bankData.getBranchCode()).append("\"");
 		}
@@ -153,14 +276,19 @@ public class BankDataGenerator extends IbanToBankData {
 		System.out.println(sb.toString());
 	}
 
-	void jsonToList(String filename, String account) throws FileNotFoundException, IOException {
+	private File getFile(String filename) throws FileNotFoundException {
 		LOG.info("filename:"+filename);
 		File file = new File(filename);
 		if(!file.exists()) {
-			LOG.warning("not existing file:"+file);
-			return;
+			//LOG.warning("not existing file:"+file);
+			throw new FileNotFoundException("Not existing file:"+file);
 		}
-		
+		return file;
+	}
+	
+	List<JSONObject> jsonToList(String filename) throws FileNotFoundException, IOException {
+		List<JSONObject> result = null;
+		File file = getFile(filename);
 		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
         JSONParser jsonParser = new JSONParser();
         try {
@@ -170,31 +298,97 @@ public class BankDataGenerator extends IbanToBankData {
         	Object country_code = jo.get("country_code");
         	LOG.info("country_code:"+country_code + " country:"+country);
         	Object list = jo.get("list");
-        	List<JSONObject> jList = (JSONArray)list;
-        	LOG.info("jList.size:"+jList.size());
-        	jList.forEach(le -> {
-        		JSONObject je = (JSONObject)le;
-        		Object swift_code = je.get("swift_code");
-        		// create IBAN and use IBANApi
-        		String bankCode = swift_code.toString().substring(0,4);
-        		String countryCode = swift_code.toString().substring(4,6);
-        		String locationCode = swift_code.toString().substring(6,8);
-        		String branchCode = "";
-        		if(swift_code.toString().length()==11) {
-        			branchCode = swift_code.toString().substring(8,11);
-        		}   		
-        		int id = bankCodeToId(bankCode);
-        		String iban = country_code.toString() + PP + bankCode + account;
-//            	LOG.info("id="+id + " swift_code:"+swift_code + " iban:"+iban);
-            	getBankDataViaApi(id, iban, branchCode);
-        	});
-		} catch (IOException | ParseException e) {
+        	result = (JSONArray)list;
+        	LOG.info("result List.size:"+result.size());
+ 		} catch (IOException | ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			reader.close();
 		}
-//        Object o = jsonParser.parse(response.toString());
-//        JSONObject jo = (JSONObject) o;
+       	return result;
+	}
+	
+	final static String JSON_BIC = "swift_code";
+	// Aufbau einer Liste von bicBranches pro PRIMARY_OFFICE: key: PRIMARY_OFFICE, Liste der Branches (incl XXX)
+	Map<String, List<JSONObject>> jsonMap(String filename) throws FileNotFoundException, IOException {
+		List<JSONObject> jList = jsonToList(filename);
+		Hashtable<String, List<JSONObject>> result = new Hashtable<String, List<JSONObject>>();
+    	jList.forEach(le -> {
+    		JSONObject je = (JSONObject)le;
+    		Object swift_code = je.get(JSON_BIC);
+    		BusinessIdentifierCode bic = new BusinessIdentifierCode(swift_code.toString());
+        	String key = bic.bic8()+BusinessIdentifierCode.PRIMARY_OFFICE;
+        	List<JSONObject> branchList = null;
+        	if(result.containsKey(key)) {
+        		result.get(key).add(je);
+        	} else { // new branchList
+        		branchList = new ArrayList<JSONObject>();
+            	branchList.add(je);
+            	result.put(key, branchList);
+        	}
+    	});
+    	LOG.info("result Map.size:"+result.size());
+    	return result;
+	}
+	
+	// sortiert das JSONArray aus file filename nach swift_code
+	void jsonSort(String filename) throws FileNotFoundException, IOException {
+		jsonSort(filename, false);
+	}
+	void jsonSort(String filename, boolean verbose) throws FileNotFoundException, IOException {
+		List<JSONObject> jList = jsonToList(filename);
+		jList.sort((m1, m2) -> {
+			String k1 = (String)m1.get(JSON_BIC);
+			String k2 = (String)m2.get(JSON_BIC);
+			return k1.compareTo(k2);
+		});
+//		int passive = 0;
+    	jList.forEach(le -> {
+    		JSONObject je = (JSONObject)le;
+    		Object id = je.get("id");
+    		Object swift_code = je.get(JSON_BIC);
+//    		Object bank = je.get("bank");
+//    		Object city = je.get("city");
+//    		Object branch = je.get("branch");
+    		// create IBAN and use IBANApi
+    		BusinessIdentifierCode bic = new BusinessIdentifierCode(swift_code.toString());
+    		String bankCode = bic.getBankCode();
+//    		String country_code = bic.getCountryCode();
+    		String isValid = bic.isValid() ? ", isValid" : ", INVALID";
+    		String isPassive = bic.isPassive() ? ", isPassive" : ", isActive";
+    		
+    		int bcId = bankCodeToId(bankCode);
+        	if(bic.isPassive()) {
+        		if(verbose) LOG.info("id="+id + " bic:"+bic + isValid + isPassive + " bcId="+bcId + " je:"+je.toJSONString());
+//        		passive++; // must be final
+        	} else {
+        		System.out.println(je.toJSONString() + ",");
+        	}
+    	});	
+	}
+	
+	void jsonToList(String filename, String account) throws FileNotFoundException, IOException {
+		List<JSONObject> jList = jsonToList(filename);
+    	jList.forEach(le -> {
+    		JSONObject je = (JSONObject)le;
+    		Object id = je.get("id");
+    		Object swift_code = je.get("swift_code");
+    		Object bank = je.get("bank");
+    		Object city = je.get("city");
+    		Object branch = je.get("branch");
+    		// create IBAN and use IBANApi
+    		BusinessIdentifierCode bic = new BusinessIdentifierCode(swift_code.toString());
+    		String bankCode = bic.getBankCode();
+    		String country_code = bic.getCountryCode();
+    		String isValid = bic.isValid() ? ", isValid" : ", INVALID";
+    		String isPassive = bic.isPassive() ? ", isPassive" : ", isActive";
+    		
+    		int bcId = bankCodeToId(bankCode);
+    		String iban = country_code.toString() + PP + bankCode + account;
+        	LOG.info("id="+id + " bic:"+bic + isValid + isPassive + " bcId="+bcId + " branch:"+branch + " je:"+je.toJSONString());
+        	
+        	//getBankDataViaApi(id, iban, null);
+    	});
 	}
 	
 	private void jsonNLList(String filename, String account) throws FileNotFoundException, IOException {
@@ -221,17 +415,19 @@ public class BankDataGenerator extends IbanToBankData {
         		String bank = je.get("bank").toString();
         		Object swift_code = je.get("swift_code");
         		// create IBAN and use IBANApi
-        		String bankCode = je.get("bank_code").toString();
+        		BusinessIdentifierCode bic = new BusinessIdentifierCode(swift_code.toString());
+        		String bankCode = bic.getBankCode();
+//        		String bankCode = je.get("bank_code").toString();
 //        		String countryCode = swift_code.toString().substring(4,6);
 //        		String locationCode = swift_code.toString().substring(6,8);
-        		String branchCode = "";
-        		if(swift_code.toString().length()==11) {
-        			branchCode = swift_code.toString().substring(8,11);
-        		}   		
+//        		String branchCode = "";
+//        		if(swift_code.toString().length()==11) {
+//        			branchCode = swift_code.toString().substring(8,11);
+//        		}   		
         		int id = bankCodeToId(bankCode);
         		String iban = country_code.toString() + PP + bankCode + account;
 //            	LOG.info("id="+id + " swift_code:"+swift_code + " iban:"+iban);
-            	getBankDataViaApi(id, iban, branchCode, swift_code, bank);
+            	getBankDataViaApi(id, iban, bic.getBranchCode(), bic, bank, null);
         	});
 		} catch (IOException | ParseException e) {
 			// TODO Auto-generated catch block
@@ -242,6 +438,66 @@ public class BankDataGenerator extends IbanToBankData {
 //        JSONObject jo = (JSONObject) o;
 	}
 
+	private void jsonBEList(String filename, String account) throws FileNotFoundException, IOException {
+		LOG.info("filename:"+filename);
+		File file = new File(filename);
+		if(!file.exists()) {
+			LOG.warning("not existing file:"+file);
+			return;
+		}
+		
+		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
+        JSONParser jsonParser = new JSONParser();
+        try {
+        	Object o = jsonParser.parse(reader);
+        	JSONObject jo = (JSONObject) o;
+        	Object country = jo.get("country");
+        	Object country_code = jo.get("country_code");
+        	LOG.info("country_code:"+country_code + " country:"+country);
+        	Object list = jo.get("list");
+        	List<JSONObject> jList = (JSONArray)list;
+        	LOG.info("jList.size:"+jList.size());
+        	jList.forEach(le -> {
+        		JSONObject je = (JSONObject)le;
+        		String bank = je.get("bank").toString();
+        		Object swift_code = je.get("swift_code");
+        		// create IBAN and use IBANApi
+        		BusinessIdentifierCode bic = new BusinessIdentifierCode(swift_code.toString());
+        		String bankCode = bic.getBankCode();
+//        		String bankCode = je.get("bank_code").toString();
+//        		String countryCode = swift_code.toString().substring(4,6);
+//        		String locationCode = swift_code.toString().substring(6,8);
+//        		String branchCode = "";
+//        		if(swift_code.toString().length()==11) {
+//        			branchCode = swift_code.toString().substring(8,11);
+//        		}   		
+        		//int id = je.get("id");
+        		String iban = country_code.toString() + PP + bankCode + account;
+        		int id = Integer.parseInt(bankCode);
+//            	LOG.info("id="+id + " swift_code:"+swift_code + " iban:"+iban);
+            	getBankDataViaApi(id, iban, bic.getBranchCode(), bic, bank, null);
+        	});
+		} catch (IOException | ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			reader.close();
+		}
+//        Object o = jsonParser.parse(response.toString());
+//        JSONObject jo = (JSONObject) o;
+	}
+
+	final static String FORMAT_02d = "%02d";
+	final static String FORMAT_03d = "%03d";
+	void tryWith(String countryCode, String format, int from, int to, String account) {
+		for(int id=from; id<=to; id++) {
+    		String bankCode = String.format(format, id);
+    		String iban = countryCode + PP + bankCode + account;
+//    		LOG.info("bankCode="+bankCode + " iban:"+iban);
+        	getBankDataViaApi(id, iban, "");
+		}
+		
+	}
+	
 	private static final int radix = 1+Character.hashCode('Z')-Character.hashCode('A');
 	// AAAA = 0, BAAA = 1, ZAAA = 28
 	static int bankCodeToId(String bankCode) {
@@ -262,8 +518,8 @@ public class BankDataGenerator extends IbanToBankData {
 		return id;
 	}
 
-	private final static String JSON_EXT = ".json";
-	private final static String JSON_DIR = "AllCountries/";
+	final static String JSON_EXT = ".json";
+	final static String JSON_DIR = "AllCountries/";
 
 	public static void main(String[] args) throws Exception {
 		BankDataGenerator test = new BankDataGenerator("testKey");
@@ -280,7 +536,7 @@ public class BankDataGenerator extends IbanToBankData {
 //		test.jsonToList(JSON_DIR+"LC"+JSON_EXT, "000100010012001200023015");
 //		test.jsonToList(JSON_DIR+"LV"+JSON_EXT, "0000435195001");
 //		test.jsonToList(JSON_DIR+"NL"+JSON_EXT, "0417164300");
-		test.jsonNLList(JSON_DIR+"NL"+JSON_EXT, "0417164300");		
+//		test.jsonNLList(JSON_DIR+"NL"+JSON_EXT, "0417164300");		
 //		test.jsonToList(JSON_DIR+"PK"+JSON_EXT, "0000001123456702");
 //		test.jsonToList(JSON_DIR+"PS"+JSON_EXT, "000000000400123456702");
 //		test.jsonToList(JSON_DIR+"QA"+JSON_EXT, "00001234567890ABCDEFG");
@@ -288,6 +544,20 @@ public class BankDataGenerator extends IbanToBankData {
 //		test.jsonToList(JSON_DIR+"SC"+JSON_EXT, "11010000000000001497USD");
 //		test.jsonToList(JSON_DIR+"SV"+JSON_EXT, "00000000000000700025");
 //		test.jsonToList(JSON_DIR+"VG"+JSON_EXT, "0000012345678901");
+
+//		test.jsonBEList(JSON_DIR+"BE"+JSON_EXT, "123456789");	// BE94 049 123456789
+		
+//		test.tryWith("AE", 0, 999, "1234567890123456"); // AE07 033 1234567890123456 TODO
+		// das folgende liefert immer XXX-branch, 
+		// BOMLAEADCSU, BOMLAEADEBC, BOMLAEADFTC, BOMLAEADHDO, BOMLAEADRAM, BOMLAEADTID, BOMLAEADGTS werden nicht gefunden
+		// test.tryWith("AE", 30, 35, "1234567890123456"); // AE07 033 1234567890123456
+		
+		// HABAEE2XHAM wird nicht gefunden, "id": 22 - wie HABAEE2XXXX
+		// es gibt noch EPBEEE2X mit 4x branch
+//		test.tryWith("EE", FORMAT_02d, 0, 99, "00221020145685"); // EE38 22 00221020145685
+		
+		// "id": 7, "swift_code": "BSUILULLXXX" hat viele branch'es
+		test.tryWith("LU", FORMAT_03d, 0, 10, "9400644750000"); // LU28 001 9400644750000
 		
 //		LOG.info("Id of AAAA/00 is "+test.bankCodeToId("AAAA"));
 //		LOG.info("Id of BAAA/01 is "+test.bankCodeToId("BAAA"));
