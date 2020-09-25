@@ -96,6 +96,10 @@ public class BusinessIdentifierCode {
 		return branchCode;
 	}
 	
+	public String bic8() {
+		return bic.substring(0,8);
+	}
+	
 	public String toString() {
 		return bic;
 	}

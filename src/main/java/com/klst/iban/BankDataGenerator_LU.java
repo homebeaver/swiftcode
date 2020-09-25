@@ -15,6 +15,10 @@ public class BankDataGenerator_LU extends BankDataGenerator {
 		super(api_key);
 	}
 	
+	int bankCodeToId(int bankCode, int addIndex) {
+		return bankCode*1000 + addIndex;
+	}
+
 	void tryWith(String countryCode, String format, int from, int to, String account) {
 		Map<String, List<JSONObject>> jMap;
 		try {
