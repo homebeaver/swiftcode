@@ -217,11 +217,11 @@ public class IbanToBankData {
 		BankData bankData = new BankData();
 		String bic = (String) bank_data.get("bic");
 		bankData.setBic(bic);
-		String bank = (String) bank_data.get("bank"); // aka bank name
+		String bank = (String) bank_data.get(BANK); // aka bank name
 		bankData.setBank(bank);
-		String city = (String) bank_data.get("city");
+		String city = (String) bank_data.get(CITY);
 		bankData.setCity(city);
-		String bank_code = (String) bank_data.get("bank_code");
+		String bank_code = (String) bank_data.get(BANK_CODE);
 		bankData.setBankIdentifier(bank_code);
 		// optional:
 		bankData = getOptionalKey(bank_data, BRANCH, bankData);
@@ -237,14 +237,21 @@ public class IbanToBankData {
 		return bankData;
 	}
 	
+    static final String SWIFT_CODE = "swift_code"; // aka BIC
+    static final String BANK = "bank"; // bank name
+    static final String BANK_CODE = "bank_code"; // String BankData.bankIdentifier, int BankData.bankCode
+    static final String ID = "id"; // unique per country, value can be bankCode
     static final String BRANCH = "branch";
+    static final String BRANCH_CODE = "branch_code";
     static final String ADDRESS = "address";
     static final String STATE = "state";
+    static final String CITY = "city";
     static final String ZIP = "zip";
     static final String PHONE = "phone";
     static final String FAX = "fax";
     static final String WWW = "www";
     static final String EMAIL = "email";
+    static final String SUPPORT_CODES = "support_codes";
     
  	private BankData getOptionalKey(JSONObject bank_data, String key, BankData bankData) {
 		Object value = bank_data.get(key);
