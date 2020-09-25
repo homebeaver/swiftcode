@@ -62,7 +62,7 @@ public class BankDataGenerator extends IbanToBankData {
     	parseValidationObject(validation);		
 	}
 	
-	final static List<String> OPTIONAL_KEYS = Arrays.asList(SUPPORT_CODES, PHONE, FAX, WWW, EMAIL);
+	final static List<String> OPTIONAL_KEYS = Arrays.asList(BRANCH_CODE, SUPPORT_CODES, PHONE, FAX, WWW, EMAIL);
 	JSONObject updateJSONObject(JSONObject jo, String key, Object value) {
 		//LOG.info("key:"+key + " old/new: "+jo.get(key)+"/"+value);	
 		if(OPTIONAL_KEYS.contains(key) && value==null) {
@@ -108,7 +108,7 @@ public class BankDataGenerator extends IbanToBankData {
         	return;
         }
         String bic = bankData.getBic();
-        if(bic==null) {
+        if(bic==null || bic.isEmpty()) {
         	return;
         }
         
@@ -116,41 +116,43 @@ public class BankDataGenerator extends IbanToBankData {
         String city = bankData.getCity();
         
         List<JSONObject> branchList = jMap.get(bic);
-//      LOG.info("id:"+id + ", bic:"+bic + ", branchList#="+(branchList==null ? "null" : branchList.size()) + ", bankName:"+bankName);
+//        LOG.info("bId:"+bId + ", bic:"+bic + ", branchList#="+(branchList==null ? "null" : branchList.size()) + ", bankName:"+bankName);
         branchList = getBranchList(bic, jMap);
         
 		for(int i=0; i<branchList.size(); i++) {
-			JSONObject le = branchList.get(i);			
+			JSONObject jo = branchList.get(i);			
 			int listIndex = i+1;
-			if(bic.equals(le.get(SWIFT_CODE))) {
+			String swiftCode = (String)jo.get(SWIFT_CODE);
+			if(swiftCode.length()==8) swiftCode = swiftCode.concat(BusinessIdentifierCode.PRIMARY_OFFICE);
+			if(bic.equals(swiftCode)) {
 				listIndex = 0; // LU: bei XXX id*1000, sonst id*1000 +i+1
 			}
-			le = updateJSONObject(le, ID, bankCodeToId(bId, listIndex));
-			//le = updateJSONObject(le, SWIFT_CODE, bic);
-			le = updateJSONObject(le, BANK_CODE, bId);
-			le = updateJSONObject(le, BANK, bankName);
-			le = updateJSONObject(le, BRANCH_CODE, bankData.getBranchCode());
+			jo = updateJSONObject(jo, ID, bankCodeToId(bId, listIndex));
+			jo = updateJSONObject(jo, SWIFT_CODE, swiftCode);
+			jo = updateJSONObject(jo, BANK_CODE, bId);
+			jo = updateJSONObject(jo, BANK, bankName);
 			if(branch==null) { 
 				// branch aus le belassen
 			} else {
-				Object branchAlt = le.get(BRANCH);
+				Object branchAlt = jo.get(BRANCH);
             	if(!branch.toString().equals(branchAlt)) {
-            		LOG.warning("le:"+le + ", le.branch ANDERS branch:"+branch);
+            		LOG.warning("le:"+jo + ", le.branch ANDERS branch:"+branch);
             	}
-				le = updateJSONObject(le, BRANCH, branch);
+				jo = updateJSONObject(jo, BRANCH, branch);
 			}
 			if(city==null) {
 				// city aus le belassen
 			} else {
-				updateJSONObject(le, bankData, CITY, i);
+				updateJSONObject(jo, bankData, CITY, listIndex);
 			}
 			// optional:
-			le = updateJSONObject(le, SUPPORT_CODES, bankData.getBankSupports());
-			le = updateJSONObject(le, PHONE, bankData.getPhone());
-			le = updateJSONObject(le, FAX, bankData.getFax());
-			le = updateJSONObject(le, WWW, bankData.getWww());
-			le = updateJSONObject(le, EMAIL, bankData.getEmail());
-			System.out.println(le.toString() + ",");
+			jo = updateJSONObject(jo, BRANCH_CODE, bankData.getBranchCode());
+			jo = updateJSONObject(jo, SUPPORT_CODES, bankData.getBankSupports());
+			jo = updateJSONObject(jo, PHONE, bankData.getPhone());
+			jo = updateJSONObject(jo, FAX, bankData.getFax());
+			jo = updateJSONObject(jo, WWW, bankData.getWww());
+			jo = updateJSONObject(jo, EMAIL, bankData.getEmail());
+			System.out.println(jo.toString() + ",");
 		}
 		
 	}
