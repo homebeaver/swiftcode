@@ -67,6 +67,8 @@ public class BankDataGenerator extends IbanToBankData {
 		//LOG.info("key:"+key + " old/new: "+jo.get(key)+"/"+value);	
 		if(OPTIONAL_KEYS.contains(key) && value==null) {
 			// nix tun
+		} else if(SUPPORT_CODES.equals(key) && value.hashCode()==0) {
+			// wie null
 		} else { // MANDATORY_KEYS || value!=null
 			jo.put(key, value);
 		}
