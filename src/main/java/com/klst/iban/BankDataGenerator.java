@@ -72,7 +72,21 @@ public class BankDataGenerator extends IbanToBankData {
 		}
 		return jo;
 	}
-	
+
+	JSONObject updateJSONObject(JSONObject jo, BankData bankData, String key, int listIndex) {
+		if(CITY.equals(key)) {
+			String city = bankData.getCity();
+			Object cityAlt = jo.get(key);
+			if(!city.equals(cityAlt) && listIndex>0) {
+				LOG.warning("JSONObject:"+jo + " - diff in "+key+":"+city);
+			}
+			jo = updateJSONObject(jo, ADDRESS, bankData.getAddress());
+			jo = updateJSONObject(jo, ZIP, bankData.getZipString());
+			jo = updateJSONObject(jo, CITY, bankData.getCity());
+		}
+		return jo;
+	}
+		
 	List<JSONObject> getBranchList(String bic, Map<String, List<JSONObject>> jMap) {
 		List<JSONObject> branchList = jMap.get(bic);
         if(branchList==null) { // id:16, bic:COBALULXXXX, branchList#=null, bankName:BANK JULIUS BAER LUXEMBOURG S.A.
@@ -126,13 +140,7 @@ public class BankDataGenerator extends IbanToBankData {
 			if(city==null) {
 				// city aus le belassen
 			} else {
-				Object cityAlt = le.get(CITY);
-				if(!city.equals(cityAlt) && i>0) {
-					LOG.warning("le:"+le + ", le.city ANDERS city:"+city);
-				}
-				le = updateJSONObject(le, ADDRESS, bankData.getAddress());
-				le = updateJSONObject(le, ZIP, bankData.getZipString());
-				le = updateJSONObject(le, CITY, bankData.getCity());
+				updateJSONObject(le, bankData, CITY, i);
 			}
 			// optional:
 			le = updateJSONObject(le, SUPPORT_CODES, bankData.getBankSupports());
