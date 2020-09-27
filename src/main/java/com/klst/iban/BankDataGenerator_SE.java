@@ -56,7 +56,11 @@ public class BankDataGenerator_SE extends BankDataGenerator {
 	public static void main(String[] args) throws Exception {
 		BankDataGenerator test = new BankDataGenerator_SE("testKey");
 
-		test.tryWith("SE", BankDataGenerator.FORMAT_03d, 000, 999, "00000058398257466"); // SE45 500 00000058398257466
+//		test.tryWith("SE", BankDataGenerator.FORMAT_03d, 000, 999, "00000058398257466"); // SE45 500 00000058398257466
+		
+		// Finnland ohne Branches xls vorhanden
+		// https://www.finanssiala.fi/en/payment-services/Pages/sepa-services.aspx
+		test.tryWith("FI", BankDataGenerator.FORMAT_03d, 000, 999, "45600000785"); // FI21 123 45600000785
 		
 	}
 }

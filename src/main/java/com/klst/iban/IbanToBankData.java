@@ -286,8 +286,8 @@ public class IbanToBankData {
 		SepaData sepaData = new SepaData();
 		String countryCode = iban.substring(0, 2);
 		String bban = iban.substring(4);
-		if(BbanValidator.BBAN_DATA.get(countryCode)!=null) {
-			BbanValidator bData = BbanValidator.BBAN_DATA.get(countryCode); // liefert eine Instanz mit Methode
+		if(Bban.BBAN.get(countryCode)!=null) {
+			Bban bData = Bban.BBAN.get(countryCode); // liefert eine Instanz mit Methode
 			bankData = bData.getBankData(iban);
 		} else {
 			LOG.warning(iban + " NOT implemented.");			
