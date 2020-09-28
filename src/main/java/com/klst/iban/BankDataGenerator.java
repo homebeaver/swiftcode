@@ -364,7 +364,7 @@ public class BankDataGenerator extends IbanToBankData {
     		String isValid = bic.isValid() ? ", isValid" : ", INVALID";
     		String isPassive = bic.isPassive() ? ", isPassive" : ", isActive";
     		
-    		int bcId = bankCodeToId(bankCode);
+    		int bcId = bic.bankCodeToId();
         	if(bic.isPassive()) {
         		if(verbose) LOG.info("id="+id + " bic:"+bic + isValid + isPassive + " bcId="+bcId + " je:"+je.toJSONString());
 //        		passive++; // must be final
@@ -390,7 +390,7 @@ public class BankDataGenerator extends IbanToBankData {
     		String isValid = bic.isValid() ? ", isValid" : ", INVALID";
     		String isPassive = bic.isPassive() ? ", isPassive" : ", isActive";
     		
-    		int bcId = bankCodeToId(bankCode);
+    		int bcId = bic.bankCodeToId();
     		String iban = country_code.toString() + PP + bankCode + account;
         	LOG.info("id="+id + " bic:"+bic + isValid + isPassive + " bcId="+bcId + " branch:"+branch + " je:"+je.toJSONString());
         	
@@ -424,7 +424,7 @@ public class BankDataGenerator extends IbanToBankData {
         		// create IBAN and use IBANApi
         		BusinessIdentifierCode bic = new BusinessIdentifierCode(swift_code.toString());
         		String bankCode = bic.getBankCode();
-        		int id = bankCodeToId(bankCode);
+        		int id = bic.bankCodeToId();
         		String iban = country_code.toString() + PP + bankCode + account;
 //            	LOG.info("id="+id + " swift_code:"+swift_code + " iban:"+iban);
             	getBankDataViaApi(id, iban, bic.getBranchCode(), bic, bank, null);
@@ -492,25 +492,6 @@ public class BankDataGenerator extends IbanToBankData {
 	
 	int bankCodeToId(int bankCode, int addIndex) {
 		return bankCode;
-	}
-	private static final int radix = 1+Character.hashCode('Z')-Character.hashCode('A');
-	// AAAA = 0, BAAA = 1, ZAAA = 28
-	static int bankCodeToId(String bankCode) {
-		if(bankCode==null) throw new IllegalArgumentException("bankCode is null.");
-		if(bankCode.length()!=4) throw new IllegalArgumentException("'"+bankCode+"'.length NOT 4.");
-		int id = 0;
-		int r = 1;
-		for(int i=0; i<bankCode.length(); i++) {
-			char ch = bankCode.charAt(i);
-			if(!Character.isUpperCase(ch)) throw new IllegalArgumentException("'"+ch+"' is not UpperCase.");
-			int hash = Character.hashCode(ch)-Character.hashCode('A');
-			int hc = hash*r;
-			//LOG.info("ch="+ch + " hash:"+hash + " hc="+hc);
-			id = id + hc;
-			r = r*radix;
-		}
-		//LOG.info("id="+id);
-		return id;
 	}
 
 	final static String JSON_EXT = ".json";

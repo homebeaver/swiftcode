@@ -28,6 +28,26 @@ package com.klst.iban;
  */
 public class BusinessIdentifierCode {
 
+	private static final int radix = 1+Character.hashCode('Z')-Character.hashCode('A');
+	// AAAA = 0, BAAA = 1, ZAAA = 28
+	static int bankCodeToId(String bankCode) {
+		if(bankCode==null) throw new IllegalArgumentException("bankCode is null.");
+		if(bankCode.length()!=4) throw new IllegalArgumentException("'"+bankCode+"'.length NOT 4.");
+		int id = 0;
+		int r = 1;
+		for(int i=0; i<bankCode.length(); i++) {
+			char ch = bankCode.charAt(i);
+			if(!Character.isUpperCase(ch)) throw new IllegalArgumentException("'"+ch+"' is not UpperCase.");
+			int hash = Character.hashCode(ch)-Character.hashCode('A');
+			int hc = hash*r;
+			//LOG.info("ch="+ch + " hash:"+hash + " hc="+hc);
+			id = id + hc;
+			r = r*radix;
+		}
+		//LOG.info("id="+id);
+		return id;
+	}
+
 	String bic;
 	
 	BusinessIdentifierCode(String bic) {
@@ -68,6 +88,10 @@ public class BusinessIdentifierCode {
 	}
 	public String getBankCode() {
 		return bic.substring(0,4);
+	}
+	
+	public int bankCodeToId() {
+		return bankCodeToId(this.getBankCode());
 	}
 	
 	//2 letters: ISO 3166-1 alpha-2 country code + XK
