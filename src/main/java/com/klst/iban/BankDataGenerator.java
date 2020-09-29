@@ -480,6 +480,7 @@ public class BankDataGenerator extends IbanToBankData {
 
 	final static String FORMAT_02d = "%02d";
 	final static String FORMAT_03d = "%03d";
+	final static String FORMAT_04d = "%04d";
 	void tryWith(String countryCode, String format, int from, int to, String account) {
 		for(int id=from; id<=to; id++) {
     		String bankCode = String.format(format, id);
