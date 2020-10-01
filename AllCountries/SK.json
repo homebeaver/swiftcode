@@ -1,6 +1,7 @@
 {
     "country": "Slovakia",
     "country_code": "SK",
+    "isSEPAcountry": true,
     "ISO_3166_1": { "name": "Slovakia" , "name_fr": "Slovaquie (la)" , "alpha2": "SK" , "alpha3": "SVK" , "numeric": 703 },
     "list": [
 {"zip":"829 90","bank_code":200,"bank":"VÚB banka, a.s.","support_codes":15,"address":"Mlynské nivy 1","city":"Bratislava","swift_code":"SUBASKBXXXX","id":200},
