@@ -62,6 +62,7 @@ public class BankDataGenerator extends IbanToBankData {
     	parseValidationObject(validation);		
 	}
 	
+    static final String BRANCH_CODE_IN_IBAN = "BRANCH_CODE_IN_IBAN";
 	final static List<String> OPTIONAL_KEYS = Arrays.asList(BRANCH_CODE, SUPPORT_CODES, PHONE, FAX, WWW, EMAIL);
 	JSONObject updateJSONObject(JSONObject jo, String key, Object value) {
 		//LOG.info("key:"+key + " old/new: "+jo.get(key)+"/"+value);	
@@ -69,6 +70,9 @@ public class BankDataGenerator extends IbanToBankData {
 			// nix tun
 		} else if(SUPPORT_CODES.equals(key) && value.hashCode()==0) {
 			// wie null
+		} else if(BRANCH_CODE_IN_IBAN.equals(key)) {
+			// dies ist ein exit zum patchen von BRANCH_CODE, der aus IBAN gewonnen werden kann, siehe MC
+			// hier nix tun
 		} else { // MANDATORY_KEYS || value!=null
 			jo.put(key, value);
 		}
@@ -152,6 +156,7 @@ public class BankDataGenerator extends IbanToBankData {
 			jo = updateJSONObject(jo, FAX, bankData.getFax());
 			jo = updateJSONObject(jo, WWW, bankData.getWww());
 			jo = updateJSONObject(jo, EMAIL, bankData.getEmail());
+			jo = updateJSONObject(jo, BRANCH_CODE_IN_IBAN, iban);
 			System.out.println(jo.toString() + ",");
 		}
 		
@@ -481,6 +486,7 @@ public class BankDataGenerator extends IbanToBankData {
 	final static String FORMAT_02d = "%02d";
 	final static String FORMAT_03d = "%03d";
 	final static String FORMAT_04d = "%04d";
+	final static String FORMAT_05d = "%05d";
 	void tryWith(String countryCode, String format, int from, int to, String account) {
 		for(int id=from; id<=to; id++) {
     		String bankCode = String.format(format, id);
