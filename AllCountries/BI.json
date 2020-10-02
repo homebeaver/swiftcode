@@ -1,41 +1,20 @@
 {
     "country": "Burundi",
     "country_code": "BI",
+    "ISO_3166_1": { "name": "Burundi" , "name_fr": "Burundi (le)" , "alpha2": "BI" , "alpha3": "BDI" , "numeric": 108 },
     "list": [
-        {
+{"zip":"","bank_code": 90,"bank":"FINBANK","address":"","city":"BUJUMBURA","swift_code":"FIKNBIBIXXX","id":90},
+{"zip":"","bank_code":110,"bank":"BANQUE DE LA REPUBLIQUE DU BURUNDI","address":"","city":"BUJUMBURA","swift_code":"BRBUBIBIXXX","id":110},
+{"zip":"","bank_code":201,"bank":"BANQUE DE CREDIT DE BUJUMBURA","address":"","city":"BUJUMBURA","swift_code":"BCRBBIBIXXX","id":201},
+{"zip":"","bank_code":301,"bank":"BANQUE COMMERCIALE DU BURUNDI","address":"","city":"BUJUMBURA","swift_code":"BCBUBIBIXXX","id":301},
+{"zip":"","bank_code":701,"bank":"INTER BANK","address":"","city":"BUJUMBURA","swift_code":"IBBUBIBIXXX","id":701},
+{"zip":"","bank_code":800,"bank":"BGF DE BUJUMBURA","address":"","city":"BUJUMBURA","swift_code":"BKGFBIBIXXX","id":800},
+       {
             "id": 1,
             "bank": "BANQUE BURUNDAISE POUR LE COMMERCE ET L'INVESTISSEMENT",
             "city": "BUJUMBURA",
             "branch": null,
             "swift_code": "BUCIBIBI"
-        },
-        {
-            "id": 2,
-            "bank": "BANQUE COMMERCIALE DU BURUNDI",
-            "city": "BUJUMBURA",
-            "branch": null,
-            "swift_code": "BCBUBIBI"
-        },
-        {
-            "id": 3,
-            "bank": "BANQUE DE CREDIT DE BUJUMBURA",
-            "city": "BUJUMBURA",
-            "branch": null,
-            "swift_code": "BCRBBIBI"
-        },
-        {
-            "id": 4,
-            "bank": "BANQUE DE GESTION ET DE FINANCEMENT",
-            "city": "BUJUMBURA",
-            "branch": null,
-            "swift_code": "BKGFBIBI"
-        },
-        {
-            "id": 5,
-            "bank": "BANQUE DE LA REPUBLIQUE DU BURUNDI",
-            "city": "BUJUMBURA",
-            "branch": null,
-            "swift_code": "BRBUBIBI"
         },
         {
             "id": 6,
@@ -80,25 +59,11 @@
             "swift_code": "ECOCBIBI"
         },
         {
-            "id": 12,
-            "bank": "FINBANK",
-            "city": "BUJUMBURA",
-            "branch": null,
-            "swift_code": "FIKNBIBI"
-        },
-        {
             "id": 13,
             "bank": "INTERBANK BURUNDI",
             "city": "BUJUMBURA",
             "branch": "(AVENUE DE L'INDUSTRIE BRANCH)",
             "swift_code": "IBBUBIBIADI"
-        },
-        {
-            "id": 14,
-            "bank": "INTERBANK BURUNDI",
-            "city": "BUJUMBURA",
-            "branch": null,
-            "swift_code": "IBBUBIBI"
         },
         {
             "id": 15,
