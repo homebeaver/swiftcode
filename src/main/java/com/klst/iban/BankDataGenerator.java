@@ -120,6 +120,7 @@ public class BankDataGenerator extends IbanToBankData {
         String city = bankData.getCity();
         
         List<JSONObject> branchList = jMap.get(bic);
+        LOG.info("bId:"+bId + ", BankData:"+bankData);
 //        LOG.info("bId:"+bId + ", bic:"+bic + ", branchList#="+(branchList==null ? "null" : branchList.size()) + ", bankName:"+bankName);
         branchList = getBranchList(bic, jMap);
         

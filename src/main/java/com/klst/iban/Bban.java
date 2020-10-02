@@ -18,6 +18,20 @@ import com.klst.iban.Result.BankData;
    You can retrieve BIC from an IBAN with IBAN Validation tool: https://www.iban.com/iban-checker
    
    Bban.getBankData(String iban) extracts BankData from a valid iban
+   
+   GY French Guyana, 
+   PF French Polynesia, 
+   TF French Southern Territories, 
+   GP Guadeloupe, 
+   MQ Martinique, 
+   YT Mayotte, 
+   NC New Caledonia, 
+   RE Réunion, 
+   BL Saint Barthélemy, 
+   MF Saint Martin (French part), 
+   PM Saint Pierre and Miquelon, 
+   WF Wallis and Futuna Islands 
+   have their own ISO country code but use "FR" as their IBAN country code.
  */
 public class Bban {
 
@@ -26,12 +40,16 @@ public class Bban {
     	BBAN.put("AD", new Bban("(\\d{4})(\\d{4})([A-Z0-9]{12})"  , 1)); // 4!n4!n12!c +BranchCode
     	BBAN.put("AE", new Bban("(\\d{3})(\\d{16})"                  )); // 3!n16!n
     	BBAN.put("AL", new Bban("(\\d{3})(\\d{4})([A-Z0-9]{17})"  , 1)); // 8!n16!c BankCode:3!n +BranchCode:3!n Kontrollzeichen+account
+    	BBAN.put("AO", new Bban("(\\d{4})(\\d{4})(\\d{11})"       , 1)); // IBAN.com Experimental List lt wikipedia + KK: AOpp bbbb ssss kkkk kkkk kkkK K
     	BBAN.put("AT", new Bban("(\\d{5})(\\d{11})"                  )); // 5!n11!n
     	BBAN.put("AZ", new Bban("([A-Z]{4})([A-Z0-9]{20})"           )); //N4!a20!c
     	BBAN.put("BA", new Bban("(\\d{3})(\\d{3})(\\d{10})"       , 1)); // 3!n3!n8!n2!n +BranchCode account+Kontrollzeichen
     	BBAN.put("BE", new Bban("(\\d{3})(\\d{9})"                   )); // 3!n7!n2!n account+Kontrollzeichen
-    	BBAN.put("BG", new Bban("([A-Z]{4})(\\d{4})([A-Z0-9]{10})", 1)); //S4!a4!n2!n8!c +BranchCode Kontrollzeichen+account
+       	BBAN.put("BF", new Bban("([A-Z]{5})(\\d{5})(\\d{14})"     , 1)); // IBAN.com Experimental List BFpp BJbb bsss sskk kkkk kkkk kkKK
+       	BBAN.put("BG", new Bban("([A-Z]{4})(\\d{4})([A-Z0-9]{10})", 1)); //S4!a4!n2!n8!c +BranchCode Kontrollzeichen+account
     	BBAN.put("BH", new Bban("([A-Z]{4})([A-Z0-9]{14})"           )); //N4!a14!c
+       	BBAN.put("BI", new Bban("(\\d{3})(\\d{9})"                   )); // IBAN.com Experimental List BIpp kkkk kkkk kkkk
+       	BBAN.put("BJ", new Bban("([A-Z]{5})(\\d{5})(\\d{14})"     , 1)); // IBAN.com Experimental List BJpp BJbb bsss sskk kkkk kkkk kkKK
     	BBAN.put("BR", new Bban("(\\d{8})(\\d{5})([A-Z0-9]{12})"  , 1)); // 8!n5!n10!n1!a1!c +BranchCode account+Kontrollzeichen
     	BBAN.put("BY", new Bban("([A-Z0-9]{4})(\\d{4})([A-Z0-9]{16})", 1)); //N4!c4!n16!c +BranchCode
     	BBAN.put("CH", new Bban("(\\d{5})([A-Z0-9]{12})"             )); // 5!n12!c
@@ -41,6 +59,7 @@ public class Bban {
     	BBAN.put("DE", new Bban("(\\d{8})(\\d{10})"                  )); // 8!n10!n
     	BBAN.put("DK", new Bban("(\\d{4})(\\d{10})"                  )); // 4!n9!n1!n account+Kontrollzeichen (Großbuchstabe oder Ziffer)
     	BBAN.put("DO", new Bban("([A-Z0-9]{4})(\\d{20})"             )); //N4!c20!n
+    	BBAN.put("DZ", new Bban("(\\d{3})(\\d{5})(\\d{12})"       , 1)); // IBAN.com Experimental List DZpp bbbs ssss kkkk kkkk kkKK
     	BBAN.put("EE", new Bban("(\\d{2})(\\d{14})"                  )); // 2!n2!n11!n1!n account+Kontrollzeichen (Großbuchstabe oder Ziffer)
     	BBAN.put("EG", new Bban("(\\d{4})(\\d{4})(\\d{17})"       , 1)); // 4!n4!n17!n +BranchCode
     	BBAN.put("ES", new Bban("(\\d{4})(\\d{4})(\\d{12})"       , 1)); // 4!n4!n1!n1!n10!n +BranchCode Kontrollzeichen+account 
@@ -72,6 +91,7 @@ public class Bban {
     	BBAN.put("LT", new Bban("(\\d{5})(\\d{11})"                  )); // 5!n11!n
     	BBAN.put("LU", new Bban("(\\d{3})([A-Z0-9]{13})"             )); // 3!n13!c
     	BBAN.put("LV", new Bban("([A-Z]{4})([A-Z0-9]{13})"           )); //S4!a13!c
+    	BBAN.put("LY", new Bban("(\\d{3})(\\d{3})(\\d{15})"       , 1)); // 3!n3!n15!n
     	BBAN.put("MC", new Bban("(\\d{5})(\\d{5})([A-Z0-9]{13})"  , 1)); // 5!n5!n11!c2!n +BranchCode account+Kontrollzeichen
     	BBAN.put("MD", new Bban("([A-Z0-9]{2})([A-Z0-9]{18})"        )); // 2!c18!c  	
     	BBAN.put("ME", new Bban("(\\d{3})(\\d{15})"                  )); // 3!n13!n2!n account+Kontrollzeichen (Großbuchstabe oder Ziffer)
