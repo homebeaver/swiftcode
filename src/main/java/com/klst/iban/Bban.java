@@ -19,6 +19,12 @@ import com.klst.iban.Result.BankData;
    
    Bban.getBankData(String iban) extracts BankData from a valid iban
    
+
+- ES includes: Canary Islands (IC), Ceuta and Melilla (EA)   
+- FI includes: Aland Islands (AX)
+- GB includes: Isle of Man (IM), Guernsey (GG), Jersey (JE), Channel Islands
+- PT includes: Azores and Madeira
+- FR includes:
    GY French Guyana, 
    PF French Polynesia, 
    TF French Southern Territories, 
@@ -32,6 +38,7 @@ import com.klst.iban.Result.BankData;
    PM Saint Pierre and Miquelon, 
    WF Wallis and Futuna Islands 
    have their own ISO country code but use "FR" as their IBAN country code.
+   
  */
 public class Bban {
 
@@ -40,16 +47,12 @@ public class Bban {
     	BBAN.put("AD", new Bban("(\\d{4})(\\d{4})([A-Z0-9]{12})"  , 1)); // 4!n4!n12!c +BranchCode
     	BBAN.put("AE", new Bban("(\\d{3})(\\d{16})"                  )); // 3!n16!n
     	BBAN.put("AL", new Bban("(\\d{3})(\\d{4})([A-Z0-9]{17})"  , 1)); // 8!n16!c BankCode:3!n +BranchCode:3!n Kontrollzeichen+account
-    	BBAN.put("AO", new Bban("(\\d{4})(\\d{4})(\\d{11})"       , 1)); // IBAN.com Experimental List lt wikipedia + KK: AOpp bbbb ssss kkkk kkkk kkkK K
     	BBAN.put("AT", new Bban("(\\d{5})(\\d{11})"                  )); // 5!n11!n
     	BBAN.put("AZ", new Bban("([A-Z]{4})([A-Z0-9]{20})"           )); //N4!a20!c
     	BBAN.put("BA", new Bban("(\\d{3})(\\d{3})(\\d{10})"       , 1)); // 3!n3!n8!n2!n +BranchCode account+Kontrollzeichen
     	BBAN.put("BE", new Bban("(\\d{3})(\\d{9})"                   )); // 3!n7!n2!n account+Kontrollzeichen
-       	BBAN.put("BF", new Bban("([A-Z]{5})(\\d{5})(\\d{14})"     , 1)); // IBAN.com Experimental List BFpp BJbb bsss sskk kkkk kkkk kkKK
        	BBAN.put("BG", new Bban("([A-Z]{4})(\\d{4})([A-Z0-9]{10})", 1)); //S4!a4!n2!n8!c +BranchCode Kontrollzeichen+account
     	BBAN.put("BH", new Bban("([A-Z]{4})([A-Z0-9]{14})"           )); //N4!a14!c
-       	BBAN.put("BI", new Bban("(\\d{3})(\\d{9})"                   )); // IBAN.com Experimental List BIpp kkkk kkkk kkkk
-       	BBAN.put("BJ", new Bban("([A-Z]{5})(\\d{5})(\\d{14})"     , 1)); // IBAN.com Experimental List BJpp BJbb bsss sskk kkkk kkkk kkKK
     	BBAN.put("BR", new Bban("(\\d{8})(\\d{5})([A-Z0-9]{12})"  , 1)); // 8!n5!n10!n1!a1!c +BranchCode account+Kontrollzeichen
     	BBAN.put("BY", new Bban("([A-Z0-9]{4})(\\d{4})([A-Z0-9]{16})", 1)); //N4!c4!n16!c +BranchCode
     	BBAN.put("CH", new Bban("(\\d{5})([A-Z0-9]{12})"             )); // 5!n12!c
@@ -59,7 +62,6 @@ public class Bban {
     	BBAN.put("DE", new Bban("(\\d{8})(\\d{10})"                  )); // 8!n10!n
     	BBAN.put("DK", new Bban("(\\d{4})(\\d{10})"                  )); // 4!n9!n1!n account+Kontrollzeichen (Großbuchstabe oder Ziffer)
     	BBAN.put("DO", new Bban("([A-Z0-9]{4})(\\d{20})"             )); //N4!c20!n
-    	BBAN.put("DZ", new Bban("(\\d{3})(\\d{5})(\\d{12})"       , 1)); // IBAN.com Experimental List DZpp bbbs ssss kkkk kkkk kkKK
     	BBAN.put("EE", new Bban("(\\d{2})(\\d{14})"                  )); // 2!n2!n11!n1!n account+Kontrollzeichen (Großbuchstabe oder Ziffer)
     	BBAN.put("EG", new Bban("(\\d{4})(\\d{4})(\\d{17})"       , 1)); // 4!n4!n17!n +BranchCode
     	BBAN.put("ES", new Bban("(\\d{4})(\\d{4})(\\d{12})"       , 1)); // 4!n4!n1!n1!n10!n +BranchCode Kontrollzeichen+account 
@@ -123,6 +125,33 @@ public class Bban {
     	BBAN.put("VA", new Bban("(\\d{3})(\\d{15})"                  )); // 3!n15!n
     	BBAN.put("VG", new Bban("([A-Z]{4})(\\d{16})"                )); //N4!a16!n
     	BBAN.put("XK", new Bban("(\\d{2})(\\d{2})(\\d{12})"       , 1)); // 4!n10!n2!n +BranchCode account+Kontrollzeichen
+    	// IBAN.com Countries which have Partial/Experimental use of the IBAN system :
+    	BBAN.put("AO", new Bban("(\\d{4})(\\d{4})(\\d{11})"       , 1)); // lt wikipedia + KK: bbbb ssss kkkk kkkk kkkK K
+       	BBAN.put("BF", new Bban("([A-Z]{5})(\\d{5})(\\d{14})"     , 1)); // BJbb bsss sskk kkkk kkkk kkKK
+       	BBAN.put("BI", new Bban("(\\d{3})(\\d{9})"                   )); // BIpp kkkk kkkk kkkk
+       	BBAN.put("BJ", new Bban("([A-Z]{5})(\\d{5})(\\d{14})"     , 1)); // BJbb bsss sskk kkkk kkkk kkKK
+    	BBAN.put("CF", new Bban("(\\d{5})(\\d{5})(\\d{13})"       , 1)); // bbbb bsss sskk kkkk kkkk kKK
+    	BBAN.put("CG", new Bban("(\\d{5})(\\d{5})(\\d{13})"       , 1)); // bbbb bsss sskk kkkk kkkk kKK
+    	BBAN.put("CI", new Bban("CI(\\d{3})(\\d{5})(\\d{14})"     , 1)); // CIbb bsss sskk kkkk kkkk kkKK
+    	BBAN.put("CM", new Bban("(\\d{5})(\\d{5})(\\d{13})"       , 1)); // bbbb bsss sskk kkkk kkkk kKK
+    	BBAN.put("CV", new Bban("(\\d{4})(\\d{4})(\\d{13})"       , 1)); // bbbb ssss kkkk kkkk kkkK K 
+    	BBAN.put("DJ", new Bban("(\\d{5})(\\d{5})(\\d{13})"       , 1)); // 
+    	BBAN.put("DZ", new Bban("(\\d{3})(\\d{5})(\\d{12})"       , 1)); // bbbs ssss kkkk kkkk kkKK
+    	BBAN.put("GA", new Bban("(\\d{5})(\\d{5})(\\d{13})"       , 1)); // bbbb bsss sskk kkkk kkkk kKK
+    	BBAN.put("GQ", new Bban("(\\d{5})(\\d{5})(\\d{13})"       , 1)); // 
+       	BBAN.put("GW", new Bban("([A-Z]{5})(\\d{5})(\\d{11})"     , 1)); // GWbb bsss sskk kkkk kkkk k
+       	BBAN.put("HN", new Bban("([A-Z]{4})(\\d{20})"                )); // 
+    	BBAN.put("IR", new Bban("(\\d{3})(\\d{3})(\\d{6})(\\d{10})", 2, 0)); // kkkk kkkk kkkk kkkk kkkk kk
+    	BBAN.put("KM", new Bban("(\\d{5})(\\d{5})(\\d{13})"       , 1)); // 
+    	BBAN.put("MA", new Bban("(\\d{2})(\\d{3})(\\d{5})(\\d{14})", 2, 1)); // 
+    	BBAN.put("MG", new Bban("(\\d{3})(\\d{20})"                  )); // bbbb bsss sskk kkkk kkkk kKK
+    	BBAN.put("ML", new Bban("([A-Z]{5})(\\d{5})(\\d{14})"     , 1)); // bbbb bsss sskk kkkk kkkk kkKK
+    	BBAN.put("MZ", new Bban("(\\d{4})(\\d{4})(\\d{13})"       , 1)); // bbbb ssss kkkk kkkk kkkK K
+    	BBAN.put("NE", new Bban("NE(\\d{3})(\\d{5})(\\d{14})"     , 1)); // 
+    	BBAN.put("NI", new Bban("([A-Z]{4})(\\d{24})"                )); // 
+    	BBAN.put("SN", new Bban("SN(\\d{3})(\\d{5})(\\d{14})"     , 1)); // bbbb bsss sskk kkkk kkkk kkKK
+    	BBAN.put("TD", new Bban("(\\d{5})(\\d{5})(\\d{13})"       , 1)); // 
+    	BBAN.put("TG", new Bban("([A-Z]{5})(\\d{5})(\\d{14})"     , 1)); // 
     }
     
     static final int GROUP_BANK_IDENTIFIER = 0;
