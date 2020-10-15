@@ -18,6 +18,7 @@ import org.json.simple.parser.ParseException;
 
 import com.klst.iban.Result.BankData;
 import com.klst.iban.Result.SepaData;
+import com.klst.ibanTest.API_Key_Provider;
 
 public class IbanToBankData { 
 	
@@ -215,7 +216,7 @@ public class IbanToBankData {
 
 	BankData parseBankDataObject(JSONObject bank_data) {
 		BankData bankData = new BankData();
-		String bic = (String) bank_data.get("bic");
+		String bic = (String) bank_data.get(BIC);
 		bankData.setBic(bic);
 		String bank = (String) bank_data.get(BANK); // aka bank name
 		bankData.setBank(bank);
@@ -237,6 +238,7 @@ public class IbanToBankData {
 		return bankData;
 	}
 	
+    static final String BIC = "bic";
     static final String SWIFT_CODE = "swift_code"; // aka BIC
     static final String BANK = "bank"; // bank name
     static final String BANK_CODE = "bank_code"; // String BankData.bankIdentifier, int BankData.bankCode
@@ -297,7 +299,7 @@ public class IbanToBankData {
 	}
 
 	public static void main(String[] args) throws Exception {
-		IbanToBankData test = new IbanToBankData();
+		IbanToBankData test = new IbanToBankData(API_Key_Provider.API_KEY);
 		test.getBankData("AD1200012030200359100100");
 /*
 {"bank_data":{"bic":"BACAADADXXX","branch":"Serveis Centrals","bank":"andbanc Grup Agr"

@@ -70,7 +70,7 @@ public class Bban {
     	BBAN.put("FR", new Bban("(\\d{5})(\\d{5})([A-Z0-9]{13})"  , 1)); // 5!n5!n11!c2!n +BranchCode account+Kontrollzeichen (Großbuchstabe oder Ziffer)
     	BBAN.put("GB", new Bban("([A-Z]{4})(\\d{6})(\\d{8})"      , 1)); //S4!a6!n8!n +BranchCode
     	BBAN.put("GE", new Bban("([A-Z]{2})(\\d{16})"                )); // 2!a16!n
-    	BBAN.put("GG", new Bban("([A-Z]{4})(\\d{6})(\\d{8})"      , 1)); //S4!a6!n8!n +BranchCode, included in GB
+//    	BBAN.put("GG", new Bban("([A-Z]{4})(\\d{6})(\\d{8})"      , 1)); //S4!a6!n8!n +BranchCode, included in GB
     	BBAN.put("GI", new Bban("([A-Z]{4})([A-Z0-9]{15})"           )); //S4!a15!c
     	BBAN.put("GL", new Bban("(\\d{4})(\\d{10})"                  )); // 4!n9!n1!n account+Kontrollzeichen (Großbuchstabe oder Ziffer)
     	BBAN.put("GR", new Bban("(\\d{3})(\\d{4})([A-Z0-9]{16})"  , 1)); // 3!n4!n16!c +BranchCode
@@ -79,11 +79,11 @@ public class Bban {
     	BBAN.put("HU", new Bban("(\\d{3})(\\d{4})(\\d{17})"       , 1)); // 3!n4!n1!n15!n1!n +BranchCode account+Kontrollzeichen (Großbuchstabe oder Ziffer)
     	BBAN.put("IE", new Bban("([A-Z]{4})(\\d{6})(\\d{8})"      , 1)); //S4!a6!n8!n +BranchCode
     	BBAN.put("IL", new Bban("(\\d{3})(\\d{3})(\\d{13})"       , 1)); // 3!n3!n13!n +BranchCode
-    	BBAN.put("IM", new Bban("([A-Z]{4})(\\d{6})(\\d{8})"      , 1)); //S4!a6!n8!n +BranchCode, included in GB
+//    	BBAN.put("IM", new Bban("([A-Z]{4})(\\d{6})(\\d{8})"      , 1)); //S4!a6!n8!n +BranchCode, included in GB
     	BBAN.put("IQ", new Bban("([A-Z]{4})(\\d{3})(\\d{12})"     , 1)); //N4!a3!n12!n +BranchCode
     	BBAN.put("IS", new Bban("(\\d{4})(\\d{18})"                  )); // 4!n2!n6!n10!n Kontrollzeichen+account+sonstige
     	BBAN.put("IT", new Bban("([A-Z]{1})(\\d{5})(\\d{5})([A-Z0-9]{12})", 2, 1)); // 1!a5!n5!n12!c Kontrollzeichen+BankCode+BranchCode+account
-    	BBAN.put("JE", new Bban("([A-Z]{4})(\\d{6})(\\d{8})"      , 1)); //S4!a6!n8!n +BranchCode, included in GB
+//    	BBAN.put("JE", new Bban("([A-Z]{4})(\\d{6})(\\d{8})"      , 1)); //S4!a6!n8!n +BranchCode, included in GB
     	BBAN.put("JO", new Bban("([A-Z]{4})(\\d{4})([A-Z0-9]{18})", 1)); //N4!a4!n18!c +BranchCode (nicht bei iban.com)
     	BBAN.put("KW", new Bban("([A-Z]{4})([A-Z0-9]{22})"           )); //N4!a22!c
     	BBAN.put("KZ", new Bban("(\\d{3})([A-Z0-9]{13})"             )); // 3!n13!c
