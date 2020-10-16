@@ -9,12 +9,16 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Hashtable;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
@@ -63,7 +67,6 @@ public class BankDataGenerator extends IbanToBankData {
 	}
 	
     static final String BRANCH_CODE_IN_IBAN = "BRANCH_CODE_IN_IBAN";
-	final static List<String> OPTIONAL_KEYS = Arrays.asList(BRANCH_CODE, SUPPORT_CODES, PHONE, FAX, WWW, EMAIL);
 	JSONObject updateJSONObject(JSONObject jo, String key, Object value) {
 		//LOG.info("key:"+key + " old/new: "+jo.get(key)+"/"+value);	
 		if(OPTIONAL_KEYS.contains(key) && value==null) {
@@ -120,7 +123,7 @@ public class BankDataGenerator extends IbanToBankData {
         String city = bankData.getCity();
         
         List<JSONObject> branchList = jMap.get(bic);
-        LOG.info("bId:"+bId + ", BankData:"+bankData);
+//        LOG.info("bId:"+bId + ", BankData:"+bankData);
 //        LOG.info("bId:"+bId + ", bic:"+bic + ", branchList#="+(branchList==null ? "null" : branchList.size()) + ", bankName:"+bankName);
         branchList = getBranchList(bic, jMap);
         
@@ -158,11 +161,133 @@ public class BankDataGenerator extends IbanToBankData {
 			jo = updateJSONObject(jo, WWW, bankData.getWww());
 			jo = updateJSONObject(jo, EMAIL, bankData.getEmail());
 			jo = updateJSONObject(jo, BRANCH_CODE_IN_IBAN, iban);
-			System.out.println(jo.toString() + ",");
-		}
-		
+			//System.out.println(jo.toString() + ","); // toString == public static String toJSONString(Map map)
+			System.out.println(toOrderedJSONString(jo) + ",");
+		}	
 	}
 	
+    // ordering:
+	final static List<String> MANDATORY_KEYS = Arrays.asList(ID, SWIFT_CODE, BANK_CODE, BANK);
+	final static List<String> OPTIONAL_KEYS = Arrays.asList(BRANCH_CODE, BRANCH
+			, STATE, ZIP, CITY, ADDRESS // location
+			, PHONE, FAX, WWW, EMAIL	// contact
+			, SUPPORT_CODES);
+	
+	public static String toOrderedJSONString(Map map){
+		if(map == null)
+			return "null";
+		
+        StringBuffer sb = new StringBuffer();
+        boolean first = true;
+        sb.append('{');
+        Iterator iter=MANDATORY_KEYS.iterator();
+        while(iter.hasNext()){
+        	if(first)
+        		first = false;
+        	else
+        		sb.append(',');
+        	
+        	Object key = iter.next();
+        	Object value = map.get(key);
+        	toJSONString(String.valueOf(key),value, sb);
+        }
+        iter=OPTIONAL_KEYS.iterator();
+        while(iter.hasNext()){
+        	Object key = iter.next();
+        	Object value = map.get(key);
+        	if(value!=null && !value.toString().isEmpty()) {
+            	if(first)
+            		first = false;
+            	else
+            		sb.append(',');
+        		toJSONString(String.valueOf(key),value, sb);
+        	}
+        }
+        sb.append('}');
+		return sb.toString();
+	}
+	public static String toSortedJSONString(Map map){
+		if(map == null)
+			return "null";
+		
+        StringBuffer sb = new StringBuffer();
+        boolean first = true;
+		Set keySet = map.keySet();
+		List keyList = (List) keySet.stream().sorted().collect(Collectors.toList());
+		Iterator iter=keyList.iterator();
+		
+        sb.append('{');
+        // key alphabetisch:
+        while(iter.hasNext()){
+        	if(first)
+        		first = false;
+        	else
+        		sb.append(',');
+        	
+        	Object key = iter.next();
+        	Object value = map.get(key);
+        	toJSONString(String.valueOf(key),value, sb);
+        }
+        sb.append('}');
+		return sb.toString();
+	}
+	private static String toJSONString(String key,Object value, StringBuffer sb){
+		sb.append('\"');
+        if(key == null)
+            sb.append("null");
+        else
+            escape(key, sb);
+		sb.append('\"').append(':');
+		
+		sb.append(JSONValue.toJSONString(value));
+		
+		return sb.toString();
+	}
+    static void escape(String s, StringBuffer sb) {
+		for(int i=0;i<s.length();i++){
+			char ch=s.charAt(i);
+			switch(ch){
+			case '"':
+				sb.append("\\\"");
+				break;
+			case '\\':
+				sb.append("\\\\");
+				break;
+			case '\b':
+				sb.append("\\b");
+				break;
+			case '\f':
+				sb.append("\\f");
+				break;
+			case '\n':
+				sb.append("\\n");
+				break;
+			case '\r':
+				sb.append("\\r");
+				break;
+			case '\t':
+				sb.append("\\t");
+				break;
+			case '/':
+				sb.append("\\/");
+				break;
+			default:
+                //Reference: http://www.unicode.org/versions/Unicode5.1.0/
+				if((ch>='\u0000' && ch<='\u001F') || (ch>='\u007F' && ch<='\u009F') || (ch>='\u2000' && ch<='\u20FF')){
+					String ss=Integer.toHexString(ch);
+					sb.append("\\u");
+					for(int k=0;k<4-ss.length();k++){
+						sb.append('0');
+					}
+					sb.append(ss.toUpperCase());
+				}
+				else{
+					sb.append(ch);
+				}
+			}
+		}//for
+	}
+
 	void getBankDataViaApi(int id, String iban, Object branchCode) {
 		getBankDataViaApi(id, iban, branchCode, null, null, null);
 	}
@@ -488,6 +613,7 @@ public class BankDataGenerator extends IbanToBankData {
 	final static String FORMAT_03d = "%03d";
 	final static String FORMAT_04d = "%04d";
 	final static String FORMAT_05d = "%05d";
+	final static String FORMAT_06d = "%06d";
 	void tryWith(String countryCode, String format, int from, int to, String account) {
 		for(int id=from; id<=to; id++) {
     		String bankCode = String.format(format, id);
