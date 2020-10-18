@@ -57,6 +57,23 @@ public class BankDataGenerator extends IbanToBankData {
 
 	final static String PP = "99";
 
+	static Integer getBankCode(Object v) {
+		if(v==null) {
+			return null;
+		} else if(v.getClass()==String.class) {
+			try {
+				return Integer.parseInt((String) v);
+			} catch(NumberFormatException e) {
+				return null;
+			}
+		} else if(v.getClass()==Double.class) {
+			return ((Double) v).intValue();
+		} else {
+	        LOG.severe("v.getClass() " + v.getClass());
+	        return null;
+		}
+	}
+
 	BankDataGenerator(String api_key) {
 		super(api_key);
 	}
@@ -107,16 +124,16 @@ public class BankDataGenerator extends IbanToBankData {
 		return branchList;
 	}
 	
-	void printBankDataViaApi(int bId, String iban, Map<String, List<JSONObject>> jMap) {
+	boolean printBankDataViaApi(int bId, String iban, Map<String, List<JSONObject>> jMap) {
     	BankData bankData =	super.retrieveBankData(iban);
-    	if(bankData==null) return;
+    	if(bankData==null) return false;
         String bankName = bankData.getBank();
         if(bankName==null) { // not found 
-        	return;
+        	return false;
         }
         String bic = bankData.getBic();
         if(bic==null || bic.isEmpty()) {
-        	return;
+        	return false;
         }
         
         Object branch = bankData.getBranch();
@@ -143,7 +160,7 @@ public class BankDataGenerator extends IbanToBankData {
 				// branch aus le belassen
 			} else {
 				Object branchAlt = jo.get(BRANCH);
-            	if(!branch.toString().equals(branchAlt)) {
+            	if(!branch.toString().equals(branchAlt) && branchAlt!=null) {
             		LOG.warning("le:"+jo + ", le.branch ANDERS branch:"+branch);
             	}
 				jo = updateJSONObject(jo, BRANCH, branch);
@@ -163,7 +180,8 @@ public class BankDataGenerator extends IbanToBankData {
 			jo = updateJSONObject(jo, BRANCH_CODE_IN_IBAN, iban);
 			//System.out.println(jo.toString() + ","); // toString == public static String toJSONString(Map map)
 			System.out.println(toOrderedJSONString(jo) + ",");
-		}	
+		}
+		return true;
 	}
 	
     // ordering:
