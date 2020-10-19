@@ -85,7 +85,7 @@ public class BankDataGenerator_BG extends BankDataGenerator {
 		bankByBic.put(new BusinessIdentifierCode("INGBBGSF"), new ArrayList<Object>());
 		bankByBic.put(new BusinessIdentifierCode("BNPABGSX"), new ArrayList<Object>());
 		bankByBic.put(new BusinessIdentifierCode("TBIBBGSF"), new ArrayList<Object>());
-//		bankByBic.put(new BusinessIdentifierCode("TTBBBG22"), new ArrayList<Object>()); // no longer exists
+		bankByBic.put(new BusinessIdentifierCode("TTBBBG22"), new ArrayList<Object>()); // no longer exists
 		bankByBic.put(new BusinessIdentifierCode("CREXBGSF"), new ArrayList<Object>());
 		bankByBic.put(new BusinessIdentifierCode("TEXIBGSF"), new ArrayList<Object>());
 		bankByBic.put(new BusinessIdentifierCode("TCZBBGSF"), new ArrayList<Object>());

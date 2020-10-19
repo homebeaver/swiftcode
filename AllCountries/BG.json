@@ -236,6 +236,7 @@
 {"id":9300,"swift_code":"STSABGSFXXX","bank_code":9300,"bank":"DSK BANK EAD","zip":"1040","city":" SOFIA","address":"19 MOSKOVSKA STREET","support_codes":1},
 {"id":9310,"swift_code":"TBIBBGSFXXX","bank_code":9310,"bank":"TBI BANK EAD","zip":"1040","city":" SOFIA","address":"INTERPRED WTC SOFIA 36, DRAGAN TSANKOV BLVD","support_codes":1},
 {"id":9350,"swift_code":"TCZBBGSFXXX","bank_code":9350,"bank":"T.C. ZIRAAT BANKASI - SOFIA BRANCH","zip":"1000","city":" SOFIA","address":"SVETA NEDELYA SQUARE 19","support_codes":1},
+{"id":9400,"swift_code":"TTBBBG22XXX","bank_code":9400,"bank":"SOCIETE GENERALE EXPRESSBANK AD","zip":"9000","city":" VARNA","address":"92,VL.VARNENCHIK BLVD"},
 {"id":9440,"swift_code":"BNPABGSXXXX","bank_code":9440,"bank":"BNP PARIBAS S.A. - SOFIA BRANCH ","zip":"1000","city":" SOFIA","address":"2, TZAR OSVOBODITEL BLVD","support_codes":15},
 {"id":9470,"swift_code":"IABGBGSFXXX","bank_code":9470,"bank":"INTERNATIONAL ASSET BANK AD","zip":"1303","city":" SOFIA","address":"TODOR ALEXANDROV BLVD. 81-83","support_codes":1},
 {"id":9545,"swift_code":"TEXIBGSFXXX","bank_code":9545,"bank":"TEXIM BANK AD ","zip":"1309","city":" SOFIA","address":"TODOR ALEXANDROV BLVD. 141","support_codes":1},
