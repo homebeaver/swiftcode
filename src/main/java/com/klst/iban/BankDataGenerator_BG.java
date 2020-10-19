@@ -89,6 +89,7 @@ public class BankDataGenerator_BG extends BankDataGenerator {
 		bankByBic.put(new BusinessIdentifierCode("CREXBGSF"), new ArrayList<Object>());
 		bankByBic.put(new BusinessIdentifierCode("TEXIBGSF"), new ArrayList<Object>());
 		bankByBic.put(new BusinessIdentifierCode("TCZBBGSF"), new ArrayList<Object>());
+		bankByBic.put(new BusinessIdentifierCode("BNBGBGSF"), new ArrayList<Object>());
 	}
 	
 	JSONObject updateJSONObjectXXX(JSONObject jo, String key, Object value) {

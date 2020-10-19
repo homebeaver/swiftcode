@@ -243,6 +243,7 @@
 {"id":9561,"swift_code":"BUINBGSFXXX","bank_code":9561,"bank":"ALLIANZ BANK BULGARIA AD","zip":"1202","city":" SOFIA","address":"79 MARIA LOUISA BOULEVARD","support_codes":1},
 {"id":9620,"swift_code":"NASBBGSFXXX","bank_code":9620,"bank":"BULGARIAN DEVELOPMENT BANK AD","zip":"1000","city":" SOFIA","address":"10 STEFAN KARADZHA STREET","support_codes":1},
 {"id":9660,"swift_code":"UNCRBGSFXXX","bank_code":9660,"bank":"UNICREDIT BULBANK AD","zip":"1000","city":" SOFIA","address":"7 SVETA NEDELYA SQUARE","support_codes":9},
+{"id":9661,"swift_code":"BNBGBGSFXXX","bank_code":9661,"bank":"BULGARIAN NATIONAL BANK","zip":"1000","city":" SOFIA","address":"ALEXANDER BATTENBERG SQUARE 1","support_codes":1},
 {"id":9790,"swift_code":"CECBBGSFXXX","bank_code":9790,"bank":"CENTRAL COOPERATIVE BANK AD","zip":"1000","city":" SOFIA","address":"CENTRAL COOPERATIVE BANK RAKOVSKY STREET 103","support_codes":1},
 {"id":9920,"swift_code":"BPBIBGSFXXX","bank_code":9920,"bank":"EUROBANK BULGARIA AD","zip":"1766","city":" SOFIA","address":"260 OKOLOVRASTEN PAT STR.","support_codes":1}
     ]
