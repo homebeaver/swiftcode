@@ -94,16 +94,16 @@ public class BankDataGenerator_MT extends BankDataGenerator {
 	 prop.name wird nicht benötigt
 
  */
-	public void tryWith(String countryCode, String format, int from, int to, String account) {
+	public void tryWith(String countryCode, String format, int from, int to) {
 		List<Integer> sortCodeList = new ArrayList<Integer>(bankByCode.keySet());
 		for(int id=from; id<=to; id++) {
 			if(sortCodeList.contains(id)) {
 	    		String sortCode = String.format(format, id);
 	    		ArrayList<Object> bankProps = bankByCode.get(id); // [ bic , name ]
 	    		BusinessIdentifierCode bic = (BusinessIdentifierCode)bankProps.get(0);
-    			String iban = countryCode + PP + bic.getBankCode()+ sortCode + account;
-    			LOG.info("id="+id + " tryWith iban "+iban);
-//    			printBankDataViaApi(id, iban);
+	    		FakeIban iban = new FakeIban(countryCode, bic.getBankCode(), sortCode);
+    			LOG.info("id="+id + " tryWith "+iban+" bankCode "+bic.getBankCode());
+    			printBankDataViaApi(id, iban.toString());
 			}
 		}
 		
@@ -111,6 +111,6 @@ public class BankDataGenerator_MT extends BankDataGenerator {
 
 	public static void main(String[] args) throws Exception {
 		BankDataGenerator test = new BankDataGenerator_MT(API_Key_Provider.API_KEY);
-		test.tryWith(countryCode, BankDataGenerator.FORMAT_05d, 00000, 99999, "0012345MTLCAST001S"); // MT84 MALT 01100 0012345MTLCAST001S
+		test.tryWith(countryCode, BankDataGenerator.FORMAT_05d, 00000, 99999);
 	}
 }

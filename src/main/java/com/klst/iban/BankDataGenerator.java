@@ -21,7 +21,9 @@ public class BankDataGenerator extends IbanToBankData {
 //	private static final Logger LOG = Logger.getLogger(BankDataGenerator.class.getName());
 	private static Logger LOG;
 	private static final LogManager logManager = LogManager.getLogManager(); // Singleton
-	
+
+    static final Map<String,String> FAKE_ACCOUNT = new Hashtable<String, String>();
+
 	static {
     	URL url = BankDataGenerator.class.getClassLoader().getResource("testLogging.properties");
 		try {
@@ -32,9 +34,99 @@ public class BankDataGenerator extends IbanToBankData {
 			LOG.warning(e.getMessage());
 		}
 		LOG = Logger.getLogger(BankDataGenerator.class.getName());
+		//                      12345678901234567809
+		FAKE_ACCOUNT.put("AD", "200359100100"        ); // 12!c
+		FAKE_ACCOUNT.put("AE", "1234567890123456"    ); // 16!n
+		FAKE_ACCOUNT.put("AL", "090000000235698741"  ); // 2!n16!c Kontrollzeichen+account
+		FAKE_ACCOUNT.put("AT", "40014400144"         ); // 5!n11!n
+		FAKE_ACCOUNT.put("AZ", "00000000137010001944"); // 20!c
+//		FAKE_ACCOUNT.put("BA", new Bban("(\\d{3})(\\d{3})(\\d{10})"       , 1)); // 3!n3!n8!n2!n +BranchCode account+Kontrollzeichen
+//		FAKE_ACCOUNT.put("BE", new Bban("(\\d{3})(\\d{9})"                   )); // 3!n7!n2!n account+Kontrollzeichen
+//		FAKE_ACCOUNT.put("BG", new Bban("([A-Z]{4})(\\d{4})([A-Z0-9]{10})", 1)); //S4!a4!n2!n8!c +BranchCode Kontrollzeichen+account
+//		FAKE_ACCOUNT.put("BH", new Bban("([A-Z]{4})([A-Z0-9]{14})"           )); //N4!a14!c
+//		FAKE_ACCOUNT.put("BR", new Bban("(\\d{8})(\\d{5})([A-Z0-9]{12})"  , 1)); // 8!n5!n10!n1!a1!c +BranchCode account+Kontrollzeichen
+//		FAKE_ACCOUNT.put("BY", new Bban("([A-Z0-9]{4})(\\d{4})([A-Z0-9]{16})", 1)); //N4!c4!n16!c +BranchCode
+//		FAKE_ACCOUNT.put("CH", new Bban("(\\d{5})([A-Z0-9]{12})"             )); // 5!n12!c
+//		FAKE_ACCOUNT.put("CR", new Bban("(\\d{4})(\\d{14})"                  )); // 4!n14!n
+//		FAKE_ACCOUNT.put("CY", new Bban("(\\d{3})(\\d{5})([A-Z0-9]{16})"  , 1)); // 3!n5!n16!c +BranchCode
+//		FAKE_ACCOUNT.put("CZ", new Bban("(\\d{4})(\\d{16})"                  )); // 4!n6!n10!n 
+//		FAKE_ACCOUNT.put("DE", new Bban("(\\d{8})(\\d{10})"                  )); // 8!n10!n
+//    	FAKE_ACCOUNT.put("DK", new FAKE_ACCOUNT("(\\d{4})(\\d{10})"                  )); // 4!n9!n1!n account+Kontrollzeichen (Großbuchstabe oder Ziffer)
+//    	FAKE_ACCOUNT.put("DO", new FAKE_ACCOUNT("([A-Z0-9]{4})(\\d{20})"             )); //N4!c20!n
+//    	FAKE_ACCOUNT.put("EE", new FAKE_ACCOUNT("(\\d{2})(\\d{14})"                  )); // 2!n2!n11!n1!n account+Kontrollzeichen (Großbuchstabe oder Ziffer)
+//    	FAKE_ACCOUNT.put("EG", new FAKE_ACCOUNT("(\\d{4})(\\d{4})(\\d{17})"       , 1)); // 4!n4!n17!n +BranchCode
+//    	FAKE_ACCOUNT.put("ES", new FAKE_ACCOUNT("(\\d{4})(\\d{4})(\\d{12})"       , 1)); // 4!n4!n1!n1!n10!n +BranchCode Kontrollzeichen+account 
+//    	FAKE_ACCOUNT.put("FI", new FAKE_ACCOUNT("(\\d{3})(\\d{11})"                  )); // 3!n11!n
+//    	FAKE_ACCOUNT.put("FO", new FAKE_ACCOUNT("(\\d{4})(\\d{10})"                  )); // 4!n9!n1!n account+Kontrollzeichen (Großbuchstabe oder Ziffer)
+//    	FAKE_ACCOUNT.put("FR", new FAKE_ACCOUNT("(\\d{5})(\\d{5})([A-Z0-9]{13})"  , 1)); // 5!n5!n11!c2!n +BranchCode account+Kontrollzeichen (Großbuchstabe oder Ziffer)
+//    	FAKE_ACCOUNT.put("GB", new FAKE_ACCOUNT("([A-Z]{4})(\\d{6})(\\d{8})"      , 1)); //S4!a6!n8!n +BranchCode
+//    	FAKE_ACCOUNT.put("GE", new FAKE_ACCOUNT("([A-Z]{2})(\\d{16})"                )); // 2!a16!n
+//    	FAKE_ACCOUNT.put("GI", new FAKE_ACCOUNT("([A-Z]{4})([A-Z0-9]{15})"           )); //S4!a15!c
+//    	FAKE_ACCOUNT.put("GL", new FAKE_ACCOUNT("(\\d{4})(\\d{10})"                  )); // 4!n9!n1!n account+Kontrollzeichen (Großbuchstabe oder Ziffer)
+//    	FAKE_ACCOUNT.put("GR", new FAKE_ACCOUNT("(\\d{3})(\\d{4})([A-Z0-9]{16})"  , 1)); // 3!n4!n16!c +BranchCode
+//    	FAKE_ACCOUNT.put("GT", new FAKE_ACCOUNT("([A-Z0-9]{4})([A-Z0-9]{20})"        )); //N4!c20!c
+//    	FAKE_ACCOUNT.put("HR", new FAKE_ACCOUNT("(\\d{7})(\\d{10})"                  )); // 7!n10!n
+//    	FAKE_ACCOUNT.put("HU", new FAKE_ACCOUNT("(\\d{3})(\\d{4})(\\d{17})"       , 1)); // 3!n4!n1!n15!n1!n +BranchCode account+Kontrollzeichen (Großbuchstabe oder Ziffer)
+//    	FAKE_ACCOUNT.put("IE", new FAKE_ACCOUNT("([A-Z]{4})(\\d{6})(\\d{8})"      , 1)); //S4!a6!n8!n +BranchCode
+//    	FAKE_ACCOUNT.put("IL", new FAKE_ACCOUNT("(\\d{3})(\\d{3})(\\d{13})"       , 1)); // 3!n3!n13!n +BranchCode
+//    	FAKE_ACCOUNT.put("IQ", new FAKE_ACCOUNT("([A-Z]{4})(\\d{3})(\\d{12})"     , 1)); //N4!a3!n12!n +BranchCode
+//    	FAKE_ACCOUNT.put("IS", new FAKE_ACCOUNT("(\\d{4})(\\d{18})"                  )); // 4!n2!n6!n10!n Kontrollzeichen+account+sonstige
+//    	FAKE_ACCOUNT.put("IT", new FAKE_ACCOUNT("([A-Z]{1})(\\d{5})(\\d{5})([A-Z0-9]{12})", 2, 1)); // 1!a5!n5!n12!c Kontrollzeichen+BankCode+BranchCode+account
+//    	FAKE_ACCOUNT.put("JO", new FAKE_ACCOUNT("([A-Z]{4})(\\d{4})([A-Z0-9]{18})", 1)); //N4!a4!n18!c +BranchCode (nicht bei iban.com)
+//    	FAKE_ACCOUNT.put("KW", new FAKE_ACCOUNT("([A-Z]{4})([A-Z0-9]{22})"           )); //N4!a22!c
+//    	FAKE_ACCOUNT.put("KZ", new FAKE_ACCOUNT("(\\d{3})([A-Z0-9]{13})"             )); // 3!n13!c
+//    	FAKE_ACCOUNT.put("LB", new FAKE_ACCOUNT("(\\d{4})([A-Z0-9]{20})"             )); // 4!n20!c
+//    	FAKE_ACCOUNT.put("LC", new FAKE_ACCOUNT("([A-Z]{4})([A-Z0-9]{24})"           )); //N4!a24!c
+//    	FAKE_ACCOUNT.put("LI", new FAKE_ACCOUNT("(\\d{5})([A-Z0-9]{12})"             )); // 5!n12!c
+//    	FAKE_ACCOUNT.put("LT", new FAKE_ACCOUNT("(\\d{5})(\\d{11})"                  )); // 5!n11!n
+//    	FAKE_ACCOUNT.put("LU", new FAKE_ACCOUNT("(\\d{3})([A-Z0-9]{13})"             )); // 3!n13!c
+//    	FAKE_ACCOUNT.put("LV", new FAKE_ACCOUNT("([A-Z]{4})([A-Z0-9]{13})"           )); //S4!a13!c
+//    	FAKE_ACCOUNT.put("LY", new FAKE_ACCOUNT("(\\d{3})(\\d{3})(\\d{15})"       , 1)); // 3!n3!n15!n
+//    	FAKE_ACCOUNT.put("MC", new FAKE_ACCOUNT("(\\d{5})(\\d{5})([A-Z0-9]{13})"  , 1)); // 5!n5!n11!c2!n +BranchCode account+Kontrollzeichen
+//    	FAKE_ACCOUNT.put("MD", new FAKE_ACCOUNT("([A-Z0-9]{2})([A-Z0-9]{18})"        )); // 2!c18!c  	
+//    	FAKE_ACCOUNT.put("ME", new FAKE_ACCOUNT("(\\d{3})(\\d{15})"                  )); // 3!n13!n2!n account+Kontrollzeichen (Großbuchstabe oder Ziffer)
+//       	FAKE_ACCOUNT.put("MK", new FAKE_ACCOUNT("(\\d{3})([A-Z0-9]{12})"             )); // 3!n10!c2!n
+//    	FAKE_ACCOUNT.put("MR", new FAKE_ACCOUNT("(\\d{5})(\\d{5})(\\d{13})"       , 1)); // 5!n5!n11!n2!n +BranchCode account+Kontrollzeichen (Großbuchstabe oder Ziffer)
+    	FAKE_ACCOUNT.put("MT", "0012345MTLCAST001S"); // 18!c
+//    	FAKE_ACCOUNT.put("MU", new FAKE_ACCOUNT("([A-Z]{4})(\\d{2})([A-Z0-9]{20})", 1)); //N4!a2!n2!n12!n3!n3!a +BranchCode account+Kontrollzeichen (Großbuchstabe oder Ziffer)
+//    	FAKE_ACCOUNT.put("NL", new FAKE_ACCOUNT("([A-Z]{4})(\\d{10})"                )); //S4!a10!n
+//    	FAKE_ACCOUNT.put("NO", new FAKE_ACCOUNT("(\\d{4})(\\d{7})"                   )); // 4!n6!n1!n
+//    	FAKE_ACCOUNT.put("PK", new FAKE_ACCOUNT("([A-Z]{4})([A-Z0-9]{16})"           )); //N4!a16!c
+//    	FAKE_ACCOUNT.put("PL", new FAKE_ACCOUNT("(\\d{8})(\\d{16})"                  )); // 8!n16!n
+//    	FAKE_ACCOUNT.put("PS", new FAKE_ACCOUNT("([A-Z]{4})([A-Z0-9]{21})"           )); //N4!a21!c
+//    	FAKE_ACCOUNT.put("PT", new FAKE_ACCOUNT("(\\d{4})(\\d{4})(\\d{13})"       , 1)); // 4!n4!n11!n2!n +BranchCode account+Kontrollzeichen (Großbuchstabe oder Ziffer)
+//    	FAKE_ACCOUNT.put("QA", new FAKE_ACCOUNT("([A-Z]{4})([A-Z0-9]{21})"           )); //N4!a21!c
+//    	FAKE_ACCOUNT.put("RO", new FAKE_ACCOUNT("([A-Z]{4})([A-Z0-9]{16})"           )); //S4!a16!c
+//    	FAKE_ACCOUNT.put("RS", new FAKE_ACCOUNT("(\\d{3})(\\d{15})"                  )); // 3!n13!n2!n
+//    	FAKE_ACCOUNT.put("SA", new FAKE_ACCOUNT("(\\d{2})([A-Z0-9]{18})"             )); // 2!n18!c
+//    	FAKE_ACCOUNT.put("SC", new FAKE_ACCOUNT("([A-Z]{4})([A-Z0-9]{23})"           )); //N4!a2!n2!n16!n3!a BankCode:4!a2!n2!n iban.com nur 4!a account+Kontrollzeichen+sonstige
+//    	FAKE_ACCOUNT.put("SE", new FAKE_ACCOUNT("(\\d{3})(\\d{17})"                  )); // 3!n16!n1!n
+//    	FAKE_ACCOUNT.put("SI", new FAKE_ACCOUNT("(\\d{5})(\\d{10})"                  )); // 5!n8!n2!n
+//    	FAKE_ACCOUNT.put("SK", new FAKE_ACCOUNT("(\\d{4})(\\d{16})"                  )); // 4!n6!n10!n
+//    	FAKE_ACCOUNT.put("SM", new FAKE_ACCOUNT("([A-Z]{1})(\\d{5})(\\d{5})([A-Z0-9]{12})", 2, 1)); // 1!a5!n5!n12!c Kontrollzeichen+BankCode+BranchCode+account
+//    	FAKE_ACCOUNT.put("ST", new FAKE_ACCOUNT("(\\d{4})(\\d{4})(\\d{13})"       , 1)); // 8!n11!n2!n +BranchCode account+Kontrollzeichen (Großbuchstabe oder Ziffer)
+//    	FAKE_ACCOUNT.put("SV", new FAKE_ACCOUNT("([A-Z]{4})(\\d{20})"                )); //N4!a20!n
+//    	FAKE_ACCOUNT.put("TL", new FAKE_ACCOUNT("(\\d{3})(\\d{16})"                  )); // 3!n14!n2!n
+//    	FAKE_ACCOUNT.put("TN", new FAKE_ACCOUNT("(\\d{2})(\\d{3})(\\d{15})"       , 1)); // 2!n3!n13!n2!n +BranchCode account+Kontrollzeichen
+//    	FAKE_ACCOUNT.put("TR", new FAKE_ACCOUNT("(\\d{5})(\\d{17})"                  )); // 5!n1!n16!c Kontrollzeichen+account
+//    	FAKE_ACCOUNT.put("UA", new FAKE_ACCOUNT("(\\d{6})([A-Z0-9]{19})"             )); // 6!n19!c
+//    	FAKE_ACCOUNT.put("VA", new FAKE_ACCOUNT("(\\d{3})(\\d{15})"                  )); // 3!n15!n
+//    	FAKE_ACCOUNT.put("VG", new FAKE_ACCOUNT("([A-Z]{4})(\\d{16})"                )); //N4!a16!n
+//    	FAKE_ACCOUNT.put("XK", new FAKE_ACCOUNT("(\\d{2})(\\d{2})(\\d{12})"       , 1)); // 4!n10!n2!n +BranchCode account+Kontrollzeichen
+
 	}
 
 	protected final static String PP = "99"; // fake CheckDigits
+
+	public static class FakeIban {
+		String iban;
+		public FakeIban(String countryCode, String bankCode, String branchCode) {
+			iban = countryCode+PP+bankCode+(branchCode==null?"":branchCode)+FAKE_ACCOUNT.get(countryCode);
+		}
+		public String toString() {
+			return iban;
+		}
+	}
 
 	final static String FORMAT_02d = "%02d";
 	final static String FORMAT_03d = "%03d";
@@ -47,6 +139,10 @@ public class BankDataGenerator extends IbanToBankData {
 		super(api_key);
 	}
 	
+	public void tryWith(String countryCode, String format, int from, int to) {
+		tryWith(countryCode, format, from, to, FAKE_ACCOUNT.get(countryCode));
+	}
+	@Deprecated
 	public void tryWith(String countryCode, String format, int from, int to, String account) {
 		for(int id=from; id<=to; id++) {
     		String bankCode = String.format(format, id);
