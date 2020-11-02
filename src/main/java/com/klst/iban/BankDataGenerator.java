@@ -40,18 +40,18 @@ public class BankDataGenerator extends IbanToBankData {
 		FAKE_ACCOUNT.put("AL", "090000000235698741"  ); // 2!n16!c Kontrollzeichen+account
 		FAKE_ACCOUNT.put("AT", "40014400144"         ); // 5!n11!n
 		FAKE_ACCOUNT.put("AZ", "00000000137010001944"); // 20!c
-//		FAKE_ACCOUNT.put("BA", new Bban("(\\d{3})(\\d{3})(\\d{10})"       , 1)); // 3!n3!n8!n2!n +BranchCode account+Kontrollzeichen
-//		FAKE_ACCOUNT.put("BE", new Bban("(\\d{3})(\\d{9})"                   )); // 3!n7!n2!n account+Kontrollzeichen
-//		FAKE_ACCOUNT.put("BG", new Bban("([A-Z]{4})(\\d{4})([A-Z0-9]{10})", 1)); //S4!a4!n2!n8!c +BranchCode Kontrollzeichen+account
-//		FAKE_ACCOUNT.put("BH", new Bban("([A-Z]{4})([A-Z0-9]{14})"           )); //N4!a14!c
-//		FAKE_ACCOUNT.put("BR", new Bban("(\\d{8})(\\d{5})([A-Z0-9]{12})"  , 1)); // 8!n5!n10!n1!a1!c +BranchCode account+Kontrollzeichen
-//		FAKE_ACCOUNT.put("BY", new Bban("([A-Z0-9]{4})(\\d{4})([A-Z0-9]{16})", 1)); //N4!c4!n16!c +BranchCode
-//		FAKE_ACCOUNT.put("CH", new Bban("(\\d{5})([A-Z0-9]{12})"             )); // 5!n12!c
-//		FAKE_ACCOUNT.put("CR", new Bban("(\\d{4})(\\d{14})"                  )); // 4!n14!n
-//		FAKE_ACCOUNT.put("CY", new Bban("(\\d{3})(\\d{5})([A-Z0-9]{16})"  , 1)); // 3!n5!n16!c +BranchCode
-//		FAKE_ACCOUNT.put("CZ", new Bban("(\\d{4})(\\d{16})"                  )); // 4!n6!n10!n 
-//		FAKE_ACCOUNT.put("DE", new Bban("(\\d{8})(\\d{10})"                  )); // 8!n10!n
-//    	FAKE_ACCOUNT.put("DK", new FAKE_ACCOUNT("(\\d{4})(\\d{10})"                  )); // 4!n9!n1!n account+Kontrollzeichen (Großbuchstabe oder Ziffer)
+		FAKE_ACCOUNT.put("BA", "9401028494"          ); // 8!n2!n account+Kontrollzeichen
+		FAKE_ACCOUNT.put("BE", "000004141"           ); // 7!n2!n account+Kontrollzeichen
+		FAKE_ACCOUNT.put("BG", "1020345678"          ); // 2!n8!c Kontrollzeichen+account
+		FAKE_ACCOUNT.put("BH", "00001299123456"      ); // a14!c
+		FAKE_ACCOUNT.put("BR", "0009795493C1"        ); // 10!n1!a1!c account+Kontrollzeichen
+		FAKE_ACCOUNT.put("BY", "900000002Z00AB00"    ); // 16!c 
+		FAKE_ACCOUNT.put("CH", "000600070004"        ); // 12!c
+		FAKE_ACCOUNT.put("CR", "02001026284066"      ); // 14!n
+		FAKE_ACCOUNT.put("CY", "0000001200527600"    ); // 16!c
+		FAKE_ACCOUNT.put("CZ", "2000145399"          ); // 10!n 
+		FAKE_ACCOUNT.put("DE", "0532013000"          ); // 10!n
+    	FAKE_ACCOUNT.put("DK", "0440116243"          ); // 9!n1!n account+Kontrollzeichen (Großbuchstabe oder Ziffer)
 //    	FAKE_ACCOUNT.put("DO", new FAKE_ACCOUNT("([A-Z0-9]{4})(\\d{20})"             )); //N4!c20!n
 //    	FAKE_ACCOUNT.put("EE", new FAKE_ACCOUNT("(\\d{2})(\\d{14})"                  )); // 2!n2!n11!n1!n account+Kontrollzeichen (Großbuchstabe oder Ziffer)
 //    	FAKE_ACCOUNT.put("EG", new FAKE_ACCOUNT("(\\d{4})(\\d{4})(\\d{17})"       , 1)); // 4!n4!n17!n +BranchCode
@@ -120,6 +120,9 @@ public class BankDataGenerator extends IbanToBankData {
 
 	public static class FakeIban {
 		String iban;
+		public FakeIban(String countryCode, String bankCode) {
+			this(countryCode, bankCode, null);
+		}
 		public FakeIban(String countryCode, String bankCode, String branchCode) {
 			iban = countryCode+PP+bankCode+(branchCode==null?"":branchCode)+FAKE_ACCOUNT.get(countryCode);
 		}
