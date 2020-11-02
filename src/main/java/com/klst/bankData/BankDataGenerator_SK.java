@@ -1,15 +1,16 @@
-package com.klst.iban;
+package com.klst.bankData;
 
 import java.util.Arrays;
-import java.util.Hashtable;
 import java.util.List;
 import java.util.logging.Logger;
 
-import org.json.simple.JSONObject;
+import com.klst.iban.BankDataGenerator;
 
 public class BankDataGenerator_SK extends BankDataGenerator {
 
 	private static final Logger LOG = Logger.getLogger(BankDataGenerator_SK.class.getName());
+	
+	static final String COUNTRY_CODE = "SK";
 	
 	BankDataGenerator_SK(String api_key) {
 		super(api_key);
@@ -43,15 +44,16 @@ public class BankDataGenerator_SK extends BankDataGenerator {
 		,2010
 		,5800
 		};
-	void tryWith(String countryCode, String format, int from, int to, String account) {
+	
+	// TODO gleiche Oberklsse mit AT bilden
+	public void tryWith(String countryCode, String format, int from, int to) {
 		List<Integer> bankCodeList = Arrays.asList(bankCodes);
-		Hashtable<String, List<JSONObject>> jMap = new Hashtable<String, List<JSONObject>>(); // leer
 		for(int id=from; id<=to; id++) {
 			if(bankCodeList.contains(id)) {
 	    		String bankCode = String.format(format, id);
-	    		String iban = countryCode + PP + bankCode + account;
-//	    		LOG.info("bankCode="+bankCode + " iban:"+iban);
-	    		printBankDataViaApi(id, iban, jMap);
+	    		FakeIban iban = new FakeIban(countryCode, bankCode);
+	    		LOG.info("id="+id + " tryWith "+iban+" bankCode "+bankCode);
+//	    		printBankDataViaApi(id, iban);
 			}
 		}
 		
@@ -60,7 +62,7 @@ public class BankDataGenerator_SK extends BankDataGenerator {
 	public static void main(String[] args) throws Exception {
 		BankDataGenerator test = new BankDataGenerator_SK("testKey");
 
-		test.tryWith("SK", BankDataGenerator.FORMAT_04d, 0000, 9999, "0000198742637541"); // SK31 1200 0000198742637541
+		test.tryWith(COUNTRY_CODE, BankDataGenerator.FORMAT_04d, 0000, 9999);
 		
 	}
 }
