@@ -52,7 +52,7 @@ public class BankDataGenerator_AD extends BankDataGenerator {
 		BankDataGenerator test = new BankDataGenerator_AD(API_Key_Provider.API_KEY);
 
 		// outerloop nur einmal!!!
-		test.tryWith("AD", BankDataGenerator.FORMAT_04d, 0000, 1);
+		test.tryWith(countryCode, BankDataGenerator.FORMAT_04d, 0000, 1);
 		
 	}
 }
