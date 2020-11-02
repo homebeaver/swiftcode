@@ -62,7 +62,7 @@ public class BankDataGenerator_BG extends BankDataGenerator {
 
 	private static final Logger LOG = Logger.getLogger(BankDataGenerator_BG.class.getName());
 	
-	static final String countryCode = "BG";
+	static final String COUNTRY_CODE = "BG";
 	Map<BusinessIdentifierCode, ArrayList<Object>> bankByBic = new Hashtable<BusinessIdentifierCode, ArrayList<Object>>();
 
 	BankDataGenerator_BG(String api_key) {
@@ -110,7 +110,7 @@ public class BankDataGenerator_BG extends BankDataGenerator {
 				String bankCode = bic.getBankCode();
 				FakeIban iban = new FakeIban(countryCode, bankCode, bankNo);
 				LOG.info("id="+id + " tryWith "+iban+" bankCode "+bankCode);
-				boolean found = printBankDataViaApi(bankId, iban.toString());
+				boolean found = printBankDataViaApi(bankId, iban);
 				if(found) {
 					//LOG.info("gefunden :: iban:"+iban);
 					break; // inner
@@ -125,7 +125,7 @@ public class BankDataGenerator_BG extends BankDataGenerator {
 	public static void main(String[] args) throws Exception {
 		BankDataGenerator test = new BankDataGenerator_BG(API_Key_Provider.API_KEY);
 
-		test.tryWith(countryCode, BankDataGenerator.FORMAT_04d, 0000, 9999);
+		test.tryWith(COUNTRY_CODE, BankDataGenerator.FORMAT_04d, 0000, 9999);
 		
 	}
 }

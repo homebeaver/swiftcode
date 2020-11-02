@@ -8,7 +8,6 @@ import java.util.logging.Logger;
 
 import com.klst.iban.BankDataGenerator;
 import com.klst.iban.BankId;
-import com.klst.iban.BankDataGenerator.FakeIban;
 import com.klst.ibanTest.API_Key_Provider;
 
 /*
@@ -41,7 +40,7 @@ public class BankDataGenerator_DE extends BankDataGenerator {
 
 	private static final Logger LOG = Logger.getLogger(BankDataGenerator_DE.class.getName());
 	
-	static final String countryCode = "DE";
+	static final String COUNTRY_CODE = "DE";
 	
 	Map<String, ArrayList<Object>> bankByCode = new Hashtable<String, ArrayList<Object>>();
 
@@ -63,13 +62,13 @@ public class BankDataGenerator_DE extends BankDataGenerator {
 			if(blzList.contains(blz)) {
 	    		FakeIban iban = new FakeIban(countryCode, blz);
     			LOG.info("id="+id + " tryWith "+iban+" bankCode "+blz);
-    			printBankDataViaApi(id, iban.toString());
+    			printBankDataViaApi(id, iban);
 			}
 		}	
 	}
 	
 	public static void main(String[] args) throws Exception {
 		BankDataGenerator test = new BankDataGenerator_DE(API_Key_Provider.API_KEY);
-		test.tryWith(countryCode, BankDataGenerator.FORMAT_08d, 10000000, 99999999);
+		test.tryWith(COUNTRY_CODE, BankDataGenerator.FORMAT_08d, 10000000, 99999999);
 	}
 }

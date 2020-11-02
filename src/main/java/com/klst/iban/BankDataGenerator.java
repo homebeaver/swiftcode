@@ -22,6 +22,8 @@ public class BankDataGenerator extends IbanToBankData {
 	private static Logger LOG;
 	private static final LogManager logManager = LogManager.getLogManager(); // Singleton
 
+	protected static final String RESOURCE_DATA_PATH = "data/doc/";
+
     static final Map<String,String> FAKE_ACCOUNT = new Hashtable<String, String>();
 
 	static {
@@ -156,8 +158,8 @@ public class BankDataGenerator extends IbanToBankData {
 		
 	}
 
-	protected boolean printBankDataViaApi(int bId, String iban) {
-		return printBankDataViaApi(bId, iban, new Hashtable<String, List<JSONObject>>());
+	protected boolean printBankDataViaApi(int bId, FakeIban iban) {
+		return printBankDataViaApi(bId, iban.toString(), new Hashtable<String, List<JSONObject>>());
 	}
 	
 	protected boolean printBankDataViaApi(int bId, String iban, Map<String, List<JSONObject>> jMap) {

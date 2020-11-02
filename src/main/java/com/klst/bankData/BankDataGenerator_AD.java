@@ -17,7 +17,7 @@ public class BankDataGenerator_AD extends BankDataGenerator {
 
 	private static final Logger LOG = Logger.getLogger(BankDataGenerator_AD.class.getName());
 	
-	static final String countryCode = "AD";
+	static final String COUNTRY_CODE = "AD";
 	
 	BankDataGenerator_AD(String api_key) {
 		super(api_key);
@@ -38,7 +38,7 @@ public class BankDataGenerator_AD extends BankDataGenerator {
 				String bankCode = String.format(BankDataGenerator.FORMAT_04d, i);
 				FakeIban iban = new FakeIban(countryCode, bankCode, branchCode);
 				LOG.info("id="+id + " tryWith "+iban+" bankCode "+bankCode);
-				boolean found = printBankDataViaApi(bankId, iban.toString());
+				boolean found = printBankDataViaApi(bankId, iban);
 //				if(found) {
 //					break; // inner
 //				}
@@ -52,7 +52,7 @@ public class BankDataGenerator_AD extends BankDataGenerator {
 		BankDataGenerator test = new BankDataGenerator_AD(API_Key_Provider.API_KEY);
 
 		// outerloop nur einmal!!!
-		test.tryWith(countryCode, BankDataGenerator.FORMAT_04d, 0000, 1);
+		test.tryWith(COUNTRY_CODE, BankDataGenerator.FORMAT_04d, 0000, 1);
 		
 	}
 }

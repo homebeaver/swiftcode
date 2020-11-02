@@ -1,27 +1,26 @@
-package com.klst.iban;
+package com.klst.bankData;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
 
-import org.json.simple.JSONObject;
-
 import com.github.miachm.sods.Range;
 import com.github.miachm.sods.Sheet;
-import com.github.miachm.sods.SpreadSheet;
+import com.klst.iban.BankDataGenerator;
+import com.klst.iban.BusinessIdentifierCode;
 import com.klst.ibanTest.API_Key_Provider;
+import com.klst.ods.Ods;
 
 public class BankDataGenerator_AT extends BankDataGenerator {
 
 	private static final Logger LOG = Logger.getLogger(BankDataGenerator_AT.class.getName());
 	
-	static final String RESOURCE_PATH = "src/main/resources/";
-	static final String ODS_RESOURCE = "at/sepa-zv-vz_gesamt.ods";
+	static final String COUNTRY_CODE = "AT";
+    static final String ODS_RESOURCE = RESOURCE_DATA_PATH + COUNTRY_CODE+"/" +"sepa-zv-vz_gesamt.ods";
 	
 	static final int COL_Kennzeichen      =  0;
 	static final int COL_Identnummer      =  1;
@@ -48,122 +47,59 @@ public class BankDataGenerator_AT extends BankDataGenerator {
 	static final int COL_passive          = 22;
 	static final int NUMCOLUMNS           = 23;
 
-	Map<Integer, ArrayList<String>> atblz = new Hashtable<Integer, ArrayList<String>>();
+	Map<Integer, ArrayList<Object>> bankByCode = new Hashtable<Integer, ArrayList<Object>>();
+//	Map<Integer, ArrayList<String>> atblz = new Hashtable<Integer, ArrayList<String>>();
 
 	BankDataGenerator_AT(String api_key) {
 		super(api_key);
-        SpreadSheet spreadSheet = null;
-		try {
-			spreadSheet = new SpreadSheet(new File(RESOURCE_PATH+ODS_RESOURCE));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		LOG.info("Number of sheets: " + spreadSheet.getNumSheets());
+		
+        List<Sheet> sheets = Ods.getSheets(ODS_RESOURCE);
+    	int numColumns = NUMCOLUMNS;
 
-        List<Sheet> sheets = spreadSheet.getSheets();
         Map<String,Integer> nonEmptySheets = new Hashtable<String,Integer>();
-        Sheet nonEmptySheet = null;
-
-        for (Sheet sheet : sheets) {
-            Range range = sheet.getDataRange();
-            int totalRows = 0;
-            int maxRows = 0;
-            int numColumns = range.getNumColumns();
-            int lastColumn = range.getLastColumn();
-            int numRows = range.getNumRows();
-            int lastRow = range.getLastRow();
-            int numValues = range.getNumValues();
-            //                             1002/1003 
-    		LOG.info("Columns " + lastColumn +"/" +numColumns+ " , Rows " + lastRow +"/"+numRows + " in sheet " + sheet.getName() + " numValues="+numValues);
-//            LOG.info(range.toString()); // too long for print, MAX_PRINTABLE = 1024
-    		
-    		for (int c = 0; c < NUMCOLUMNS ; c++) {
-        		range = sheet.getRange(0, c, numRows);
-        		maxRows = getMaxRows(range);
-        		if(maxRows>totalRows) totalRows = maxRows;
-    		}
-    		if(totalRows==0) {
-        		LOG.info("empty sheet " + sheet.getName());
-    		} else {
-        		LOG.info("sheet " + sheet.getName() + " totalRows="+totalRows);
-        		nonEmptySheet = sheet;
-        		nonEmptySheets.put(nonEmptySheet.getName(), totalRows);
-    		}
-    	}
-        if(nonEmptySheets.size()==1) {
-        	Range range = nonEmptySheet.getRange(0, COL_Bankleitzahl, nonEmptySheets.get(nonEmptySheet.getName()));
-    		Object[][] values = range.getValues();
-    		for (int r = 0; r < range.getNumRows(); r++) {
-    			for (int c = 0; c < range.getNumColumns(); c++) {
-    				Object v = values[r][c];
-//            		Object cellObect = range.getCell(r, c).getValue();
-    				Integer bankCode = getBankCode(v);
-    				if(bankCode==null) {
-
-    				} else {
-    					Object bic = nonEmptySheet.getRange(r, COL_SWIFT_Code).getValue();
-    					Object name = nonEmptySheet.getRange(r, COL_Bankenname).getValue();
-    					System.out.println("r("+r+"),c:"+bankCode + " bic:"+bic + " name:"+name);
-    					atblz.put(bankCode, new ArrayList<String>(Arrays.asList((String)bic, (String)name)));
-    				}
-//    				LOG.info("r("+r+"),c:"+v + (v==null? "null" : v.getClass()) + cellObect);
+        Sheet nonEmptySheet = Ods.getNonEmptySheet(sheets, nonEmptySheets, numColumns);
+        LOG.info("file "+ODS_RESOURCE+" has nonEmptySheets/sheets:"+nonEmptySheets.size()+"/"+sheets.size());
+    	
+		if (nonEmptySheets.size() == 1) {
+			Collection<Integer> collection = nonEmptySheets.values();
+			int numRows = collection.iterator().next();
+			Range range = nonEmptySheet.getRange(0, 0, numRows, numColumns);
+			LOG.info("range.getNumRows()=" + range.getNumRows() + " range.getNumColumns()=" + range.getNumColumns());
+			Object[][] values = range.getValues();
+			// r==0 ist colname, daher start bei 1
+			for (int r = 1; r < range.getNumRows(); r++) {
+    			Object bic = values[r][COL_SWIFT_Code]; // String, aber nicht immer
+    			Object blz = values[r][COL_Bankleitzahl]; // String numeric
+    			Object name = values[r][COL_Bankenname];
+//				for (int c = 0; c < range.getNumColumns(); c++) {
+//					Object v = values[r][c];
+//					Object cellObect = range.getCell(r, c).getValue();
+//					LOG.info("r(" + r + "),c:" + c + " " + (v == null ? "null" : v.getClass()) + " " + cellObect);
+//				}
+    			
+				Integer bankCode = Ods.getInteger(blz);
+    			LOG.info("r("+r+"):"+bankCode+" ==> "+bic+" "+blz+" "+name);
+    			if(bankCode!=null) {
+    				bankByCode.put(bankCode, new ArrayList<Object>(Arrays.asList(new BusinessIdentifierCode((String)bic), name)));
     			}
-    		}
-        }
+
+			}
+
+		}
+		LOG.info("bankByCode.size="+bankByCode.size());
 
 	}
 	
-	int getMaxRows(Range range) {
-        int maxRows = 0;
-		Object[][] values = range.getValues();
-		for (int r = 0; r < range.getNumRows(); r++) {
-			for (int c = 0; c < range.getNumColumns(); c++) {
-				Object v = values[r][c];
-				if(v!=null) maxRows = 1+r;
-				//LOG.info("r("+r+"),c:"+v);
-			}
-		}
-		if(maxRows>0) {
-			LOG.info("Columns " + range.getNumColumns() + " , Rows " + range.getNumRows() + " maxRows="+maxRows);
-		}
-		return maxRows;
-	}
-	
-	Integer getBankCode(Object v) {
-		if(v==null) {
-			return null;
-		} else if(v.getClass()==String.class) {
-			try {
-				return Integer.parseInt((String) v);
-			} catch(NumberFormatException e) {
-				return null;
-			}
-		} else if(v.getClass()==Double.class) {
-			return ((Double) v).intValue();
-		} else {
-	        LOG.severe("v.getClass() " + v.getClass());
-	        return null;
-		}
-	}
 
-	JSONObject updateJSONObjectXXX(JSONObject jo, String key, Object value) {
-		if(BANK.equals(key)) {
-			LOG.info(key + ":: iban:"+value);
-			return super.updateJSONObject(jo, BANK, value);
-		}
-		return super.updateJSONObject(jo, key, value);
-	}
-	
-	void tryWith(String countryCode, String format, int from, int to, String account) {
-		List<Integer> bankCodeList = new ArrayList<Integer>(atblz.keySet());
+	public void tryWith(String countryCode, String format, int from, int to) {
+		List<Integer> bankCodeList = new ArrayList<Integer>(bankByCode.keySet());
 		for(int id=from; id<=to; id++) {
 			if(bankCodeList.contains(id)) {
 	    		String bankCode = String.format(format, id);
-//	    		ArrayList<String> bankProps = fmicab.get(id); // bic + name
-	    		Hashtable<String, List<JSONObject>> jMap = new Hashtable<String, List<JSONObject>>(); // leer
-    			String iban = countryCode + PP + bankCode + account;
-    			printBankDataViaApi(id, iban, jMap);
+//	    		ArrayList<Object> bankProps = bankByCode.get(id); // [ bic , name ]
+	    		FakeIban iban = new FakeIban(countryCode, bankCode);
+    			LOG.info("id="+id + " tryWith "+iban+" bankCode "+bankCode);
+    			printBankDataViaApi(id, iban);
 			}
 		}
 		
@@ -172,7 +108,7 @@ public class BankDataGenerator_AT extends BankDataGenerator {
 	public static void main(String[] args) throws Exception {
 		BankDataGenerator test = new BankDataGenerator_AT(API_Key_Provider.API_KEY);
 
-		test.tryWith("AT", BankDataGenerator.FORMAT_05d, 00000, 99999, "00234573201"); // AT61 19043 00234573201
+		test.tryWith(COUNTRY_CODE, BankDataGenerator.FORMAT_05d, 00000, 99999);
 		
 	}
 }

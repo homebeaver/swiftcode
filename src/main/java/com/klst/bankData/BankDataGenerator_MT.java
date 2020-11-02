@@ -29,8 +29,8 @@ public class BankDataGenerator_MT extends BankDataGenerator {
 
 	private static final Logger LOG = Logger.getLogger(BankDataGenerator_MT.class.getName());
 	
-	static final String countryCode = "MT";
-    static final String ODS_RESOURCE = LocalFileProxy.RESOURCE_DATA_PATH + "doc/MT/BIC_sort_codes_(asat15-10-2020).ods";
+	static final String COUNTRY_CODE = "MT";
+    static final String ODS_RESOURCE = RESOURCE_DATA_PATH + COUNTRY_CODE+"/" +"BIC_sort_codes_(asat15-10-2020).ods";
     // BIC Code	| Financial Institution Name | National ID (Sort Code) | Branch | Remarks
 	static final int COL_BIC                     =  0;
 	static final int COL_BANK                    =  1;  // name
@@ -103,7 +103,7 @@ public class BankDataGenerator_MT extends BankDataGenerator {
 	    		BusinessIdentifierCode bic = (BusinessIdentifierCode)bankProps.get(0);
 	    		FakeIban iban = new FakeIban(countryCode, bic.getBankCode(), sortCode);
     			LOG.info("id="+id + " tryWith "+iban+" bankCode "+bic.getBankCode());
-    			printBankDataViaApi(id, iban.toString());
+    			printBankDataViaApi(id, iban);
 			}
 		}
 		
@@ -111,6 +111,6 @@ public class BankDataGenerator_MT extends BankDataGenerator {
 
 	public static void main(String[] args) throws Exception {
 		BankDataGenerator test = new BankDataGenerator_MT(API_Key_Provider.API_KEY);
-		test.tryWith(countryCode, BankDataGenerator.FORMAT_05d, 00000, 99999);
+		test.tryWith(COUNTRY_CODE, BankDataGenerator.FORMAT_05d, 00000, 99999);
 	}
 }
