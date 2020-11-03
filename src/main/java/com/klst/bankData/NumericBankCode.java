@@ -18,7 +18,7 @@ import com.klst.ods.Ods;
 
     	countryToFunc.put("AT", NUMERIC_BANKCODE);  subclass existiert
     	countryToFunc.put("BE", NUMERIC_BANKCODE);
-    	countryToFunc.put("CH", NUMERIC_BANKCODE);
+    	countryToFunc.put("CH", NUMERIC_BANKCODE);  subclass existiert, datan generiert
     	countryToFunc.put("CZ", NUMERIC_BANKCODE);
     	countryToFunc.put("DE", NUMERIC_BANKCODE_WITH_MAP);
     	countryToFunc.put("DK", NUMERIC_BANKCODE);
@@ -46,7 +46,7 @@ public class NumericBankCode extends BankDataGenerator {
 	Map<Integer, ArrayList<Object>> bankByCode = null;
 	ArrayList<Integer> refBankByCodeArray = null; /* Beispiel:
 		new ArrayList<Integer>(Arrays.asList(0, 1, 2)); */
-	ArrayList<Object> columnMapper = null;
+	ArrayList<Object> columnMapper = new ArrayList<Object>(); // initial leer
 
 	protected NumericBankCode(String countryCode, String api_key) {
 		super(api_key);
@@ -74,6 +74,7 @@ public class NumericBankCode extends BankDataGenerator {
 	}
 	void loadBankByCode(String odsFilePath, int firstRow) {
         List<Sheet> sheets = Ods.getSheets(odsFilePath);
+        if(sheets==null) System.exit(4);
     	int numColumns = columnMapper.size();
 
         Map<String,Integer> nonEmptySheets = new Hashtable<String,Integer>();
@@ -126,7 +127,7 @@ public class NumericBankCode extends BankDataGenerator {
 //    			printBankDataViaApi(id, iban);
 			} else if(bankCodeList.contains(id)) {
     			LOG.info("id="+id + " tryWith "+iban+" bankCode "+bankCode);
-//    			printBankDataViaApi(id, iban);
+    			printBankDataViaApi(id, iban);
 			} else {
 				// unnötige iban.com Abfrage
 			}
