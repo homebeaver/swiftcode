@@ -16,14 +16,14 @@ import com.klst.ods.Ods;
 
 /* Oberklasse für
 
-    	countryToFunc.put("AT", NUMERIC_BANKCODE);  -------
+    	countryToFunc.put("AT", NUMERIC_BANKCODE);  subclass existiert
     	countryToFunc.put("BE", NUMERIC_BANKCODE);
     	countryToFunc.put("CH", NUMERIC_BANKCODE);
     	countryToFunc.put("CZ", NUMERIC_BANKCODE);
     	countryToFunc.put("DE", NUMERIC_BANKCODE_WITH_MAP);
     	countryToFunc.put("DK", NUMERIC_BANKCODE);
     	countryToFunc.put("EE", NUMERIC_BANKCODE);
-    	countryToFunc.put("FI", NUMERIC_BANKCODE);
+    	countryToFunc.put("FI", NUMERIC_BANKCODE);  subclass existiert
     	countryToFunc.put("HR", NUMERIC_BANKCODE);
     	countryToFunc.put("IS", NUMERIC_BANKCODE);
     	countryToFunc.put("LI", NUMERIC_BANKCODE);
@@ -33,7 +33,7 @@ import com.klst.ods.Ods;
     	countryToFunc.put("PL", NUMERIC_BANKCODE);
     	countryToFunc.put("SE", NUMERIC_BANKCODE);
     	countryToFunc.put("SI", NUMERIC_BANKCODE);
-    	countryToFunc.put("SK", NUMERIC_BANKCODE);   ------
+    	countryToFunc.put("SK", NUMERIC_BANKCODE);  subclass existiert, datan generiert
     	countryToFunc.put("VA", NUMERIC_BANKCODE);
 
 
@@ -126,7 +126,7 @@ public class NumericBankCode extends BankDataGenerator {
 //    			printBankDataViaApi(id, iban);
 			} else if(bankCodeList.contains(id)) {
     			LOG.info("id="+id + " tryWith "+iban+" bankCode "+bankCode);
-    			printBankDataViaApi(id, iban);
+//    			printBankDataViaApi(id, iban);
 			} else {
 				// unnötige iban.com Abfrage
 			}
