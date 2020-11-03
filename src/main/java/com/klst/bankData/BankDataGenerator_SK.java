@@ -1,68 +1,42 @@
 package com.klst.bankData;
 
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.logging.Logger;
 
-import com.klst.iban.BankDataGenerator;
+import com.klst.ibanTest.API_Key_Provider;
 
-public class BankDataGenerator_SK extends BankDataGenerator {
+public class BankDataGenerator_SK extends NumericBankCode {
 
 	private static final Logger LOG = Logger.getLogger(BankDataGenerator_SK.class.getName());
 	
 	static final String COUNTRY_CODE = "SK";
 	
-	BankDataGenerator_SK(String api_key) {
-		super(api_key);
-	}
-
 	// numeric bankCode aus https://www.nbs.sk/en/payment-systems/directories/directory-sk
-	Integer[] bankCodes =
-		{200
-		,900
-		,720
-		,1100
-		,1111
-		,3000
-		,3100
-		,5200
-		,5600
-		,5900
-		,6500
-		,7500
-		,7930
-		,8100
-		,8120
-		,8170
-		,8160
-		,8180
-		,8320
-		,8330
-		,8360
-		,8370
-		,8420
-		,2010
-		,5800
-		};
+    static final String ODS_RESOURCE = RESOURCE_DATA_PATH + COUNTRY_CODE+"/" +"Directory_IC_DPS_SR.ods";
+//  nCodename	name	aCode	activeParty
+	static final int COL_nID         =  0;  // aka bankCode
+	static final int COL_Name        =  1;
+	static final int COL_BIC         =  2;  // aka SWIFT_Code
+	static final int COL_activeParty =  3;  // aka SWIFT_Code
 	
-	// TODO gleiche Oberklsse mit AT bilden
-	public void tryWith(String countryCode, String format, int from, int to) {
-		List<Integer> bankCodeList = Arrays.asList(bankCodes);
-		for(int id=from; id<=to; id++) {
-			if(bankCodeList.contains(id)) {
-	    		String bankCode = String.format(format, id);
-	    		FakeIban iban = new FakeIban(countryCode, bankCode);
-	    		LOG.info("id="+id + " tryWith "+iban+" bankCode "+bankCode);
-//	    		printBankDataViaApi(id, iban);
-			}
-		}
+	BankDataGenerator_SK(String api_key) {
+		super(COUNTRY_CODE, api_key);
+
+		columnMapper = new ArrayList<Object>(Arrays.asList( // nur size wird in super benötigt!
+				COL_nID , 
+				COL_Name ,
+				COL_BIC ,
+				COL_activeParty ));
+		refBankByCodeArray = new ArrayList<Integer>(Arrays.asList(COL_nID, COL_BIC, COL_Name));
 		
+		this.loadBankByCode(ODS_RESOURCE);
 	}
 	
 	public static void main(String[] args) throws Exception {
-		BankDataGenerator test = new BankDataGenerator_SK("testKey");
+		NumericBankCode test = new BankDataGenerator_SK(API_Key_Provider.API_KEY);
 
-		test.tryWith(COUNTRY_CODE, BankDataGenerator.FORMAT_04d, 0000, 9999);
-		
+		test.tryWith(FORMAT_04d, 0000, 9999);
 	}
+
 }

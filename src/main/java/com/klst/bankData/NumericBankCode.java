@@ -126,7 +126,7 @@ public class NumericBankCode extends BankDataGenerator {
 //    			printBankDataViaApi(id, iban);
 			} else if(bankCodeList.contains(id)) {
     			LOG.info("id="+id + " tryWith "+iban+" bankCode "+bankCode);
-//    			printBankDataViaApi(id, iban);
+    			printBankDataViaApi(id, iban);
 			} else {
 				// unnötige iban.com Abfrage
 			}
