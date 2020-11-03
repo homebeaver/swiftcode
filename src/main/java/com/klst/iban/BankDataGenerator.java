@@ -138,7 +138,7 @@ public class BankDataGenerator extends IbanToBankData {
 	}
 
 	final static String FORMAT_02d = "%02d";
-	final static String FORMAT_03d = "%03d";
+	protected final static String FORMAT_03d = "%03d";
 	protected final static String FORMAT_04d = "%04d";
 	protected final static String FORMAT_05d = "%05d";
 	final static String FORMAT_06d = "%06d";
@@ -149,7 +149,12 @@ public class BankDataGenerator extends IbanToBankData {
 	}
 	
 	public void tryWith(String countryCode, String format, int from, int to) {
-		tryWith(countryCode, format, from, to, FAKE_ACCOUNT.get(countryCode));
+		for(int id=from; id<=to; id++) {
+    		String bankCode = String.format(format, id);
+    		String iban = countryCode + PP + bankCode + FAKE_ACCOUNT.get(countryCode);
+//    		LOG.info("bankCode="+bankCode + " iban:"+iban);
+    		printBankDataViaApi(id, iban, new Hashtable<String, List<JSONObject>>());
+		}
 	}
 	@Deprecated
 	public void tryWith(String countryCode, String format, int from, int to, String account) {
