@@ -19,25 +19,24 @@ import com.klst.ods.Ods;
     	countryToFunc.put("AT", NUMERIC_BANKCODE);  subclass existiert
     	countryToFunc.put("BE", NUMERIC_BANKCODE);
     	countryToFunc.put("CH", NUMERIC_BANKCODE);  subclass existiert, datan generiert
-    	countryToFunc.put("CZ", NUMERIC_BANKCODE);
-    	countryToFunc.put("DE", NUMERIC_BANKCODE_WITH_MAP);
-    	countryToFunc.put("DK", NUMERIC_BANKCODE);
+    	countryToFunc.put("CZ", NUMERIC_BANKCODE);	subclass existiert, datan generiert
+    	countryToFunc.put("DK", NUMERIC_BANKCODE);	TODO 4
     	countryToFunc.put("EE", NUMERIC_BANKCODE);
     	countryToFunc.put("FI", NUMERIC_BANKCODE);  subclass existiert
-    	countryToFunc.put("HR", NUMERIC_BANKCODE);
-    	countryToFunc.put("IS", NUMERIC_BANKCODE);
+    	countryToFunc.put("HR", NUMERIC_BANKCODE);	TODO 7
+    	countryToFunc.put("IS", NUMERIC_BANKCODE);	TODO 4
     	countryToFunc.put("LI", NUMERIC_BANKCODE);
     	countryToFunc.put("LT", NUMERIC_BANKCODE);
     	countryToFunc.put("LU", NUMERIC_BANKCODE);
-    	countryToFunc.put("NO", NUMERIC_BANKCODE);
-    	countryToFunc.put("PL", NUMERIC_BANKCODE);
-    	countryToFunc.put("SE", NUMERIC_BANKCODE);
+    	countryToFunc.put("NO", NUMERIC_BANKCODE);	TODO 4
+    	countryToFunc.put("PL", NUMERIC_BANKCODE);	TODO 8
+    	countryToFunc.put("SE", NUMERIC_BANKCODE);	subclass existiert
     	countryToFunc.put("SI", NUMERIC_BANKCODE);
     	countryToFunc.put("SK", NUMERIC_BANKCODE);  subclass existiert, datan generiert
     	countryToFunc.put("VA", NUMERIC_BANKCODE);
 	// other iban countries:
-    	countryToFunc.put("ME", NUMERIC_BANKCODE);
-    	countryToFunc.put("MK", NUMERIC_BANKCODE);
+    	countryToFunc.put("ME", NUMERIC_BANKCODE);	subclass existiert
+    	countryToFunc.put("MK", NUMERIC_BANKCODE);	subclass existiert
 
  */
 public class NumericBankCode extends BankDataGenerator {
@@ -120,21 +119,22 @@ public class NumericBankCode extends BankDataGenerator {
 
 	public void tryWith(String countryCode, String format, int from, int to) {
 		List<Integer> bankCodeList = bankByCode==null ? null : new ArrayList<Integer>(bankByCode.keySet());
+		int counter = 0;
 		for(int id=from; id<=to; id++) {
 			String bankCode = String.format(format, id);
 			FakeIban iban = new FakeIban(countryCode, bankCode);
 			if(bankCodeList==null) {
 				// suchen
 				LOG.info("id="+id + " tryWith "+iban+" bankCode "+bankCode);
-//    			printBankDataViaApi(id, iban);
+    			if(printBankDataViaApi(id, iban)) counter++;
 			} else if(bankCodeList.contains(id)) {
-    			LOG.info("id="+id + " tryWith "+iban+" bankCode "+bankCode);
-    			printBankDataViaApi(id, iban);
+    			LOG.info("id="+id + " do "+iban+" bankCode "+bankCode);
+    			if(printBankDataViaApi(id, iban)) counter++;
 			} else {
 				// unnötige iban.com Abfrage
 			}
 		}
-		
+		System.out.println("done "+counter + "/"+ (bankCodeList==null ? to : bankByCode.size()));
 	}
 
 }

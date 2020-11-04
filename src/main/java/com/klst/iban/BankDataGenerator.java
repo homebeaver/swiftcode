@@ -51,7 +51,7 @@ public class BankDataGenerator extends IbanToBankData {
 		FAKE_ACCOUNT.put("CH", "000600070004"        ); // 12!c
 		FAKE_ACCOUNT.put("CR", "02001026284066"      ); // 14!n
 		FAKE_ACCOUNT.put("CY", "0000001200527600"    ); // 16!c
-		FAKE_ACCOUNT.put("CZ", "2000145399"          ); // 10!n 
+		FAKE_ACCOUNT.put("CZ", "0000192000145399"    ); // 6!n10!n
 		FAKE_ACCOUNT.put("DE", "0532013000"          ); // 10!n
     	FAKE_ACCOUNT.put("DK", "0440116243"          ); // 9!n1!n account+Kontrollzeichen (Großbuchstabe oder Ziffer)
     	FAKE_ACCOUNT.put("DO", "00000001212453611324"); // 20!n
