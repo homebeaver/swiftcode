@@ -15,11 +15,14 @@ import com.github.miachm.sods.Range;
 import com.github.miachm.sods.Sheet;
 import com.github.miachm.sods.SpreadSheet;
 import com.klst.ibanTest.API_Key_Provider;
+import com.klst.ods.Ods;
 
 public class BankDataGenerator_IE extends BankDataGenerator {
 
 	private static final Logger LOG = Logger.getLogger(BankDataGenerator_IE.class.getName());
-	
+
+	static final String COUNTRY_CODE = "IE";
+
 	static final String RESOURCE_PATH = "src/main/resources/";
 	static final String ODS_RESOURCE = "ie/NSC_List_SEPA.ods";
 
@@ -91,7 +94,7 @@ public class BankDataGenerator_IE extends BankDataGenerator {
     			for (int c = 0; c < range.getNumColumns(); c++) {
     				Object v = values[r][c];
 //            		Object cellObect = range.getCell(r, c).getValue();
-    				Integer bankCode = getBankCode(v); // sortCode
+    				Integer bankCode = Ods.getInteger(v);; // sortCode
     				if(bankCode==null) {
 
     				} else {
@@ -133,16 +136,16 @@ public class BankDataGenerator_IE extends BankDataGenerator {
 		return super.updateJSONObject(jo, key, value);
 	}
 	
-	void tryWith(String countryCode, String format, int from, int to, String account) {
+	public void tryWith(String countryCode, String format, int from, int to) {
 		List<Integer> sortCodeList = new ArrayList<Integer>(atblz.keySet());
 		for(int id=from; id<=to; id++) {
 			if(sortCodeList.contains(id)) {
 	    		String sortCode = String.format(format, id);
 	    		ArrayList<Object> bankProps = atblz.get(id); // bic + name
 	    		BusinessIdentifierCode bic = (BusinessIdentifierCode)bankProps.get(0);
-	    		Hashtable<String, List<JSONObject>> jMap = new Hashtable<String, List<JSONObject>>(); // leer
-    			String iban = countryCode + PP + bic.getBankCode()+ sortCode + account;
-    			printBankDataViaApi(id, iban, jMap);
+	    		FakeIban iban = new FakeIban(countryCode, bic.getBankCode(), sortCode);
+    			LOG.info("id="+id + " tryWith "+iban+" bankCode "+bic.getBankCode() +" branchCode "+sortCode);
+    			printBankDataViaApi(id, iban);
 			}
 		}
 		
@@ -151,7 +154,7 @@ public class BankDataGenerator_IE extends BankDataGenerator {
 	public static void main(String[] args) throws Exception {
 		BankDataGenerator test = new BankDataGenerator_IE(API_Key_Provider.API_KEY);
 
-		test.tryWith("IE", BankDataGenerator.FORMAT_06d, 000000, 999999, "12345678"); // IE29 AIBK 931152 12345678
+		test.tryWith(COUNTRY_CODE, BankDataGenerator.FORMAT_06d, 000000, 999999);
 		
 	}
 }
