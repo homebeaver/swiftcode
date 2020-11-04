@@ -179,8 +179,8 @@ public class BankDataGenerator extends IbanToBankData {
 		if (bankName == null) { // not found
 			return false;
 		}
-		String bic = bankData.getBic(); // mandatory, kann aber leer sein, siehe Minitest "LY83002048000020100120361"
-		if (bic == null || bic.isEmpty()) {
+		String bic = bankData.getBic(); // mandatory, kann aber null/leer sein, siehe Minitest "LY83002048000020100120361"
+		if (bic == null || bic.trim().isEmpty()) {
 			LOG.config("no bic bankData:" + bankData);
 			return false;
 		}
