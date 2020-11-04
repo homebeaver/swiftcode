@@ -9,6 +9,8 @@ import java.util.logging.Logger;
 
 import org.json.simple.JSONObject;
 
+import com.klst.ibanTest.API_Key_Provider;
+
 public class BankDataGenerator_MC extends BankDataGenerator {
 
 	private static final Logger LOG = Logger.getLogger(BankDataGenerator_MC.class.getName());
@@ -72,7 +74,7 @@ Crédit Mobilier de Monaco                           	10160	99001	MC 	CMMDMCM1XX
 		return bankCode*100 + i;
 	}
 
-	JSONObject updateJSONObject(JSONObject jo, String key, Object value) {
+	protected JSONObject updateJSONObject(JSONObject jo, String key, Object value) {
 		if(BRANCH_CODE_IN_IBAN.equals(key)) {
 			//LOG.info(key + ":: iban:"+value);
 			String countryCode = value.toString().substring(0, 2);
@@ -82,9 +84,8 @@ Crédit Mobilier de Monaco                           	10160	99001	MC 	CMMDMCM1XX
 		return super.updateJSONObject(jo, key, value);
 	}
 	
-	void tryWith(String countryCode, String format, int from, int to, String account) {
+	public void tryWith(String countryCode, String format, int from, int to) {
 		List<Integer> bankCodeList = new ArrayList<Integer>(CIB.keySet());
-		Hashtable<String, List<JSONObject>> jMap = new Hashtable<String, List<JSONObject>>(); // leer
 		for(int id=from; id<=to; id++) {
 			if(bankCodeList.contains(id)) {
 	    		String bankCode = String.format(format, id);
@@ -92,9 +93,9 @@ Crédit Mobilier de Monaco                           	10160	99001	MC 	CMMDMCM1XX
 	    		for(int i = 0; i < branchCodeList.size(); i++){
 	    			int codeGuichet = branchCodeList.get(i);
 	    			String branchCode = String.format(BankDataGenerator.FORMAT_05d, codeGuichet);
-	    			String iban = countryCode + PP + bankCode + branchCode + account;
-	    			//LOG.info("bankCode="+bankCode + " iban:"+iban);
-	    			printBankDataViaApi(id, iban, jMap);
+	    			FakeIban iban = new FakeIban(countryCode, bankCode, branchCode);
+	    			LOG.info("id="+id + " tryWith "+iban+" bankCode "+bankCode +" branchCode "+branchCode);
+	    			printBankDataViaApi(id, iban);
 	    		}
 			}
 		}
@@ -102,9 +103,9 @@ Crédit Mobilier de Monaco                           	10160	99001	MC 	CMMDMCM1XX
 	}
 	
 	public static void main(String[] args) throws Exception {
-		BankDataGenerator test = new BankDataGenerator_MC("testKey");
+		BankDataGenerator test = new BankDataGenerator_MC(API_Key_Provider.API_KEY);
 
-		test.tryWith("MC", BankDataGenerator.FORMAT_05d, 00000, 99999, "0123456789030"); // MC58 11222 00001 0123456789030
+		test.tryWith("MC", BankDataGenerator.FORMAT_05d, 00000, 99999);
 		
 	}
 }
