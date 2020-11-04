@@ -20,24 +20,23 @@ import com.klst.ods.Ods;
     	countryToFunc.put("BE", NUMERIC_BANKCODE);
     	countryToFunc.put("CH", NUMERIC_BANKCODE);  subclass existiert, datan generiert
     	countryToFunc.put("CZ", NUMERIC_BANKCODE);	subclass existiert, datan generiert
-    	countryToFunc.put("DK", NUMERIC_BANKCODE);	TODO 4
+    	countryToFunc.put("DK", NUMERIC_BANKCODE);	subclass existiert, datan generiert
     	countryToFunc.put("EE", NUMERIC_BANKCODE);
     	countryToFunc.put("FI", NUMERIC_BANKCODE);  subclass existiert
-    	countryToFunc.put("HR", NUMERIC_BANKCODE);	TODO 7
-    	countryToFunc.put("IS", NUMERIC_BANKCODE);	TODO 4
+    	countryToFunc.put("HR", NUMERIC_BANKCODE);	subclass existiert, datan generiert
+    	countryToFunc.put("IS", NUMERIC_BANKCODE);	subclass existiert, datan generiert
     	countryToFunc.put("LI", NUMERIC_BANKCODE);
     	countryToFunc.put("LT", NUMERIC_BANKCODE);
     	countryToFunc.put("LU", NUMERIC_BANKCODE);
-    	countryToFunc.put("NO", NUMERIC_BANKCODE);	TODO 4
+    	countryToFunc.put("NO", NUMERIC_BANKCODE);	subclass existiert, datan generiert
     	countryToFunc.put("PL", NUMERIC_BANKCODE);	subclass existiert, datan generiert
     	countryToFunc.put("SE", NUMERIC_BANKCODE);	subclass existiert
     	countryToFunc.put("SI", NUMERIC_BANKCODE);
     	countryToFunc.put("SK", NUMERIC_BANKCODE);  subclass existiert, datan generiert
     	countryToFunc.put("VA", NUMERIC_BANKCODE);
-	// other iban countries:
+	// other iban countries, non sepa:
     	countryToFunc.put("ME", NUMERIC_BANKCODE);	subclass existiert
     	countryToFunc.put("MK", NUMERIC_BANKCODE);	subclass existiert
-
  */
 public class NumericBankCode extends BankDataGenerator {
 
