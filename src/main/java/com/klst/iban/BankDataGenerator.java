@@ -137,7 +137,7 @@ public class BankDataGenerator extends IbanToBankData {
 		}
 	}
 
-	final static String FORMAT_02d = "%02d";
+	protected final static String FORMAT_02d = "%02d";
 	protected final static String FORMAT_03d = "%03d";
 	protected final static String FORMAT_04d = "%04d";
 	protected final static String FORMAT_05d = "%05d";

@@ -15,7 +15,7 @@ import com.klst.iban.BusinessIdentifierCode;
 import com.klst.ods.Ods;
 
 /* Oberklasse für
-
+	// sepa countries:
     	countryToFunc.put("AT", NUMERIC_BANKCODE);  subclass existiert
     	countryToFunc.put("BE", NUMERIC_BANKCODE);
     	countryToFunc.put("CH", NUMERIC_BANKCODE);  subclass existiert, datan generiert
@@ -35,7 +35,9 @@ import com.klst.ods.Ods;
     	countryToFunc.put("SI", NUMERIC_BANKCODE);
     	countryToFunc.put("SK", NUMERIC_BANKCODE);  subclass existiert, datan generiert
     	countryToFunc.put("VA", NUMERIC_BANKCODE);
-
+	// other iban countries:
+    	countryToFunc.put("ME", NUMERIC_BANKCODE);
+    	countryToFunc.put("MK", NUMERIC_BANKCODE);
 
  */
 public class NumericBankCode extends BankDataGenerator {
