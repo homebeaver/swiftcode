@@ -15,20 +15,16 @@ public class BankDataGenerator_FI extends NumericBankCode {
     static final String ODS_RESOURCE = RESOURCE_DATA_PATH + COUNTRY_CODE+"/" +"Finnish_monetary_institution_codes_and_BICs_in_excel_format.ods";
 //    National ID | BIC Code | Financial Institution Name
 	static final int COL_nID      =  0;  // aka bankCode
-	static final int COL_BIC       = 1;  // aka SWIFT_Code
+	static final int COL_BIC      =  1;  // aka SWIFT_Code
 	static final int COL_Name     =  2;
+	static final int NUMCOLUMNS   =  3;
 
 	BankDataGenerator_FI(String api_key) {
 		super(COUNTRY_CODE, api_key);
 		
-//		columnMapper = new ArrayList<Object>();
-		columnMapper = new ArrayList<Object>(Arrays.asList( // nur size wird in super benötigt!
-				0 , // "key" , // BANK_CODE ,
-				1 , //Bank_Data.SWIFT_CODE ,
-				2 )); // BANK name
 		refBankByCodeArray = new ArrayList<Integer>(Arrays.asList(COL_nID, COL_BIC, COL_Name));
 		
-		this.loadBankByCode(ODS_RESOURCE, 2);
+		this.loadBankByCode(ODS_RESOURCE, 2, NUMCOLUMNS);
 	}
 	
 

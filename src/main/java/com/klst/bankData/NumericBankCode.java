@@ -29,7 +29,7 @@ import com.klst.ods.Ods;
     	countryToFunc.put("LT", NUMERIC_BANKCODE);
     	countryToFunc.put("LU", NUMERIC_BANKCODE);
     	countryToFunc.put("NO", NUMERIC_BANKCODE);	TODO 4
-    	countryToFunc.put("PL", NUMERIC_BANKCODE);	TODO 8
+    	countryToFunc.put("PL", NUMERIC_BANKCODE);	subclass existiert, datan generiert
     	countryToFunc.put("SE", NUMERIC_BANKCODE);	subclass existiert
     	countryToFunc.put("SI", NUMERIC_BANKCODE);
     	countryToFunc.put("SK", NUMERIC_BANKCODE);  subclass existiert, datan generiert
@@ -47,7 +47,7 @@ public class NumericBankCode extends BankDataGenerator {
 	Map<Integer, ArrayList<Object>> bankByCode = null;
 	ArrayList<Integer> refBankByCodeArray = null; /* Beispiel:
 		new ArrayList<Integer>(Arrays.asList(0, 1, 2)); */
-	ArrayList<Object> columnMapper = new ArrayList<Object>(); // initial leer
+	ArrayList<Object> columnMapper = null;
 
 	protected NumericBankCode(String countryCode, String api_key) {
 		super(api_key);
@@ -71,12 +71,11 @@ public class NumericBankCode extends BankDataGenerator {
 	}
 	
 	void loadBankByCode(String odsFilePath) {
-		loadBankByCode(odsFilePath, 1);
+		loadBankByCode(odsFilePath, 1, columnMapper.size());
 	}
-	void loadBankByCode(String odsFilePath, int firstRow) {
+	void loadBankByCode(String odsFilePath, int firstRow, int numColumns) {
         List<Sheet> sheets = Ods.getSheets(odsFilePath);
         if(sheets==null) System.exit(4);
-    	int numColumns = columnMapper.size();
 
         Map<String,Integer> nonEmptySheets = new Hashtable<String,Integer>();
         Sheet nonEmptySheet = Ods.getNonEmptySheet(sheets, nonEmptySheets, numColumns);
