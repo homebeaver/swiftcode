@@ -18,7 +18,7 @@ public class BankDataGenerator_SK extends NumericBankCode {
 	static final int COL_nID         =  0;  // aka bankCode
 	static final int COL_Name        =  1;
 	static final int COL_BIC         =  2;  // aka SWIFT_Code
-	static final int COL_activeParty =  3;  // aka SWIFT_Code
+	static final int COL_activeParty =  3;
 	
 	BankDataGenerator_SK(String api_key) {
 		super(COUNTRY_CODE, api_key);

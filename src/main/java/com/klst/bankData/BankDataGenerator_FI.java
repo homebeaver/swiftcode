@@ -2,8 +2,6 @@ package com.klst.bankData;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Hashtable;
-import java.util.Map;
 import java.util.logging.Logger;
 
 import com.klst.iban.BankDataGenerator;
@@ -19,10 +17,6 @@ public class BankDataGenerator_FI extends NumericBankCode {
 	static final int COL_nID      =  0;  // aka bankCode
 	static final int COL_BIC       = 1;  // aka SWIFT_Code
 	static final int COL_Name     =  2;
-
-	// fmicab : Finnish_monetary_institution_codes_and_BICs
-	Map<Integer, ArrayList<String>> fmicab = new Hashtable<Integer, ArrayList<String>>();
-    // =====> Map<Integer, ArrayList<Object>> bankByCode
 
 	BankDataGenerator_FI(String api_key) {
 		super(COUNTRY_CODE, api_key);
