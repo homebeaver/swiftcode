@@ -55,7 +55,7 @@ public class BankDataGenerator extends IbanToBankData {
 		FAKE_ACCOUNT.put("DE", "0532013000"          ); // 10!n
     	FAKE_ACCOUNT.put("DK", "0440116243"          ); // 9!n1!n account+Kontrollzeichen (Großbuchstabe oder Ziffer)
     	FAKE_ACCOUNT.put("DO", "00000001212453611324"); // 20!n
-    	FAKE_ACCOUNT.put("EE", "221020145685"        ); // 11!n1!n account+Kontrollzeichen (Großbuchstabe oder Ziffer)
+    	FAKE_ACCOUNT.put("EE", "00221020145685"      ); // 13!n1!n account+Kontrollzeichen (Großbuchstabe oder Ziffer)
     	FAKE_ACCOUNT.put("EG", "00000000263180002"   ); // 17!n
     	FAKE_ACCOUNT.put("ES", "450200051332"        ); // 1!n1!n10!n Kontrollzeichen+account 
     	FAKE_ACCOUNT.put("FI", "45600000785"         ); // 11!n
@@ -120,6 +120,19 @@ public class BankDataGenerator extends IbanToBankData {
 
 	protected final static String PP = "99"; // fake CheckDigits
 
+	// TODO FakeIban mit korrektem PP
+// wg. {"id":82017,"swift_code":"VIPULT22XXX","bank_code":82017,"bank":"Via Payments UAB","zip":"09308","city":"Vilnius","address":"Konstitucijos pr. 7","phone":"520 603 33","support_codes":1},
+/*
+{"bank_data":{"bic":"VIPULT22XXX","branch":null,"bank":"Via Payments UAB","address":"Konstitucijos pr. 7","city":"Vilnius","state":null,"zip":"09308","phone":"520 603 33","fax":"","www":null,"email":null,"country":"Switzerland","country_iso":"CH","account":"000600070004","bank_code":"82017","branch_code":""}
+,"sepa_data":{"SCT":"YES","SDD":"NO","COR1":"NO","B2B":"NO","SCC":"NO"}
+,"validations":{"chars":{"code":"006","message":"IBAN does not contain illegal characters"}
+             ,"account":{"code":"002","message":"Account Number check digit is correct"}
+                ,"iban":{"code":"202","message":"IBAN Check digit not correct"}
+           ,"structure":{"code":"005","message":"IBAN structure is correct"}
+              ,"length":{"code":"003","message":"IBAN Length is correct"}
+     ,"country_support":{"code":"007","message":"Country supports IBAN standard"}}
+,"errors":[]}< 
+ */
 	public static class FakeIban {
 		String iban;
 		public FakeIban(String countryCode, String bankCode) {
@@ -250,8 +263,9 @@ public class BankDataGenerator extends IbanToBankData {
 		return true;	
 	}
 
-	int bankCodeToId(Long bankId, int addIndex) {
-		return Integer.parseInt(bankId.toString());
+	long bankCodeToId(Long bankId, int addIndex) {
+		return bankId+addIndex;
+//		return Integer.parseInt(bankId.toString()); // Integer MAX:2147483647 bei FR erreicht
 	}
 
 	List<JSONObject> getBranchList(String bic, Map<String, List<JSONObject>> jMap) {
