@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
+import java.util.function.BiFunction;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
@@ -182,10 +183,15 @@ public class BankDataGenerator extends IbanToBankData {
 	}
 
 	protected boolean printBankDataViaApi(int bId, FakeIban iban) {
-		return printBankDataViaApi(bId, iban.toString(), new Hashtable<String, List<JSONObject>>());
+		return printBankDataViaApi(bId, iban.toString(), new Hashtable<String, List<JSONObject>>(), defaultCallback);
 	}
 	
 	protected boolean printBankDataViaApi(int bId, String iban, Map<String, List<JSONObject>> jMap) {
+		return printBankDataViaApi(bId, iban, jMap, defaultCallback);
+	}
+	
+	protected boolean printBankDataViaApi(int bId, String iban, 
+			Map<String, List<JSONObject>> jMap, BiFunction<Long, JSONObject, JSONObject> callback) {
 		BankData bankData = super.retrieveBankData(iban); // iban wird nicht validiert!
 		if (bankData == null)
 			return false;
@@ -216,8 +222,9 @@ public class BankDataGenerator extends IbanToBankData {
 				listIndex = 0; // LU: bei XXX id*1000, sonst id*1000 +i+1
 			}
 			String countryCode = iban.substring(0, 2);
+			Long bankId = null;
 			try {
-				Long bankId = BankId.getBankId(countryCode, bankData.getBankIdentifier(), bankData.getBranchCode());
+				bankId = BankId.getBankId(countryCode, bankData.getBankIdentifier(), bankData.getBranchCode());
 				jo = updateJSONObject(jo, Bank_Data.ID, bankCodeToId(bankId, listIndex));
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
@@ -258,11 +265,17 @@ public class BankDataGenerator extends IbanToBankData {
 			jo = updateJSONObject(jo, EMAIL, bankData.getEmail());
 			jo = updateJSONObject(jo, BRANCH_CODE_IN_IBAN, iban);
 			//System.out.println(jo.toString() + ","); // toString == public static String toJSONString(Map map)
-			System.out.println(BankDataOrdered.toOrderedJSONString(jo) + ",");
+			jo = callback.apply(bankId, jo);
 		}
 		return true;	
 	}
 
+	BiFunction<Long, JSONObject, JSONObject> defaultCallback = (bankId, jo) -> doPrint(bankId, jo);
+	protected JSONObject doPrint(Long bankId, JSONObject jo) {
+		System.out.println(BankDataOrdered.toOrderedJSONString(jo) + ",");
+		return jo;
+	}
+	
 	long bankCodeToId(Long bankId, int addIndex) {
 		return bankId+addIndex;
 //		return Integer.parseInt(bankId.toString()); // Integer MAX:2147483647 bei FR erreicht
