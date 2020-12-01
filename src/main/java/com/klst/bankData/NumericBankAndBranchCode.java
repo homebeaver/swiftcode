@@ -1,5 +1,11 @@
 package com.klst.bankData;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -8,7 +14,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
 
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
 import com.github.miachm.sods.Range;
 import com.github.miachm.sods.Sheet;
@@ -16,8 +25,6 @@ import com.klst.iban.BankDataGenerator;
 import com.klst.iban.BankDataOrdered;
 import com.klst.iban.BusinessIdentifierCode;
 import com.klst.iban.datastore.DatabaseProxy;
-import com.klst.iban.datastore.SqlInstance;
-import com.klst.ibanTest.API_Key_Provider;
 import com.klst.ods.Ods;
 
 /* Oberklasse für
@@ -43,6 +50,36 @@ public class NumericBankAndBranchCode extends BankDataGenerator {
 
 	private static final Logger LOG = Logger.getLogger(NumericBankAndBranchCode.class.getName());
 
+	private static File getFile(String filename) throws FileNotFoundException {
+		LOG.info("filename:"+filename);
+		File file = new File(filename);
+		if(!file.exists()) {
+			throw new FileNotFoundException("Not existing file:"+file);
+		}
+		return file;
+	}
+	static List<JSONObject> jsonToList(String filename) throws FileNotFoundException, IOException {
+		List<JSONObject> result = null;
+		File file = getFile(filename);
+		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
+        JSONParser jsonParser = new JSONParser(); // gibt es auch in jdk 1.8 nashorn.jar jdk.nashorn.internal.parser.JSONParser
+        try {
+        	Object o = jsonParser.parse(reader);
+        	JSONObject jo = (JSONObject) o;
+        	Object country = jo.get("country");
+        	Object country_code = jo.get("country_code");
+        	LOG.info("country_code:"+country_code + " country:"+country);
+        	Object list = jo.get("list");
+        	result = (JSONArray)list;
+        	LOG.info("result List.size:"+result.size());
+ 		} catch (IOException | ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			reader.close();
+		}
+       	return result;
+	}
+
 	DatabaseProxy db;
 	String countryCode;
 	String bankCodeFormat;
@@ -57,7 +94,7 @@ public class NumericBankAndBranchCode extends BankDataGenerator {
 		this.countryCode = countryCode;
 		this.bankCodeFormat = bankCodeFormat;
 		this.branchCodeFormat = branchCodeFormat;
-		this.db = new DatabaseProxy(new SqlInstance(DatabaseProxy.POSTGRESQL_DATASTORE, API_Key_Provider.POSTGRESQL_USER, API_Key_Provider.POSTGRESQL_PW, SqlInstance.POSTGRESQL_DRIVER));
+//		this.db = new DatabaseProxy(new SqlInstance(DatabaseProxy.POSTGRESQL_DATASTORE, API_Key_Provider.POSTGRESQL_USER, API_Key_Provider.POSTGRESQL_PW, SqlInstance.POSTGRESQL_DRIVER));
 	}
 
 	Integer bankCodeKey(Object[][] rangeValues, int row, int column) {
@@ -122,23 +159,27 @@ public class NumericBankAndBranchCode extends BankDataGenerator {
 		tryWith(countryCode, bankCodeFormat, from, to);
 	}
 
+	static boolean equalsKey(String key, JSONObject o1,JSONObject o2) {
+		return o1.get(key)==null ? o2.get(key)==null : o1.get(key).equals(o2.get(key));
+	}
+	
 	private int counter;
 	private int count() { counter++; return counter;}
 	Map<Integer, JSONObject> template = new Hashtable<Integer, JSONObject>();
 	protected JSONObject doPrint(Long bankId, JSONObject jo) {
 		//Bank_Data.BRANCH_CODE = "branch_code";
-		Object bido = jo.get("bank_code");
-		Object bco = jo.get("branch_code");
-		Integer bci;
+		Object bank_codeObject = jo.get("bank_code");
+		Object branch_codeObject = jo.get("branch_code");
+		Integer branch_code;
         try {
-    		bci = new Integer(Integer.parseInt(bco.toString())); 
+    		branch_code = new Integer(Integer.parseInt(branch_codeObject.toString())); 
         } catch (NumberFormatException e) {
-        	LOG.warning("branch_code "+bco + " is not numeric.");
+        	LOG.warning("branch_code "+branch_codeObject + " is not numeric.");
         	return jo;
         }        
-        if(bci==0) {
+        if(branch_code==0) {
         	// TODO in db einfügen insert (template filiale)
-        	template.put((Integer)bido, jo);
+        	template.put((Integer)bank_codeObject, jo);
     		System.out.println(BankDataOrdered.toOrderedJSONString(jo) + ",");
         } else {
         	// filiale<>0 : suchen nach bankId = bank_code+branch_code
@@ -147,14 +188,15 @@ public class NumericBankAndBranchCode extends BankDataGenerator {
         	//               - suche nach template: filiale bank_code+0
         	//               - ist diese equals jo (ohne "branch_code" natürlich) ==> nix tun
         	//               - else insert jo in db
-        	JSONObject temp = template.get((Integer)bido);
+        	JSONObject temp = template.get((Integer)bank_codeObject);
         	if(temp==null) {
         		LOG.warning("temp is null!");
+        		System.out.println(BankDataOrdered.toOrderedJSONString(jo) + ",");
         	} else {
-        		if(jo.get("bank").equals(temp.get("bank")) && jo.get("branch").equals(temp.get("branch")) 
-        		&& jo.get("zip").equals(temp.get("zip")) && jo.get("city").equals(temp.get("city"))
-            	&& jo.get("address").equals(temp.get("address")) 
-            	&& (jo.get("support_codes")==null ? true : jo.get("support_codes").equals(temp.get("support_codes"))) ) {
+        		if(equalsKey("bank", jo, temp) && equalsKey("branch", jo, temp)
+        		&& equalsKey("zip", jo, temp) && equalsKey("city", jo, temp)
+            	&& equalsKey("address", jo, temp)
+            	&& equalsKey("support_codes", jo, temp) ) {
         			// nix tun
         		} else {
         			// else insert jo in db
@@ -184,11 +226,11 @@ public class NumericBankAndBranchCode extends BankDataGenerator {
 			}
 		});
 		System.out.println("done "+counter + "/"+ bankByCode.size());
-		// loop über Filialn
+		// loop über Filialen:
 		bankCodeList.forEach(bankCode -> {
 			for(int branch=from; branch<=to; branch++) {
-				if(branch%100==0) {
-					int perCent = 100*branch/to;
+				if(branch%1000==0) {
+					int perCent = 100*branch/(to*bankCodeList.size());
 					System.out.println(bankCode+","+branch + " %:"+ perCent);
 				}
 				String bankId = String.format(format, bankCode);
@@ -197,35 +239,6 @@ public class NumericBankAndBranchCode extends BankDataGenerator {
 				if(printBankDataViaApi(bankCode, iban)) count(); // mit callback doPrint(JSONObject jo)
 			}
 		});
-		
-//		int counter = 0;
-//		for(int id=from; id<=to; id++) {
-//			String bankCode = String.format(format, id);
-//			  for(int branch=9800; branch<=9999; branch++) {
-//					if(branch%100==0) {
-//						int perCent = 100*branch/99999;
-//						System.out.println(id+","+branch + " %:"+ perCent);
-//					}
-////			int branch = 0;
-//			if(id%100==0) {
-//				int perCent = 100*id/99999;
-//				System.out.println(""+id+","+branch + " %:"+ perCent);
-//			}
-//			String branchCode = String.format(FORMAT_05d, branch);
-//			FakeIban iban = new FakeIban(countryCode, bankCode, branchCode);
-//			if(bankCodeList==null) {
-//				// suchen
-//				LOG.info("id="+id + " tryWith "+iban+" bankCode "+bankCode);
-////    			if(printBankDataViaApi(id, iban)) counter++;
-//			} else if(bankCodeList.contains(id)) {
-//    			LOG.info("id="+id + " do "+iban+" bankCode "+bankCode);
-//    			if(printBankDataViaApi(id, iban)) counter++;
-//			} else {
-//				// unnötige iban.com Abfrage
-//			}
-//		  }
-//		}
-//		System.out.println("done "+counter + "/"+ (bankCodeList==null ? to : bankByCode.size()));
 	}
 
 }
